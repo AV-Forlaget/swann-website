@@ -3,5 +3,42 @@
 
     .main-header__wrapper {
         @extend .wrapper;
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .main-logo {
+        min-width: 18em;
+        flex: 1;
+    }
+
+    .nav-list {
+        @include chrisCoyier;
+        flex: 1 0 auto;
+        min-width: calc(100% - 26.2em);
+        padding: 0 0 0 1em;
+
+        .nav-list__item {
+            display: block;
+  
+            @include mq($removeMobileMenuBreakPoint) {
+              float: left;
+            }
+
+            a {
+                padding: 1em;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .btn {
+        display: block;
+        flex: 1;
+        margin-left: auto;
     }
 }

@@ -10,10 +10,10 @@
   }
 
   @include mq($removeMobileMenuBreakPoint) {
-    max-width: 60em;
+    max-width: 75em;
   }
 
-  @include mq(976) {
+  @include mq(1276) {
     padding: 0;
   }
 

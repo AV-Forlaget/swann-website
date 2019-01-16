@@ -22,18 +22,14 @@ $warning:#e7a713;
 // Gradients
 $brand-gradient: linear-gradient(90deg, $brand-color 0%, shade($brand-color,2%) 100%);
 
-// border radius
-$r:4px;
-$r-btn:6px;
-
 // Font family settings
 $font-standard: 'Roboto', sans-serif;
 $font-bold: 'Roboto', sans-serif;;
 
 // border radius
-$r:2px;
-$r-table:5px;
-$r-btn:8px;
+$r: 2px;
+$r-table: 5px;
+$r-btn: 24px;
 
 // remove mobile menu breakpoint
 $smallMobileBreakpoint: 330;
