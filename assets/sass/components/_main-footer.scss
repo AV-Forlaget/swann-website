@@ -1,0 +1,7 @@
+.main-footer {
+    background: $bg-color-dark;
+
+    .main-footer__wrapper {
+        @extend .wrapper;
+    }
+}

@@ -1,0 +1,7 @@
+.main-header {
+    background: $white;
+
+    .main-header__wrapper {
+        @extend .wrapper;
+    }
+}
