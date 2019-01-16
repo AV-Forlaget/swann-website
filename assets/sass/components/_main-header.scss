@@ -29,7 +29,12 @@
               float: left;
             }
 
+            &.current a {
+                color: $brand-color;
+            }
+
             a {
+                color: $font-color-dark;
                 padding: 1em;
                 box-sizing: border-box;
             }

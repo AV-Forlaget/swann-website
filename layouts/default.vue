@@ -7,16 +7,16 @@
         </div>
         <ul class="nav-list">
                 <li class="nav-list__item">
-                    <a>Forisde</a>
+                    <a href="#">Forisde</a>
+                </li>
+                  <li class="nav-list__item current">
+                    <a href="#">Oplevelser</a>
                 </li>
                   <li class="nav-list__item">
-                    <a>Oplevelser</a>
+                    <a href="#">Vision</a>
                 </li>
                   <li class="nav-list__item">
-                    <a>Vision</a>
-                </li>
-                  <li class="nav-list__item">
-                    <a>Kontakt</a>
+                    <a href="#">Kontakt</a>
                 </li>
             </ul>
         <button class="btn btn--orange">Log ind</button>
