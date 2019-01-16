@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  kluboplevelser_frontend:
+    build:
+      context: ./docker
+      dockerfile: frontend.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www:cached
+    ports:
+      - 3000:3000
