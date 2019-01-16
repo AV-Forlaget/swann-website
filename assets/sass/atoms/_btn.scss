@@ -50,11 +50,11 @@
     transition: opacity 1s ease;
   }
 
-  &.btn--alt {
-    background: $grey-dark;
+  &.btn--orange {
+    background: $brand-color-2;
 
     &:hover {
-      background: shade($grey-dark, 8%);
+      background: shade($brand-color-2, 8%);
     }
   }
 
