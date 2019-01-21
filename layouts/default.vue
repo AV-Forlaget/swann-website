@@ -56,6 +56,15 @@
         </div>
         <div class="footer-col">
           <h4>Sociale medier</h4>
+          <div class="social-media-links">
+            <a href="https://www.facebook.com/kluboplevelser.dk">
+              <img src="@/assets/img/icon-facebook.svg" alt="Kluboplevelser.dk Facebook">
+            </a>
+            <a href="https://www.instagram.com/kluboplevelser.dk">
+              <img src="@/assets/img/icon-instagram.svg" alt="Kluboplevelser.dk Instagram">
+            </a>
+          </div>
+
         </div>
       </div>
     </div>

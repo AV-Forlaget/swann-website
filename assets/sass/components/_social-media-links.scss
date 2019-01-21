@@ -1,0 +1,10 @@
+.social-media-links {
+    display: flex;
+    flex-flow: nowrap row;
+
+    a {
+        margin: 1em 1em 0 0;
+        min-width: 3.5em;
+        max-width: 3.5em;
+    }
+}
