@@ -1,8 +1,13 @@
 .mobile-menu {
     flex: 1;
     order: 3;
-    margin: auto;
+    margin: auto 0 auto auto;
     z-index: 12;
+    max-width: 3em;
+
+    @include mq($mobileBreakpoint) {
+      margin: 0;
+    }
   
     @include mq($removeMobileMenuBreakPoint) {
       display: none;
