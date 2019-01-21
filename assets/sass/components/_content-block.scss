@@ -116,10 +116,13 @@
         display: block;
 
         &.sport-objects {
+            width: 100%;
+            min-width: 15em;
             max-width: 15em;
             margin: 0 auto;
 
             @include mq($largeBreakpoint) {
+                min-width: 18em;
                 max-width: 18em;
             }
 
