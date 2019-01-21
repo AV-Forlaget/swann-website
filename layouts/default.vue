@@ -6,10 +6,10 @@
           <img src="@/assets/img/kluboplevelser-logo.svg" alt="">
         </div>
         <ul class="nav-list">
-            <li class="nav-list__item">
+            <li class="nav-list__item current">
                 <a href="#">Forisde</a>
             </li>
-              <li class="nav-list__item current">
+              <li class="nav-list__item">
                 <a href="#">Oplevelser</a>
             </li>
               <li class="nav-list__item">

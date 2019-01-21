@@ -38,7 +38,7 @@
           <button class="btn">Se oplevelser</button>
         </div>
         <div class="content-block">
-            <img src="@/assets/img/sport-objects.svg" alt="" class="sport-objects">
+            <img src="@/assets/img/oplevelser-cta.png" alt="" class="masked-image">
         </div>
       </div>
     </div>
