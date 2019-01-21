@@ -42,16 +42,16 @@
           <ul>
             <li>Kluboplevelser.dk APS <span>Rugårdsvej 253, 5210 Odense NV</span></li>
             <li>CVR. 39690330</li>
-            <li>Telefon: (45) 2145 9850</li>
-            <li>E-mail: info@kluboplevelser.dk</li>
+            <li>Telefon: <a href="tel:004521459850">(45) 2145 9850</a></li>
+            <li>E-mail: <a href="mailto:info@kluboplevelser.dk">info@kluboplevelser.dk</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Information</h4>
           <ul>
-            <li>Privatlivspolitik</li>
-            <li>Forretningsbetingelser</li>
-            <li>Lovgrundlag</li>
+            <li><a href="#">Privatlivspolitik</a></li>
+            <li><a href="#">Forretningsbetingelser</a></li>
+            <li><a href="#">Lovgrundlag</a></li>
           </ul>
         </div>
         <div class="footer-col">
