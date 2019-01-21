@@ -1,7 +1,49 @@
 .main-footer {
     background: $bg-color-dark;
+    padding: 2em 0;
 
     .main-footer__wrapper {
         @extend .wrapper;
+
+        @include mq($mobileBreakpoint) {
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-between;
+        }
+    }
+
+    .footer-col {
+
+        @include mq($mobileBreakpoint) {
+            flex: 1;
+            min-width: 32%;
+        }
+
+        h4 {
+            color: $white;
+            font-size: 1.5em;
+            font-weight: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                margin: 1em 0;
+                font-size: 0.9em;
+                line-height: 150%;
+                color: $white;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-weight: bold;
+
+                span {
+                    display: block;
+                    font-weight: normal;
+                }
+            }
+        }
     }
 }
