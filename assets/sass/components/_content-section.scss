@@ -43,6 +43,7 @@
         @extend .content-section--lines;
 
         .content-section__wrapper {
+            
             &:before {
 
                 @include mq($removeMobileMenuBreakPoint) {
