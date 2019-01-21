@@ -1,11 +1,61 @@
 .content-section {
+    position: relative;
 
     &:nth-child(even) {
         background: $white;
     }
 
-    &.content-section--with-lines {
+    &.content-section--lines {
+        overflow: hidden;
         
+        .content-section__wrapper {
+
+            @include mq($removeMobileMenuBreakPoint) {
+                padding-top: 4em;
+            }
+
+            &:before {
+
+                @include mq($removeMobileMenuBreakPoint) {
+                    content:'';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    background: url("../../img/lines-bg.svg") no-repeat center 100%/cover;
+                    background-position-y: top;
+                    background-size: 98%;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                }
+    
+                @include mq($desktopWrapper) {
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+
+    &.content-section--lines-reversed {
+        @extend .content-section--lines;
+
+        .content-section__wrapper {
+            &:before {
+
+                @include mq($removeMobileMenuBreakPoint) {
+                    background: url("../../img/lines-reversed-bg.svg") no-repeat center 100%/cover;
+                    background-position-y: top;
+                    background-size: 98%;
+                }
+
+                @include mq($desktopWrapper) {
+                    background-size: 100%;
+                }
+            }
+        }
     }
 
     .content-section__wrapper {
