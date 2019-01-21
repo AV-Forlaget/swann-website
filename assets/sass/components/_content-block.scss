@@ -28,6 +28,13 @@
         }
     }
 
+    @at-root .content-section.content-section--lines-reversed .content-block:first-child {
+
+        @include mq($removeMobileMenuBreakPoint) {
+            padding-left: 6em;
+        }
+    }
+
     h2 {
         margin: 0 0 0.5em;
         font-size: 2em;
