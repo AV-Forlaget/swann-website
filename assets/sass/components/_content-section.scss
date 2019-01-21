@@ -1,0 +1,21 @@
+.content-section {
+
+    &:nth-child(even) {
+        background: $white;
+    }
+
+    &.content-section--with-lines {
+        
+    }
+
+    .content-section__wrapper {
+        @extend .wrapper;
+
+        @include mq($removeMobileMenuBreakPoint) {
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
