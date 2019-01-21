@@ -29,9 +29,23 @@
         }
     }
 
+    &.content-block--small {
+        @include mq($removeMobileMenuBreakPoint) {
+            flex: 0.8;
+        }
+
+        @include mq($largeBreakpoint) {
+            flex: 1;
+        }
+    }
+
     @at-root .content-section.content-section--lines-reversed .content-block:first-child {
 
         @include mq($removeMobileMenuBreakPoint) {
+            padding-left: 3em;
+        }
+
+        @include mq(1000) {
             padding-left: 6em;
         }
 
@@ -75,6 +89,10 @@
         }
 
         @include mq($removeMobileMenuBreakPoint) {
+            font-size: 1.15em;
+        }
+
+        @include mq(1000) {
             font-size: 1.2em;
         }
 
@@ -87,6 +105,7 @@
         margin: 1em 0 0;
 
         @include mq($removeMobileMenuBreakPoint) {
+            margin-top: 1.5em;
             padding: 0.8em 2em;
             font-size: 1.4em;
             border-radius: 40px;
@@ -97,8 +116,12 @@
         display: block;
 
         &.sport-objects {
-            max-width: 18em;
+            max-width: 15em;
             margin: 0 auto;
+
+            @include mq($largeBreakpoint) {
+                max-width: 18em;
+            }
 
             @include mq($desktopWrapper) {
                 margin: 0 12em 0 auto;

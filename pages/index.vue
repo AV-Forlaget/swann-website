@@ -16,7 +16,7 @@
           <p>Når I har en drøm om at opleve noget sammen, er I allerede langt. Der skal selvfølgelig penge til at indfrie den, og det kan vi hjælpe jer med.</p>
           <button class="btn">Tilmeld dig nu</button>
         </div>
-        <div class="content-block">
+        <div class="content-block content-block--small">
             <img src="@/assets/img/sport-objects.svg" alt="" class="sport-objects">
         </div>
       </div>
