@@ -12,88 +12,86 @@
       </div>
     </div>
     <div class="content-section content-section--bg">
-      <div class="content-section__wrapper">
-        <div class="content-grid">
-          <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Oplev stjernerne</h3>
-              <p>Det er altid en succes at rejse ud sammen for at opleve de stjerner, der inspirerer os alle til blive ved. Det er en oplevelse for livet.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+      <div class="content-grid">
+        <div class="grid-item">
+          <div class="grid-item__header">
           </div>
-          <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Aktiviteter</h3>
-              <p>Fællesskabet styrkes, når man gør noget sammen. Det er ofte også en god vej til fælles grin og øget sammenhold.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Oplev stjernerne</h3>
+            <p>Det er altid en succes at rejse ud sammen for at opleve de stjerner, der inspirerer os alle til blive ved. Det er en oplevelse for livet.</p>
+            <button class="btn">Gå til tilbud</button>
           </div>
-          <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Stævner</h3>
-              <p>At mødes med andre, der har samme interesse, er fremragende. Og så giver det mulighed for at måle sit holds evner på en større skala.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item__header">
           </div>
-          <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Oplev stjernerne</h3>
-              <p>Det er altid en succes at rejse ud sammen for at opleve de stjerner, der inspirerer os alle til blive ved. Det er en oplevelse for livet.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Aktiviteter</h3>
+            <p>Fællesskabet styrkes, når man gør noget sammen. Det er ofte også en god vej til fælles grin og øget sammenhold.</p>
+            <button class="btn">Gå til tilbud</button>
           </div>
-          <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Aktiviteter</h3>
-              <p>Fællesskabet styrkes, når man gør noget sammen. Det er ofte også en god vej til fælles grin og øget sammenhold.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item__header">
           </div>
-          <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Stævner</h3>
-              <p>At mødes med andre, der har samme interesse, er fremragende. Og så giver det mulighed for at måle sit holds evner på en større skala.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Stævner</h3>
+            <p>At mødes med andre, der har samme interesse, er fremragende. Og så giver det mulighed for at måle sit holds evner på en større skala.</p>
+            <button class="btn">Gå til tilbud</button>
           </div>
-            <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Oplev stjernerne</h3>
-              <p>Det er altid en succes at rejse ud sammen for at opleve de stjerner, der inspirerer os alle til blive ved. Det er en oplevelse for livet.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item__header">
           </div>
-          <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Aktiviteter</h3>
-              <p>Fællesskabet styrkes, når man gør noget sammen. Det er ofte også en god vej til fælles grin og øget sammenhold.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Oplev stjernerne</h3>
+            <p>Det er altid en succes at rejse ud sammen for at opleve de stjerner, der inspirerer os alle til blive ved. Det er en oplevelse for livet.</p>
+            <button class="btn">Gå til tilbud</button>
           </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item__header">
+          </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Aktiviteter</h3>
+            <p>Fællesskabet styrkes, når man gør noget sammen. Det er ofte også en god vej til fælles grin og øget sammenhold.</p>
+            <button class="btn">Gå til tilbud</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item__header">
+          </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Stævner</h3>
+            <p>At mødes med andre, der har samme interesse, er fremragende. Og så giver det mulighed for at måle sit holds evner på en større skala.</p>
+            <button class="btn">Gå til tilbud</button>
+          </div>
+        </div>
           <div class="grid-item">
-            <div class="grid-item__header">
-            </div>
-            <div class="grid-item__body">
-              <h3 class="grid-item__title">Stævner</h3>
-              <p>At mødes med andre, der har samme interesse, er fremragende. Og så giver det mulighed for at måle sit holds evner på en større skala.</p>
-              <button class="btn">Gå til tilbud</button>
-            </div>
+          <div class="grid-item__header">
+          </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Oplev stjernerne</h3>
+            <p>Det er altid en succes at rejse ud sammen for at opleve de stjerner, der inspirerer os alle til blive ved. Det er en oplevelse for livet.</p>
+            <button class="btn">Gå til tilbud</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item__header">
+          </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Aktiviteter</h3>
+            <p>Fællesskabet styrkes, når man gør noget sammen. Det er ofte også en god vej til fælles grin og øget sammenhold.</p>
+            <button class="btn">Gå til tilbud</button>
+          </div>
+        </div>
+          <div class="grid-item">
+          <div class="grid-item__header">
+          </div>
+          <div class="grid-item__body">
+            <h3 class="grid-item__title">Stævner</h3>
+            <p>At mødes med andre, der har samme interesse, er fremragende. Og så giver det mulighed for at måle sit holds evner på en større skala.</p>
+            <button class="btn">Gå til tilbud</button>
           </div>
         </div>
       </div>

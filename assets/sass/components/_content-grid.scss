@@ -1,8 +1,9 @@
 .content-grid {
-    margin: 1em 0;
+    @extend .wrapper;
+    margin: 1em auto;
 
     @include mq($mobileBreakpoint) {
-        margin: 2.5em 0;
+        margin: 2.5em auto;
         display: flex;
         flex-flow: wrap row;
         justify-content: flex-start;
@@ -15,6 +16,7 @@
         box-shadow: $block-shadow;
 
         @include mq($mobileBreakpoint) {
+            width: 48%;
             min-width: 48%;
             max-width: 48%;
             flex: 1;
@@ -23,6 +25,7 @@
         }
 
         @include mq($contentGridBreakpoint) {
+            width: 31.5%;
             min-width: 31.5%;
             max-width: 31.5%;
             margin-right: 2.75%;
