@@ -1,0 +1,84 @@
+.faq-item {
+    margin-bottom: 1em;
+    border-radius: $r;
+
+    @include mq($largeBreakpoint) {
+        margin-bottom: 1.5em;
+    }
+
+    &:hover .faq-item__header {
+        cursor: pointer;
+        background: linear-gradient(10deg, $brand-color 0%, $brand-purple 200%);
+    }
+
+    &.faq-item--open {
+
+        .faq-item__header {
+            border-radius: $r $r 0 0;
+            box-shadow: none;
+        }
+        
+        .faq-item__body {
+            display: block;
+            background: $white;
+            box-shadow: $block-shadow;
+        }
+    }
+
+    .faq-item__header {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(10deg, shade($brand-color, 10%) 0%, $brand-purple 250%);
+        padding: 1em;
+        border-radius: $r;
+        box-sizing: border-box;
+        box-shadow: $block-shadow;
+
+        @include mq($mobileBreakpoint) {
+            padding: 1em 1.5em;
+        }
+
+        @include mq($largeBreakpoint) {
+            padding: 1em 2em;
+        }
+
+        h3 {
+            flex: 1;
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: normal;
+            line-height: 140%;
+            color: $white;
+        }
+
+        img {
+            flex: 1;
+            min-width: 2.2em;
+            max-width: 2.2em;
+            min-height: 2em;
+            max-height: 2em;
+            margin-left: 1em;
+        }
+    }
+
+    .faq-item__body {
+        padding: 1em;
+        display: none;
+        border-radius: 0 0 $r $r;
+
+        @include mq($mobileBreakpoint) {
+            padding: 1.5em;
+        }
+
+        @include mq($largeBreakpoint) {
+            padding: 2em;
+        }
+
+        p {
+            margin: 0;
+            line-height: 150%;
+        }
+    }
+}

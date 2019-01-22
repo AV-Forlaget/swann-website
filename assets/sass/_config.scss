@@ -5,6 +5,8 @@ $white:#fff;
 // Client colors
 $brand-color: #4f81bd;
 $brand-color-2: #ff6912;
+$brand-purple: #a672d4;
+$brand-pink: #f24b86;
 $bg-color: #f2eeeb;
 $bg-color-dark: #1a2a3d;
 $border-color:#f2eeeb;
@@ -18,9 +20,6 @@ $positive:#5aa253;
 $negative:#e75858;
 $informative:#1e88c5;
 $warning:#e7a713;
-
-// Gradients
-$brand-gradient: linear-gradient(90deg, $brand-color 0%, shade($brand-color,2%) 100%);
 
 // Font family settings
 $font-standard: 'Lato', sans-serif;

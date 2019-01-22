@@ -16,7 +16,7 @@
                 <a href="/vision">Vision</a>
             </li>
               <li class="nav-list__item">
-                <a href="#">Kontakt</a>
+                <a href="/kontakt">Kontakt</a>
             </li>
         </ul>
         <button class="btn btn--orange">

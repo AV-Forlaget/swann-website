@@ -26,7 +26,8 @@
 
   //Color
   color: $white;
-  background: $brand-color;
+  background: linear-gradient(35deg, $brand-color 0%, $brand-purple 250%) no-repeat center 100%/cover;
+  box-shadow: $block-shadow;
 
   //Interaction
   cursor: pointer;
@@ -34,7 +35,7 @@
   transition: color 1s ease;
 
   &:hover {
-    background: shade($brand-color, 8%);
+    background: linear-gradient(35deg, tint($brand-color, 8%), $brand-purple 120%) no-repeat center 100%/cover;
   }
 
   &:after {
@@ -50,10 +51,10 @@
   }
 
   &.btn--orange {
-    background: $brand-color-2;
+    background: linear-gradient(35deg, $brand-color-2 0%, $brand-pink 200%) no-repeat center 100%/cover;
 
     &:hover {
-      background: shade($brand-color-2, 8%);
+      background: linear-gradient(35deg, tint($brand-color-2, 15%), $brand-pink 160%) no-repeat center 100%/cover;
     }
   }
 
