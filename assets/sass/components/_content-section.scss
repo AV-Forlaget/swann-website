@@ -67,6 +67,28 @@
         }
     }
 
+    @at-root .default-page .content-section {
+        background: $white;
+        border-bottom: 1px solid $border-color;
+        box-shadow: inset $block-shadow;
+
+        &:first-child {
+            box-shadow: none;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        @include mq($removeMobileMenuBreakPoint) {
+            &:nth-child(even) {
+                .content-section__wrapper .content-block:first-child {
+                    order: 2;
+                }
+            }
+        }
+    }
+
     .content-section__wrapper {
         @extend .wrapper;
 

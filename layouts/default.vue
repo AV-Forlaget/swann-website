@@ -13,7 +13,7 @@
                 <a href="/oplevelser">Oplevelser</a>
             </li>
               <li class="nav-list__item">
-                <a href="#">Vision</a>
+                <a href="/vision">Vision</a>
             </li>
               <li class="nav-list__item">
                 <a href="#">Kontakt</a>

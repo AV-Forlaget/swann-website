@@ -13,7 +13,7 @@
       <div class="content-section__wrapper">
         <div class="content-block">
           <h2>Vi gør dine klubdrømme til virkelighed</h2>
-          <p>Når I har en drøm om at opleve noget sammen, er I allerede langt. Der skal selvfølgelig penge til at indfrie den, og det kan vi hjælpe jer med.</p>
+          <p>Det gode liv. Et foreningsliv i Danmark, der giver alle mulighed for at få gode oplevelser og sunde sociale kompetencer funderet i lokal frivillighed.</p>
           <button class="btn">Tilmeld dig nu</button>
         </div>
         <div class="content-block content-block--small">
@@ -34,7 +34,7 @@
       <div class="content-section__wrapper">
         <div class="content-block">
           <h2>Få inspiration til dine kluboplevelser</h2>
-          <p>Fælles oplevelser er den lim, der holder klubben sammen. De styrker det klubliv og venskab, vi alle nyder at være en del af.</p>
+          <p>kluboplevelser.dk vil gøre det attraktivt at deltage i frivilligt foreningsarbejde ved at stille en platform til rådighed, der sikrer foreningerne en nem og billig vej til at samle penge ind via salg af klubrelaterede produkter.</p>
           <button class="btn">Se oplevelser</button>
         </div>
         <div class="content-block">
