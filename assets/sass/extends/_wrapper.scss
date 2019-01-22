@@ -2,12 +2,8 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0.5em;
+  padding: 0 1em;
   box-sizing: border-box;
-
-  @include mq($mobileBreakpoint) {
-    padding: 0 1em;
-  }
 
   @include mq($removeMobileMenuBreakPoint) {
     max-width: 75em;
