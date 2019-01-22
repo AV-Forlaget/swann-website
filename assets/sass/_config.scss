@@ -27,7 +27,7 @@ $font-standard: 'Lato', sans-serif;
 $font-bold: 'Lato', sans-serif;;
 
 // border radius
-$r: 2px;
+$r: 4px;
 $r-table: 5px;
 $r-btn: 24px;
 
@@ -35,6 +35,7 @@ $r-btn: 24px;
 $smallMobileBreakpoint: 330;
 $mobileBreakpoint: 600;
 $removeMobileMenuBreakPoint: 900;
+$contentGridBreakpoint: 1100;
 $largeBreakpoint: 1200;
 $desktopWrapper: 1276;
 $hamburgerTransition: all 150ms ease;

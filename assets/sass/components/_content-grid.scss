@@ -1,0 +1,101 @@
+.content-grid {
+    margin: 1em 0;
+
+    @include mq($mobileBreakpoint) {
+        margin: 2.5em 0;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: flex-start;
+    }
+
+    .grid-item {
+        margin-bottom: 1em;
+        background: $white;
+        border-radius: $r;
+        box-shadow: $block-shadow;
+
+        @include mq($mobileBreakpoint) {
+            min-width: 48%;
+            max-width: 48%;
+            flex: 1;
+            margin-right: 4%;
+            margin-bottom: 2.5em;
+        }
+
+        @include mq($contentGridBreakpoint) {
+            min-width: 31.5%;
+            max-width: 31.5%;
+            margin-right: 2.75%;
+        }
+
+        &:nth-child(2n) {
+
+            @include mq($mobileBreakpoint) {
+                margin-right: 0;
+            }
+
+            @include mq($contentGridBreakpoint) {
+                margin-right: 2.75%;
+            }
+        }
+
+        &:nth-child(3n) {
+
+            @include mq($contentGridBreakpoint) {
+                margin-right: 0;
+            }
+        }
+
+        .grid-item__header {
+            border-radius: $r $r 0 0;
+            position: relative;
+            overflow: hidden;
+            min-height: 7em;
+            background: url("../../img/oplevelse-eksempel.jpg") no-repeat center 100%/cover;
+
+            @include mq(400) {
+                min-height: 10em; 
+            }
+
+            @include mq(480) {
+                min-height: 14em; 
+            }
+
+            @include mq($mobileBreakpoint) {
+                min-height: 10em; 
+            }
+
+            @include mq(800) {
+                min-height: 12em; 
+            }
+
+            @include mq($contentGridBreakpoint) {
+                min-height: 14em; 
+            }
+
+            @include mq($largeBreakpoint) {
+                min-height: 16em; 
+            }
+
+            @include mq($contentGridBreakpoint) {
+                min-height: 12em; 
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .grid-item__body {
+            padding: 1em;
+            box-sizing: border-box;
+        }
+    }
+}
