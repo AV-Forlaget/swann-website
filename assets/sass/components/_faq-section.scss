@@ -37,10 +37,11 @@
     }
 
     .faq-grid {
-        margin: 1em 0;
+        @extend .wrapper;
+        margin: 1em auto;
 
         @include mq($removeMobileMenuBreakPoint) {
-            margin: 2.5em 0;
+            margin: 2.5em auto;
             display: flex;
             flex-flow: wrap row;
             justify-content: flex-start;

@@ -1,7 +1,6 @@
 <template>
   <section class="main-content">
     <div class="content-section">
-        <div class="content-section__wrapper">
           <div class="faq-section">
             <h2 class="faq-section__heading">Ofte stillede spørgsmål</h2>
             <div class="faq-grid">
@@ -78,7 +77,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
   </section>
