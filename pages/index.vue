@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <div class="content-section content-section--lines">
+    <div class="content-section content-section--lines content-section--white">
       <div class="content-section__wrapper">
         <div class="content-block">
           <h2>Vi gør dine klubdrømme til virkelighed</h2>
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="content-section">
+    <div class="content-section content-section--bg">
       <div class="content-section__wrapper">
         <div class="content-block">
           <h2>Testimonials</h2>

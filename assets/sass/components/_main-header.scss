@@ -1,5 +1,8 @@
 .main-header {
+    position: relative;
     background: $white;
+    box-shadow: $block-shadow;
+    z-index: 1;
 
     .main-header__wrapper {
         @extend .wrapper;

@@ -7,10 +7,10 @@
         </div>
         <ul class="nav-list">
             <li class="nav-list__item current">
-                <a href="#">Forisde</a>
+                <a href="/">Forisde</a>
             </li>
               <li class="nav-list__item">
-                <a href="#">Oplevelser</a>
+                <a href="/oplevelser">Oplevelser</a>
             </li>
               <li class="nav-list__item">
                 <a href="#">Vision</a>

@@ -5,6 +5,14 @@
         background: $white;
     }
 
+    &.content-section--white {
+        background: $white; 
+    }
+
+    &.content-section--bg {
+        background: $bg-color; 
+    }
+
     &.content-section--lines {
         overflow: hidden;
         
