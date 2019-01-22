@@ -98,10 +98,6 @@
               float: left;
             }
 
-            &.current a {
-                color: $brand-color;
-            }
-
             a {
                 font-size: 1.1em;
                 color: $font-color-dark;
@@ -110,6 +106,10 @@
 
                 @include mq($largeBreakpoint) {
                     font-size: 1.25em;
+                }
+                
+                &.nuxt-link-exact-active {
+                    color: $brand-color;
                 }
             }
         }

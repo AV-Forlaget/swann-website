@@ -2,21 +2,19 @@
   <div class="main-app">
     <div class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-logo" href="/">
-          <img src="@/assets/img/kluboplevelser-logo.svg" alt="">
-        </a>
+        <nuxt-link to="/" class="main-logo"><img src="@/assets/img/kluboplevelser-logo.svg" alt=""></nuxt-link>
         <ul class="nav-list">
-            <li class="nav-list__item current">
-                <a href="/">Forisde</a>
+            <li class="nav-list__item">
+              <nuxt-link to="/">Forisde</nuxt-link>
+            </li>
+            <li class="nav-list__item">
+              <nuxt-link to="/oplevelser">Oplevelser</nuxt-link>
             </li>
               <li class="nav-list__item">
-                <a href="/oplevelser">Oplevelser</a>
+                <nuxt-link to="/vision">Vision</nuxt-link>
             </li>
               <li class="nav-list__item">
-                <a href="/vision">Vision</a>
-            </li>
-              <li class="nav-list__item">
-                <a href="/kontakt">Kontakt</a>
+                <nuxt-link to="/kontakt">Kontakt</nuxt-link>
             </li>
         </ul>
         <button class="btn btn--orange">
