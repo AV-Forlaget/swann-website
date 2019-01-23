@@ -1,0 +1,88 @@
+.testimonial-block {
+
+    @include mq($mobileBreakpoint) {
+        margin: 2em 0 3em;
+    }
+
+    @include mq($removeMobileMenuBreakPoint) {
+        margin: 4em 0;
+    }
+
+    @include mq($largeBreakpoint) {
+        margin: 6em 0;
+    }
+
+    .testimonial-person {
+        margin: 1em 0;
+        display: flex;
+        flex-flow: nowrap row;
+        align-items: center;
+
+        .testimonial-person__content {
+            padding: 1em;
+            box-sizing: border-box;
+            background: $white;
+
+            .testimonial-person__content__name {
+                display: block;
+                color: $brand-color-2;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .testimonial-person__content__job {
+                display: block;
+                color: $font-color-dark;
+            }
+        }
+
+        .testimonial-person__avatar {
+            border: 6px solid $white;
+            padding: 1em;
+            box-sizing: border-box;
+            border-radius: 50%;
+            min-width: 6em;
+            max-width: 6em;
+            min-height: 6em;
+            max-height: 6em;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    .testimonial-qoute {
+        margin: 1em 0;
+        padding: 1em;
+        box-sizing: border-box;
+        background: $white;
+
+        @include mq($mobileBreakpoint) {
+            margin: 2em 0 3em;
+            padding: 3em 2em;
+        }
+
+        @include mq($removeMobileMenuBreakPoint) {
+            margin: 2em 6em 3em;
+            padding: 3em 2em;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.1em;
+            line-height: 150%;
+            color: $font-color;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            @include mq($mobileBreakpoint) {
+                font-size: 1.4em;
+            }
+
+            @include mq($removeMobileMenuBreakPoint) {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
