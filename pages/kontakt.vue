@@ -108,7 +108,7 @@
           </div>
           <div class="content-block">
              <h2>Vores hold</h2>
-            <p>Kluboplevelser.dk består af os seks, der alle har lang erfaring i foreningslivet. Vi er et hold, der spiller sammen om at gøre det så godt som muligt for dig og dine klubkammerater. Bagerst fra venstre ses Ole Madsen, Lars Duus Madsen, Michael Bjørn Hansen og Henrik Hansen, mens Lotte Hansen og Tobias Feldballe sidder forrest. Kontakt os her eller ring på <a href="tel:004521459850">21 45 98 50</a>. Vi glæder os til at tale med jer.</p>
+            <p>Kluboplevelser.dk består af os seks, der alle har lang erfaring i foreningslivet. Vi er et hold, der spiller sammen om at gøre det så godt som muligt for dig og dine klubkammerater. Bagerst fra venstre ses Ole Madsen, Michael Bjørn Hansen, Lars Duus Madsen og Henrik Hansen, mens Lotte Hansen og Tobias Feldballe sidder forrest. Kontakt os her eller ring på <a href="tel:004521459850">21 45 98 50</a>. Vi glæder os til at tale med jer.</p>
           </div>
         </div>
       </div>
