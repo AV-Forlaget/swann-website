@@ -1,5 +1,6 @@
 const pkg = require('./package')
-const config = require('./.contentful.json');
+const fs = require('fs');
+const config = (fs.existsSync('./.contentful.json')) ? require('./.contentful.json') : { }
 
 module.exports = {
   mode: 'universal',
