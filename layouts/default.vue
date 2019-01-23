@@ -1,5 +1,6 @@
 <template>
   <div class="main-app">
+    <div id="fb-root"></div>
     <div class="main-header">
       <div class="main-header__wrapper">
         <nuxt-link to="/" class="main-logo"><img src="@/assets/img/kluboplevelser-logo.svg" alt=""></nuxt-link>
