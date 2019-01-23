@@ -12,13 +12,17 @@
         padding: 2em 0 1em;
 
         @include mq($mobileBreakpoint) {
-            padding: 4em 0 3em;
+            padding: 4em 0 1em;
         }
     
         @include mq($removeMobileMenuBreakPoint) {
             flex: 1;
             align-self: center;
-            padding: 6em 0;
+            padding: 6em 0 1em;
+        }
+
+        @include mq($largeBreakpoint) {
+            padding-bottom: 2em;
         }
         
         .slide-heading {
@@ -49,13 +53,17 @@
         padding: 2em 0 1em;
 
         @include mq($mobileBreakpoint) {
-            padding: 4em 0 3em;
+            padding: 4em 0 1em;
         }
     
         @include mq($removeMobileMenuBreakPoint) {
             flex: 0.8;
             align-self: center;
-            padding: 6em 0;
+            padding: 6em 0 1em;
+        }
+
+        @include mq($largeBreakpoint) {
+            padding-bottom: 2em;
         }
 
         img {
