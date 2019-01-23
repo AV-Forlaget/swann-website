@@ -2,11 +2,28 @@
   <section class="main-content">
     <div class="content-section">
       <div class="content-section__wrapper">
-        <div class="content-block">
-          <h2>Slides</h2>
-        </div>
-        <div class="content-block">
-        </div>
+        <carousel :per-page="1" :pagination-enabled="true">
+          <slide>
+                    <div class="content-block">
+                      <h2>Slide 1</h2>
+                    </div>
+          </slide>
+          <slide>
+                    <div class="content-block">
+                      <h2>Slide 2</h2>
+                    </div>
+          </slide>
+           <slide>
+                    <div class="content-block">
+                      <h2>Slide 3</h2>
+                    </div>
+          </slide>
+          <slide>
+                    <div class="content-block">
+                      <h2>Slide 4</h2>
+                    </div>
+          </slide>
+        </carousel>
       </div>
     </div>
     <div class="content-section content-section--lines content-section--white">
