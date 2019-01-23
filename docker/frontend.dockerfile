@@ -1,4 +1,4 @@
-FROM node:9.4
+FROM node:8.15
 
 #Installing WEBPACK
 RUN npm install -g nuxt
