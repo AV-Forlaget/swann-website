@@ -79,7 +79,7 @@
           </div>
       </div>
     </div>
-    <div class="content-section">
+    <div class="content-section" id="contactBlock">
       <div class="content-section__wrapper">
         <div class="content-block">
           <h2>Kontakt os</h2>

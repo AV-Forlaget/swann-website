@@ -14,7 +14,7 @@
         <div class="content-block">
           <h2>Vi gør dine klubdrømme til virkelighed</h2>
           <p>Det gode liv. Et foreningsliv i Danmark, der giver alle mulighed for at få gode oplevelser og sunde sociale kompetencer funderet i lokal frivillighed.</p>
-          <button class="btn">Tilmeld dig nu</button>
+          <nuxt-link to="/kontakt#contactBlock" class="btn">Tilmeld dig nu</nuxt-link>
         </div>
         <div class="content-block content-block--small">
             <img src="@/assets/img/sport-objects.svg" alt="" class="sport-objects">
@@ -35,7 +35,7 @@
         <div class="content-block">
           <h2>Få inspiration til dine kluboplevelser</h2>
           <p>kluboplevelser.dk vil gøre det attraktivt at deltage i frivilligt foreningsarbejde ved at stille en platform til rådighed, der sikrer foreningerne en nem og billig vej til at samle penge ind via salg af klubrelaterede produkter.</p>
-          <button class="btn">Se oplevelser</button>
+          <nuxt-link to="/oplevelser" class="btn">Se oplevelser</nuxt-link>
         </div>
         <div class="content-block">
             <img src="@/assets/img/oplevelser-cta.png" alt="" class="masked-image">
