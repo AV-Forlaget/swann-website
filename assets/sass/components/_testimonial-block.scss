@@ -1,4 +1,5 @@
 .testimonial-block {
+    margin: 2em 0;
 
     @include mq($mobileBreakpoint) {
         margin: 2em 0 3em;
@@ -25,16 +26,45 @@
             border-radius: 0 $r $r 0;
             margin-left: -1em;
 
+            @include mq($mobileBreakpoint) {
+                padding: 1em 1.2em 1em 1.5em;
+            }
+        
+            @include mq($removeMobileMenuBreakPoint) {
+                padding: 1.2em 2em 1.2em 1.8em;
+            }
+
             .testimonial-person__content__name {
                 display: block;
+                font-size: 1em;
                 color: $brand-color-2;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+
+                @include mq($mobileBreakpoint) {
+                    font-size: 1.1em;
+                }
+            
+                @include mq($removeMobileMenuBreakPoint) {
+                    font-size: 1.25em;
+                }
             }
 
             .testimonial-person__content__job {
+                margin-top: 0.2em;
                 display: block;
+                font-size: 0.9em;
                 color: $font-color-dark;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+
+                @include mq($mobileBreakpoint) {
+                    font-size: 0.95em;
+                }
+            
+                @include mq($removeMobileMenuBreakPoint) {
+                    font-size: 1em;
+                }
             }
         }
 
@@ -50,15 +80,32 @@
             min-height: 6em;
             max-height: 6em;
             z-index: 1;
+
+            @include mq($mobileBreakpoint) {
+                min-width: 7em;
+                max-width: 7em;
+                min-height: 7em;
+                max-height: 7em;
+            }
+        
+            @include mq($removeMobileMenuBreakPoint) {
+                border: 7px solid $white;
+                min-width: 8em;
+                max-width: 8em;
+                min-height: 8em;
+                max-height: 8em;
+            }
         }
     }
     
     .testimonial-quote {
+        position: relative;
         margin: 1em 0;
-        padding: 1em;
+        padding: 1.5em 1.2em;
         box-sizing: border-box;
         background: $white;
         border-radius: $r;
+        box-shadow: $block-shadow;
 
         @include mq($mobileBreakpoint) {
             margin: 1.5em 0 3em;
@@ -66,8 +113,67 @@
         }
 
         @include mq($removeMobileMenuBreakPoint) {
-            margin: 1.5em 5.2em 3em;
-            padding: 3em 2em;
+            margin: 1.5em 5em 3em 7em;
+            padding: 3em;
+        }
+
+        @include mq($largeBreakpoint) {
+            padding: 4em;
+        }
+
+        &:before {
+            content: '“';
+            position: absolute;
+            top: 0.2em;
+            right: auto;
+            bottom: auto;
+            left: 0.3em;
+            margin: auto;
+            font-size: 2em;
+            color: $brand-color-2;
+            font-family: $font-standard;
+
+            @include mq($mobileBreakpoint) {
+                font-size: 3em;
+            }
+
+            @include mq($removeMobileMenuBreakPoint) {
+                font-size: 3.5em;
+            }
+
+            @include mq($largeBreakpoint) {
+                font-size: 4em;
+                top: 0.4em;
+                right: auto;
+                bottom: auto;
+                left: 0.5em;
+            }
+        }
+
+        &:after {
+            content: '“';
+            position: absolute;
+            top: auto;
+            right: 0.4em;
+            bottom: 0;
+            left: auto;
+            margin: auto;
+            font-size: 2em;
+            color: $brand-color-2;
+            font-family: $font-standard;
+
+            @include mq($mobileBreakpoint) {
+                font-size: 3em;
+            }
+
+            @include mq($removeMobileMenuBreakPoint) {
+                font-size: 3.5em;
+            }
+
+            @include mq($largeBreakpoint) {
+                font-size: 4em;
+                right: 0.5em;
+            }
         }
 
         p {
@@ -79,11 +185,15 @@
             -moz-osx-font-smoothing: grayscale;
 
             @include mq($mobileBreakpoint) {
-                font-size: 1.4em;
+                font-size: 1.3em;
             }
 
             @include mq($removeMobileMenuBreakPoint) {
-                font-size: 1.5em;
+                font-size: 1.35em;
+            }
+
+            @include mq($largeBreakpoint) {
+                font-size: 1.4em;
             }
         }
     }
