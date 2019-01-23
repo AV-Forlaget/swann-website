@@ -14,10 +14,15 @@
     }
 
     .testimonial-person {
-        margin: 1em 0;
+        margin: 1em 0 1em -0.25em;
         display: flex;
         flex-flow: nowrap row;
         align-items: center;
+        margin-left: -0.25em;
+
+        @include mq($mobileBreakpoint) {
+            margin: 1em 0;
+        }
 
         .testimonial-person__content {
             padding: 1em 1em 1em 1.4em;
@@ -105,7 +110,6 @@
         box-sizing: border-box;
         background: $white;
         border-radius: $r;
-        box-shadow: $block-shadow;
 
         @include mq($mobileBreakpoint) {
             margin: 1.5em 0 3em;
