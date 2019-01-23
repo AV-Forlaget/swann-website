@@ -19,9 +19,11 @@
         align-items: center;
 
         .testimonial-person__content {
-            padding: 1em;
+            padding: 1em 1em 1em 1.4em;
             box-sizing: border-box;
             background: $white;
+            border-radius: 0 $r $r 0;
+            margin-left: -1em;
 
             .testimonial-person__content__name {
                 display: block;
@@ -37,34 +39,34 @@
         }
 
         .testimonial-person__avatar {
-            border: 6px solid $white;
-            padding: 1em;
-            box-sizing: border-box;
+            position: relative;
             border-radius: 50%;
+            background: url("../../img/oplevelse-eksempel.jpg") no-repeat center 100%/cover;
+            padding: 1em;
+            border: 6px solid $white;
+            box-sizing: border-box;
             min-width: 6em;
             max-width: 6em;
             min-height: 6em;
             max-height: 6em;
-            
-            img {
-                width: 100%;
-            }
+            z-index: 1;
         }
     }
     
-    .testimonial-qoute {
+    .testimonial-quote {
         margin: 1em 0;
         padding: 1em;
         box-sizing: border-box;
         background: $white;
+        border-radius: $r;
 
         @include mq($mobileBreakpoint) {
-            margin: 2em 0 3em;
+            margin: 1.5em 0 3em;
             padding: 3em 2em;
         }
 
         @include mq($removeMobileMenuBreakPoint) {
-            margin: 2em 6em 3em;
+            margin: 1.5em 5.2em 3em;
             padding: 3em 2em;
         }
 

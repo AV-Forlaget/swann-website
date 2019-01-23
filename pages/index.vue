@@ -35,7 +35,7 @@
               <span class="testimonial-person__content__job">Titel, Virksomhed/Klub</span>
             </div>
           </div>
-          <div class="testimonial-qoute">
+          <div class="testimonial-quote">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
           </div>
         </div>
