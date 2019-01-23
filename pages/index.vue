@@ -1,30 +1,52 @@
 <template>
   <section class="main-content">
     <div class="content-section">
-      <div class="content-section__wrapper">
-        <carousel :per-page="1" :pagination-enabled="true">
-          <slide>
-                    <div class="content-block">
-                      <h2>Slide 1</h2>
-                    </div>
-          </slide>
-          <slide>
-                    <div class="content-block">
-                      <h2>Slide 2</h2>
-                    </div>
-          </slide>
-           <slide>
-                    <div class="content-block">
-                      <h2>Slide 3</h2>
-                    </div>
-          </slide>
-          <slide>
-                    <div class="content-block">
-                      <h2>Slide 4</h2>
-                    </div>
-          </slide>
-        </carousel>
-      </div>
+      <carousel :per-page="1" :pagination-enabled="true">
+        <slide>
+          <div class="intro-slide">
+            <div class="intro-slide__content">
+              <h2 class="slide-heading slide-heading--orange">Din klub</h2>
+              <p class="slide-text">drømmer om at opleve noget sammen, men I mangler penge</p>
+            </div>
+            <div class="intro-slide__image">
+              <img src="@/assets/img/slide-illustration-01.svg" alt="" class="">
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class="intro-slide">
+            <div class="intro-slide__content">
+              <h2 class="slide-heading slide-heading--blue">Kluboplevelser.dk</h2>
+              <p class="slide-text">leverer et kvalitetsprodukt til jer, som I kan tjene mange penge på</p>
+            </div>
+            <div class="intro-slide__image">
+              <img src="@/assets/img/slide-illustration-02.svg" alt="" class="">
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class="intro-slide">
+            <div class="intro-slide__content">
+              <h2 class="slide-heading slide-heading--orange">Din klub</h2>
+              <p class="slide-text">sælger varerne til venner og familie, hvor der betales via MobilePay</p>
+            </div>
+            <div class="intro-slide__image">
+              <img src="@/assets/img/slide-illustration-03.svg" alt="" class="">
+            </div> 
+          </div>
+        </slide>
+        <slide>
+          <div class="intro-slide">
+            <div class="intro-slide__content">
+              <h2 class="slide-heading slide-heading--orange">Din klub</h2>
+              <p class="slide-text">får pengene samlet fra vores system, og så er I klar til at gøre jeres drøm til virkelighed</p>
+            </div>
+            <div class="intro-slide__image">
+              <img src="@/assets/img/slide-illustration-04.svg" alt="" class="">
+            </div> 
+          </div>
+        </slide>
+      </carousel>
     </div>
     <div class="content-section content-section--lines content-section--white">
       <div class="content-section__wrapper">
