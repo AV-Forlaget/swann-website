@@ -80,6 +80,11 @@ export default {
       ]
     }
   },
+  mounted() {
+    if(window.FB) {
+      window.FB.XFBML.parse();
+    }
+  },
   methods: {
     openFaqItem(faqKey) {
       if(faqKey === this.openFaq) {
