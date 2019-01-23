@@ -5,7 +5,7 @@
         <nuxt-link to="/" class="main-logo"><img src="@/assets/img/kluboplevelser-logo.svg" alt=""></nuxt-link>
         <ul class="nav-list">
             <li class="nav-list__item">
-              <nuxt-link to="/">Forisde</nuxt-link>
+              <nuxt-link to="/">Forside</nuxt-link>
             </li>
             <li class="nav-list__item">
               <nuxt-link to="/oplevelser">Oplevelser</nuxt-link>
