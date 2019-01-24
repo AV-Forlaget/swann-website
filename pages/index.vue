@@ -61,24 +61,68 @@
       </div>
     </div>
     <div class="content-section content-section--bg">
-      <div class="content-section__wrapper">
-        <div class="testimonial-block">
-          <div class="testimonial-person">
-            <div class="testimonial-person__avatar">
-              <div class="testimonial-person__avatar__img">
-                
+        <carousel :per-page="1" :pagination-enabled="true">
+          <slide>
+            <div class="content-section__wrapper">
+              <div class="testimonial-block">
+                <div class="testimonial-person">
+                  <div class="testimonial-person__avatar">
+                    <div class="testimonial-person__avatar__img">
+                      
+                    </div>
+                  </div>
+                  <div class="testimonial-person__content">
+                    <span class="testimonial-person__content__name">Fornavn Efternavn</span>
+                    <span class="testimonial-person__content__job">Titel, Virksomhed/Klub</span>
+                  </div>
+                </div>
+                <div class="testimonial-quote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                </div>
               </div>
             </div>
-            <div class="testimonial-person__content">
-              <span class="testimonial-person__content__name">Fornavn Efternavn</span>
-              <span class="testimonial-person__content__job">Titel, Virksomhed/Klub</span>
+          </slide>
+            <slide>
+            <div class="content-section__wrapper">
+              <div class="testimonial-block">
+                <div class="testimonial-person">
+                  <div class="testimonial-person__avatar">
+                    <div class="testimonial-person__avatar__img">
+                      
+                    </div>
+                  </div>
+                  <div class="testimonial-person__content">
+                    <span class="testimonial-person__content__name">Fornavn Efternavn</span>
+                    <span class="testimonial-person__content__job">Titel, Virksomhed/Klub</span>
+                  </div>
+                </div>
+                <div class="testimonial-quote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="testimonial-quote">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-          </div>
-        </div>
-      </div>
+          </slide>
+            <slide>
+            <div class="content-section__wrapper">
+              <div class="testimonial-block">
+                <div class="testimonial-person">
+                  <div class="testimonial-person__avatar">
+                    <div class="testimonial-person__avatar__img">
+                      
+                    </div>
+                  </div>
+                  <div class="testimonial-person__content">
+                    <span class="testimonial-person__content__name">Fornavn Efternavn</span>
+                    <span class="testimonial-person__content__job">Titel, Virksomhed/Klub</span>
+                  </div>
+                </div>
+                <div class="testimonial-quote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                </div>
+              </div>
+            </div>
+          </slide>
+        </carousel>
     </div>
     <div class="content-section content-section--lines-reversed">
       <div class="content-section__wrapper">
