@@ -42,7 +42,8 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    'nuxt-imagemin'
   ],
 
   env: {
