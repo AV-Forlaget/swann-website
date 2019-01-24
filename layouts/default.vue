@@ -19,9 +19,9 @@
         <div class="footer-col">
           <h4>Information</h4>
           <ul>
-            <li><a href="#">Privatlivspolitik</a></li>
-            <li><a href="#">Forretningsbetingelser</a></li>
-            <li><a href="#">Lovgrundlag</a></li>
+            <li><nuxt-link to="/privatlivspolitik">Privatlivspolitik</nuxt-link></li>
+            <li><nuxt-link to="/forretningsbetingelser">Forretningsbetingelser</nuxt-link></li>
+            <li><nuxt-link to="/lorretningsbetingelser">Lovgrundlag</nuxt-link></li>
           </ul>
         </div>
         <div class="footer-col">
