@@ -13,18 +13,18 @@
     </div>
     <div class="content-section content-section--bg">
       <div class="content-grid">
-        <experience v-for="experience in experiences" :cnotent="experience" :key="experience.id"></experience>
+        <experience v-for="experience in experiences" :content="experience.fields" :key="experience.sys.id"></experience>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Experience from '~/componetns/Experience.vue';
-import {createClient} from '~/plugins/contentful.js'
-const client = createClient();
+import Experience from '~/components/Experience.vue';
+import contentful from '~/plugins/contentful.js'
 export default {
   asyncData({env}) {
+      let client = contentful.createClient(env);
       return Promise.all([
         // fetch all blog posts sorted by creation date
         client.getEntries({
