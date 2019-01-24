@@ -49,6 +49,22 @@
         }
     }
 
+    @at-root .default-page.default-page--no-flex .content-section .content-block:last-child {
+        padding: 2em 0 1em;
+
+        @include mq($mobileBreakpoint) {
+            padding: 4em 0 3em;
+        }
+    
+        @include mq($removeMobileMenuBreakPoint) {
+            padding: 6em 0;
+        }
+    
+        @include mq($largeBreakpoint) {
+            padding: 8em 0;
+        }
+    }
+
     @at-root .content-section.content-section--lines-reversed .content-block:first-child {
 
         @include mq($removeMobileMenuBreakPoint) {
