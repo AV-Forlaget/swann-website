@@ -24,7 +24,7 @@ import Experience from '~/components/Experience.vue';
 import contentful from '~/plugins/contentful.js'
 export default {
   asyncData({env}) {
-      let client = contentful.createClient(env);
+      let client = contentful.createClient();
       return Promise.all([
         // fetch all blog posts sorted by creation date
         client.getEntries({
