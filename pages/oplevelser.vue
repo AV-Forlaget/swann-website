@@ -39,9 +39,6 @@ export default {
         }
       }).catch(console.error)
   },
-  mounted() {
-    console.log(process.env.CTF_SPACE_ID);
-  },
   components: {
     Experience
   },
