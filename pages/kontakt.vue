@@ -12,7 +12,8 @@
       <div class="content-section__wrapper">
         <div class="content-block">
           <h2>Kontakt os</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla impedit deleniti necessitatibus aspernatur labore iste voluptatibus corporis quos atque consectetur dolor tenetur ipsam eum, excepturi similique provident, accusamus quis eveniet!</p>
+          <p>Vi er klar til at hjælpe dig, så send endelig dine spørgsmål på banen. Du kan kontakte os ved hjælp af formularen her, hvor du rammer os via Facebook. Du er også velkommen til at ringe til os på <a href="tel:004521459850">21 45 98 50</a>, lige som du kan skrive til os på <a href="mailto:info@kluboplevelser.dk">info@kluboplevelser.dk</a>, hvis du foretrækker email.
+Vi glæder os til at tale med dig.</p>
         </div>
         <div class="content-block">
             <div class="fb-widget">
@@ -29,7 +30,7 @@
           </div>
           <div class="content-block">
              <h2>Vores hold</h2>
-            <p>Kluboplevelser.dk består af os seks, der alle har lang erfaring i foreningslivet. Vi er et hold, der spiller sammen om at gøre det så godt som muligt for dig og dine klubkammerater. Bagerst fra venstre ses Ole Madsen, Michael Bjørn Hansen, Lars Duus Madsen og Henrik Hansen, mens Lotte Hansen og Tobias Feldballe sidder forrest. Kontakt os her eller ring på <a href="tel:004521459850">21 45 98 50</a>. Vi glæder os til at tale med jer.</p>
+            <p>Kluboplevelser.dk består af os seks, der alle har lang erfaring i foreningslivet. Vi er et hold, der spiller sammen om at gøre det så godt som muligt for dig og dine klubkammerater. <br /> Bagerst fra venstre ses Ole Madsen, Michael Bjørn Hansen, Lars Duus Madsen og Henrik Hansen, mens Lotte Hansen og Tobias Feldballe sidder forrest.</p>
           </div>
         </div>
       </div>
