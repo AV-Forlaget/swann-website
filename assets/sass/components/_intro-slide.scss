@@ -9,16 +9,20 @@
     }
 
     .intro-slide__content {
-        padding: 2em 0 1em;
+        padding: 2em 0 0;
 
         @include mq($mobileBreakpoint) {
-            padding: 4em 0 1em;
+            padding: 2em 0 1em 2em;
+            max-width: 25em;
+            margin: 0 auto;
         }
     
         @include mq($removeMobileMenuBreakPoint) {
             flex: 1;
             align-self: center;
-            padding: 6em 0 1em;
+            padding: 4em 0 2em 0;
+            max-width: inherit;
+            margin: 0;
         }
 
         @include mq($largeBreakpoint) {
@@ -27,10 +31,22 @@
         
         .slide-heading {
             margin: 0;
-            font-size: 3em;
+            font-size: 1.7em;
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+
+            @include mq($mobileBreakpoint) {
+                font-size: 2.4em;
+            }
+
+            @include mq($removeMobileMenuBreakPoint) {
+                font-size: 3em;
+            }
+
+            @include mq($largeBreakpoint) {
+                font-size: 3.5em;
+            }
 
             &.slide-heading--orange {
                 color: $brand-color-2;
@@ -42,24 +58,43 @@
         }
 
         .slide-text {
-            font-size: 2em;
-            margin: 0;
+            font-size: 1.3em;
+            margin: 0.2em 0 0;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+
+            @include mq($mobileBreakpoint) {
+                font-size: 1.6em;
+            }
+
+            @include mq($removeMobileMenuBreakPoint) {
+                margin-top: 0.3em;
+                font-size: 2em;
+                max-width: 17em;
+            }
+
+            @include mq($largeBreakpoint) {
+                font-size: 2.3em;
+                max-width: 16.2em;
+            }
         }
     }
 
     .intro-slide__image {
-        padding: 2em 0 1em;
+        padding: 1.5em 0 1em;
+
+        @include mq(400) {
+            padding: 1.5em 0 1em;
+        }
 
         @include mq($mobileBreakpoint) {
-            padding: 4em 0 1em;
+            padding: 1em 0;
         }
     
         @include mq($removeMobileMenuBreakPoint) {
             flex: 0.8;
             align-self: center;
-            padding: 6em 0 1em;
+            padding: 4em 0 2em;
         }
 
         @include mq($largeBreakpoint) {
@@ -69,7 +104,15 @@
         img {
             display: block;
             margin: 0 auto;
-            width: 80%;
+            width: 75%;
+
+            @include mq($mobileBreakpoint) {
+                width: 50%;
+            }
+        
+            @include mq($removeMobileMenuBreakPoint) {
+                width: 80%;
+            }
         }
     }
 }
