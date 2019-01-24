@@ -3,8 +3,8 @@ const contentful = require('contentful')
 export default {
   config() {
     return {
-      space: process.env.CTF_SPACE_ID,
-      accessToken: process.env.CTF_CDA_ACCESS_TOKEN
+      space: 'y4qloewutpau',
+      accessToken: '1bddab230a3f8524938d08c0c18b83128e0afc075a5a73b8c92d55ea4aadd148'
     }
   },
   createClient () {
