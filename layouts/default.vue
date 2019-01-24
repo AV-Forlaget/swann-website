@@ -21,7 +21,7 @@
           <ul>
             <li><nuxt-link to="/privatlivspolitik">Privatlivspolitik</nuxt-link></li>
             <li><nuxt-link to="/forretningsbetingelser">Forretningsbetingelser</nuxt-link></li>
-            <li><nuxt-link to="/lorretningsbetingelser">Lovgrundlag</nuxt-link></li>
+            <li><nuxt-link to="/lovgrundlag">Lovgrundlag</nuxt-link></li>
           </ul>
         </div>
         <div class="footer-col">
