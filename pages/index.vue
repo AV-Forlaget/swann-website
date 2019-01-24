@@ -1,6 +1,6 @@
 <template>
   <section class="main-content">
-    <div class="content-section">
+    <div class="content-section" v-if="showSlider">
       <carousel :per-page="1" :pagination-enabled="true">
         <slide>
           <div class="intro-slide">
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-    <div class="content-section content-section--bg">
+    <div class="content-section content-section--bg" v-if="showSlider">
         <carousel :per-page="1" :pagination-enabled="true">
           <slide>
             <div class="content-section__wrapper">
@@ -140,11 +140,15 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
+  data() {
+    return {
+      showSlider: false
+    }
+  },
+  mounted() {
+    this.showSlider = true;
   }
 }
 </script>
