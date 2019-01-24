@@ -65,6 +65,10 @@
         }
     }
 
+    @at-root .default-page.default-page--login .content-section .content-block a {
+        margin-right: 1em;
+    }
+
     @at-root .content-section.content-section--lines-reversed .content-block:first-child {
 
         @include mq($removeMobileMenuBreakPoint) {
