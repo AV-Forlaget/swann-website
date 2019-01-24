@@ -2,51 +2,13 @@
   <section class="main-content">
     <div class="content-section" v-if="showSlider">
       <carousel :per-page="1" :pagination-enabled="true">
-        <slide>
-          <div class="intro-slide">
-            <div class="intro-slide__content">
-              <h2 class="slide-heading slide-heading--orange">Din klub</h2>
-              <p class="slide-text">drømmer om at opleve noget sammen, men I mangler penge</p>
-            </div>
-            <div class="intro-slide__image">
-              <img src="@/assets/img/slide-illustration-01.svg" alt="" class="">
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div class="intro-slide">
-            <div class="intro-slide__content">
-              <h2 class="slide-heading slide-heading--blue">Kluboplevelser.dk</h2>
-              <p class="slide-text">leverer et kvalitetsprodukt til jer, som I kan tjene mange penge på</p>
-            </div>
-            <div class="intro-slide__image">
-              <img src="@/assets/img/slide-illustration-02.svg" alt="" class="">
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div class="intro-slide">
-            <div class="intro-slide__content">
-              <h2 class="slide-heading slide-heading--orange">Din klub</h2>
-              <p class="slide-text">sælger varerne til venner og familie, hvor der betales via MobilePay</p>
-            </div>
-            <div class="intro-slide__image">
-              <img src="@/assets/img/slide-illustration-03.svg" alt="" class="">
-            </div> 
-          </div>
-        </slide>
-        <slide>
-          <div class="intro-slide">
-            <div class="intro-slide__content">
-              <h2 class="slide-heading slide-heading--orange">Din klub</h2>
-              <p class="slide-text">får pengene samlet fra vores system, og så er I klar til at gøre jeres drøm til virkelighed</p>
-            </div>
-            <div class="intro-slide__image">
-              <img src="@/assets/img/slide-illustration-04.svg" alt="" class="">
-            </div> 
-          </div>
+        <slide v-for="(content, contentKey) in introSlides" :key="contentKey">
+          <intro-slide :content="content"></intro-slide>
         </slide>
       </carousel>
+    </div>
+    <div class="content-section" v-if="!showSlider">
+      <intro-slide v-for="(content, contentKey) in introSlides" :key="contentKey" :content="content" v-show="contentKey < 1"></intro-slide>
     </div>
     <div class="content-section content-section--lines content-section--white">
       <div class="content-section__wrapper">
@@ -140,15 +102,45 @@
 </template>
 
 <script>
+import IntroSlide from '~/components/IntroSlide';
 
 export default {
   data() {
     return {
-      showSlider: false
+      showSlider: false,
+      introSlides: [
+        {
+          header: 'Din klub',
+          text: 'drømmer om at opleve noget sammen, men I mangler penge',
+          type: 'orange',
+          image: '/img/slide-illustration-01.svg'
+        },
+        {
+          header: 'Kluboplevelser.dk',
+          text: 'leverer et kvalitetsprodukt til jer, som I kan tjene mange penge på',
+          type: 'blue',
+          image: '/img/slide-illustration-02.svg'
+        },
+        {
+          header: 'Din klub',
+          text: 'sælger varerne til venner og familie, hvor der betales via MobilePay',
+          type: 'orange',
+          image: '/img/slide-illustration-03.svg'
+        },
+        {
+          header: 'Din klub',
+          text: 'får pengene samlet fra vores system, og så er I klar til at gøre jeres drøm til virkelighed',
+          type: 'orange',
+          image: '/img/slide-illustration-04.svg'
+        },
+      ]
     }
   },
   mounted() {
     this.showSlider = true;
+  },
+  components: {
+    IntroSlide
   }
 }
 </script>
