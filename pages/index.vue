@@ -24,67 +24,17 @@
     </div>
     <div class="content-section content-section--bg" v-if="showSlider">
         <carousel :per-page="1" :pagination-enabled="true">
-          <slide>
+          <slide v-for="(content, contentKey) in testimonals" :key="contentKey">
             <div class="content-section__wrapper">
-              <div class="testimonial-block">
-                <div class="testimonial-person">
-                  <div class="testimonial-person__avatar">
-                    <div class="testimonial-person__avatar__img">
-                      
-                    </div>
-                  </div>
-                  <div class="testimonial-person__content">
-                    <span class="testimonial-person__content__name">Fornavn Efternavn</span>
-                    <span class="testimonial-person__content__job">Titel, Virksomhed/Klub</span>
-                  </div>
-                </div>
-                <div class="testimonial-quote">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                </div>
-              </div>
-            </div>
-          </slide>
-            <slide>
-            <div class="content-section__wrapper">
-              <div class="testimonial-block">
-                <div class="testimonial-person">
-                  <div class="testimonial-person__avatar">
-                    <div class="testimonial-person__avatar__img">
-                      
-                    </div>
-                  </div>
-                  <div class="testimonial-person__content">
-                    <span class="testimonial-person__content__name">Fornavn Efternavn</span>
-                    <span class="testimonial-person__content__job">Titel, Virksomhed/Klub</span>
-                  </div>
-                </div>
-                <div class="testimonial-quote">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                </div>
-              </div>
-            </div>
-          </slide>
-            <slide>
-            <div class="content-section__wrapper">
-              <div class="testimonial-block">
-                <div class="testimonial-person">
-                  <div class="testimonial-person__avatar">
-                    <div class="testimonial-person__avatar__img">
-                      
-                    </div>
-                  </div>
-                  <div class="testimonial-person__content">
-                    <span class="testimonial-person__content__name">Fornavn Efternavn</span>
-                    <span class="testimonial-person__content__job">Titel, Virksomhed/Klub</span>
-                  </div>
-                </div>
-                <div class="testimonial-quote">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                </div>
-              </div>
+              <testimonial :content="content"></testimonial>
             </div>
           </slide>
         </carousel>
+    </div>
+    <div class="content-section content-section--bg" v-if="!showSlider">
+      <div class="content-section__wrapper" v-for="(content, contentKey) in testimonals" :key="contentKey" v-show="contentKey < 1">
+        <testimonial :content="content"></testimonial>
+      </div>
     </div>
     <div class="content-section content-section--lines-reversed">
       <div class="content-section__wrapper">
@@ -103,6 +53,7 @@
 
 <script>
 import IntroSlide from '~/components/IntroSlide';
+import Testimonial from '~/components/Testimonial';
 
 export default {
   data() {
@@ -133,6 +84,23 @@ export default {
           type: 'orange',
           image: '/img/slide-illustration-04.svg'
         },
+      ],
+      testimonals: [
+        {
+          name: 'Fornavn Efternavn',
+          job: 'Titel, Virksomhed/Klub',
+          quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.'
+        },
+        {
+          name: 'Fornavn Efternavn',
+          job: 'Titel, Virksomhed/Klub',
+          quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.'
+        },
+        {
+          name: 'Fornavn Efternavn',
+          job: 'Titel, Virksomhed/Klub',
+          quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.'
+        }
       ]
     }
   },
@@ -140,7 +108,8 @@ export default {
     this.showSlider = true;
   },
   components: {
-    IntroSlide
+    IntroSlide,
+    Testimonial
   }
 }
 </script>
