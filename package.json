@@ -1,8 +1,8 @@
 {
   "name": "kluboplevelser.dk",
   "version": "1.0.0",
-  "description": "Kluboplevelser website",
-  "author": "Kasper Baagø Jensen",
+  "description": "Vi gør dine klubdrømme til virkelighed",
+  "author": "Edentic ApS",
   "private": true,
   "scripts": {
     "dev": "nuxt --hostname '0.0.0.0' --port 3000",

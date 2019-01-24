@@ -97,6 +97,14 @@ export default {
   },
   components: {
     FaqItem
+  },
+  head() {
+        return {
+            title: 'Ofte stillede spørgsmål og kontakt',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Kontakt os og læs ofte stillede spørgsmål'}
+            ]
+        }
   }
 }
 </script>

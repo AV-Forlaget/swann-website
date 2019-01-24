@@ -41,6 +41,14 @@ export default {
   },
   components: {
     Experience
-  }
+  },
+  head() {
+      return {
+          title: 'Oplevelser',
+          meta: [
+              { hid: 'description', name: 'description', content: 'Fælles oplevelser for hele klubben'}
+          ]
+      }
+    }
 }
 </script>

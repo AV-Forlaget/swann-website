@@ -110,6 +110,14 @@ export default {
   components: {
     IntroSlide,
     Testimonial
+  },
+  head() {
+    return {
+      title: 'Kluboplevelser.dk',
+      meta: [
+         { hid: 'description', name: 'description', content: 'Vi gør dine klubdrømme til virkelighed'}
+      ]
+    }
   }
 }
 </script>

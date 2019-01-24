@@ -116,3 +116,16 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+    head() {
+      return {
+          title: 'Privatlivspolitik',
+          meta: [
+              { hid: 'description', name: 'description', content: 'Privatlivspolitik for kluboplevelser.dk'}
+          ]
+      }
+    }
+}
+</script>

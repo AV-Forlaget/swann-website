@@ -14,3 +14,16 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+    head() {
+        return {
+            title: 'Login',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Login til kluboplevelser.dk'}
+            ]
+        }
+    }
+}
+</script>

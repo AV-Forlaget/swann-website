@@ -15,3 +15,16 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+    head() {
+        return {
+            title: 'Lovgrundlag',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Det siger loven om kluboplevelser.dk'}
+            ]
+        }
+    }
+}
+</script>

@@ -107,3 +107,16 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+    head() {
+        return {
+            title: 'Forretningsbetingelser for kluboplevelser.dk',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Læs vores betingelser for brug af klubopelevelser.dk'}
+            ]
+        }
+  }
+}
+</script>
