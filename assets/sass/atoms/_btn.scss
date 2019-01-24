@@ -11,7 +11,7 @@
   //Typography
   font-family: $font-standard;
   font-size: 0.85em;
-  text-decoration: none;
+  text-decoration: none !important;
   text-align: center;
   font-weight: normal;
   letter-spacing: 0.01em;
@@ -25,7 +25,7 @@
   }
 
   //Color
-  color: $white;
+  color: $white !important;
   background: linear-gradient(35deg, $brand-color 0%, $brand-purple 250%) no-repeat center 100%/cover;
   box-shadow: $block-shadow;
 
