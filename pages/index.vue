@@ -87,33 +87,39 @@ export default {
       ],
       testimonals: [
         {
-          name: 'Hjalte Pedersen',
+          name: 'Sylvester Lassen',
           job: 'U14-spiller',
-          quote: 'Det var ikke svært, at være med til at samle pengene ind. MobilePay er nemt. Nu skal vi skal til Holland, og jeg glæder mig meget. Specielt til at vinde nogle kampe og have det sjovt.'
+          image: '/img/kluboplevelser-testimonial-sylvester-lassen.jpg',
+          quote: 'Det var ikke svært, at være med til at samle pengene ind. MobilePay er nemt. Nu skal vi til Holland, og jeg glæder mig meget. Specielt til at vinde nogle kampe og have det sjovt.'
         },
         {
           name: 'Allan Pendegast',
           job: 'Forælder',
+          image: '/img/kluboplevelser-testimonial-allan-pendegast.jpg',
           quote: 'Det har fungeret fuldstændig perfekt at rejse penge gennem kluboplevelser.dk. Det har været rart at få muligheden for at sælge noget, der har givet værdi til køberne i stedet for sådan noget som lodsedler. Jeg vil helt klart gerne anbefale sådan et projekt til andre.'
         },
         {
           name: 'Lars-Bo Christensen',
           job: 'Holdleder',
+          image: '/img/kluboplevelser-testimonial-lars-bo-christensen.jpg',
           quote: 'Det har været en fantastisk måde til at inddrage hele holdet i at indsamle nogle midler til en tur. Vi kom rigtig fint i mål, og drengene har været godt engageret i det. Det har forældrene også, de skal lige som ind og hive dem ud af playstationen og sofaen, og det har været fint.'
         },
         {
           name: 'Jacob Nielsen',
           job: 'U14-spiller',
+          image: '/img/kluboplevelser-testimonial-jacob-nielsen.jpg',
           quote: 'Jeg glæder mig rigtigt meget. Vi har aldrig været i udlandet før, så det bliver sjovt at komme ned og spille i et andet land og så forhåbentlig vinde. Jeg kom fint gennem at hjælpe til med at skaffe pengene.'
         },
         {
           name: 'Lars-Bo Christensen',
           job: 'Holdleder',
+          image: '/img/kluboplevelser-testimonial-lars-bo-christensen.jpg',
           quote: 'Jeg har brugt det rigtigt meget, at jeg som holdleder har kunnet følge med online hele vejen gennem projektet. Jeg har fulgt med i, hvem der har solgt meget, og hvem jeg måske lige skulle prikke lidt til. Det er også meget sjovt at kunne bruge det til at fortælle holdet, hvor langt vi nu er nået.'
         },
         {
           name: 'Chresten Clemmesen',
           job: 'Klubformand',
+          image: '/img/kluboplevelser-testimonial-chresten-clemmesen.jpg',
           quote: 'Efter det er gået så godt for vores U14-hold, er jeg sikker på, at også andre hold i klubben vil gå i gang, når de skal skaffe penge. Det vil jeg også anbefale.'
         }
       ]

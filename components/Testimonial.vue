@@ -1,10 +1,7 @@
 <template>
     <div class="testimonial-block">
         <div class="testimonial-person">
-            <div class="testimonial-person__avatar">
-            <div class="testimonial-person__avatar__img">
-                
-            </div>
+            <div class="testimonial-person__avatar" :style="{'background-image': bgImg}">
             </div>
             <div class="testimonial-person__content">
             <span class="testimonial-person__content__name" v-text="content.name"></span>
@@ -21,6 +18,11 @@
 export default {
     props: {
         content: {type: Object, default() {return { }}}
+    },
+    computed: {
+        bgImg() {
+            return (this.content.image) ? 'url(' + this.content.image +')' : '';
+        }
     }
 }
 </script>
