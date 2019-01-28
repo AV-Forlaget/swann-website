@@ -99,6 +99,10 @@
         .grid-item__body {
             padding: 1em;
             box-sizing: border-box;
+
+            a {
+                display: inline-block;
+            }
         }
     }
 }
