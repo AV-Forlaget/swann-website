@@ -7,34 +7,8 @@
 
     <div class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="footer-col">
-          <h4>Virksomhed</h4>
-          <ul>
-            <li>Kluboplevelser.dk APS <span>Rugårdsvej 253, 5210 Odense NV</span></li>
-            <li>CVR. 39690330</li>
-            <li>Telefon: <a href="tel:004521459850">(45) 2145 9850</a></li>
-            <li>E-mail: <a href="mailto:info@kluboplevelser.dk">info@kluboplevelser.dk</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Information</h4>
-          <ul>
-            <li><nuxt-link to="/privatlivspolitik">Privatlivspolitik</nuxt-link></li>
-            <li><nuxt-link to="/forretningsbetingelser">Forretningsbetingelser</nuxt-link></li>
-            <li><nuxt-link to="/lovgrundlag">Lovgrundlag</nuxt-link></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Sociale medier</h4>
-          <div class="social-media-links">
-            <a href="https://www.facebook.com/kluboplevelser.dk">
-              <img src="@/assets/img/icon-facebook.svg" alt="Kluboplevelser.dk Facebook">
-            </a>
-            <a href="https://www.instagram.com/kluboplevelser.dk">
-              <img src="@/assets/img/icon-instagram.svg" alt="Kluboplevelser.dk Instagram">
-            </a>
-          </div>
-
+        <div class="progress-bar">
+          <div class="steps"></div>
         </div>
       </div>
     </div>
