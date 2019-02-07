@@ -1,5 +1,6 @@
 <template>
   <section class="main-content">
+    <p>content</p>
   </section>
 </template>
 

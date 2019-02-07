@@ -1,9 +1,0 @@
-.main-footer {
-    background: $bg-color-dark;
-    padding: 4em 0;
-
-    .main-footer__wrapper {
-        @extend .wrapper;
-        @include chrisCoyier;
-    }
-}

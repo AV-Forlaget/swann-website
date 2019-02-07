@@ -31,10 +31,10 @@
 
 //Extends
 @import "extends/wrapper";
+@import "extends/modal";
 
 //Components
-@import "components/main-header";
-@import "components/main-footer";
+@import "components/main-app";
 @import "components/loading-bar";
 
 //Templates
