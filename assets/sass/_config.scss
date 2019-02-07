@@ -3,22 +3,22 @@ $black:#000;
 $white:#fff;
 
 // Client colors
-$brand-color: #2B4E69;
-$brand-color-2: #ff6912;
-$brand-purple: #a672d4;
-$brand-pink: #f24b86;
-$bg-color: #f2eeeb;
-$bg-color-dark: #1a2a3d;
+$brand-color: #288dcc;
+$brand-color-2: #22b777;
+$brand-purple: #7e4fc6;
+$brand-cyan: #20d9bc;
+$bg-color: #f7f7f7;
+$bg-color-dark: #191f47;
 $border-color:#f2eeeb;
 
 // Font colors
-$font-color: #63605c;
-$font-color-dark: #1a2a3d;
+$font-color: #767676;
+$font-color-dark: $bg-color-dark;
 
 // System colors
-$positive:#5aa253;
+$positive:$brand-color-2;
 $negative:#e75858;
-$informative:#1e88c5;
+$informative:$brand-color;
 $warning:#e7a713;
 
 // Font family settings

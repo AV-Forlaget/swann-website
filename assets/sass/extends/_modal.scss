@@ -75,6 +75,11 @@
           border-left: 1px solid shade($bg-color-dark, 20%);
           cursor: pointer;
           transition: background 110ms ease;
+
+          @include mq($mobileBreakpoint) {
+            min-width: 8em;
+            max-width: 8em;
+          }
   
           &:hover {
             background: $bg-color-dark;
@@ -96,6 +101,11 @@
             margin: auto;
             width: 1.4em;
             height: 1.4em;
+
+            @include mq($mobileBreakpoint) {
+              width: 1.8em;
+              height: 1.8em;
+            }
   
             path {
               fill: $white;
@@ -129,7 +139,7 @@
         justify-content: space-between;
         padding: 0;
         box-sizing: border-box;
-        background: $black;
+        background: $bg-color-dark;
   
         button, .btn {
           flex: 1;

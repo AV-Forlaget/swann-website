@@ -1,6 +1,7 @@
 <template>
   <section class="main-content">
-    <p>content</p>
+    <p>If you find yourself here, that means you are a potential narrator on our team here at Swann Studio.</p>
+    <p>We will be evaluating your application by:</p>
   </section>
 </template>
 
