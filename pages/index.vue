@@ -1,7 +1,9 @@
 <template>
   <section class="main-content">
-    <p>If you find yourself here, that means you are a potential narrator on our team here at Swann Studio.</p>
-    <h3>We will be evaluating your application by:</h3>
+    <div class="modal-intro">
+      <p>If you find yourself here, that means you are a potential narrator on our team here at Swann Studio.</p>
+      <h3>We will be evaluating your application by:</h3>
+    </div>
     <div class="evaluation-grid">
       <div class="evaluation-block">
         <img src="" class="evaluation-block__img" alt="">
