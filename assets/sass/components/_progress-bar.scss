@@ -1,0 +1,121 @@
+.progress-bar {
+    margin-top: 0.7em;
+    position: relative;
+    width: 100%;
+    padding: 0 1em;
+    box-sizing: border-box;
+  
+    @include mq($mobileBreakpoint) {
+      margin-top: 1.5em;
+    }
+  
+    @include mq($removeMobileMenuBreakpoint) {
+      padding: 0;
+    }
+  
+    &.progress-bar--two-steps .progress-bar__bar {
+      min-width: 50%;
+    }
+  
+    &.progress-bar--three-steps .progress-bar__bar {
+      min-width: 33.34%;
+    }
+  
+    .progress-bar__wrapper {
+      @extend .wrapper;
+      padding: 0;
+      position: relative;
+      height: 2em;
+      background: $white;
+      border-radius: $r-btn;
+      max-width: 40em;
+      display: flex;
+      flex-flow: nowrap row;
+      overflow: hidden;
+    }
+  
+    .progress-bar__bar {
+      position: relative;
+      flex: 1;
+      display: block;
+      height: 2em;
+      min-width: 100%;
+  
+      &:first-child {
+  
+        .progress-dot {
+          display: none;
+        }
+      }
+  
+      .progress-dot {
+        position: absolute;
+        top: 0;
+        right: auto;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transition: opacity 100ms ease;
+        cursor: pointer;
+        width: 2em;
+        height: 2em;
+  
+        .progress-dot__fill {
+          position: absolute;
+          top: 0;
+          right: auto;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          width: 0.2em;
+          height: 2em;
+          background: rgba(shade($positive, 50%), 0.25);
+          transition: transform 110ms ease;
+        }
+      }
+  
+      .progress-bar__bar__text {
+        position: relative;
+        margin-top: 0.7em;
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 0.75em;
+        box-sizing: border-box;
+        pointer-events: none;
+        z-index: 1;
+  
+        @include mq($mobileBreakpoint) {
+          margin-top: 0.55em;
+          font-size: 0.8em;
+        }
+      }
+    }
+  
+    .progress-bar__fill {
+      position: absolute;
+      top: 0;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 0;
+      height: 2em;
+      background: rgba(tint($positive, 25%), 0.9);
+      transition: width 450ms ease;
+    }
+  
+    .progress-bar__text {
+      position: absolute;
+      top: auto;
+      right: 0;
+      bottom: -2em;
+      left: 0;
+      margin: auto;
+      font-size: 0.9em;
+      text-align: center;
+      color: $white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
