@@ -1,0 +1,41 @@
+.evaluation-grid {
+
+    @include mq($mobileBreakpoint) {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .evaluation-block {
+        flex: 1;
+        margin-bottom: 1.5em;
+
+        @include mq($mobileBreakpoint) {
+            margin-bottom: 0;
+            margin-right: 1em;
+        }
+
+        &:last-child {
+        
+            @include mq($mobileBreakpoint) {
+                margin: 0;
+            }
+        }
+
+        .evaluation-block__img {
+            display: block;
+            min-height: 10em;
+            background: shade($bg-color, 10%);
+        }
+
+        .evaluation-block__text {
+            margin-top: 0.5em;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $brand-color-2;
+        }
+    }
+}

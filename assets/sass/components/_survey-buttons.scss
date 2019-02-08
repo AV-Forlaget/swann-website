@@ -1,0 +1,30 @@
+.survey-buttons {
+    margin: 3em 0 1em;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+
+    @include mq($mobileBreakpoint) {
+        margin: 4em 0 2em;
+    }
+
+    @include mq($removeMobileMenuBreakpoint) {
+        margin: 8em 0 2em;
+    }
+    
+    
+    .btn {
+        margin-right: 1em;
+        min-width: 10em;
+        font-size: 1em;
+
+        @include mq($mobileBreakpoint) {
+            min-width: 12em;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

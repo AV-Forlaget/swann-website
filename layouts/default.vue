@@ -1,52 +1,33 @@
 <template>
   <div class="main-app">
-    <div id="fb-root"></div>
-    <main-header></main-header>
-
-    <nuxt/>
-
-    <div class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="footer-col">
-          <h4>Virksomhed</h4>
-          <ul>
-            <li>Kluboplevelser.dk APS <span>Rugårdsvej 253, 5210 Odense NV</span></li>
-            <li>CVR. 39690330</li>
-            <li>Telefon: <a href="tel:004521459850">(45) 2145 9850</a></li>
-            <li>E-mail: <a href="mailto:info@kluboplevelser.dk">info@kluboplevelser.dk</a></li>
-          </ul>
+    <div class="modal-box">
+      <div class="modal-box__header">
+        <img src="@/assets/img/swann-logo-icon.svg" class="modal-header__logo" alt="">
+        <div class="modal-box__heading">
+          <h2>Narrator application</h2>
+          <span>Welcome to Swann Studios narrator application</span>
         </div>
-        <div class="footer-col">
-          <h4>Information</h4>
-          <ul>
-            <li><nuxt-link to="/privatlivspolitik">Privatlivspolitik</nuxt-link></li>
-            <li><nuxt-link to="/forretningsbetingelser">Forretningsbetingelser</nuxt-link></li>
-            <li><nuxt-link to="/lovgrundlag">Lovgrundlag</nuxt-link></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Sociale medier</h4>
-          <div class="social-media-links">
-            <a href="https://www.facebook.com/kluboplevelser.dk">
-              <img src="@/assets/img/icon-facebook.svg" alt="Kluboplevelser.dk Facebook">
-            </a>
-            <a href="https://www.instagram.com/kluboplevelser.dk">
-              <img src="@/assets/img/icon-instagram.svg" alt="Kluboplevelser.dk Instagram">
-            </a>
+        <button class="modal-box__header__close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.8 23.8"><path d="M23.8,2.8,21,0,11.9,9.1,2.8,0,0,2.8l9.1,9.1L0,21l2.8,2.8,9.1-9.1L21,23.8,23.8,21l-9.1-9.1Z"/></svg>
+        </button>
+      </div>
+      <div class="modal-box__body modal-box__body--padding">
+        <nuxt/>
+      </div>
+      <div class="modal-box__footer">
+          <div class="progress-bar">
+            <div class="steps"></div>
           </div>
-
-        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import MainHeader from '~/components/MainHeader.vue';
+
 export default {
   components: {
-    MainHeader
+
   }
 }
 </script>
-

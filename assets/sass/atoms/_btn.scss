@@ -10,16 +10,17 @@
 
   //Typography
   font-family: $font-standard;
-  font-size: 0.85em;
+  font-size: 0.9em;
   text-decoration: none !important;
   text-align: center;
-  font-weight: normal;
-  letter-spacing: 0.01em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   @include mq($mobileBreakpoint) {
-    font-size: 0.9em;
+    font-size: 1em;
     padding: 1em 1.5em;
     min-width: 8em;
   }
@@ -35,7 +36,7 @@
   transition: color 1s ease;
 
   &:hover {
-    background: linear-gradient(35deg, tint($brand-color, 8%), $brand-purple 120%) no-repeat center 100%/cover;
+    background: linear-gradient(35deg, tint($brand-color, 8%), $brand-cyan 350%) no-repeat center 100%/cover;
   }
 
   &:after {
@@ -50,11 +51,11 @@
     transition: opacity 1s ease;
   }
 
-  &.btn--orange {
-    background: linear-gradient(35deg, $brand-color-2 0%, $brand-pink 200%) no-repeat center 100%/cover;
+  &.btn--green {
+    background: linear-gradient(35deg, $brand-color-2 0%, $brand-cyan 200%) no-repeat center 100%/cover;
 
     &:hover {
-      background: linear-gradient(35deg, tint($brand-color-2, 15%), $brand-pink 160%) no-repeat center 100%/cover;
+      background: linear-gradient(35deg, tint($brand-color-2, 15%), $brand-cyan 160%) no-repeat center 100%/cover;
     }
   }
 

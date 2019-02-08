@@ -3,13 +3,13 @@
 body {
   overflow-x: hidden;
   margin: 0;
-  background: $bg-color;
+  background: url('../../../assets/img/bg-example.jpg') no-repeat 100%/cover;
 
   &.noScroll {
     height: 100%;
     overflow: hidden;
 
-    @include mq($removeMobileMenuBreakPoint) {
+    @include mq($removeMobileMenuBreakpoint) {
       height: auto;
       overflow-y: auto;
     }
