@@ -1,0 +1,15 @@
+.survey-buttons {
+    margin-top: 2em;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    
+    .btn {
+        margin-right: 1em;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

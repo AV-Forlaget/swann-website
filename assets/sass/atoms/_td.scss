@@ -8,7 +8,7 @@ td {
   -moz-osx-font-smoothing: grayscale;
   color: $font-color;
 
-  @include mq($removeMobileMenuBreakPoint) {
+  @include mq($removeMobileMenuBreakpoint) {
     font-size: 1.1em;
     padding: 0.8em 1em;
   }

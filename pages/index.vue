@@ -1,7 +1,24 @@
 <template>
   <section class="main-content">
     <p>If you find yourself here, that means you are a potential narrator on our team here at Swann Studio.</p>
-    <p>We will be evaluating your application by:</p>
+    <h3>We will be evaluating your application by:</h3>
+    <div class="evaluation-grid">
+      <div class="evaluation-block">
+        <img src="" class="evaluation-block__img" alt="">
+        <span class="evaluation-block__text">Voice sample</span>
+      </div>
+      <div class="evaluation-block">
+        <img src="" class="evaluation-block__img" alt="">
+        <span class="evaluation-block__text">Experience</span>
+      </div>
+      <div class="evaluation-block">
+        <img src="" class="evaluation-block__img" alt="">
+        <span class="evaluation-block__text">Expected Salary</span>
+      </div>
+    </div>
+    <div class="survey-buttons">
+      <button class="btn">Begin</button>
+    </div>
   </section>
 </template>
 

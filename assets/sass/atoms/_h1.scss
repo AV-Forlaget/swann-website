@@ -18,7 +18,7 @@ h1 {
         font-size: 2.7em;
     }
 
-    @include mq($removeMobileMenuBreakPoint) {
+    @include mq($removeMobileMenuBreakpoint) {
         font-size: 3em;
     }
 
