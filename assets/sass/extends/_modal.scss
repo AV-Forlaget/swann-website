@@ -154,13 +154,17 @@
   
       .modal-box__footer {
         overflow: hidden;
-        box-shadow: 0 -5px 10px rgba($black, 0.2);
+        box-shadow: 0 -3px 6px rgba($black, 0.15);
         display: flex;
         flex-flow: wrap row;
         justify-content: space-between;
         padding: 0;
         box-sizing: border-box;
         background: $bg-color-dark;
+
+        @include mq($mobileBreakpoint) {
+          border-radius: 0 0 $r $r;
+        }
   
         button, .btn {
           flex: 1;

@@ -16,16 +16,8 @@
       </div>
       <div class="modal-box__footer">
          <div class="progress-bar">
-                <div class="progress-bar__wrapper">
-                    <div class="progress-bar__bar">
-                        <div class="progress-bar__fill" style="'width': 25%"></div>
-                        <span class="progress-dot">
-                            <span class="progress-dot__fill"></span>
-                        </span>
-                        <span class="progress-bar__bar__text">test</span>
-                    </div>
-                </div>
-                <p class="progress-bar__text">test</p>
+               <div class="progress-bar__fill" style="width: 25%"></div>
+                <span class="progress-bar__text">Step 1 of 4</span>
             </div>
       </div>
     </div>
