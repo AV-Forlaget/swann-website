@@ -16,7 +16,7 @@
       @include mq($mobileBreakpoint) {
         border-radius: $r+1;
         position: absolute;
-        top: 5em;
+        top: 2em;
         right: 0;
         bottom: auto;
         left: 0;
@@ -134,6 +134,10 @@
         overflow-y: auto;
         max-height: 66vh;
         -webkit-overflow-scrolling: touch;
+
+        @include mq($mobileBreakpoint) {
+          max-height: 73vh;
+        }
 
         &.modal-box__body--padding {
           padding: 1em;

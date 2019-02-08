@@ -100,5 +100,30 @@
                 }
             }
         }
+
+        .modal-step {
+            p {
+                @include mq($mobileBreakpoint) {
+                    font-size: 1.1em;
+                }
+    
+                @include mq($removeMobileMenuBreakpoint) {
+                    font-size: 1.2em;
+                }
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 1.2em;
+
+                @include mq($mobileBreakpoint) {
+                    font-size: 1.3em;
+                }
+    
+                @include mq($removeMobileMenuBreakpoint) {
+                    font-size: 1.5em;
+                }
+            }
+        }
     }
 }
