@@ -36,9 +36,9 @@ export default {
   },
   head() {
     return {
-      title: 'Narrator onboarding',
+      title: 'Narrator application',
       meta: [
-         { hid: 'description', name: 'description', content: 'Swann narrator onboarding'}
+         { hid: 'description', name: 'description', content: 'Swann Studios narrator application'}
       ]
     }
   }
