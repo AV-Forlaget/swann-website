@@ -10,7 +10,7 @@
       <input-field name="Zip"></input-field>
       <input-field name="Country"></input-field>
         <div class="survey-buttons">
-            <nuxt-link to="/" class="btn">Previous</nuxt-link>
+            <nuxt-link to="/" class="btn btn--grey">Previous</nuxt-link>
             <nuxt-link to="/step-2" class="btn">Next</nuxt-link>
         </div>
       </div>

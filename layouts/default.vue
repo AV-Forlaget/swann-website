@@ -11,13 +11,12 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.8 23.8"><path d="M23.8,2.8,21,0,11.9,9.1,2.8,0,0,2.8l9.1,9.1L0,21l2.8,2.8,9.1-9.1L21,23.8,23.8,21l-9.1-9.1Z"/></svg>
         </button>
       </div>
+      <div class="progress-bar">
+          <div class="progress-bar__fill" style="width: 25%"></div>
+          <span class="progress-bar__text">Step 1 of 4</span>
+      </div>
       <div class="modal-box__body modal-box__body--padding">
         <nuxt/>
-      </div>
-      <div class="modal-box__footer">
-          <div class="progress-bar">
-            <div class="steps"></div>
-          </div>
       </div>
     </div>
   </div>

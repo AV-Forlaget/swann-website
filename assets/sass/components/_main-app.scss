@@ -87,7 +87,9 @@
 
             h3 {
                 margin-top: 1.5em;
-                font-size: 1.2em;
+                font-size: 1.1em;
+                text-align: center;
+                color: $font-color-dark;
 
                 @include mq($mobileBreakpoint) {
                     margin-top: 2em;
@@ -95,8 +97,8 @@
                 }
     
                 @include mq($removeMobileMenuBreakpoint) {
-                    margin-top: 3em;
-                    font-size: 1.5em;
+                    margin-top: 2em;
+                    font-size: 1.6em;
                 }
             }
         }
