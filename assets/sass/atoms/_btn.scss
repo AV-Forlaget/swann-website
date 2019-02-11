@@ -59,6 +59,14 @@
     }
   }
 
+  &.btn--grey {
+    background: tint($font-color, 45%);
+
+    &:hover {
+      background: tint($font-color, 40%);
+    }
+  }
+
   &.btn--negative {
     background: $negative;
 
