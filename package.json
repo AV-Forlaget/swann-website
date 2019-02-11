@@ -1,7 +1,7 @@
 {
-  "name": "kluboplevelser.dk",
+  "name": "Narrator App",
   "version": "1.0.0",
-  "description": "Vi gør dine klubdrømme til virkelighed",
+  "description": "Swann Narrator App",
   "author": "Edentic ApS",
   "private": true,
   "scripts": {

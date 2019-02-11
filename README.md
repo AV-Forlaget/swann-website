@@ -1,6 +1,6 @@
-# kluboplevelser.dk
+# Swann Narrator App
 
-> Kluboplevelser website
+> Swann Narrator App
 
 ## Build Setup
 
