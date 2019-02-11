@@ -11,9 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "contentful": "^7.1.0",
-    "nuxt": "^2.0.0",
-    "vue-carousel": "^0.17.0"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",

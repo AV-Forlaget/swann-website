@@ -34,8 +34,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: '~/plugins/fb.js', ssr: false},
-    { src: '~/plugins/carousel.js', ssr: false }
+ 
   ],
 
   /*
@@ -55,6 +54,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    transpile: ['vue-carousel']
+
   }
 }
