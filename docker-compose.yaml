@@ -1,7 +1,7 @@
 version: '2.1'
 
 services:
-  kluboplevelser_frontend:
+  narrator_onboarding_frontend:
     build:
       context: ./docker
       dockerfile: frontend.dockerfile
