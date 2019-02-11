@@ -3,8 +3,8 @@ docker-compose build
 docker-compose up -d
 
 echo "*** Updating node dependencies... ***"
-docker-compose exec kluboplevelser_frontend node -v  > .nvmrc
-docker-compose exec kluboplevelser_frontend npm install
+docker-compose exec narrator_onboarding_frontend node -v  > .nvmrc
+docker-compose exec narrator_onboarding_frontend yarn install
 
 echo "*** Running Gulp .. ***"
-docker-compose exec kluboplevelser_frontend npm run dev
+docker-compose exec narrator_onboarding_frontend yarn run dev
