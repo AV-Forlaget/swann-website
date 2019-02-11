@@ -2,22 +2,16 @@
     background: $white;
     display: block;
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 2em;
     padding: 0 1em;
     box-sizing: border-box;
     overflow: hidden;
+    box-shadow: $block-shadow;
 
     @include mq($mobileBreakpoint) {
       padding: 0;
-    }
-  
-    &.progress-bar--two-steps .progress-bar__bar {
-      min-width: 50%;
-    }
-  
-    &.progress-bar--three-steps .progress-bar__bar {
-      min-width: 33.34%;
     }
   
     .progress-bar__fill {

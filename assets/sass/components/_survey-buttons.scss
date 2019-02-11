@@ -6,11 +6,11 @@
     align-items: center;
 
     @include mq($mobileBreakpoint) {
-        margin: 4em 0 2em;
+        margin: 2em 0 0;
     }
 
     @include mq($removeMobileMenuBreakpoint) {
-        margin: 8em 0 2em;
+        margin: 3em 0 0;
     }
 
     @at-root .modal-step .survey-buttons {

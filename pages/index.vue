@@ -6,15 +6,15 @@
     </div>
     <div class="evaluation-grid">
       <div class="evaluation-block">
-        <img src="" class="evaluation-block__img" alt="">
+        <img src="@/assets/img/icons/icon-voice-sample.svg" class="evaluation-block__img" alt="">
         <span class="evaluation-block__text">Voice sample</span>
       </div>
       <div class="evaluation-block">
-        <img src="" class="evaluation-block__img" alt="">
+      <img src="@/assets/img/icons/icon-experience.svg" class="evaluation-block__img" alt="">
         <span class="evaluation-block__text">Experience</span>
       </div>
       <div class="evaluation-block">
-        <img src="" class="evaluation-block__img" alt="">
+        <img src="@/assets/img/icons/icon-expected-salary.svg" class="evaluation-block__img" alt="">
         <span class="evaluation-block__text">Expected Salary</span>
       </div>
     </div>
