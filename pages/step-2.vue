@@ -11,6 +11,7 @@
         <li class="suggestion-list__item">Mature</li>
       </dropdown>
       <input-field name="Genre" inputType="textarea"></input-field>
+        <checkbox name="Would you consider reading erotica?"></checkbox>
       <input-field name="Relevant education" inputType="textarea"></input-field>
       <input-field name="Relevant experience" inputType="textarea"></input-field>
       <input-field name="Links to audiobooks" inputType="textarea"></input-field>
@@ -26,6 +27,7 @@
 <script>
     import InputField from '~/components/input-field.vue';
     import Dropdown from '~/components/dropdown.vue';
+    import Checkbox from '~/components/checkbox.vue';
 
 export default {
   data() {
@@ -35,7 +37,8 @@ export default {
   },
   components: {
       InputField,
-      Dropdown
+      Dropdown,
+      Checkbox
   },
   head() {
     return {
