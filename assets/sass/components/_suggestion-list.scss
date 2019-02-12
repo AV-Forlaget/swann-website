@@ -1,0 +1,156 @@
+.suggestion-list-component {
+    position: relative;
+  
+    &.open {
+  
+      .suggestion-list {
+        display: block;
+      }
+  
+      &.scroll .suggestion-list {
+        @include mq($mobileBreakpoint) {
+          min-height: 20em;
+          max-height: 20em;
+          overflow: auto;
+        }
+      }
+    }
+  
+    ul.suggestion-list {
+      position: absolute;
+      top: 100%;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      background: none;
+      width: 100%;
+      height:100%;
+      margin: 0;
+      padding: 0;
+      border-radius: 0 0 $r $r;
+      display: none;
+      @include chrisCoyier;
+  
+      .suggestion-list__item {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background: $white;
+        margin: 0;
+        padding: 0.8em 0.5em;
+        list-style: none;
+        font-family: $font-standard;
+        z-index: 7;
+  
+        @include mq($mobileBreakpoint) {
+          padding: 0.4em 1em;
+        }
+  
+        @include mq($removeMobileMenuBreakpoint) {
+          transition: transform 150ms ease;
+          padding: 0.4em 1.5em;
+        }
+  
+        @include mq($largeBreakpoint) {
+          padding: 0.4em 2em;
+        }
+  
+        &:hover, &.selected {
+          background: $white;
+          color: $brand-color;
+          cursor: pointer;
+          box-shadow: $block-shadow;
+  
+  
+          &:nth-child(odd) {
+            background: $white;
+          }
+  
+          @include mq($removeMobileMenuBreakpoint) {
+            z-index: 9;
+            transform: scale(1.02);
+            transition: transform 150ms ease;
+          }
+        }
+  
+        &:last-child {
+          border-radius: 0 0 $r $r;
+        }
+  
+        .suggestion-list__item__img {
+          position: relative;
+          margin-right: 0.5em;
+          min-width: 4em;
+          max-width: 4em;
+          min-height: 4em;
+          max-height: 4em;
+          display: block;
+          flex: 1 0 auto;
+          align-self: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+  
+          @include mq($mobileBreakpoint) {
+            margin-right: 1em;
+          }
+  
+          @include mq($removeMobileMenuBreakpoint) {
+            margin-right: 1.5em;
+          }
+  
+          @include mq($largeBreakpoint) {
+            margin-right: 2em;
+          }
+        }
+  
+        .suggestion-list__item__product {
+          flex: 1;
+          align-self: center;
+          margin: 0 0.5em 0 0;
+          font-size: 0.85em;
+  
+          @include mq($mobileBreakpoint) {
+            margin-right: 1em;
+            font-size: 0.95em;
+          }
+  
+          .recycle-icon {
+            @extend .recycle-icon;
+            position: relative;
+            top: 0.15em;
+            left: 0.2em;
+  
+            @include mq($mobileBreakpoint) {
+              top: 0.35em;
+              left: 0.5em;
+            }
+          }
+        }
+  
+        .suggestion-list__item__category {
+          display: none;
+  
+          @include mq($removeMobileMenuBreakpoint) {
+            display: block;
+            flex: 1;
+            align-self: center;
+            max-width: 8em;
+            margin: 0 0.5em 0 0;
+            color: $font-color;
+            font-size: 0.85em;
+          }
+        }
+  
+        .suggestion-list__item__price {
+          flex: 1;
+          align-self: center;
+          text-align: right;
+          max-width: 5em;
+          font-weight: bold;
+          color: $brand-color;
+        }
+      }
+    }
+  }
+  
