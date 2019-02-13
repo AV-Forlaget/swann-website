@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="survey-buttons">
-       <nuxt-link to="/step-1" class="btn">Begin</nuxt-link>
+       <nuxt-link to="/step-2" class="btn">Begin</nuxt-link>
     </div>
   </section>
 </template>

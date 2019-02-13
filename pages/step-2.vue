@@ -11,7 +11,7 @@
       <input-field name="Country"></input-field>
         <div class="survey-buttons">
             <nuxt-link to="/" class="btn btn--grey">Previous</nuxt-link>
-            <nuxt-link to="/step-2" class="btn">Next</nuxt-link>
+            <nuxt-link to="/step-3" class="btn">Next</nuxt-link>
         </div>
       </div>
   </section>
