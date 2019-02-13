@@ -4,18 +4,18 @@
     .voice-samples__block {
         position: relative;
         margin: 1em 0;
-        padding: 1em;
+        padding: 2em 2em 1.5em;
         box-sizing: border-box;
         background: $bg-color;
         border-radius: $r;
         border: 1px solid $border-color;
     
         @include mq($mobileBreakpoint) {
-            padding: 1.5em;
+            padding: 3em 2em 2em;
         }
 
         @include mq($removeMobileMenuBreakpoint) {
-            padding: 2em 1.5em 2em 1.5em;
+            padding: 3em 2em 2em;
         }
 
         .suggestion-list-component.input-field .label-input {
@@ -23,11 +23,56 @@
         }
 
         .remove-sample-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: auto;
+            left: auto;
+            margin: auto;
+            width: 3em;
+            height: 3em;
+            background: none;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
 
+            @include mq($mobileBreakpoint) {
+                width: 4em;
+                height: 4em;
+            }
+
+            &:hover svg path {
+                fill: $negative;
+            }
+
+            svg {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                width: 1.25em;
+                height: 1.25em;
+
+                @include mq($mobileBreakpoint) {
+                    width: 1.3em;
+                    height: 1.3em;
+                }
+                
+                path {
+                    fill: $font-color;
+                }
+            }
         }
     }
 
     .btn {
+        margin: 0 auto;
         font-size: 0.8em;
+
+        @include mq($mobileBreakpoint) {
+            margin: 0;
+        }
     }
 }
