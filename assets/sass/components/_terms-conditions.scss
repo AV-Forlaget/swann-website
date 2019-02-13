@@ -1,0 +1,20 @@
+.terms-conditions {
+    margin: 2em 0;
+
+    @include mq($mobileBreakpoint) {
+        margin: 2.5em 0;
+    }
+
+    @include mq($removeMobileMenuBreakpoint) {
+        margin: 3em 0;
+    }
+
+    a {
+        color: $brand-color;
+        text-decoration: underline;
+    }
+
+    .label-checkbox {
+        margin-top: 0.5em;
+    }
+}
