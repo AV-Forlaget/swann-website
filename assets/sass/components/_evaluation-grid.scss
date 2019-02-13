@@ -23,23 +23,12 @@
             margin-bottom: 0;
             margin-right: 1em;
         }
-
-        &:nth-child(2) {
-
-            .evaluation-block__text {
-                color: $brand-color-2;
-            }
-        }
         
 
         &:last-child {
         
             @include mq($mobileBreakpoint) {
                 margin: 0;
-            }
-
-            .evaluation-block__text {
-                color: $brand-purple;
             }
         }
 
@@ -71,7 +60,7 @@
             text-align: center;
             font-weight: bold;
             text-transform: uppercase;
-            color: $brand-color;
+            color: $font-color;
 
             @include mq($mobileBreakpoint) {
                 margin-top: 0.5em;
