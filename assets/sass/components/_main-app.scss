@@ -115,7 +115,8 @@
             }
 
             h3 {
-                margin: 0;
+                color: $font-color-dark;
+                margin: 0 0 1em;
                 font-size: 1.2em;
 
                 @include mq($mobileBreakpoint) {
@@ -127,8 +128,41 @@
                 }
             }
 
+            h4 {
+                margin: 0;
+                color: $font-color-dark;
+                font-size: 1em;
+
+                @include mq($mobileBreakpoint) {
+                    font-size: 1.05em;
+                }
+    
+                @include mq($removeMobileMenuBreakpoint) {
+                    font-size: 1.1em;
+                }
+            }
+
             .label-checkbox {
-                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+        }
+
+        .field-header {
+            margin: 2em 0 1em;
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                flex: 1;
+                display: block;
+            }
+
+            span {
+                flex: 0.5;
+                display: block;
+                text-align: right
             }
         }
     }

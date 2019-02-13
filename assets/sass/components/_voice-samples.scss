@@ -1,0 +1,33 @@
+.voice-samples {
+    margin-bottom: 4em;
+
+    .voice-samples__block {
+        position: relative;
+        margin: 1em 0;
+        padding: 1em;
+        box-sizing: border-box;
+        background: $bg-color;
+        border-radius: $r;
+        border: 1px solid $border-color;
+    
+        @include mq($mobileBreakpoint) {
+            padding: 1.5em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            padding: 2em 1.5em 2em 1.5em;
+        }
+
+        .suggestion-list-component.input-field .label-input {
+            margin-bottom: 1em;
+        }
+
+        .remove-sample-btn {
+
+        }
+    }
+
+    .btn {
+        font-size: 0.8em;
+    }
+}

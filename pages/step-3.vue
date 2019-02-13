@@ -2,10 +2,19 @@
   <section class="main-content">
     <div class="modal-step">
       <h3>Narration</h3>
+      <div class="field-header">
+        <h4>Gender</h4>
+        <span>Required</span>
+      </div>
       <dropdown placeholder="Choose gender">
         <li class="suggestion-list__item">Male</li>
         <li class="suggestion-list__item">Female</li>
       </dropdown>
+
+      <div class="field-header">
+        <h4>Voicetype</h4>
+        <span>Required</span>
+      </div>
       <dropdown placeholder="Choose voicetype">
         <li class="suggestion-list__item">Youthful</li>
         <li class="suggestion-list__item">Mature</li>
@@ -15,12 +24,30 @@
       <input-field name="Relevant education" inputType="textarea"></input-field>
       <input-field name="Relevant experience" inputType="textarea"></input-field>
       <input-field name="Links to audiobooks" inputType="textarea"></input-field>
-      <input-field name="Voicesample" inputType="textarea"></input-field>
-        <div class="survey-buttons">
-            <nuxt-link to="/step-2" class="btn btn--grey">Previous</nuxt-link>
-            <nuxt-link to="/step-4" class="btn">Next</nuxt-link>
-        </div>
+      <div class="field-header">
+        <h4>Voicesample</h4>
+        <span>Required</span>
       </div>
+      <div class="voice-samples">
+        <div class="voice-samples__block">
+          <dropdown placeholder="Choose language">
+            <li class="suggestion-list__item">Arabic</li>
+            <li class="suggestion-list__item">Bengali</li>
+            <li class="suggestion-list__item">Bulgarian</li>
+            <li class="suggestion-list__item">Danish</li>
+          </dropdown>
+          <div class="file-upload">
+            <input type="file" name="file" id="voicesample" class="file-upload__input"/>
+            <label for="voicesample" class="file-upload__label">Upload voicesample</label>
+          </div>
+        </div>
+          <button class="btn btn--outline">Add sample</button>
+      </div>
+    </div>
+    <div class="survey-buttons">
+      <nuxt-link to="/step-2" class="btn btn--grey">Previous</nuxt-link>
+      <nuxt-link to="/step-4" class="btn">Next</nuxt-link>
+    </div>
   </section>
 </template>
 
