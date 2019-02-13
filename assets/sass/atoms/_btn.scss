@@ -57,7 +57,7 @@
   }
 
   &.btn--green {
-    background: linear-gradient(35deg, $brand-color-2 0%, $brand-cyan 200%) no-repeat center 100%/cover;
+    background: linear-gradient(35deg, $brand-color-2 0%, $brand-cyan 350%) no-repeat center 100%/cover;
 
     &:hover {
       background: linear-gradient(35deg, tint($brand-color-2, 15%), $brand-cyan 160%) no-repeat center 100%/cover;
