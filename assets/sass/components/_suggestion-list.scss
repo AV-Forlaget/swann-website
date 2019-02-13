@@ -41,26 +41,17 @@
         list-style: none;
         font-family: $font-standard;
         z-index: 7;
+        border: 1px solid $border-color;
+        border-top: none;
   
         @include mq($mobileBreakpoint) {
           padding: 0.4em 1em;
-        }
-  
-        @include mq($removeMobileMenuBreakpoint) {
-          transition: transform 150ms ease;
-          padding: 0.4em 1.5em;
-        }
-  
-        @include mq($largeBreakpoint) {
-          padding: 0.4em 2em;
         }
   
         &:hover, &.selected {
           background: $white;
           color: $brand-color;
           cursor: pointer;
-          box-shadow: $block-shadow;
-  
   
           &:nth-child(odd) {
             background: $white;
@@ -68,8 +59,6 @@
   
           @include mq($removeMobileMenuBreakpoint) {
             z-index: 9;
-            transform: scale(1.02);
-            transition: transform 150ms ease;
           }
         }
   

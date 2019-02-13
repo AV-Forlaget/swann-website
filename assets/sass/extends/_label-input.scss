@@ -2,13 +2,24 @@
   margin: 2em 0 0;
   position: relative;
 
-  &.drop-down {
+  @at-root .suggestion-list-component.input-field .label-input {
 
-    .input, textarea {
-      padding: 0.6em 2.8em 0.7em 0.6em;
+    input, textarea, select {
+      padding: 0.6em 2.8em 0.8em 1em;
+      cursor: pointer;
+    }
+
+    label {
+      left: 1em;
+    }
+
+    .icon-dropdown {
+      left: auto;
+      top: 1em;
+      right: 0.9em;
     }
   }
-
+  
   input, textarea, select {
     width: 100%;
     margin: 0 auto;
@@ -23,7 +34,7 @@
     border-radius: $r;
     box-sizing: border-box;
     overflow: hidden;
-    box-shadow: 0 2px 2px rgba($black,0.05);
+    box-shadow: 0 0 2px rgba($black,0.05);
     transition: background 200ms ease, color 200ms ease;
     -webkit-appearance: none;
 
@@ -47,22 +58,23 @@
     }
 
     &:hover {
-      background: shade($white,2%);
-      color: $brand-color-2;
+      border-color: rgba($black, 0.15);
+      box-shadow: 0 1px 1px rgba($black,0.05);
+      color: $brand-color;
       transition: background 200ms ease, color 200ms ease;
 
       &::-webkit-input-placeholder {
-        color: $brand-color-2;
+        color: $brand-color;
         transition: color 200ms ease;
       }
 
       &::-moz-placeholder {
-        color: $brand-color-2;
+        color: $brand-color;
         transition: color 200ms ease;
       }
 
       &:-ms-input-placeholder {
-        color: $brand-color-2;
+        color: $brand-color;
         transition: color 200ms ease;
       }
     }
@@ -70,22 +82,22 @@
     &:hover ~ svg {
 
       path, rect, circle {
-        fill: $brand-color-2;
+        fill: $brand-color;
         transition: fill 110ms ease;
       }
     }
 
     &:hover ~ label {
-      color: $brand-color-2;
+      color: $brand-color;
     }
 
     &:focus {
-      color: $brand-color-2;
+      color: $brand-color;
     }
 
     &:focus:hover {
-      color: $brand-color-2;
-      background: tint($brand-color-2,96%);
+      color: $brand-color;
+      background: tint($brand-color,96%);
       transition: background 200ms ease, color 200ms ease, border 280ms ease;
     }
 
@@ -100,7 +112,7 @@
     &:focus ~ svg {
 
       path, rect, circle {
-        fill: $brand-color-2;
+        fill: $brand-color;
         transition: fill 110ms ease;
       }
     }
@@ -141,7 +153,7 @@
     pointer-events: none;
 
     path, rect, circle {
-      fill: $font-color;
+      fill: rgba($font-color, 0.6);
       transition: fill 110ms ease;
     }
   }
