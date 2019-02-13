@@ -1,7 +1,7 @@
 .btn {
   //Layout
   margin: 0;
-  padding: 0.8em 1.1em;
+  padding: 0.8em 1em;
   border-radius: $r-btn;
   border: none;
   -webkit-appearance: none;
@@ -15,14 +15,19 @@
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include mq($smallMobileBreakpoint) {
+    padding: 0.8em 1.1em;
+    letter-spacing: 0.01em;
+  }
 
   @include mq($mobileBreakpoint) {
     font-size: 1em;
     padding: 1em 1.5em;
     min-width: 8em;
+    letter-spacing: 0.02em;
   }
 
   //Color
@@ -103,6 +108,14 @@
       opacity: 1;
       animation: spinner 1s linear infinite;
       transition: opacity 350ms ease;
+    }
+  }
+
+  .btn__mobile-hide {
+    display: none;
+    
+    @include mq($mobileBreakpoint) {
+      display: inline;
     }
   }
 }

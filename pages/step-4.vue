@@ -21,7 +21,7 @@ part of our website?"></checkbox>
       </div>
         <div class="survey-buttons">
             <nuxt-link to="/step-3" class="btn btn--grey">Previous</nuxt-link>
-            <nuxt-link to="/done" class="btn btn--green">Send application</nuxt-link>
+            <nuxt-link to="/done" class="btn btn--green">Send <span class="btn__mobile-hide">application</span></nuxt-link>
         </div>
   </section>
 </template>

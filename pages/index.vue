@@ -18,7 +18,7 @@
         <span class="evaluation-block__text">Expected Salary</span>
       </div>
     </div>
-    <div class="survey-buttons">
+    <div class="survey-buttons survey-buttons--center">
        <nuxt-link to="/step-2" class="btn">Begin</nuxt-link>
     </div>
   </section>

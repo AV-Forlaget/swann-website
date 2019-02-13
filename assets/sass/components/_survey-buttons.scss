@@ -2,7 +2,7 @@
     margin: 3em 0 1em;
     display: flex;
     flex-flow: nowrap row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     @include mq($mobileBreakpoint) {
@@ -20,14 +20,21 @@
             margin: 2em 0 1em;
         }
     }
+
+    &.survey-buttons--center {
+        justify-content: center;
+    }
     
     
     .btn {
         margin-right: 1em;
-        min-width: 10em;
-        font-size: 1em;
+        min-width: 6em;
 
         @include mq($mobileBreakpoint) {
+            min-width: 10em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
             min-width: 12em;
         }
 
