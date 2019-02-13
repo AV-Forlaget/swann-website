@@ -6,7 +6,11 @@
       <checkbox name="Can a studio be set up in your home/office?"></checkbox>
       <checkbox name="May we display your name and sound sample on the publicly accesible
 part of our website?"></checkbox>
-      <input-field name="Salary"></input-field>
+      <div class="field-header">
+        <h4>Salary</h4>
+        <span>Required</span>
+      </div>
+      <input-field name="Your expected wage per finished hour of audiobook in euro" class="label-input--salary"></input-field>
       </div>
        <div class="terms-conditions">
         <a href="#" target="_blank">Terms of service</a>

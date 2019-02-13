@@ -148,11 +148,11 @@
         }
 
         .field-header {
-            margin: 2em 0 1em;
+            margin: 2em 0 0.5em;
             display: flex;
             flex-flow: nowrap row;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
 
             h4 {
                 flex: 1;
@@ -160,9 +160,17 @@
             }
 
             span {
-                flex: 0.5;
+                font-size: 0.8em;
+                flex: 0.4;
                 display: block;
-                text-align: right
+                text-align: right;
+            }
+        }
+
+        .field-block {
+
+            .label-input {
+                margin: 0 0 1em;
             }
         }
     }

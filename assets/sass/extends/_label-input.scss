@@ -1,5 +1,5 @@
 .label-input {
-  margin: 0 0 2em;
+  margin: 0 0 2.5em;
   position: relative;
 
   @at-root .suggestion-list-component.input-field .label-input {
@@ -14,10 +14,18 @@
     }
 
     .icon-dropdown {
-      left: auto;
       top: 1em;
       right: 0.9em;
     }
+  }
+
+  &.label-input--salary:after {
+    content: '€';
+    position: absolute;
+    top: 0.38em;
+    right: 0.6em;
+    font-size: 1.25em;
+    color: $font-color;
   }
   
   input, textarea, select {
@@ -88,11 +96,12 @@
     }
 
     &:hover ~ label {
-      color: $brand-color;
+      color: $font-color;
     }
 
     &:focus {
-      color: $brand-color;
+      outline: none;
+      color: $font-color;
     }
 
     &:focus:hover {
@@ -102,10 +111,9 @@
     }
 
     &:focus ~ label, &.has-text ~ label {
-      font-size: 0.8em;
-      opacity: 1;
-      transition: opacity 110ms ease, transform 200ms ease, font-size 200ms ease;
-      transform: translate3d(-1em,-2.4em,0);
+      font-size: 0.7em;
+      opacity: 0;
+      transition: opacity 110ms ease, font-size 200ms ease;
       text-shadow: none;
     }
 
@@ -139,6 +147,8 @@
     pointer-events: none;
     opacity: 1;
     transition: opacity 110ms ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   svg {
