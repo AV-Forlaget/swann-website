@@ -97,7 +97,39 @@
                 }
     
                 @include mq($removeMobileMenuBreakpoint) {
-                    margin-top: 2em;
+                    font-size: 1.6em;
+                }
+            }
+        }
+
+        .modal-done {
+            
+            p {
+                max-width: 30em;
+                margin: 1em auto;
+                text-align: center;
+                
+                @include mq($mobileBreakpoint) {
+                    font-size: 1.1em;
+                }
+    
+                @include mq($removeMobileMenuBreakpoint) {
+                    font-size: 1.2em;
+                }
+            }
+
+            h3 {
+                margin-top: 1em;
+                font-size: 1.1em;
+                text-align: center;
+                color: $font-color-dark;
+
+                @include mq($mobileBreakpoint) {
+                    margin: 1em 0 1.5em;
+                    font-size: 1.3em;
+                }
+    
+                @include mq($removeMobileMenuBreakpoint) {
                     font-size: 1.6em;
                 }
             }
@@ -105,6 +137,7 @@
 
         .modal-step {
             p {
+
                 @include mq($mobileBreakpoint) {
                     font-size: 1.1em;
                 }
