@@ -6,10 +6,7 @@
         <h4>Gender</h4>
         <span>Required</span>
       </div>
-      <dropdown placeholder="Choose gender">
-        <li class="suggestion-list__item">Male</li>
-        <li class="suggestion-list__item">Female</li>
-      </dropdown>
+      <dropdown placeholder="Choose gender" :options="genderOptions" v-model="gender"></dropdown>
       <div class="field-header">
         <h4>Voicetype</h4>
         <span>Required</span>
@@ -71,7 +68,17 @@
 export default {
   data() {
     return {
-
+      genderOptions: [
+        {
+          text: 'Male',
+          value: 'male'
+        },
+        {
+          text: 'Female',
+          value: 'female'
+        }
+      ],
+      gender: ''
     }
   },
   components: {
