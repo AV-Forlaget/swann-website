@@ -85,14 +85,6 @@ export default {
       InputField,
       Dropdown,
       Checkbox
-  },
-  head() {
-    return {
-      title: 'Narrator application',
-      meta: [
-         { hid: 'description', name: 'description', content: 'Swann Studios narrator application'}
-      ]
-    }
   }
 }
 </script>
