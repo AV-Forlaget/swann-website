@@ -4,7 +4,12 @@ export const state = () => ({
         name: '',
         email: '',
         phone: '', // including area codes
-        address: '',
+        address: {
+            line1: '',
+            line2: '',
+            zip: '',
+            country: ''
+        },
         voice: {
             gender: '', // male | female
             age: '', // young | mature
@@ -39,7 +44,7 @@ export const state = () => ({
 
 export const mutations = {
     data(state, data) {
-        state.data = data;
+        state.data = Object.assign({}, state.data, data);
     },
     step(state, step) {
         state.step = step;
