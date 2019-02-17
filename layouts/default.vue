@@ -12,8 +12,8 @@
         </button>
       </div>
       <div class="progress-bar">
-          <div class="progress-bar__fill" style="width: 25%"></div>
-          <span class="progress-bar__text">Step 1 of 4</span>
+          <div class="progress-bar__fill" :style="{width: percent + '%'}"></div>
+          <span class="progress-bar__text">Step {{ currentStep }} of 4</span>
       </div>
       <div class="modal-box__body modal-box__body--padding">
         <nuxt/>
@@ -25,8 +25,13 @@
 <script>
 
 export default {
-  components: {
-
+  computed: {
+    percent() {
+      return (this.$store.state.step / 4) * 100
+    },
+    currentStep() {
+      return this.$store.state.step;
+    }
   }
 }
 </script>

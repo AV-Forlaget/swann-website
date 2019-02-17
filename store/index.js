@@ -1,4 +1,5 @@
 export const state = () => ({
+    step: 1,
     data: {
         name: '',
         email: '',
@@ -36,8 +37,11 @@ export const state = () => ({
     }
 });
 
-const mutations = {
-    setData(state, data) {
+export const mutations = {
+    data(state, data) {
         state.data = data;
+    },
+    step(state, step) {
+        state.step = step;
     }
 };
