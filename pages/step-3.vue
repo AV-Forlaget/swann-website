@@ -15,20 +15,20 @@
       <div class="field-header">
         <h4>Genre</h4>
       </div>
-      <input-field name="Describe which genres you would like to narrate, and would fit you voice" inputType="textarea"></input-field>
-        <checkbox name="Would you consider reading erotica?"></checkbox>
+      <input-field name="Describe which genres you would like to narrate, and would fit you voice" inputType="textarea" v-model="genres"></input-field>
+        <checkbox name="Would you consider reading erotica?" :value="erotica" @checked="(val) => erotica = val"></checkbox>
       <div class="field-header">
         <h4>Relevant education</h4>
       </div>
-      <input-field name="Do you have relevant education?" inputType="textarea"></input-field>
+      <input-field name="Do you have relevant education?" inputType="textarea" v-model="education"></input-field>
       <div class="field-header">
         <h4>Relevant experience</h4>
       </div>
-      <input-field name="Do you have relevant experience with narration?" inputType="textarea"></input-field>
+      <input-field name="Do you have relevant experience with narration?" inputType="textarea" v-model="experience"></input-field>
       <div class="field-header">
         <h4>Links to audiobooks</h4>
       </div>
-      <input-field name="Insert links, If available, of a selection of your narrated audiobooks" inputType="textarea"></input-field>
+      <input-field name="Insert links, If available, of a selection of your narrated audiobooks" inputType="textarea" v-model="booksNarrated"></input-field>
       <div class="field-header">
         <h4>Voicesample</h4>
         <span>Required</span>
@@ -100,7 +100,12 @@ export default {
       ],
       age: '',
       gender: '',
-      samples: [ ]
+      samples: [ ],
+      erotica: false,
+      genres: '',
+      education: '',
+      experience: '',
+      booksNarrated: ''
     }
   },
   mounted() {
