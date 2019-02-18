@@ -34,15 +34,8 @@
         <span>Required</span>
       </div>
       <div class="voice-samples">
-        <div class="voice-samples__block">
-          <button class="remove-sample-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.8 23.8"><path d="M23.8,2.8,21,0,11.9,9.1,2.8,0,0,2.8l9.1,9.1L0,21l2.8,2.8,9.1-9.1L21,23.8,23.8,21l-9.1-9.1Z"/></svg></button>
-          <dropdown placeholder="Choose language" :options="langOptions"></dropdown>
-          <div class="file-upload">
-            <input type="file" name="file" id="voicesample" class="file-upload__input"/>
-            <label for="voicesample" class="file-upload__label">Upload voicesample</label>
-          </div>
-        </div>
-          <button class="btn btn--outline">Add sample</button>
+          <voice-sample v-model="samples[sampleKey]" v-for="(sample, sampleKey) in samples" :key="sampleKey" @remove="removeSample(sampleKey)"></voice-sample>
+          <button class="btn btn--outline" @click="addSample">Add sample</button>
       </div>
     </div>
     <div class="survey-buttons">
@@ -56,6 +49,7 @@
     import InputField from '~/components/input-field.vue';
     import Dropdown from '~/components/dropdown.vue';
     import Checkbox from '~/components/checkbox.vue';
+    import VoiceSample from '~/components/voice-sample.vue';
 
 export default {
   data() {
@@ -80,27 +74,12 @@ export default {
           value: 'mature'
         }
       ],
-      langOptions: [
-        {
-          text: 'Arabic',
-          value: ''
-        },
-        {
-          text: 'Bengali',
-          value: ''
-        },
-        {
-          text: 'Bulgarian',
-          value: ''
-        },
-        {
-          text: 'Danish',
-          value: ''
-        }
-      ],
       age: '',
       gender: '',
-      samples: [ ],
+      samples: [{
+        lang: 'ar',
+        data: ''
+      }],
       erotica: false,
       genres: '',
       education: '',
@@ -111,10 +90,22 @@ export default {
   mounted() {
     this.$store.commit('step', 3);
   },
+  methods: {
+    addSample() {
+      this.samples.push({
+        lang: 'ar',
+        data: ''
+      });
+    },
+    removeSample(samplekey) {
+      this.samples.splice(samplekey, 1);
+    }
+  },
   components: {
       InputField,
       Dropdown,
-      Checkbox
+      Checkbox,
+      VoiceSample
   }
 }
 </script>
