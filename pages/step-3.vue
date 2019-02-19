@@ -40,7 +40,7 @@
     </div>
     <div class="survey-buttons">
       <nuxt-link to="/step-2" class="btn btn--grey">Previous</nuxt-link>
-      <nuxt-link to="/step-4" class="btn">Next</nuxt-link>
+      <button @click="goToNextStep" class="btn" :disabled="valid">Next</button>
     </div>
   </section>
 </template>
@@ -50,6 +50,7 @@
     import Dropdown from '~/components/dropdown.vue';
     import Checkbox from '~/components/checkbox.vue';
     import VoiceSample from '~/components/voice-sample.vue';
+    import ValidateJS from 'validate.js';
 
 export default {
   data() {
@@ -77,8 +78,8 @@ export default {
       age: '',
       gender: '',
       samples: [{
-        lang: 'ar',
-        data: ''
+        language: '',
+        data: null
       }],
       erotica: false,
       genres: '',
@@ -93,12 +94,51 @@ export default {
   methods: {
     addSample() {
       this.samples.push({
-        lang: 'ar',
+        language: '',
         data: null
       });
     },
     removeSample(samplekey) {
       this.samples.splice(samplekey, 1);
+    },
+    goToNextStep() {
+      this.$router.push({
+        path: '/step-4'
+      });
+    },
+  },
+  computed: {
+    valid() {
+      return ValidateJS({
+        age: this.age,
+        gender: this.gender,
+        samples: this.samples
+      }, {
+        age: {
+          presence: {
+            allowEmpty: false
+          }
+        },
+        gender: {
+          presence: {
+            allowEmpty: false
+          }
+        },
+        samples: {
+          array: {
+            language: {
+              presence: {
+                allowEmpty: false
+              }
+            },
+            data: {
+              presence: {
+                allowEmpty: false
+              }
+            }
+          }
+        }
+      });
     }
   },
   components: {
