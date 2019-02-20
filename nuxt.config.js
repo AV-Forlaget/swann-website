@@ -21,7 +21,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#22c877' },
 
   /*
   ** Global CSS
@@ -49,6 +49,7 @@ module.exports = {
   env: {
     RECAPCHA_SITE_KEY: process.env.RECAPCHA_SITE_KEY || '',
     POST_URL: process.env.POST_URL || '',
+    CLOSE_URL: process.env.CLOSE_URL || '',
   },
 
   /*

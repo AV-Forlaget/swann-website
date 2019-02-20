@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     close() {
-      window.location = "https://swann-studio.com/";
+      window.location = process.env.CLOSE_URL;
     }
   },
   computed: {
