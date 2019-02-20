@@ -99,6 +99,9 @@ export default {
 
     this.erotica = this.dataModel.erotica;
     this.genres = this.dataModel.experience.genres;
+    this.education = this.dataModel.experience.education;
+    this.experience = this.dataModel.experience.experience;
+    this.booksNarrated = this.dataModel.experience.booksNarrated;
   },
   watch: {
     age() {
