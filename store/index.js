@@ -34,7 +34,7 @@ export const state = () => ({
         erotica: false, // would you consider reading erotica?
         salary: {
             hourlyWage: 0, // wage per finished hour of audiobook
-            currency: 'DKK' // ISO 4217 currency code
+            currency: 'EUR' // ISO 4217 currency code
         },
         hasOwnStudio: false, // do you have a recording studio?
         canHaveStudio: false, // can a studio be set up in your home/office?
