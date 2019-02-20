@@ -90,8 +90,67 @@ export default {
   },
   mounted() {
     this.$store.commit('step', 3);
+
+    this.age = this.dataModel.voice.age;
+    this.gender = this.dataModel.voice.gender;
+    if(this.dataModel.voice.samples.length) {
+      this.samples = this.dataModel.voice.samples;
+    }
+
+    this.erotica = this.dataModel.erotica;
+    this.genres = this.dataModel.experience.genres;
+  },
+  watch: {
+    age() {
+      this.updateVoice();
+    },
+    gender() {
+      this.updateVoice();
+    },
+    samples: {
+      handler() {
+        this.updateVoice();
+      },
+      deep: true
+    },
+    erotica() {
+      this.$store.commit('data', {
+        erotica: this.erotica
+      })
+    },
+    genres() {
+      this.updateExperience();
+    },
+    education() {
+      this.updateExperience();
+    },
+    experience() {
+      this.updateExperience();
+    },
+    booksNarrated() {
+      this.updateExperience();
+    }
   },
   methods: {
+    updateVoice() {
+      this.$store.commit('data', Object.assign({}, {voice: this.dataModel.voice}, {
+        voice: {
+          age: this.age,
+          gender: this.gender,
+          samples: this.samples.map((sample) => Object.assign({}, sample))
+        }
+      }))
+    },
+    updateExperience() {
+      this.$store.commit('data', Object.assign({ }, {experience: this.dataModel.experience}, {
+        experience: {
+          genres: this.genres,
+          education: this.education,
+          experience: this.experience,
+          booksNarrated: this.booksNarrated
+        }
+      }));
+    },
     addSample() {
       this.samples.push({
         language: '',
@@ -108,6 +167,9 @@ export default {
     },
   },
   computed: {
+    dataModel() {
+      return this.$store.state.data;
+    },
     valid() {
       return ValidateJS({
         age: this.age,
