@@ -31,6 +31,15 @@ export default {
         this.$store.commit('token', token);
       })
     });
+
+    this.$nextTick(() => {
+      if(!this.$store.state.started) {
+        this.$router.push({
+          path: '/'
+        })
+      }
+    });
+    
   },
   computed: {
     percent() {

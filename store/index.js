@@ -1,5 +1,6 @@
 export const state = () => ({
     step: 1,
+    started: false,
     token: '',
     data: {
         name: '',
@@ -48,6 +49,9 @@ export const mutations = {
         state.data = Object.assign({}, state.data, data);
     },
     step(state, step) {
+        if(step == 1) {
+            state.started = true;
+        }
         state.step = step;
     },
     token(state, token) {
