@@ -18,3 +18,11 @@ ValidateJS.validators.array = (arrayItems, itemConstraints) => {
 
     return isEmpty(arrayItemErrors) ? null : { errors: arrayItemErrors }
 }
+
+ValidateJS.validators.istrue = function(value, options, key, attributes) {
+    if(value == true) {
+        return null;
+    }
+
+    return "is not checked";
+  };

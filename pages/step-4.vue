@@ -30,6 +30,7 @@
     import Dropdown from '~/components/dropdown.vue';
     import Checkbox from '~/components/checkbox.vue';
     import {Money} from 'v-money';
+    import ValidateJS from 'validate.js';
 
 export default {
   data() {
@@ -48,8 +49,37 @@ export default {
       }
     }
   },
+  watch: {
+    hasOwnStudio() {
+      this.$store.commit('data', {
+        hasOwnStudio: this.hasOwnStudio
+      });
+    },
+    canHaveStudio() {
+      this.$store.commit('data', {
+        canHaveStudio: this.canHaveStudio
+      });
+    },
+    publicDisplay() {
+      this.$store.commit('data', {
+        publicDisplay: this.publicDisplay
+      });
+    },
+    hourlyWage() {
+      this.$store.commit('data', {
+        salary: {
+          hourlyWage: this.hourlyWage,
+          currency: 'EUR'
+        }
+      });
+    }
+  },
   mounted() {
     this.$store.commit('step', 4);
+    this.hasOwnStudio = this.dataModel.hasOwnStudio;
+    this.canHaveStudio = this.dataModel.canHaveStudio;
+    this.publicDisplay = this.dataModel.publicDisplay;
+    this.hourlyWage = this.dataModel.salary.hourlyWage;
   },
   methods: {
     goToNextStep() {
@@ -58,8 +88,26 @@ export default {
   },
   computed: {
     valid() {
-      return null;
-    }
+      return ValidateJS({
+        terms: this.terms,
+        hourlyWage: this.hourlyWage,
+      }, {
+        terms: {
+          istrue: true 
+        },
+        hourlyWage: {
+          presence: {
+            allowEmpty: false
+          },
+          numericality: {
+            greaterThan: 0
+          }
+        }
+      });
+    },
+    dataModel() {
+      return this.$store.state.data;
+    },
   },
   components: {
       InputField,
