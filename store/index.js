@@ -1,5 +1,6 @@
 export const state = () => ({
     step: 1,
+    token: '',
     data: {
         name: '',
         email: '',
@@ -48,5 +49,8 @@ export const mutations = {
     },
     step(state, step) {
         state.step = step;
+    },
+    token(state, token) {
+        state.token = token;
     }
 };

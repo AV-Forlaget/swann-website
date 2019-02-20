@@ -25,6 +25,13 @@
 <script>
 
 export default {
+  mounted() {
+    this.$recaptchaLoaded().then(() => {
+      this.$recaptcha('homepage').then((token) => {
+        this.$store.commit('token', token);
+      })
+    });
+  },
   computed: {
     percent() {
       return (this.$store.state.step / 4) * 100
