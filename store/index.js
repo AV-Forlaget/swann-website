@@ -85,20 +85,14 @@ export const actions = {
                 let sample = state.data.voice.samples[i];
                 let file = sample.data;
                 files.append(file.name, file);
-                                
+
                 data.voice.samples.push({
                     language: sample.language,
                     data: file.name
                 });
             }
-
-            console.log('Data', data);
-            console.log('Files', files);
-            let formData = ObjectToFormData(data, {}, files);
             
-            for (var pair of formData.entries()) {
-                console.log(pair[0]+ ', ' + pair[1]); 
-            }
+            let formData = ObjectToFormData(data, {}, files);
 
             let url = process.env.POST_URL;
             axios.post(url, formData, {
