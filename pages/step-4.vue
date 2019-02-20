@@ -20,7 +20,8 @@
       </div>
         <div class="survey-buttons">
             <nuxt-link to="/step-3" class="btn btn--grey">Previous</nuxt-link>
-            <button @click="goToNextStep" class="btn" :disabled="valid">Send <span class="btn__mobile-hide">application</span></button>
+            <button @click="goToNextStep" class="btn" :disabled="valid" :class="{'loading': loading}">Send <span class="btn__mobile-hide">application</span></button>
+            <p class="error" v-if="error">An error happened when sending the request...</p>
         </div>
   </section>
 </template>
@@ -46,7 +47,9 @@ export default {
         prefix: ' ',
         suffix: ' EUR',
         precision: 2
-      }
+      },
+      loading: false,
+      error: false
     }
   },
   watch: {
@@ -83,7 +86,18 @@ export default {
   },
   methods: {
     goToNextStep() {
-
+      if(!this.valid) {
+        this.loading = true;
+        this.$store.dispatch('submit').then((res) => {
+          this.$router.push({
+            path: '/done'
+          });
+        }).catch((error) => {
+          console.error(error);
+          this.error = true;
+          this.loading = false;
+        });
+      }
     }
   },
   computed: {

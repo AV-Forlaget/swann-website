@@ -47,7 +47,8 @@ module.exports = {
   ],
 
   env: {
-    RECAPCHA_SITE_KEY: process.env.RECAPCHA_SITE_KEY || ''
+    RECAPCHA_SITE_KEY: process.env.RECAPCHA_SITE_KEY || '',
+    POST_URL: process.env.POST_URL || '',
   },
 
   /*

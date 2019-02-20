@@ -1,3 +1,6 @@
+import axios from 'axios';
+import ObjectToFormData from 'object-to-formdata';
+
 export const state = () => ({
     step: 1,
     started: false,
@@ -58,3 +61,56 @@ export const mutations = {
         state.token = token;
     }
 };
+
+export const actions = {
+    submit({state}) {
+        return new Promise((resolve, reject) => {
+            let data = Object.assign({}, state.data);
+            data.address = state.data.address.line1;
+            
+            if(state.data.address.line2) {
+                data.address += ', ' + state.data.address.line2;
+            }
+
+            data.address += ', ' +state.data.address.zip + ', ' + state.data.address.country;
+            data.voice = Object.assign({}, state.data.voice, {samples: [ ]});
+            data.experience = Object.assign({}, state.data.experience);
+            data.salary = Object.assign({}, state.data.salary);
+
+            let token = state.token;
+            let files = new FormData();
+
+
+            for(let i in state.data.voice.samples) {
+                let sample = state.data.voice.samples[i];
+                let file = sample.data;
+                files.append(file.name, file);
+                                
+                data.voice.samples.push({
+                    language: sample.language,
+                    data: file.name
+                });
+            }
+
+            console.log('Data', data);
+            console.log('Files', files);
+            let formData = ObjectToFormData(data, {}, files);
+            
+            for (var pair of formData.entries()) {
+                console.log(pair[0]+ ', ' + pair[1]); 
+            }
+
+            let url = process.env.POST_URL;
+            axios.post(url, formData, {
+                headers: {
+                    'Auth': token,
+                    'Content-Type': 'multipart/form-data'
+                }
+            }).then((res) => {
+                resolve(res);
+            }).catch((error) => {
+                reject(error);
+            });
+        });
+    }
+}

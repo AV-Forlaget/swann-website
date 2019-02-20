@@ -11,7 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "nuxt": "^2.0.0",
+    "object-to-formdata": "^1.6.3",
     "underscore": "^1.9.1",
     "v-money": "^0.8.1",
     "validate.js": "^0.12.0",
