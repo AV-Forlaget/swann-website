@@ -1,5 +1,4 @@
 import axios from 'axios';
-import ObjectToFormData from 'object-to-formdata';
 
 export const state = () => ({
     step: 1,
@@ -78,13 +77,13 @@ export const actions = {
             data.salary = Object.assign({}, state.data.salary);
 
             let token = state.token;
-            let files = new FormData();
+            let formData = new FormData();
 
 
             for(let i in state.data.voice.samples) {
                 let sample = state.data.voice.samples[i];
                 let file = sample.data;
-                files.append(file.name, file);
+                formData.append(file.name, file);
 
                 data.voice.samples.push({
                     language: sample.language,
@@ -92,8 +91,7 @@ export const actions = {
                 });
             }
             
-            let formData = ObjectToFormData(data, {}, files);
-
+            formData.append('json_data', JSON.stringify(data));
             let url = process.env.POST_URL;
             axios.post(url, formData, {
                 headers: {

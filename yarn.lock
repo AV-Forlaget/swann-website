@@ -5853,11 +5853,6 @@ object-keys@^1.0.12:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.0.tgz#11bd22348dd2e096a045ab06f6c85bcc340fa032"
   integrity sha512-6OO5X1+2tYkNyNEx6TsCxEqFfRWaqx6EtMiSbGrw8Ob8v9Ne+Hl8rBAgLBZn5wjEz3s/s6U1WXFUFOcxxAwUpg==
 
-object-to-formdata@^1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/object-to-formdata/-/object-to-formdata-1.6.3.tgz#e08ac4bef2492e580794880b3fef91c4ae24b8b7"
-  integrity sha512-J0JDCVxItmy6D1Oe33lxCqqEfK+o8qcrbbc/vQpUo4DtAwV15f0zbqwOYALvp96zx/yS0tUT6ikgj1I9fPt2OQ==
-
 object-visit@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
