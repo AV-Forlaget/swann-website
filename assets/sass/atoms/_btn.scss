@@ -96,18 +96,20 @@
 
   &.btn--loading {
     position: relative;
-    color: rgba($white,0);
-    transition: color 350ms ease;
     cursor: wait;
+    overflow: hidden;
 
     &:after {
-      width: 2em;
-      height: 2em;
-      //background: url("../assets/img/icons/icon-loading.png") 100%/cover;
-      background: $brand-color;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: rgba($white, 0.2);
       opacity: 1;
-      animation: spinner 1s linear infinite;
-      transition: opacity 350ms ease;
+      animation: loading-progress 6s linear both;
     }
   }
 

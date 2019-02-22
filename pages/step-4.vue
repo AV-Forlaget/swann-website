@@ -20,9 +20,9 @@
       </div>
         <div class="survey-buttons">
             <nuxt-link to="/step-3" class="btn btn--grey">Previous</nuxt-link>
-            <button @click="goToNextStep" class="btn" :disabled="valid" :class="{'loading': loading}">Send <span class="btn__mobile-hide">application</span></button>
-            <p class="error" v-if="error">An error happened when sending the request...</p>
+            <button @click="goToNextStep" class="btn btn--green" :disabled="valid" :class="{'btn--loading': loading}">Send <span class="btn__mobile-hide">application</span></button>
         </div>
+        <p class="error-text" v-if="error">An error happened when sending the request...</p>
   </section>
 </template>
 
