@@ -60,9 +60,12 @@
         span {
             font-size: 0.8em;
             color: $brand-color-2;
+            line-height: 130%;
+            display: block;
 
             @include mq($mobileBreakpoint) {
                 font-size: 0.9em;
+                line-height: 150%;
             }
 
             @include mq($removeMobileMenuBreakpoint) {

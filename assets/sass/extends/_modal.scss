@@ -139,8 +139,7 @@
           max-height: 70vh;
 
           @include mqh(650) {
-            max-height: 59vh;
-            background: red;
+            max-height: 59vh !important;
           }
         }
 
