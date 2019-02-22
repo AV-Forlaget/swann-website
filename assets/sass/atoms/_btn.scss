@@ -7,6 +7,7 @@
   -webkit-appearance: none;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 
   //Typography
   font-family: $font-standard;
@@ -99,12 +100,23 @@
     }
   }
 
-
   &.btn--loading {
     position: relative;
-    color: rgba($white,0);
-    transition: color 350ms ease;
     cursor: wait;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: rgba($white, 0.2);
+      opacity: 1;
+      animation: loading-progress 6s linear both;
+    }
   }
 
   .btn__mobile-hide {

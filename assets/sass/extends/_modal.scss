@@ -136,7 +136,15 @@
         -webkit-overflow-scrolling: touch;
 
         @include mq($mobileBreakpoint) {
-          max-height: 73vh;
+          max-height: 70vh;
+
+          @include mqh(650) {
+            max-height: 59vh !important;
+          }
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+          max-height: 74vh;
         }
 
         &.modal-box__body--padding {

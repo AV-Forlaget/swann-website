@@ -10,7 +10,7 @@
     }
 
     @include mq($removeMobileMenuBreakpoint) {
-        margin: 3em 0 0;
+        margin: 2.5em 0 0;
     }
 
     @at-root .modal-step .survey-buttons {
@@ -28,14 +28,14 @@
     
     .btn {
         margin-right: 1em;
-        min-width: 6em;
+        min-width: 9em;
 
         @include mq($mobileBreakpoint) {
-            min-width: 10em;
+            min-width: 13em;
         }
 
         @include mq($removeMobileMenuBreakpoint) {
-            min-width: 12em;
+            min-width: 15em;
         }
 
         &:last-child {

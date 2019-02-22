@@ -6,59 +6,41 @@
         <h4>Gender</h4>
         <span>Required</span>
       </div>
-      <dropdown placeholder="Choose gender">
-        <li class="suggestion-list__item">Male</li>
-        <li class="suggestion-list__item">Female</li>
-      </dropdown>
+      <dropdown placeholder="Choose gender" :options="genderOptions" v-model="gender"></dropdown>
       <div class="field-header">
         <h4>Voicetype</h4>
         <span>Required</span>
       </div>
-      <dropdown placeholder="Choose voicetype">
-        <li class="suggestion-list__item">Youthful</li>
-        <li class="suggestion-list__item">Mature</li>
-      </dropdown>
+      <dropdown placeholder="Choose voicetype" :options="ageOptions" v-model="age"></dropdown>
       <div class="field-header">
         <h4>Genre</h4>
       </div>
-      <input-field name="Describe which genres you would like to narrate, and would fit you voice" inputType="textarea"></input-field>
-        <checkbox name="Would you consider reading erotica?"></checkbox>
+      <input-field name="Describe which genres you would like to narrate, and would fit you voice" inputType="textarea" v-model="genres"></input-field>
+        <checkbox name="Would you consider reading erotica?" :value="erotica" @checked="(val) => erotica = val"></checkbox>
       <div class="field-header">
         <h4>Relevant education</h4>
       </div>
-      <input-field name="Do you have relevant education?" inputType="textarea"></input-field>
+      <input-field name="Do you have relevant education?" inputType="textarea" v-model="education"></input-field>
       <div class="field-header">
         <h4>Relevant experience</h4>
       </div>
-      <input-field name="Do you have relevant experience with narration?" inputType="textarea"></input-field>
+      <input-field name="Do you have relevant experience with narration?" inputType="textarea" v-model="experience"></input-field>
       <div class="field-header">
         <h4>Links to audiobooks</h4>
       </div>
-      <input-field name="Insert links, If available, of a selection of your narrated audiobooks" inputType="textarea"></input-field>
+      <input-field name="Insert links, If available, of a selection of your narrated audiobooks" inputType="textarea" v-model="booksNarrated"></input-field>
       <div class="field-header">
         <h4>Voicesample</h4>
         <span>Required</span>
       </div>
       <div class="voice-samples">
-        <div class="voice-samples__block">
-          <button class="remove-sample-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.8 23.8"><path d="M23.8,2.8,21,0,11.9,9.1,2.8,0,0,2.8l9.1,9.1L0,21l2.8,2.8,9.1-9.1L21,23.8,23.8,21l-9.1-9.1Z"/></svg></button>
-          <dropdown placeholder="Choose language">
-            <li class="suggestion-list__item">Arabic</li>
-            <li class="suggestion-list__item">Bengali</li>
-            <li class="suggestion-list__item">Bulgarian</li>
-            <li class="suggestion-list__item">Danish</li>
-          </dropdown>
-          <div class="file-upload">
-            <input type="file" name="file" id="voicesample" class="file-upload__input"/>
-            <label for="voicesample" class="file-upload__label">Upload voicesample</label>
-          </div>
-        </div>
-          <button class="btn btn--outline">Add sample</button>
+          <voice-sample v-model="samples[sampleKey]" v-for="(sample, sampleKey) in samples" :uid="sampleKey" :key="sampleKey" @remove="removeSample(sampleKey)"></voice-sample>
+          <button class="btn btn--outline" @click="addSample">Add sample</button>
       </div>
     </div>
     <div class="survey-buttons">
       <nuxt-link to="/step-2" class="btn btn--grey">Previous</nuxt-link>
-      <nuxt-link to="/step-4" class="btn">Next</nuxt-link>
+      <button @click="goToNextStep" class="btn" :disabled="valid">Next</button>
     </div>
   </section>
 </template>
@@ -67,25 +49,168 @@
     import InputField from '~/components/input-field.vue';
     import Dropdown from '~/components/dropdown.vue';
     import Checkbox from '~/components/checkbox.vue';
+    import VoiceSample from '~/components/voice-sample.vue';
+    import ValidateJS from 'validate.js';
 
 export default {
   data() {
     return {
+      genderOptions: [
+        {
+          text: 'Male',
+          value: 'male'
+        },
+        {
+          text: 'Female',
+          value: 'female'
+        }
+      ],
+      ageOptions: [
+        {
+          text: 'Youthful',
+          value: 'young'
+        },
+        {
+          text: 'Mature',
+          value: 'mature'
+        }
+      ],
+      age: '',
+      gender: '',
+      samples: [{
+        language: '',
+        data: null
+      }],
+      erotica: false,
+      genres: '',
+      education: '',
+      experience: '',
+      booksNarrated: ''
+    }
+  },
+  mounted() {
+    this.$store.commit('step', 3);
 
+    this.age = this.dataModel.voice.age;
+    this.gender = this.dataModel.voice.gender;
+    if(this.dataModel.voice.samples.length) {
+      this.samples = this.dataModel.voice.samples;
+    }
+
+    this.erotica = this.dataModel.erotica;
+    this.genres = this.dataModel.experience.genres;
+    this.education = this.dataModel.experience.education;
+    this.experience = this.dataModel.experience.experience;
+    this.booksNarrated = this.dataModel.experience.booksNarrated;
+  },
+  watch: {
+    age() {
+      this.updateVoice();
+    },
+    gender() {
+      this.updateVoice();
+    },
+    samples: {
+      handler() {
+        this.updateVoice();
+      },
+      deep: true
+    },
+    erotica() {
+      this.$store.commit('data', {
+        erotica: this.erotica
+      })
+    },
+    genres() {
+      this.updateExperience();
+    },
+    education() {
+      this.updateExperience();
+    },
+    experience() {
+      this.updateExperience();
+    },
+    booksNarrated() {
+      this.updateExperience();
+    }
+  },
+  methods: {
+    updateVoice() {
+      this.$store.commit('data', Object.assign({}, {voice: this.dataModel.voice}, {
+        voice: {
+          age: this.age,
+          gender: this.gender,
+          samples: this.samples.map((sample) => Object.assign({}, sample))
+        }
+      }))
+    },
+    updateExperience() {
+      this.$store.commit('data', Object.assign({ }, {experience: this.dataModel.experience}, {
+        experience: {
+          genres: this.genres,
+          education: this.education,
+          experience: this.experience,
+          booksNarrated: this.booksNarrated
+        }
+      }));
+    },
+    addSample() {
+      this.samples.push({
+        language: '',
+        data: null
+      });
+    },
+    removeSample(samplekey) {
+      this.samples.splice(samplekey, 1);
+    },
+    goToNextStep() {
+      this.$router.push({
+        path: '/step-4'
+      });
+    },
+  },
+  computed: {
+    dataModel() {
+      return this.$store.state.data;
+    },
+    valid() {
+      return ValidateJS({
+        age: this.age,
+        gender: this.gender,
+        samples: this.samples
+      }, {
+        age: {
+          presence: {
+            allowEmpty: false
+          }
+        },
+        gender: {
+          presence: {
+            allowEmpty: false
+          }
+        },
+        samples: {
+          array: {
+            language: {
+              presence: {
+                allowEmpty: false
+              }
+            },
+            data: {
+              presence: {
+                allowEmpty: false
+              }
+            }
+          }
+        }
+      });
     }
   },
   components: {
       InputField,
       Dropdown,
-      Checkbox
-  },
-  head() {
-    return {
-      title: 'Narrator application',
-      meta: [
-         { hid: 'description', name: 'description', content: 'Swann Studios narrator application'}
-      ]
-    }
+      Checkbox,
+      VoiceSample
   }
 }
 </script>

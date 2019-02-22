@@ -27,20 +27,8 @@
 <script>
 
 export default {
-  data() {
-    return {
-      
-    }
-  },
-  components: {
-  },
-  head() {
-    return {
-      title: 'Narrator application',
-      meta: [
-         { hid: 'description', name: 'description', content: 'Swann Studios narrator application'}
-      ]
-    }
+  mounted() {
+    this.$store.commit('step', 1);
   }
 }
 </script>

@@ -7,11 +7,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Narrator application',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'Swann Studios narrator application'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -21,7 +21,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#22c877' },
 
   /*
   ** Global CSS
@@ -34,7 +34,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
- 
+    '@/plugins/directives.js',
+    { src: '@/plugins/recapcha.js', ssr: false }
   ],
 
   /*
@@ -46,8 +47,9 @@ module.exports = {
   ],
 
   env: {
-    CTF_SPACE_ID: process.env.CTF_SPACE_ID || '',
-    CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN || ''
+    RECAPCHA_SITE_KEY: process.env.RECAPCHA_SITE_KEY || '',
+    POST_URL: process.env.POST_URL || '',
+    CLOSE_URL: process.env.CLOSE_URL || '',
   },
 
   /*
