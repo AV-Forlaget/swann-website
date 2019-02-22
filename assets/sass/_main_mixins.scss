@@ -17,6 +17,14 @@
   }
 }
 
+/* Media Query mixin */
+@mixin mqh($height, $type:'max') {
+  $height: $height / 16;
+  @media all and (#{$type}-height: #{$height}em) {
+    @content;
+  }
+}
+
 @mixin isRetina() {
   @media
   (-webkit-min-device-pixel-ratio: 2),

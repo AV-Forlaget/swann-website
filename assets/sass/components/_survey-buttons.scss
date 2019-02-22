@@ -10,7 +10,7 @@
     }
 
     @include mq($removeMobileMenuBreakpoint) {
-        margin: 3em 0 0;
+        margin: 2.5em 0 0;
     }
 
     @at-root .modal-step .survey-buttons {
