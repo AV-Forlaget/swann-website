@@ -34,7 +34,7 @@
         <span>Required</span>
       </div>
       <div class="voice-samples">
-          <voice-sample v-model="samples[sampleKey]" v-for="(sample, sampleKey) in samples" :uid="sampleKey" :key="sampleKey" @remove="removeSample(sampleKey)"></voice-sample>
+          <voice-sample v-model="samples[sampleKey]" v-for="(sample, sampleKey) in samples" :uid="sampleKey" :key="sampleKey" @remove="removeSample(sampleKey)" :removable="(sampleKey > 0) ? true : false"></voice-sample>
           <button class="btn btn--outline" @click="addSample">Add sample</button>
       </div>
     </div>
@@ -161,7 +161,9 @@ export default {
       });
     },
     removeSample(samplekey) {
-      this.samples.splice(samplekey, 1);
+      if(samplekey > 0) {
+        this.samples.splice(samplekey, 1);
+      }
     },
     goToNextStep() {
       this.$router.push({

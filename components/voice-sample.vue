@@ -1,6 +1,6 @@
 <template>
     <div class="voice-samples__block">
-        <button @click="$emit('remove')" class="remove-sample-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.8 23.8"><path d="M23.8,2.8,21,0,11.9,9.1,2.8,0,0,2.8l9.1,9.1L0,21l2.8,2.8,9.1-9.1L21,23.8,23.8,21l-9.1-9.1Z"/></svg></button>
+        <button v-if="removable" @click="$emit('remove')" class="remove-sample-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.8 23.8"><path d="M23.8,2.8,21,0,11.9,9.1,2.8,0,0,2.8l9.1,9.1L0,21l2.8,2.8,9.1-9.1L21,23.8,23.8,21l-9.1-9.1Z"/></svg></button>
         <dropdown placeholder="Choose language" :options="langOptions" v-model="language"></dropdown>
         <div class="file-upload">
             <p v-if="data">{{ data.name }}</p>
@@ -19,7 +19,8 @@ export default {
             language: 'ar',
             data: null
         }}},
-        uid: {type: Number, default: 0}
+        uid: {type: Number, default: 0},
+        removable: {type: Boolean, default: true}
     },
     data() {
         return {
