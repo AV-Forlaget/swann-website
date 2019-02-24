@@ -83,11 +83,12 @@ export const actions = {
             for(let i in state.data.voice.samples) {
                 let sample = state.data.voice.samples[i];
                 let file = sample.data;
-                formData.append(file.name, file);
+                let fileKey = file.name + '_' + i;
+                formData.append(fileKey, file);
 
                 data.voice.samples.push({
                     language: sample.language,
-                    data: file.name
+                    data: fileKey
                 });
             }
             
