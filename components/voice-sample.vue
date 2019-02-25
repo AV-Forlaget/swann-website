@@ -40,7 +40,129 @@ export default {
                 {
                 text: 'Danish',
                 value: 'da'
-                }
+                },
+                {
+                text: 'Dutch',
+                value: 'nl'
+                },
+                {
+                text: 'Czech',
+                value: 'cs'
+                },
+                {
+                text: 'Croatian',
+                value: 'hr'
+                },
+                {
+                text: 'English',
+                value: 'en'
+                },
+                {
+                text: 'Estonian',
+                value: 'et'
+                },
+                {
+                text: 'Farsi',
+                value: 'fa'
+                },
+                {
+                text: 'Finnish',
+                value: 'fi'
+                },
+                {
+                text: 'French',
+                value: 'fr'
+                },
+                {
+                text: 'German',
+                value: 'de'
+                },
+                {
+                text: 'Greek',
+                value: 'el'
+                },
+                {
+                text: 'Hindi',
+                value: 'hi'
+                },
+                {
+                text: 'Hungarian',
+                value: 'hu'
+                },
+                {
+                text: 'Icelandic',
+                value: 'is'
+                },
+                {
+                text: 'Italian',
+                value: 'it'
+                },
+                {
+                text: 'Japanese',
+                value: 'ja'
+                },
+                {
+                text: 'Latvian',
+                value: 'lv'
+                },
+                {
+                text: 'Lithuanian',
+                value: 'lt'
+                },
+                {
+                text: 'Mandarin',
+                value: 'zh'
+                },
+                {
+                text: 'Norwegian',
+                value: 'no'
+                },
+                {
+                text: 'Polish',
+                value: 'pl'
+                },
+                {
+                text: 'Portuguese',
+                value: 'pt'
+                },
+                {
+                text: 'Punjabi',
+                value: 'pa'
+                },
+                {
+                text: 'Romanian',
+                value: 'ro'
+                },
+                {
+                text: 'Russian',
+                value: 'ru'
+                },
+                {
+                text: 'Serbian',
+                value: 'sr'
+                },
+                {
+                text: 'Spanish',
+                value: 'es'
+                },
+                {
+                text: 'Swedish',
+                value: 'sv'
+                },
+                {
+                text: 'Turkish',
+                value: 'tr'
+                },
+                {
+                text: 'Ukrainian',
+                value: 'uk'
+                },
+                {
+                text: 'Vietnamese',
+                value: 'vi'
+                },
+                
+                
             ],
             language: 'ar',
             data: null
