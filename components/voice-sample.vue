@@ -160,9 +160,7 @@ export default {
                 {
                 text: 'Vietnamese',
                 value: 'vi'
-                },
-                
-                
+                }
             ],
             language: 'ar',
             data: null
