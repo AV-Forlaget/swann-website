@@ -2,23 +2,6 @@
   margin: 0 0 2.5em;
   position: relative;
 
-  @at-root .suggestion-list-component.input-field .label-input {
-
-    input, textarea, select {
-      padding: 0.6em 2.8em 0.8em 1em;
-      cursor: pointer;
-    }
-
-    label {
-      left: 1em;
-    }
-
-    .icon-dropdown {
-      top: 1em;
-      right: 0.9em;
-    }
-  }
-
   &.label-input--salary:after {
     content: '€';
     position: absolute;

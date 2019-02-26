@@ -1,0 +1,87 @@
+.search-selector {
+    margin: 0 0 2.5em;
+    position: relative;
+    cursor: pointer;
+
+    .search-selector__field {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding: 0.6em 2.8em 0.8em 1em;
+        font-family: $font-standard;
+        font-size: 0.8em;
+        color: $font-color;
+        background: $white;
+        border: 1px solid $border-color;
+        border-radius: $r;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 0 0 2px rgba($black,0.05);
+        transition: background 200ms ease, color 200ms ease;
+        -webkit-appearance: none;
+        cursor: pointer;
+    
+        span {
+            font-size: 1em;
+        }
+    }
+
+    .icon-dropdown {
+        position: absolute;
+        top: 1.2em;
+        right: 1em;
+        left: auto;
+        margin: auto;
+        width: 1.25em;
+        height: auto;
+        max-height: 0.95em;
+        pointer-events: none;
+    
+        path, rect, circle {
+          fill: rgba($font-color, 0.6);
+          transition: fill 110ms ease;
+        }
+    }
+
+    .search-selector--options {
+        background: $white;
+        box-sizing: border-box;
+        border-radius: $r;
+        position: absolute;
+        top: 2.4em;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+        z-index: 7;
+        box-shadow: $block-shadow;
+
+        ul {
+            padding: 0;
+
+            li {
+                position: relative;
+                box-sizing: border-box;
+                background: $white;
+                color: $font-color;
+                margin: 0;
+                cursor: pointer;
+                padding: 0.4em 1em;
+                list-style: none;
+                font-family: $font-standard;
+                z-index: 7;
+                border: 1px solid $border-color;
+                border-top: none;
+
+                &:last-child {
+                    padding-bottom: 0.4em;
+                    border-radius: 0 0 $r $r;
+                }
+
+                &:hover {
+                    color: $brand-color;
+                }
+            }
+        }
+    }
+}
