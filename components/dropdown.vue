@@ -15,21 +15,6 @@
                 </ul>
             </div>
         </div>
-        <!-- <div @click="openSelector" class="suggestion-list-component input-field" :class="{'open': open}">
-            <div class="label-input">
-                <input type="text" :placeholder="placeholder" :value="selectedValueTxt" readonly>
-                <ul class="suggestion-list" >
-                    <li v-for="option in options" 
-                        :key="(option.value) ? option.value : option"
-                        v-text="(option.text) ? option.text : option"
-                        class="suggestion-list__item"
-                        :class="{'selected': option == selectedValue}"
-                        @click="selectOption(option)"
-                        ></li>
-                </ul>
-   
-            </div>
-        </div> -->
 </template>
 
 <script>
