@@ -1,8 +1,24 @@
 <template>
-        <div @click="openSelector" class="suggestion-list-component input-field" :class="{'open': open}">
+       <div class="search-selector">
+            <div class="search-selector__field" @click="openSelector">
+                <span v-text="selectedValueTxt"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.65 223" class="icon-dropdown"><path d="M370.5,0a25,25,0,0,0-17.79,7.37L210.57,149.51l-12.73,12.73-12.73-12.73L43,7.37A25.16,25.16,0,1,0,7.38,43L180,215.63a25.16,25.16,0,0,0,35.58,0L388.29,43A25.17,25.17,0,0,0,370.5,0Z"/></svg>
+            </div>
+            <div class="search-selector--options" v-if="open">
+                <ul>
+                   <li v-for="option in options" 
+                        :key="(option.value) ? option.value : option"
+                        v-text="(option.text) ? option.text : option"
+                        :class="{'selected': option == selectedValue}"
+                        @click="selectOption(option)"
+                        ></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div @click="openSelector" class="suggestion-list-component input-field" :class="{'open': open}">
             <div class="label-input">
-                <input type="text" :placeholder="placeholder" :value="selectedValueTxt" disabled>
-                <ul class="suggestion-list">
+                <input type="text" :placeholder="placeholder" :value="selectedValueTxt" readonly>
+                <ul class="suggestion-list" >
                     <li v-for="option in options" 
                         :key="(option.value) ? option.value : option"
                         v-text="(option.text) ? option.text : option"
@@ -11,13 +27,12 @@
                         @click="selectOption(option)"
                         ></li>
                 </ul>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.65 223" class="icon-dropdown"><path d="M370.5,0a25,25,0,0,0-17.79,7.37L210.57,149.51l-12.73,12.73-12.73-12.73L43,7.37A25.16,25.16,0,1,0,7.38,43L180,215.63a25.16,25.16,0,0,0,35.58,0L388.29,43A25.17,25.17,0,0,0,370.5,0Z"/></svg>
+   
             </div>
-        </div>
+        </div> -->
 </template>
 
 <script>
-import InputField from '~/components/input-field.vue';
 
 export default {
     props: {
@@ -39,6 +54,7 @@ export default {
     methods: {
         selectOption(option) {
             this.$emit('input', (option.value) ? option.value : option);
+            this.closeSelector();
         },
         closeSelector() {
             this.open = false;
@@ -80,9 +96,6 @@ export default {
 
             return this.placeholder;
         }
-    },
-    components: {
-        InputField
     }
 }
 </script>
