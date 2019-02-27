@@ -59,7 +59,7 @@
 
         span {
             font-size: 0.8em;
-            color: $brand-color-2;
+            color: rgba($brand-color-2, 0.8);
             line-height: 130%;
             display: block;
 
@@ -79,12 +79,28 @@
         .modal-intro {
 
             p {
+                margin-top: 0.2em;
+
                 @include mq($mobileBreakpoint) {
                     font-size: 1.1em;
                 }
     
                 @include mq($removeMobileMenuBreakpoint) {
                     font-size: 1.2em;
+                }
+            }
+
+            h2 {
+                margin: 1em 0 0;
+                font-size: 1em;
+                color: $font-color-dark;
+
+                @include mq($mobileBreakpoint) {
+                    font-size: 1.1em;
+                }
+    
+                @include mq($removeMobileMenuBreakpoint) {
+                    font-size: 1.3em;
                 }
             }
 
