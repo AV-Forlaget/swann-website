@@ -37,6 +37,14 @@ export default {
                 text: 'Bulgarian',
                 value: 'bg'
                 },
+                  {
+                text: 'Czech',
+                value: 'cs'
+                },
+                {
+                text: 'Croatian',
+                value: 'hr'
+                },
                 {
                 text: 'Danish',
                 value: 'da'
@@ -44,14 +52,6 @@ export default {
                 {
                 text: 'Dutch',
                 value: 'nl'
-                },
-                {
-                text: 'Czech',
-                value: 'cs'
-                },
-                {
-                text: 'Croatian',
-                value: 'hr'
                 },
                 {
                 text: 'English',
