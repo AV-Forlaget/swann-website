@@ -1,8 +1,9 @@
 <template>
   <section class="main-content">
     <div class="modal-intro">
-      <p>If you find yourself here, that means you are a potential narrator on our team here at Swann Studio.</p>
-      <h3>We will be evaluating your application by:</h3>
+      <h2>Welcome!</h2>
+      <p>Complete this application to potentially become a Swann Studio narrator.</p>
+      <h3>Your application will be evaluated based on:</h3>
     </div>
     <div class="evaluation-grid">
       <div class="evaluation-block">
