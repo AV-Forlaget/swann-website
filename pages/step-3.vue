@@ -8,15 +8,15 @@
       </div>
       <dropdown placeholder="Choose gender" :options="genderOptions" v-model="gender"></dropdown>
       <div class="field-header">
-        <h4>Voicetype</h4>
+        <h4>Voice type</h4>
         <span>Required</span>
       </div>
-      <dropdown placeholder="Choose voicetype" :options="ageOptions" v-model="age"></dropdown>
+      <dropdown placeholder="Choose voice type" :options="ageOptions" v-model="age"></dropdown>
       <div class="field-header">
         <h4>Genre</h4>
       </div>
-      <input-field name="Describe which genres you would like to narrate, and would fit you voice" inputType="textarea" v-model="genres"></input-field>
-        <checkbox name="Would you consider reading erotica?" :value="erotica" @checked="(val) => erotica = val"></checkbox>
+      <input-field name="Describe which genres would fit your voice" inputType="textarea" v-model="genres"></input-field>
+        <checkbox name="I don’t mind reading erotica" :value="erotica" @checked="(val) => erotica = val"></checkbox>
       <div class="field-header">
         <h4>Relevant education</h4>
       </div>
@@ -26,16 +26,25 @@
       </div>
       <input-field name="Do you have relevant experience with narration?" inputType="textarea" v-model="experience"></input-field>
       <div class="field-header">
-        <h4>Links to audiobooks</h4>
+        <h4>Previously narrated audiobooks</h4>
       </div>
-      <input-field name="Insert links, If available, of a selection of your narrated audiobooks" inputType="textarea" v-model="booksNarrated"></input-field>
+      <dropdown placeholder="How many audiobooks have you narrated?" :options="booksNarratedOptions" v-model="booksNarrated"></dropdown>
       <div class="field-header">
-        <h4>Voicesample</h4>
+        <h4>Voice sample</h4>
         <span>Required</span>
       </div>
+      <span class="field-text">Only upload voice samples in your native language(s).</span>
       <div class="voice-samples">
           <voice-sample v-model="samples[sampleKey]" v-for="(sample, sampleKey) in samples" :uid="sampleKey" :key="sampleKey" @remove="removeSample(sampleKey)" :removable="(sampleKey > 0) ? true : false"></voice-sample>
           <button class="btn btn--outline" @click="addSample">Add sample</button>
+      </div>
+      <div class="field-header">
+        <h4>Secondary languages</h4>
+        <span>Required</span>
+      </div>
+      <span class="field-text">This information is used to dertemine if you are the ideal choice for narrating e.g. a travel book set in a foreign country.</span>
+      <div class="voice-samples">
+          <voice-sample v-model="samples[sampleKey]" v-for="(sample, sampleKey) in samples" :uid="sampleKey" :key="sampleKey" @remove="removeSample(sampleKey)" :removable="(sampleKey > 0) ? true : false"></voice-sample>
       </div>
     </div>
     <div class="survey-buttons">
@@ -77,6 +86,7 @@ export default {
       ],
       age: '',
       gender: '',
+      booksNarratedOptions: ['0', '1-9', '10-19', '20-29', '30+'],
       samples: [{
         language: '',
         data: null

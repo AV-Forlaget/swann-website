@@ -219,6 +219,16 @@
             }
         }
 
+        .field-text {
+            display: block;
+            font-size: 0.9em;
+            font-style: italic;
+            margin-bottom: 0.5em;
+            color: $font-color;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
         .field-block {
 
             .label-input {
