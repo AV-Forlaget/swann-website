@@ -16,7 +16,7 @@
         <h4>Phonenumber</h4>
         <span>Required</span>
       </div>
-      <input-field name="Phonenumber" :value="phone" @input="(val) => phone = val.toString().substr(0,11)" input-type="tel" mask="+9999999999" @focus="setPhoneCode"></input-field>
+         <vue-tel-input v-model="phone" default-country="dk" @onValidate="(valid) => phoneValid = valid.isValid"></vue-tel-input>
        <div class="field-header">
         <h4>Address</h4>
         <span>Required</span>
@@ -50,7 +50,8 @@ export default {
         line2: '',
         zip: '',
         country: ''
-      }
+      },
+      phoneValid: false
     }
   },
   components: {
@@ -109,7 +110,7 @@ export default {
       return ValidateJS({
         name: this.name,
         email: this.email,
-        phone: this.phone,
+        phoneValid: this.phoneValid,
         address_line1: this.address.line1,
         zip: this.address.zip,
         country: this.address.country
@@ -125,11 +126,8 @@ export default {
           },
           email: true
         },
-        phone: {
-          presence: {
-            allowEmpty: false
-          },
-          numericality: true
+        phoneValid: {
+          istrue: true
         },
         address_line1: {
           presence: {

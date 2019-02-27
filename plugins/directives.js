@@ -2,6 +2,10 @@ import Vue from 'vue';
 import VMasker from './MaskedInput.js';
 import ValidateJS from 'validate.js';
 import { isEmpty } from 'underscore';
+import VueTelInput from 'vue-tel-input';
+import 'vue-tel-input/dist/vue-tel-input.css';
+
+Vue.use(VueTelInput);
 
 Vue.directive('ui-mask', (el, binding) => {
     if(binding.value.mask) {
@@ -25,4 +29,4 @@ ValidateJS.validators.istrue = function(value, options, key, attributes) {
     }
 
     return "is not checked";
-  };
+};
