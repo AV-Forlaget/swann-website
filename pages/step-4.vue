@@ -2,17 +2,18 @@
   <section class="main-content">
     <div class="modal-step">
       <h3>Other information</h3>
-      <checkbox name="Do you have a recording studio in your home?" :value="hasOwnStudio" @checked="(val) => hasOwnStudio = val"></checkbox>
-      <checkbox name="Can a studio be set up in your home/office?" :value="canHaveStudio" @checked="(val) => canHaveStudio = val"></checkbox>
-      <checkbox name="May we display your name and sound sample on the publicly accesible part of our website?" :value="publicDisplay" @checked="(val) => publicDisplay = val"></checkbox>
+      <checkbox name="I have a recording studio in my home/office" :value="hasOwnStudio" @checked="(val) => hasOwnStudio = val"></checkbox>
+      <checkbox name="A studio can be set up in my home/office" :value="canHaveStudio" @checked="(val) => canHaveStudio = val"></checkbox>
+      <checkbox name="Swann Studio may display my name and sound sample on the publicly accessible part of their website" :value="publicDisplay" @checked="(val) => publicDisplay = val"></checkbox>
       <div class="field-header">
         <h4>Salary</h4>
         <span>Required</span>
       </div>
-        <div class="label-input">
-          <money class="input input-field has-text" v-model="hourlyWage" v-bind="money"></money>
-          <label class="label">Your expected wage per finished hour of audiobook in euro"</label>
-        </div>
+      <span class="field-text">Expected wage per hour of the finished audiobook.</span>
+      <div class="label-input">
+        <money class="input input-field has-text" v-model="hourlyWage" v-bind="money"></money>
+        <label class="label">Your expected wage per finished hour of audiobook in euro"</label>
+      </div>
       </div>
        <div class="terms-conditions">
         <a href="#" target="_blank">Terms of service</a>
