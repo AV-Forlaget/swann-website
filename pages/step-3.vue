@@ -40,11 +40,11 @@
       </div>
       <div class="field-header">
         <h4>Secondary languages</h4>
-        <span>Required</span>
       </div>
       <span class="field-text">This information is used to dertemine if you are the ideal choice for narrating e.g. a travel book set in a foreign country.</span>
       <div class="voice-samples">
-          <voice-sample v-model="samples[sampleKey]" v-for="(sample, sampleKey) in samples" :uid="sampleKey" :key="sampleKey" @remove="removeSample(sampleKey)" :removable="(sampleKey > 0) ? true : false"></voice-sample>
+          <secondary-lang v-model="secondaryLanguages[langKey]" v-for="(lang, langKey) in secondaryLanguages" :uid="langKey" :key="langKey" @remove="removeLanguage(langKey)"></secondary-lang>
+          <button class="btn btn--outline" @click="addLanguage">Add language</button>
       </div>
     </div>
     <div class="survey-buttons">
@@ -59,6 +59,7 @@
     import Dropdown from '~/components/dropdown.vue';
     import Checkbox from '~/components/checkbox.vue';
     import VoiceSample from '~/components/voice-sample.vue';
+    import SecondaryLang from '~/components/secondary-lang.vue';
     import ValidateJS from 'validate.js';
 
 export default {
@@ -91,6 +92,7 @@ export default {
         language: '',
         data: null
       }],
+      secondaryLanguages: [],
       erotica: false,
       genres: '',
       education: '',
@@ -105,6 +107,10 @@ export default {
     this.gender = this.dataModel.voice.gender;
     if(this.dataModel.voice.samples.length) {
       this.samples = this.dataModel.voice.samples;
+    }
+
+    if(this.dataModel.experience.secondaryLanguages.length) {
+      this.secondaryLanguages = this.dataModel.experience.secondaryLanguages;
     }
 
     this.erotica = this.dataModel.erotica;
@@ -123,6 +129,12 @@ export default {
     samples: {
       handler() {
         this.updateVoice();
+      },
+      deep: true
+    },
+    secondaryLanguages: {
+      handler() {
+        this.updateExperience();
       },
       deep: true
     },
@@ -160,7 +172,8 @@ export default {
           genres: this.genres,
           education: this.education,
           experience: this.experience,
-          booksNarrated: this.booksNarrated
+          booksNarrated: this.booksNarrated,
+          secondaryLanguages: this.secondaryLanguages.map((secondaryLanguages) => Object.assign({}, secondaryLanguages))
         }
       }));
     },
@@ -173,6 +186,17 @@ export default {
     removeSample(samplekey) {
       if(samplekey > 0) {
         this.samples.splice(samplekey, 1);
+      }
+    },
+    addLanguage() {
+      this.secondaryLanguages.push({
+        language: 'da',
+        proficiency: null
+      });
+    },
+    removeLanguage(key) {
+      if(key > -1) {
+        this.secondaryLanguages.splice(key, 1);
       }
     },
     goToNextStep() {
@@ -189,7 +213,8 @@ export default {
       return ValidateJS({
         age: this.age,
         gender: this.gender,
-        samples: this.samples
+        samples: this.samples,
+        secondaryLanguages: this.secondaryLanguages
       }, {
         age: {
           presence: {
@@ -214,6 +239,20 @@ export default {
               }
             }
           }
+        },
+        secondaryLanguages: {
+          array: {
+            language: {
+              presence: {
+                allowEmpty: false
+              }
+            },
+            proficiency: {
+              presence: {
+                allowEmpty: false
+              }
+            }
+          }
         }
       });
     }
@@ -222,7 +261,8 @@ export default {
       InputField,
       Dropdown,
       Checkbox,
-      VoiceSample
+      VoiceSample,
+      SecondaryLang
   }
 }
 </script>
