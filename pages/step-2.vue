@@ -24,7 +24,7 @@
       <div class="field-block">
         <input-field name="Address line 1" :value="address.line1" @input="(val) => address.line1 = val"></input-field>
         <input-field name="Address line 2" :value="address.line2" @input="(val) => address.line2 = val"></input-field>
-        <input-field name="Zip" input-type="tel" mask="9999" :value="address.zip" @input="(val) => address.zip = val.substr(0,4)"></input-field>
+        <input-field name="Zip" input-type="tel" mask="9999999999999999" :value="address.zip" @input="(val) => address.zip = val.substr(0,16)"></input-field>
         <input-field name="Country" :value="address.country" @input="(val) => address.country = val"></input-field>
       </div>
     </div>
