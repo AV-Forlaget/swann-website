@@ -190,7 +190,7 @@ export default {
     },
     addLanguage() {
       this.secondaryLanguages.push({
-        language: 'da',
+        language: '',
         proficiency: null
       });
     },

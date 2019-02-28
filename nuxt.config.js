@@ -56,6 +56,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    transpile: ['vue-languages-dropdown']
+    
   }
 }
