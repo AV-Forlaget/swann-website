@@ -60,7 +60,6 @@ export default {
     },
     methods: {
         optionSelected(evt) {
-            console.log(evt);
             this.language = evt.code;
         },
         updateIntVal() {
