@@ -16,7 +16,7 @@
       </div>
       </div>
        <div class="terms-conditions">
-        <a href="#" target="_blank">Terms of service</a>
+        <a href="/terms_of_service.pdf" target="_blank">Terms of service</a>
         <checkbox name="I have read Swann Studio’s terms of service" :value="terms" @checked="(val) => terms = val"></checkbox>
       </div>
         <div class="survey-buttons">
