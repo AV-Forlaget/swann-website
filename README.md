@@ -1,22 +1,13 @@
-# Swann Narrator App
+# Narrator Onboardning
+> NArrator onboarding project
 
-> Swann Narrator App
+## Dependencies
+- Docker
 
-## Build Setup
+##Run
+To get started run `sh run.sh` and wait for it to finish. When finished you can visit your new Nuxt Project at `localhost:3000`.
 
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
+##Static build
+To generate a static build of the site run `docker-compose exec narrator_onboarding_frontend yarn generate`. Then copy the `dist` folder to the location final location
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
