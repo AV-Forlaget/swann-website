@@ -27,7 +27,8 @@ export default {
         value: '',
         options: {type: Array, default() { return [ ]}},
         placeholder: {type: String, default: ''},
-        search: {type: Boolean, default: false}
+        search: {type: Boolean, default: false},
+        selectSearch: {type: Boolean, default: true}
     },
     data() {
         return {
@@ -58,6 +59,12 @@ export default {
 
             this.open = true;
             this.searchVal = '';
+            
+            this.$nextTick(() => {
+                if(this.search && this.selectSearch) {
+                    this.$refs.searchField.selectInput();
+                }
+            })
             window.addEventListener('click', this.windowListener);
         },
         windowListener(evt) {
