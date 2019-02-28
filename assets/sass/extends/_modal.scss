@@ -148,14 +148,15 @@
         }
 
         &.modal-box__body--padding {
-          padding: 1em;
+          padding: 1em 1em 0;
+          box-sizing: border-box;
 
           @include mq($mobileBreakpoint) {
-            padding: 1.5em;
+            padding: 1.5em 1.5em 0;
           }
 
           @include mq($mobileBreakpoint) {
-            padding: 2em;
+            padding: 2em 2em 0;
           }
         }
       }
