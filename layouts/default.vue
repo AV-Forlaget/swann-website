@@ -1,28 +1,30 @@
 <template>
   <div class="main-app">
-  <div class="header">
-  	<div class="header__logo"></div>
-  	<ul class="nav primary-menu">
-  		<li class="nav__item">
-  			<a class="nav__anchor" href="#">Audio</a>
-  		</li>
-  		<li class="nav__item">
-  			<a class="nav__anchor" href="#">Distribution</a>
-  		</li>
-  		<li class="nav__item">
-  			<a class="nav__anchor" href="#">Countries</a>
-  		</li>
-  	</ul>
-  	<p class="header__tagline">Be part of our narrator catalog</p>
-  	<ul class="nav login-menu">
-  		<li class="nav__item">
-  			<a class="nav__anchor" href="#">Login</a>
-  		</li>
-  		<li class="nav__item">
-  			<a class="nav__anchor" href="#">Sign up</a>
-  		</li>
-  	</ul>
-  </div>
+	  <div class="header">
+	  	<a href="#" class="header-logo__anchor" title="Go to title page">
+	  		<img src="#" class="header-logo__image" alt="Swann Studio" />
+	  	</a>
+	  	<ul class="nav primary-menu">
+	  		<li class="nav__item primary-menu__item">
+	  			<a class="nav__anchor primary-menu__anchor" href="#">Audio</a>
+	  		</li>
+	  		<li class="nav__item primary-menu__item">
+	  			<a class="nav__anchor primary-menu__anchor" href="#">Distribution</a>
+	  		</li>
+	  		<li class="nav__item primary-menu__item">
+	  			<a class="nav__anchor primary-menu__anchor" href="#">Countries</a>
+	  		</li>
+	  	</ul>
+	  	<p class="header__tagline">Be part of our narrator catalog</p>
+	  	<ul class="nav login-menu">
+	  		<li class="nav__item login-menu__item">
+	  			<a class="nav__anchor login-menu__anchor" href="#">Login</a>
+	  		</li>
+	  		<li class="nav__item login-menu__item">
+	  			<a class="nav__anchor login-menu__anchor" href="#">Sign up</a>
+	  		</li>
+	  	</ul>
+	  </div>
 <!--
     <div class="modal-box">
       <div class="modal-box__header">
@@ -44,6 +46,35 @@
       </div>
     </div>
 -->
+	<div class="footer">
+		<img src="#" class="footer__logo" alt="Swann Studio" />
+		<ul class="nav footer-menu">
+			<li class="nav__item footer-menu__item">
+				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+			</li>
+			<li class="nav__item footer-menu__item">
+				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+			</li>
+			<li class="nav__item footer-menu__item">
+				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+			</li>
+			<li class="nav__item footer-menu__item">
+				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+			</li>
+			<li class="nav__item footer-menu__item">
+				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+			</li>
+		</ul>
+		<div class="footer-some">
+			<a href="#" class="footer-some__anchor" title="Visit Facebook">
+				<img src="#" class="footer-some__icon footer-icon__facebook" alt="Visit Facebook" />
+			</a>
+			<a href="#" class="footer-some__anchor" title="Visit Instagram">
+				<img src="#" class="footer-some__icon footer-icon__instagram" alt="Visit Instagram" />
+			</a>
+		</div>
+		<p class="footer__copyright">© 2019 Swann A/S - All rights reserved</p>
+	</div>
   </div>
 </template>
 
