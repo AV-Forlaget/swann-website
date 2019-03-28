@@ -1,4 +1,5 @@
 <template>
+ <!--
   <section class="main-content">
     <div class="modal-intro">
       <h2>Welcome!</h2>
@@ -23,13 +24,15 @@
        <nuxt-link to="/step-2" class="btn">Begin</nuxt-link>
     </div>
   </section>
+-->
 </template>
 
 <script>
-
+/*
 export default {
   mounted() {
     this.$store.commit('step', 1);
   }
 }
+*/
 </script>

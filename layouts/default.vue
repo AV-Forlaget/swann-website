@@ -1,5 +1,29 @@
 <template>
   <div class="main-app">
+  <div class="header">
+  	<div class="header__logo"></div>
+  	<ul class="nav primary-menu">
+  		<li class="nav__item">
+  			<a class="nav__anchor" href="#">Audio</a>
+  		</li>
+  		<li class="nav__item">
+  			<a class="nav__anchor" href="#">Distribution</a>
+  		</li>
+  		<li class="nav__item">
+  			<a class="nav__anchor" href="#">Countries</a>
+  		</li>
+  	</ul>
+  	<p class="header__tagline">Be part of our narrator catalog</p>
+  	<ul class="nav login-menu">
+  		<li class="nav__item">
+  			<a class="nav__anchor" href="#">Login</a>
+  		</li>
+  		<li class="nav__item">
+  			<a class="nav__anchor" href="#">Sign up</a>
+  		</li>
+  	</ul>
+  </div>
+<!--
     <div class="modal-box">
       <div class="modal-box__header">
         <img src="@/assets/img/swann-logo-icon.svg" class="modal-header__logo" alt="">
@@ -19,11 +43,12 @@
         <nuxt/>
       </div>
     </div>
+-->
   </div>
 </template>
 
 <script>
-
+/*
 export default {
   mounted() {
     this.$recaptchaLoaded().then(() => {
@@ -55,4 +80,5 @@ export default {
     }
   }
 }
+*/
 </script>
