@@ -1,30 +1,34 @@
 <template>
   <div class="main-app">
 	  <div class="header">
-	  	<a href="#" class="header-logo__anchor" title="Go to title page">
-	  		<img src="#" class="header-logo__image" alt="Swann Studio" />
-	  	</a>
-	  	<ul class="nav primary-menu">
-	  		<li class="nav__item primary-menu__item">
-	  			<a class="nav__anchor primary-menu__anchor" href="#">Audio</a>
-	  		</li>
-	  		<li class="nav__item primary-menu__item">
-	  			<a class="nav__anchor primary-menu__anchor" href="#">Distribution</a>
-	  		</li>
-	  		<li class="nav__item primary-menu__item">
-	  			<a class="nav__anchor primary-menu__anchor" href="#">Countries</a>
-	  		</li>
-	  	</ul>
-	  	<p class="header__tagline">Be part of our narrator catalog</p>
-	  	<ul class="nav login-menu">
-	  		<li class="nav__item login-menu__item">
-	  			<a class="nav__anchor login-menu__anchor" href="#">Login</a>
-	  		</li>
-	  		<li class="nav__item login-menu__item">
-	  			<a class="nav__anchor login-menu__anchor" href="#">Sign up</a>
-	  		</li>
-	  	</ul>
-	  </div>
+      <div class="header_item header__left">
+  	  	<a href="#" class="header-logo__anchor" title="Go to title page">
+  	  		<img src="#" class="header-logo__image" alt="Swann Studio" />
+  	  	</a>
+  	  	<ul class="nav primary-menu">
+  	  		<li class="nav__item primary-menu__item">
+  	  			<a class="nav__anchor primary-menu__anchor" href="#">Audio</a>
+  	  		</li>
+  	  		<li class="nav__item primary-menu__item">
+  	  			<a class="nav__anchor primary-menu__anchor" href="#">Distribution</a>
+  	  		</li>
+  	  		<li class="nav__item primary-menu__item">
+  	  			<a class="nav__anchor primary-menu__anchor" href="#">Countries</a>
+  	  		</li>
+  	  	</ul>
+      </div>
+      <div class="header_item header__right">
+  	  	<p class="header__tagline">Be part of our narrator catalog</p>
+  	  	<ul class="nav login-menu">
+  	  		<li class="nav__item login-menu__item">
+  	  			<a class="nav__anchor login-menu__anchor" href="#">Login</a>
+  	  		</li>
+  	  		<li class="nav__item login-menu__item">
+  	  			<a class="nav__anchor login-menu__anchor" href="#">Sign up</a>
+  	  		</li>
+  	  	</ul>
+      </div>
+    </div>
 <!--
     <div class="modal-box">
       <div class="modal-box__header">
@@ -95,7 +99,7 @@ export default {
         })
       }
     });
-    
+
   },
   methods: {
     close() {
