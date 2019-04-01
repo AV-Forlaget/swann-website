@@ -1,5 +1,18 @@
 const pkg = require('./package')
 
+let modules = [
+  '@nuxtjs/dotenv',
+  'nuxt-imagemin'
+];
+
+if(!process.env.PRODUCTION) {
+  modules.push(['nuxt-robots-module', {
+    /* module options */
+    UserAgent: '*',
+    Disallow: '/',
+  }])
+}
+
 module.exports = {
   mode: 'universal',
 
@@ -41,10 +54,7 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-    '@nuxtjs/dotenv',
-    'nuxt-imagemin'
-  ],
+  modules,
 
   env: {
     RECAPCHA_SITE_KEY: process.env.RECAPCHA_SITE_KEY || '',
