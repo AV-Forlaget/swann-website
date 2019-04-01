@@ -2,18 +2,18 @@
   <div class="main-app">
 	  <div class="header">
       <div class="header_item header__left">
-  	  	<a href="#" class="header-logo__anchor" title="Go to title page">
+  	  	<nuxt-link to="/" class="header-logo__anchor" title="Go to title page">
   	  		<img src="#" class="header-logo__image" alt="Swann Studio" />
-  	  	</a>
+  	  	</nuxt-link>
   	  	<ul class="nav primary-menu">
   	  		<li class="nav__item primary-menu__item">
-  	  			<a class="nav__anchor primary-menu__anchor" href="#">Audio</a>
+            <nuxt-link class="nav__anchor primary-menu__anchor" to="/audio">Audio</nuxt-link>
   	  		</li>
   	  		<li class="nav__item primary-menu__item">
-  	  			<a class="nav__anchor primary-menu__anchor" href="#">Distribution</a>
+  	  			<nuxt-link class="nav__anchor primary-menu__anchor" to="/distribution">Distribution</nuxt-link>
   	  		</li>
   	  		<li class="nav__item primary-menu__item">
-  	  			<a class="nav__anchor primary-menu__anchor" href="#">Countries</a>
+  	  			<nuxt-link class="nav__anchor primary-menu__anchor" to="/countries">Countries</nuxt-link>
   	  		</li>
   	  	</ul>
       </div>
@@ -21,10 +21,10 @@
   	  	<p class="header__tagline">Be part of our narrator catalog</p>
   	  	<ul class="nav login-menu">
   	  		<li class="nav__item login-menu__item">
-  	  			<a class="nav__anchor login-menu__anchor" href="#">Login</a>
+  	  			<nuxt-link class="nav__anchor login-menu__anchor" to="/login">Login</nuxt-link>
   	  		</li>
   	  		<li class="nav__item login-menu__item">
-  	  			<a class="nav__anchor login-menu__anchor" href="#">Sign up</a>
+  	  			<nuxt-link class="nav__anchor login-menu__anchor" to="/sign-up">Sign up</nuxt-link>
   	  		</li>
   	  	</ul>
       </div>
@@ -33,27 +33,27 @@
     <nuxt/>
 
   	<div class="footer">
-  		<img src="#" class="footer__logo" alt="Swann Studio" />
+  		<img src="@/assets/img/swann-logo-icon.svg" class="footer__logo" alt="Swann Studio" />
   		<ul class="nav footer-menu">
   			<li class="nav__item footer-menu__item">
-  				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/about-us">About us</nuxt-link>
   			</li>
   			<li class="nav__item footer-menu__item">
-  				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/language">Language</nuxt-link>
   			</li>
   			<li class="nav__item footer-menu__item">
-  				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/login">Login</nuxt-link>
   			</li>
   			<li class="nav__item footer-menu__item">
-  				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/sign-up">Sign up</nuxt-link>
   			</li>
   			<li class="nav__item footer-menu__item">
-  				<a class="nav__anchor footer-menu__anchor" href="#"></a>
+  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/trouble">Trouble? Contact us here ...</nuxt-link>
   			</li>
   		</ul>
   		<div class="footer-some">
   			<a href="#" class="footer-some__anchor" title="Visit Facebook">
-  				<img src="@/assets/img/swann-logo-icon.svg" class="footer-some__icon footer-icon__facebook" alt="Visit Facebook" />
+  				<img src="#" class="footer-some__icon footer-icon__facebook" alt="Visit Facebook" />
   			</a>
   			<a href="#" class="footer-some__anchor" title="Visit Instagram">
   				<img src="#" class="footer-some__icon footer-icon__instagram" alt="Visit Instagram" />
