@@ -3,7 +3,7 @@ docker-compose build
 docker-compose up -d
 
 echo "*** Updating node dependencies... ***"
-#docker-compose exec frontend node -v  > .nvmrc
+docker-compose exec frontend node -v  > .nvmrc
 docker-compose exec frontend yarn install
 
 echo "*** Running Gulp .. ***"
