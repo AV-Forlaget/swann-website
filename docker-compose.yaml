@@ -1,7 +1,7 @@
 version: '2.1'
 
 services:
-  narrator_onboarding_frontend:
+  frontend:
     build:
       context: ./docker
       dockerfile: frontend.dockerfile
