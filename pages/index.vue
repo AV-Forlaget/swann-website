@@ -1,35 +1,96 @@
 <template>
   <section class="main-content">
-    <div class="modal-intro">
-      <h2>Welcome!</h2>
-      <p>Complete this application to potentially become a Swann Studio narrator.</p>
-      <h3>Your application will be evaluated based on:</h3>
+
+
+    <div class="hero content-section">
+      <h1 class="hero__title">audiobooks since 1983</h1>
     </div>
-    <div class="evaluation-grid">
-      <div class="evaluation-block">
-        <img src="@/assets/img/icons/icon-voice-sample.svg" class="evaluation-block__img" alt="">
-        <span class="evaluation-block__text">Voice sample</span>
-      </div>
-      <div class="evaluation-block">
-      <img src="@/assets/img/icons/icon-experience.svg" class="evaluation-block__img" alt="">
-        <span class="evaluation-block__text">Experience</span>
-      </div>
-      <div class="evaluation-block">
-        <img src="@/assets/img/icons/icon-expected-salary.svg" class="evaluation-block__img" alt="">
-        <span class="evaluation-block__text">Expected Salary</span>
+
+
+    <div class="nice content-section">
+      <h2 class="nice__title">[how nice we are]</h2>
+      <p class="nice__paragraph content-section__paragraph">[more about the niceness]</p>
+    </div>
+
+    <div class="about content-section">
+      <div class="about__card">
+        <div class="about__header">
+          <img src="#" class="about__icon about__icon-audio" alt="" />
+          <h3 class="about__title"></h3>
+          <p class="about__paragraph"></p>
+        </div>
+
+        <div class="about__list">
+          <div class="about__item">
+            
+          </div>
+        </div>
       </div>
     </div>
-    <div class="survey-buttons survey-buttons--center">
-       <nuxt-link to="/step-2" class="btn">Begin</nuxt-link>
+
+
+    <div class="countries content-section">
+      <h2 class="countries__title">Countries</h2>
+      <p class="countries__paragraph content-section__paragraph">[quick introduction about our history with various countries and current activities]</p>
+      <div class="countries__select">Choose country</div>
+    </div>
+
+
+    <div class="production-facts content-section">
+      <h2 class="production-facts__title">Audio productions</h2>
+      <p class="production-facts__paragraph content-section__paragraph">[rundown of productions and growth]</p>
+
+      <div class="production-facts__list">
+
+        <p class="production-facts__item">
+          <span class="production-facts__number">2013</span>
+          <span class="production-facts__text">Productions last year</span>
+        </p>
+
+        <p class="production-facts__item">
+          <span class="production-facts__number">230</span>
+          <span class="production-facts__text">Productions this year</span>
+        </p>
+
+        <p class="production-facts__item">
+          <span class="production-facts__number">405</span>
+          <span class="production-facts__text">Active narrators</span>
+        </p>
+
+        <p class="production-facts__item">
+          <span class="production-facts__number">89</span>
+          <span class="production-facts__text">Active studios</span>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="partners content-section">
+      <h2 class="partners__title">Partners</h2>
+      <p class="partners__paragraph content-section__paragraph">[something about our partners]</p>
+
+      <div class="partners__list">
+        <img src="#" class="partners__logo" alt="Some company name" />
+      </div>
+    </div>
+
+
+    <div class="brochure content-section">
+      <h2 class="brochure__title">Download printable brochure</h2>
+      <div class="brochure__select-area">
+        <div class="brochure__icon">pdf</div>
+        <div class="brochure__select">Choose language</div>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-
+/*
 export default {
   mounted() {
     this.$store.commit('step', 1);
   }
 }
+*/
 </script>
