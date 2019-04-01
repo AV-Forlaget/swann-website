@@ -32,7 +32,7 @@
     <div class="countries content-section">
       <h2 class="countries__title">Countries</h2>
       <p class="countries__paragraph content-section__paragraph">[quick introduction about our history with various countries and current activities]</p>
-      <dropdown placeholder="Choose country" :options="countryOptions" v-model="country"></dropdown>
+      <dropdown placeholder="Choose country" :options="countryOptions"></dropdown>
     </div>
 
 
@@ -79,7 +79,7 @@
       <h2 class="brochure__title">Download printable brochure</h2>
       <div class="brochure__select-area">
         <div class="brochure__icon">pdf</div>
-        <div class="brochure__select">Choose language</div>
+        <dropdown placeholder="Choose language" :options="languageOptions"></dropdown>
       </div>
     </div>
   </section>
@@ -94,6 +94,16 @@ export default {
         {
           text: 'Denmark',
           value: 'denmark'
+        },
+        {
+          text: 'Etc.',
+          value: 'etc'
+        }
+      ],
+       languageOptions: [
+        {
+          text: 'Danish',
+          value: 'danish'
         },
         {
           text: 'Etc.',
