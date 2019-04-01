@@ -32,7 +32,7 @@
     <div class="countries content-section">
       <h2 class="countries__title">Countries</h2>
       <p class="countries__paragraph content-section__paragraph">[quick introduction about our history with various countries and current activities]</p>
-      <div class="countries__select">Choose country</div>
+      <dropdown placeholder="Choose country" :options="countryOptions" v-model="country"></dropdown>
     </div>
 
 
@@ -86,11 +86,24 @@
 </template>
 
 <script>
-/*
+    import Dropdown from '~/components/dropdown.vue';
 export default {
-  mounted() {
-    this.$store.commit('step', 1);
+ data() {
+    return {
+      countryOptions: [
+        {
+          text: 'Denmark',
+          value: 'denmark'
+        },
+        {
+          text: 'Etc.',
+          value: 'etc'
+        }
+      ],
+    }
+  },
+  components: {
+    Dropdown
   }
 }
-*/
 </script>
