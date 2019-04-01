@@ -1,54 +1,66 @@
 <template>
   <div class="main-app">
-	  <div class="header">
-      <div class="header_item header__left">
-  	  	<nuxt-link to="/" class="header-logo__anchor" title="Go to title page">
-  	  		<img src="@/assets/img/swann-logo.svg" class="header-logo__image" alt="Swann Studio" />
-  	  	</nuxt-link>
-  	  	<ul class="nav primary-menu">
-  	  		<li class="nav__item primary-menu__item">
-            <nuxt-link class="nav__anchor primary-menu__anchor" to="/audio">Audio</nuxt-link>
-  	  		</li>
-  	  		<li class="nav__item primary-menu__item">
-  	  			<nuxt-link class="nav__anchor primary-menu__anchor" to="/distribution">Distribution</nuxt-link>
-  	  		</li>
-  	  		<li class="nav__item primary-menu__item">
-  	  			<nuxt-link class="nav__anchor primary-menu__anchor" to="/countries">Countries</nuxt-link>
-  	  		</li>
-  	  	</ul>
-      </div>
-      <div class="header_item header__right">
-  	  	<p class="header__tagline">Be part of our narrator catalog</p>
-  	  	<ul class="nav login-menu">
-  	  		<li class="nav__item login-menu__item">
-  	  			<nuxt-link class="nav__anchor login-menu__anchor" to="/login">Login</nuxt-link>
-  	  		</li>
-  	  		<li class="nav__item login-menu__item">
-  	  			<nuxt-link class="nav__anchor login-menu__anchor" to="/sign-up">Sign up</nuxt-link>
-  	  		</li>
-  	  	</ul>
-      </div>
+	  <div class="main-header">
+			<div class="main-header__wrapper">
+				<nuxt-link to="/" class="header-logo" title="Go to title page">
+					<img src="@/assets/img/swann-logo.svg" class="header-logo__image" alt="Swann Studio" />
+				</nuxt-link>
+				<div class="main-nav">
+					<div class="main-nav__list main-nav__list--left">
+						<ul class="nav nav--primary-menu">
+							<li class="nav__item">
+								<nuxt-link class="nav__item__anchor" to="/audio">Audio</nuxt-link>
+							</li>
+							<li class="nav__item">
+								<nuxt-link class="nav__item__anchor" to="/distribution">Distribution</nuxt-link>
+							</li>
+							<li class="nav__item">
+								<nuxt-link class="nav__item__anchor" to="/countries">Countries</nuxt-link>
+							</li>
+						</ul>
+					</div>
+					<div class="main-nav__list main-nav__list--right">
+						<p class="header-tagline">Be part of our 1 catalog</p>
+						<ul class="nav nav--login-menu">
+							<li class="nav__item">
+								<nuxt-link class="nav__item__anchor" to="/login">Login</nuxt-link>
+							</li>
+							<li class="nav__item">
+								<nuxt-link class="nav__item__anchor" to="/sign-up">Sign up</nuxt-link>
+							</li>
+						</ul>
+					</div>
+				</div>	
+				<div class="mobile-menu" @click="open = !open">
+						<div class="mobile-menu__hamburger">
+								<span class="mobile-menu__hamburger__bar mobile-menu__hamburger__bar--top"></span>
+								<span class="mobile-menu__hamburger__bar mobile-menu__hamburger__bar--middle"></span>
+								<span class="mobile-menu__hamburger__bar mobile-menu__hamburger__bar--bottom"></span>
+						</div>
+				</div>
+			</div>
     </div>
 
     <nuxt/>
 
   	<div class="footer">
   		<img src="@/assets/img/swann-logo-white.svg" class="footer__logo" alt="Swann Studio" />
-  		<ul class="nav footer-menu">
-  			<li class="nav__item footer-menu__item">
-  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/about-us">About us</nuxt-link>
+			<div class="footer-nav"></div>
+  		<ul class="nav nav--footer">
+  			<li class="nav__item">
+  				<nuxt-link class="nav__item__anchor" to="/about-us">About us</nuxt-link>
   			</li>
-  			<li class="nav__item footer-menu__item">
-  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/language">Language</nuxt-link>
+  			<li class="nav__item">
+  				<nuxt-link class="nav__item__anchor" to="/language">Language</nuxt-link>
   			</li>
-  			<li class="nav__item footer-menu__item">
-  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/login">Login</nuxt-link>
+  			<li class="nav__item">
+  				<nuxt-link class="nav__item__anchor" to="/login">Login</nuxt-link>
   			</li>
-  			<li class="nav__item footer-menu__item">
-  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/sign-up">Sign up</nuxt-link>
+  			<li class="nav__item">
+  				<nuxt-link class="nav__item__anchor" to="/sign-up">Sign up</nuxt-link>
   			</li>
-  			<li class="nav__item footer-menu__item">
-  				<nuxt-link class="nav__anchor footer-menu__anchor" to="/trouble">Trouble? Contact us here ...</nuxt-link>
+  			<li class="nav__item">
+  				<nuxt-link class="nav__item__anchor" to="/trouble">Trouble? Contact us here ...</nuxt-link>
   			</li>
   		</ul>
   		<div class="footer-some">
@@ -65,37 +77,23 @@
 </template>
 
 <script>
-/*
 export default {
-  mounted() {
-    this.$recaptchaLoaded().then(() => {
-      this.$recaptcha('homepage').then((token) => {
-        this.$store.commit('token', token);
-      })
-    });
-
-    this.$nextTick(() => {
-      if(!this.$store.state.started) {
-        this.$router.push({
-          path: '/'
-        })
-      }
-    });
-
-  },
-  methods: {
-    close() {
-      window.location = process.env.CLOSE_URL;
-    }
-  },
-  computed: {
-    percent() {
-      return (this.$store.state.step / 4) * 100
+    data() {
+        return {
+            open: false
+        }
     },
-    currentStep() {
-      return this.$store.state.step;
+    watch: {
+        '$route'() {
+            this.open = false;
+        },
+        open() {
+            if(this.open) {
+                document.getElementsByTagName('body')[0].classList.add('showMenu');
+            } else {
+                document.getElementsByTagName('body')[0].classList.remove('showMenu');
+            }
+        }
     }
-  }
 }
-*/
 </script>

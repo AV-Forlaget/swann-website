@@ -37,19 +37,15 @@
 
 //Components
 @import "components/main-app";
+@import "components/main-header";
 @import "components/loading-bar";
-@import "components/evaluation-grid";
-@import "components/survey-buttons";
-@import "components/progress-bar";
+@import "components/mobile-menu";
 @import "components/search-selector";
-@import "components/terms-conditions";
-@import "components/file-upload";
-@import "components/voice-samples";
 @import "components/error-text";
 @import "components/vue-tel-input";
 
 //Templates
 
 // Mads
-@import "components/header";
+
 @import "components/content-elements"
