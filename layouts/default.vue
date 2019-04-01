@@ -3,7 +3,7 @@
 	  <div class="header">
       <div class="header_item header__left">
   	  	<nuxt-link to="/" class="header-logo__anchor" title="Go to title page">
-  	  		<img src="#" class="header-logo__image" alt="Swann Studio" />
+  	  		<img src="@/assets/img/swann-logo.svg" class="header-logo__image" alt="Swann Studio" />
   	  	</nuxt-link>
   	  	<ul class="nav primary-menu">
   	  		<li class="nav__item primary-menu__item">
@@ -33,7 +33,7 @@
     <nuxt/>
 
   	<div class="footer">
-  		<img src="@/assets/img/swann-logo-icon.svg" class="footer__logo" alt="Swann Studio" />
+  		<img src="@/assets/img/swann-logo-white.svg" class="footer__logo" alt="Swann Studio" />
   		<ul class="nav footer-menu">
   			<li class="nav__item footer-menu__item">
   				<nuxt-link class="nav__anchor footer-menu__anchor" to="/about-us">About us</nuxt-link>
