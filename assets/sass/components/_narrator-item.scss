@@ -7,19 +7,33 @@
     align-items: center;
 
     .narrator-item__avatar {
-        flex: 1;
-        min-width: 6em;
-        max-width: 6em;
-        height: 6.7em;
-        display: flex;
-        flex-flow: nowrap row;
-        align-items: center;
+       display: none;
+
+        @include mq($smallMobileBreakpoint) {
+            display: block;
+            flex: 1;
+            min-width: 5em;
+            max-width: 5em;
+            height: 6.7em;
+            display: flex;
+            flex-flow: nowrap row;
+            align-items: center;
+        }
+
+        @include mq($mobileBreakpoint) {
+            min-width: 6em;
+            max-width: 6em;
+        }
     }
 
     .narrator-item__content {
         flex: 1;
-        padding: 1em 1em 1em 0;
+        padding: 1em;
         box-sizing: border-box;
+
+        @include mq($smallMobileBreakpoint) {
+            padding-left: 0;
+        }
 
         .narrator-name {
             margin: 0;
