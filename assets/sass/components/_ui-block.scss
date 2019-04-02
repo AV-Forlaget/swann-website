@@ -1,0 +1,37 @@
+.ui-block {
+    position: relative;
+    display: block;
+    margin-bottom: 10em;
+    box-shadow: $block-shadow;
+
+    .ui-block__header {
+        background: $bg-color-dark;
+        border-radius: $r $r 0 0;
+
+        .ui-block__header__heading {
+            display: block;
+            margin: 0;
+            padding: 1em;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: $white;
+        }
+    }
+    
+    .ui-block__body {
+        background: $white;
+        padding: 1em;
+        box-sizing: border-box;
+
+        .ui-block__body__intro {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 40em;
+        }
+    }
+
+    .ui-block__footer {
+
+    }
+}
