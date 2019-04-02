@@ -33,9 +33,12 @@
                 <span class="narrator-narrations">Narrations: 65</span>
                 <span class="narrator-price">Price: 125,00 EUR</span>
               </div>
-              <div class="narrator-item__preview">
-              
-              </div>
+              <button class="narrator-item__preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
             </div>
             <div class="narrator-item">
               <div class="narrator-item__avatar">
@@ -47,9 +50,250 @@
                 <span class="narrator-narrations">Narrations: 65</span>
                 <span class="narrator-price">Price: 125,00 EUR</span>
               </div>
-              <div class="narrator-item__preview">
-              
+              <button class="narrator-item__preview">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+              <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-male-narrator.svg" alt="">
               </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-female-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+              <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-male-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-female-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+              <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-male-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-female-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+              <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-male-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-female-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+              <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-male-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-female-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+              <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-male-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-female-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+              <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-male-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-female-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <button class="narrator-item__preview">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
+                    <circle cx="139" cy="139" r="139"/>
+                    <polygon points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"/>
+                  </svg>
+              </button>
             </div>
           </div>
         </div>

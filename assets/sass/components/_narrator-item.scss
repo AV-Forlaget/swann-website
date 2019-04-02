@@ -44,11 +44,36 @@
     }
 
     .narrator-item__preview {
-        background: $brand-color;
+        background: none;
+        border: none;
         flex: 1;
         min-width: 5em;
         max-width: 5em;
         height: 5em;
         margin-right: 1em;
+        cursor: pointer;
+
+        &:hover {
+
+            svg {
+                 circle {
+                    fill: rgba($black, 0.2);
+                 }
+
+                 polygon {
+                    fill: $brand-color;
+                 }
+            }
+        }
+
+        svg {
+            circle {
+                fill: rgba($black, 0.1);
+            }
+                
+            polygon {
+                fill: $black;
+            }
+        }
     }
 }
