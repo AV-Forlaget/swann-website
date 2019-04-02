@@ -5,9 +5,8 @@
         <h1 class="main-hero__heading">Denmark</h1>
         <p class="main-hero__subheading">[Extended text about our history with the country and current activities]</p>
       </div>
-   
     </div>
-    <div class="nice content-section">
+    <div class="content-section">
       <h2 class="nice__title">Audio production in Denmark</h2>
       <p class="nice__paragraph content-section__paragraph">[Extended text about our history with audio production in the country and current activities]</p>
     </div>
@@ -21,7 +20,7 @@
           <div class="narrator-grid">
             <div class="narrator-item">
               <div class="narrator-item__avatar">
-                <img src="" alt="">
+                <img src="@/assets/img/icons/icon-male-narrator.svg" alt="">
               </div>
               <div class="narrator-item__content">
                <h4 class="narrator-name">Narrator name</h4>
@@ -30,7 +29,21 @@
                 <span class="narrator-price">Price: 125,00 EUR</span>
               </div>
               <div class="narrator-item__preview">
-                <img src="" alt="">
+              
+              </div>
+            </div>
+            <div class="narrator-item">
+              <div class="narrator-item__avatar">
+                <img src="@/assets/img/icons/icon-female-narrator.svg" alt="">
+              </div>
+              <div class="narrator-item__content">
+               <h4 class="narrator-name">Narrator name</h4>
+                <span class="narrator-genre">Most read genre: Crime</span>
+                <span class="narrator-narrations">Narrations: 65</span>
+                <span class="narrator-price">Price: 125,00 EUR</span>
+              </div>
+              <div class="narrator-item__preview">
+              
               </div>
             </div>
           </div>
