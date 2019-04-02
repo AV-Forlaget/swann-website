@@ -1,12 +1,10 @@
 <template>
   <section class="main-content">
-
-
-    <div class="hero content-section">
-      <h1 class="hero__title">audiobooks since 1983</h1>
+    <div class="main-hero">
+      <div class="main-hero__wrapper">
+        <h1 class="main-hero__heading">Audiobooks since 1983</h1>
+      </div>
     </div>
-
-
     <div class="nice content-section">
       <h2 class="nice__title">[how nice we are]</h2>
       <p class="nice__paragraph content-section__paragraph">[more about the niceness]</p>

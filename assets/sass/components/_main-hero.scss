@@ -1,10 +1,19 @@
 .main-hero {
-    min-height: 25em;
+    min-height: 12em;
     background-color: $bg-color-dark;
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
     align-items: center;
+
+    @include mq($mobileBreakpoint) {
+        min-height: 20em;
+    }
+
+    @include mq($removeMobileMenuBreakpoint) {
+        min-height: 25em;
+    }
+
 
     .main-hero__wrapper {
         @extend .wrapper;
@@ -12,17 +21,33 @@
 
     .main-hero__heading {
         margin: 0;
-        font-size: 4em;
+        font-size: 2.25em;
         color: $white;
         text-align: center;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 3.5em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 4em;
+        }
     }
 
     .main-hero__subheading {
         margin: 0;
-        font-size: 1em;
-        color: $white;
+        font-size: 0.95em;
+        color: $brand-color-2;
         text-align: center;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 1.1em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.2em;
+        }
     }
 }

@@ -1,8 +1,9 @@
 <template>
   <section class="main-content">
-
-    <div class="hero content-section">
-      <h1 class="hero__title">Language</h1>
+    <div class="main-hero">
+      <div class="main-hero__wrapper">
+        <h1 class="main-hero__heading">Language</h1>
+      </div>
     </div>
 
   </section>
