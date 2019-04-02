@@ -3,8 +3,7 @@
 }
 
 .content-section {
-  max-width: 1200px;
-  width: 100%;
+  @extend .wrapper;
   position: relative;
   margin: auto;
   text-align: center;
