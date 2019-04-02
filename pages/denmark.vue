@@ -7,11 +7,10 @@
       </div>
     </div>
     <div class="content-section">
-      <h2 class="nice__title">Audio production in Denmark</h2>
-      <p class="nice__paragraph content-section__paragraph">[Extended text about our history with audio production in the country and current activities]</p>
-    </div>
-    <div class="nice content-section">
-      <div class="ui-block">
+      <div class="content-section__wrapper">
+        <h2 class="content-section__heading">Audio production in Denmark</h2>
+        <p class="content-section__subheading">[Extended text about our history with audio production in the country and current activities]</p>
+       <div class="ui-block">
         <div class="ui-block__header">
           <h3 class="ui-block__header__heading">Narrators</h3>
         </div>
@@ -297,6 +296,13 @@
             </div>
           </div>
         </div>
+      </div>
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="content-section__wrapper">
+                <h2 class="content-section__heading">Audio production in Denmark</h2>
+        <p class="content-section__subheading">[Extended text about our history with audio production in the country and current activities]</p>
       </div>
     </div>
   </section>
