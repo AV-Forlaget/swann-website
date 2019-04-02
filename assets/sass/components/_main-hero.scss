@@ -1,0 +1,29 @@
+.main-hero {
+    min-height: 25em;
+    background-color: $bg-color-dark;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-hero__wrapper {
+        @extend .wrapper;
+    }
+
+    .main-hero__heading {
+        margin: 0;
+        font-size: 4em;
+        color: $white;
+        text-align: center;
+    }
+
+
+    .main-hero__subheading {
+        margin: 0;
+        font-size: 1em;
+        color: $white;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
