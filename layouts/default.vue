@@ -44,7 +44,7 @@
     <nuxt/>
 
   	<div class="footer">
-  		<img src="@/assets/img/swann-logo-white.svg" class="footer__logo" alt="Swann Studio" />
+  		<img src="@/assets/img/swann-logo-white.svg" class="footer__logo" alt="Swann Studio" style="display: none;"/>
 			<div class="footer-nav"></div>
   		<ul class="nav nav--footer">
   			<li class="nav__item">
