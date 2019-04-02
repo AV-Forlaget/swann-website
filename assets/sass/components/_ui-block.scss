@@ -24,6 +24,10 @@
         padding: 1em;
         box-sizing: border-box;
 
+        @include mq($removeMobileMenuBreakpoint) {
+            padding: 2em;
+        }
+
         .ui-block__body__intro {
             display: block;
             margin: 0 auto;

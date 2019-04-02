@@ -17,6 +17,11 @@
         </div>
         <div class="ui-block__body">
           <p class="ui-block__body__intro">[Extended text about our history with narrators in the country and current activities + country specific narration stuff]</p>
+          <div class="narrator-sorting">
+              <dropdown placeholder="Voice type" :options="voicetypeOptions"></dropdown>
+              <dropdown placeholder="Location" :options="locationOptions"></dropdown>
+              <input-field name="Search"></input-field>
+          </div>
           <div class="narrator-grid">
             <div class="narrator-item">
               <div class="narrator-item__avatar">
@@ -54,11 +59,44 @@
 </template>
 
 <script>
-/*
+    import Dropdown from '~/components/dropdown.vue';
+    import InputField from '~/components/input-field.vue';
 export default {
-  mounted() {
-    this.$store.commit('step', 1);
+ data() {
+    return {
+      voicetypeOptions: [
+        {
+          text: 'Feminine',
+          value: 'feminine'
+        },
+        {
+          text: 'Masculine',
+          value: 'masculine'
+        },
+        {
+          text: 'Youthful',
+          value: 'youthful'
+        },
+        {
+          text: 'Mature',
+          value: 'mature'
+        }
+      ],
+       locationOptions: [
+        {
+          text: 'Denmark',
+          value: 'denmark'
+        },
+        {
+          text: 'Etc.',
+          value: 'etc'
+        }
+      ],
+    }
+  },
+  components: {
+    Dropdown,
+    InputField
   }
 }
-*/
 </script>
