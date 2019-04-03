@@ -15,6 +15,11 @@
         background: $bg-color-dark;
     }
 
+    &.content-section--dropdowns .search-selector {
+        max-width: 35em;
+        margin: 0 auto;
+    }
+
     .content-section__wrapper {
         @extend .wrapper;
     }
@@ -57,7 +62,7 @@
         }
 
         @at-root .content-section.content-section--dark .content-section__subheading {
-            color: $white;
+            color: $brand-color-2;
         }
     }
 }
