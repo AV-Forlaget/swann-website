@@ -1,6 +1,6 @@
 .main-hero {
     min-height: 12em;
-    background-color: $bg-color-dark;
+    background: $bg-color-dark;
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
@@ -12,6 +12,10 @@
 
     @include mq($removeMobileMenuBreakpoint) {
         min-height: 25em;
+    }
+
+    &.main-hero--frontpage {
+        background: url('../../img/hero-bg.jpg') no-repeat center 100%/cover;
     }
 
 

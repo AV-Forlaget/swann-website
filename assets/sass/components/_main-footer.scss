@@ -1,0 +1,76 @@
+.main-footer {
+    background: $bg-color-dark;
+    padding: 4em 0;
+
+    .main-footer__wrapper {
+        @extend .wrapper;
+
+        @include mq($removeMobileMenuBreakpoint) {
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .footer-col {
+
+        &:first-child {
+            max-width: 16em;
+
+            @include mq($mobileBreakpoint) {
+                max-width: 14em;
+                flex: 1;
+            }
+
+            @include mq($removeMobileMenuBreakpoint) {
+                max-width: 14em;
+            }
+
+            @include mq($largeBreakpoint) {
+                max-width: 14em;
+            }
+    
+        }
+
+        &:last-child {
+            max-width: 9em;
+        }
+    }
+
+    .footer-logo {
+        margin-right: 1em;
+    }
+
+    .footer-nav {
+        
+        a {
+            padding: 1em 1em 0.5em;
+            box-sizing: border-box;
+            display: block;
+            color: $white;
+
+            @include mq($mobileBreakpoint) {
+                display: inline-block;
+            }    
+
+            &:hover, &.nuxt-link-exact-active {
+                color: $brand-color-2;
+            }
+        }
+    }
+
+    .footer-some {
+        display: inline-block;
+        width: 4em;
+    }
+
+    .footer-copyright {
+        display: block;
+        margin-left: 1em;
+        font-size: 0.9em;
+        color: rgba($white, 0.5);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}

@@ -43,35 +43,29 @@
 
     <nuxt/>
 
-  	<div class="footer">
-  		<img src="@/assets/img/swann-logo-white.svg" class="footer__logo" alt="Swann Studio" style="display: none;"/>
-			<div class="footer-nav"></div>
-  		<ul class="nav nav--footer">
-  			<li class="nav__item">
-  				<nuxt-link class="nav__item__anchor" to="/about-us">About us</nuxt-link>
-  			</li>
-  			<li class="nav__item">
-  				<nuxt-link class="nav__item__anchor" to="/language">Language</nuxt-link>
-  			</li>
-  			<li class="nav__item">
-  				<nuxt-link class="nav__item__anchor" to="/login">Login</nuxt-link>
-  			</li>
-  			<li class="nav__item">
-  				<nuxt-link class="nav__item__anchor" to="/sign-up">Sign up</nuxt-link>
-  			</li>
-  			<li class="nav__item">
-  				<nuxt-link class="nav__item__anchor" to="/trouble">Trouble? Contact us here ...</nuxt-link>
-  			</li>
-  		</ul>
-  		<div class="footer-some">
-  			<a href="#" class="footer-some__anchor" title="Visit Facebook">
-  				<img src="#" class="footer-some__icon footer-icon__facebook" alt="Visit Facebook" />
-  			</a>
-  			<a href="#" class="footer-some__anchor" title="Visit Instagram">
-  				<img src="#" class="footer-some__icon footer-icon__instagram" alt="Visit Instagram" />
-  			</a>
-  		</div>
-  		<p class="footer__copyright">© 2019 Swann A/S - All rights reserved</p>
+  	<div class="main-footer">
+		<div class="main-footer__wrapper">
+			<div class="footer-col">
+	  			<img src="@/assets/img/swann-logo-white.svg" class="footer-logo" alt="Swann Studio"/>
+			</div>
+			<div class="footer-col">
+				<div class="footer-nav">
+					<nuxt-link to="/about-us">About us</nuxt-link>
+					<nuxt-link to="/language">Language</nuxt-link>
+					<nuxt-link to="/login">Login</nuxt-link>
+					<nuxt-link to="/trouble">Trouble? Contact us here ...</nuxt-link>
+				</div>
+				<span class="footer-copyright">© 2019 Swann A/S - All rights reserved</span>
+			</div>
+			<div class="footer-col">
+				<a href="#" class="footer-some" title="Visit Facebook">
+  					<img src="@/assets/img/icons/icon-facebook.svg" alt="Visit Facebook" />
+				</a>
+				<a href="#" class="footer-some" title="Visit Instagram">
+					<img src="@/assets/img/icons/icon-instagram.svg" alt="Visit Instagram" />
+				</a>
+			</div>
+		</div>
   	</div>
   </div>
 </template>

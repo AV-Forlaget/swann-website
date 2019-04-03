@@ -1,6 +1,6 @@
 <template>
   <section class="main-content">
-    <div class="main-hero">
+    <div class="main-hero main-hero--frontpage">
       <div class="main-hero__wrapper">
         <h1 class="main-hero__heading">Audiobooks since 1983</h1>
       </div>
