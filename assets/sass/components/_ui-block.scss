@@ -35,4 +35,13 @@
             max-width: 40em;
         }
     }
+
+    &.ui-block--formats {
+
+        img {
+            display: block;
+            max-width: 30%;
+            margin: 0 auto;
+        }
+    }
 }
