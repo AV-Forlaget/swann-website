@@ -9,22 +9,83 @@
       <div class="content-section__wrapper">
       <h2 class="content-section__heading">[how nice we are]</h2>
       <p class="content-section__subheading">[more about the niceness]</p>
+
       <div class="about">
-        <div class="about__card">
+
+        <div class="about__audio about__card">
           <div class="about__header">
             <img src="#" class="about__icon about__icon-audio" alt="" />
-            <h3 class="about__title"></h3>
-            <p class="about__paragraph"></p>
+            <h3 class="about__title">Audio</h3>
+            <p class="about__paragraph">[quick introduction about our history with audio production and current activities]</p>
           </div>
 
-          <div class="about__list">
-            <div class="about__item">
-              
+          <div class="about__list icon-list">
+
+            <div class="icon-list__item">
+              <img src="" class="icon-list__icon" alt="" />
+              <h4 class="icon-list__heading">Audiobooks</h4>
+              <p class="icon-list__paragraph">[quick introduction]</p>
             </div>
+
+            <div class="icon-list__item">
+              <img src="" class="icon-list__icon" alt="" />
+              <h4 class="icon-list__heading">Articles</h4>
+              <p class="icon-list__paragraph">[quick introduction]</p>
+            </div>
+
+            <div class="icon-list__item">
+              <img src="" class="icon-list__icon" alt="" />
+              <h4 class="icon-list__heading">Podcast</h4>
+              <p class="icon-list__paragraph">[quick introduction]</p>
+            </div>
+
+            <div class="icon-list__item">
+              <img src="" class="icon-list__icon" alt="" />
+              <h4 class="icon-list__heading">Digitization</h4>
+              <p class="icon-list__paragraph">[quick introduction]</p>
+            </div>
+          </div> <!-- END .about__list -->
+      </div> <!-- END .about__audio -->
+
+
+      <div class="about__distribution about__card">
+        <div class="about__header">
+          <img src="#" class="about__icon about__icon-audio" alt="" />
+          <h3 class="about__title">Distribution</h3>
+          <p class="about__paragraph">[quick introduction about our history with distribution and current activities]</p>
+        </div>
+
+        <div class="about__list icon-list">
+
+          <div class="icon-list__item">
+            <img src="" class="icon-list__icon" alt="" />
+            <h4 class="icon-list__heading">Digital audiobooks</h4>
+            <p class="icon-list__paragraph">[quick introduction]</p>
           </div>
-      </div>
-      </div>
-    </div>
+
+          <div class="icon-list__item">
+            <img src="" class="icon-list__icon" alt="" />
+            <h4 class="icon-list__heading">Print-on-demand</h4>
+            <p class="icon-list__paragraph">[quick introduction]</p>
+          </div>
+
+          <div class="icon-list__item">
+            <img src="" class="icon-list__icon" alt="" />
+            <h4 class="icon-list__heading">Streaming</h4>
+            <p class="icon-list__paragraph">[quick introduction]</p>
+          </div>
+
+          <div class="icon-list__item">
+            <img src="" class="icon-list__icon" alt="" />
+            <h4 class="icon-list__heading">Publishing</h4>
+            <p class="icon-list__paragraph">[quick introduction]</p>
+          </div>
+        </div> <!-- END .about__list -->
+      </div> <!-- END .about__distribution -->
+
+
+    </div> <!-- END .about -->
+  </div> <!-- END .content-section -->
 
     </div>
     <div class="content-section">
@@ -34,7 +95,7 @@
         <dropdown placeholder="Choose country" :options="countryOptions"></dropdown>
       </div>
     </div>
-    
+
     <div class="content-section">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading">Audio productions</h2>
