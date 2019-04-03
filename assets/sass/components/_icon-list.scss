@@ -1,0 +1,23 @@
+.icon-list {
+  display: flex;
+}
+
+.icon-list__icon {
+  display: block;
+  position: relative;
+  margin: auto;
+  max-width: 95px;
+  background-color: $bg-color-2;
+}
+
+.icon-list__heading {
+  color: $font-color;
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.icon-list__paragraph {
+  color: $font-color;
+  text-align: center;
+  margin: 5px auto 0;
+}

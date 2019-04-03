@@ -1,0 +1,51 @@
+/* --- About, Audio and distribution --- */
+
+.service {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+/* Frede, måske? */
+/*
+  @extend .wrapper;
+  @include mq($mobileBreakpoint) {
+      padding: 4em 0;
+  }
+*/
+}
+
+.service__list {
+  margin-top: 48px;
+}
+
+.service__card {
+  background-color: $white;
+  box-sizing: border-box;
+  padding: 2em 1.4em 3em;
+  max-width: 49%;
+  box-shadow: $block-shadow;
+}
+
+.service__heading {
+  color: $font-color;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0;
+}
+
+.service__paragraph {
+  color: $font-color;
+  text-align: center;
+}
+
+.service__icon {
+  outline: none;
+  width: 35%;
+  height: auto;
+  min-width: 135px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
