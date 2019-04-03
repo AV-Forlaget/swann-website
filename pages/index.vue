@@ -96,7 +96,7 @@
       </div>
     </div>
 
-    <div class="content-section">
+    <div class="content-section content-section--dark">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading">Audio productions</h2>
         <p class="content-section__subheading">[rundown of productions and growth]</p>

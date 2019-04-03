@@ -1,0 +1,59 @@
+.production-facts {
+
+    .production-facts__list {
+
+        @include mq($mobileBreakpoint) {
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .production-facts__item {
+
+        
+    }
+
+    .production-facts__number {
+        color: $white;
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 3em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 4.5em;
+        }
+
+        @include mq($largeBreakpoint) {
+            font-size: 5em;
+        }
+    }
+
+    .production-facts__text {
+        display: block;
+        color: $white;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 0.9em;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 0.95em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.2em;
+        }
+
+        @include mq($largeBreakpoint) {
+            font-size: 1.3em;
+        }
+    }
+}
