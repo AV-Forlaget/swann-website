@@ -1,5 +1,13 @@
 .main-content {
+  background-color: $bg-color-2;
+}
 
+.content-section {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  text-align: center;
 }
 
 .content-section__paragraph {
@@ -19,3 +27,7 @@
   font-size: 4em;
   color: $white;
 }
+
+
+
+/* --- About, Audio and distribution --- */

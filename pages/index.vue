@@ -10,7 +10,7 @@
       <h2 class="content-section__heading">[how nice we are]</h2>
       <p class="content-section__subheading">[more about the niceness]</p>
 
-      <div class="about">
+      <div class="about"> <!-- Frede, kan vi finde på et bedre navn til denne?  -->
 
         <div class="about__audio about__card">
           <div class="about__header">
