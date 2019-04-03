@@ -131,8 +131,95 @@
         <h2 class="content-section__heading">Partners</h2>
         <p class="content-section__subheading">[something about our partners]</p>
         <div class="partners-grid">
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-alvilda.svg" alt="">
+          </div>
+          <div class="partners-item partners-item--large">
+              <img src="@/assets/img/logos/logo-bibelselskabet.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-bonnier.svg" alt="">
+          </div>
+          <div class="partners-item partners-item--small">
+              <img src="@/assets/img/logos/logo-ck.svg" alt="">
+          </div>
+            <div class="partners-item">
+            <img src="@/assets/img/logos/logo-dafolo.svg" alt="">
+          </div>
+          <div class="partners-item partners-item--extra-small">
+              <img src="@/assets/img/logos/logo-gadsforlag.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-grif.svg" alt="">
+          </div>
+          <div class="partners-item partners-item--extra-small">
+              <img src="@/assets/img/logos/logo-gyldendal.svg" alt="">
+          </div>
+             <div class="partners-item">
+            <img src="@/assets/img/logos/logo-harlequin.svg" alt="">
+          </div>
           <div class="partners-item">
-            <img src="" alt="">
+              <img src="@/assets/img/logos/logo-harpercollinsnordic.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-hoi.svg" alt="">
+          </div>
+          <div class="partners-item partners-item--medium">
+              <img src="@/assets/img/logos/logo-hrferdinand.svg" alt="">
+          </div>
+            <div class="partners-item">
+            <img src="@/assets/img/logos/logo-illustreretvidenskab.svg" alt="">
+          </div>
+          <div class="partners-item partners-item--medium">
+              <img src="@/assets/img/logos/logo-jentas.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-klim.svg" alt="">
+          </div>
+          <div class="partners-item partners-item--small">
+              <img src="@/assets/img/logos/logo-kristeligtdagblad.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--small">
+              <img src="@/assets/img/logos/logo-lr.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--medium">
+              <img src="@/assets/img/logos/logo-lust.svg" alt="">
+          </div>
+           <div class="partners-item">
+              <img src="@/assets/img/logos/logo-modtryk.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--small">
+              <img src="@/assets/img/logos/logo-mofibo.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--medium">
+              <img src="@/assets/img/logos/logo-nextory.svg" alt="">
+          </div>
+           <div class="partners-item">
+              <img src="@/assets/img/logos/logo-palatium.svg" alt="">
+          </div>
+           <div class="partners-item">
+              <img src="@/assets/img/logos/logo-peoplespress.svg" alt="">
+          </div>
+           <div class="partners-item">
+              <img src="@/assets/img/logos/logo-polaris.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--small">
+              <img src="@/assets/img/logos/logo-politikensforlag.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--medium">
+              <img src="@/assets/img/logos/logo-rosinante.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--medium">
+              <img src="@/assets/img/logos/logo-saga.svg" alt="">
+          </div>
+           <div class="partners-item">
+              <img src="@/assets/img/logos/logo-saxo.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--extra-small">
+              <img src="@/assets/img/logos/logo-storytel.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--medium">
+              <img src="@/assets/img/logos/logo-viatone.svg" alt="">
           </div>
         </div>
       </div>
