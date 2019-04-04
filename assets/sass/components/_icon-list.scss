@@ -1,5 +1,11 @@
 .icon-list {
-  display: flex;
+
+  @include mq($removeMobileMenuBreakpoint) {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .icon-list__icon {
@@ -12,11 +18,29 @@
 .icon-list__heading {
   color: $font-color;
   text-align: center;
-  margin: 10px auto 0;
+  margin: 0 auto;
+  font-size: 0.9em;
+  padding: 0 0.2em;
+  box-sizing: border-box;
+
+  @include mq($mobileBreakpoint) {
+    font-size: 0.95em;
+  }
+
+  @include mq($removeMobileMenuBreakpoint) {
+    font-size: 1em;
+  }
 }
 
 .icon-list__paragraph {
   color: $font-color;
   text-align: center;
   margin: 5px auto 0;
+  font-size: 0.9em;
+  padding: 0 0.2em;
+  box-sizing: border-box;
+
+  @include mq($removeMobileMenuBreakpoint) {
+    font-size: 1em;
+  }
 }
