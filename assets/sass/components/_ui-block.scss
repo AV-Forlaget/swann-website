@@ -61,5 +61,39 @@
                 max-width: 20em;
             }
         }
+
+        .icon-list .icon-list__item {
+            margin: 1em 0;
+            flex: 1;
+
+            .icon-list__icon {
+
+                @include mq($mobileBreakpoint) {
+                    max-width: 8em;
+                }
+    
+                @include mq($removeMobileMenuBreakpoint) {
+                    max-width: 10em;
+                }
+
+                &.icon-list__item--small {
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        max-width: 8em;
+                    }
+                }
+
+                &.icon-list__item--large {
+                    max-width: 18em;
+                }
+                
+            }
+
+            .icon-list__paragraph {
+                @include mq($removeMobileMenuBreakpoint) {
+                    max-width: 15em;
+                }
+            }
+        }
     }
 }
