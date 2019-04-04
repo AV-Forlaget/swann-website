@@ -10,6 +10,33 @@
       <div class="content-section__wrapper">
            <h2 class="content-section__heading">Audio production</h2>
            <p class="content-section__subheading">[Extended text about our history with audio production in general and current activities]</p>
+           <div class="audio-flow">
+              <div class="audio-flow__block audio-flow__block--studio">
+                <img src="@/assets/img/swann-studio-app.png" alt="">
+                <h4 class="audio-flow__block__heading">Swann studio app</h4>
+                <p class="audio-flow__block__text">[we have an awesome app that you can use, and it makes everything easy]</p>
+              </div>
+              <div class="audio-flow__block audio-flow__block--order">
+                <img src="@/assets/img/swann-app-order.png" alt="">
+                <h4 class="audio-flow__block__heading">Order</h4>
+                <p class="audio-flow__block__text">[this is how you order an audio production]</p>
+              </div>
+              <div class="audio-flow__block audio-flow__block--narrator">
+                <img src="@/assets/img/swann-choose-narrator.jpg" alt="">
+                <h4 class="audio-flow__block__heading">Choose narrator</h4>
+                <p class="audio-flow__block__text">[this is how you choose a narrator]</p>
+              </div>
+              <div class="audio-flow__block audio-flow__block--upload">
+                <img src="@/assets/img/icons/icon-jpg-pdf.svg" alt="">
+                <h4 class="audio-flow__block__heading">Upload files</h4>
+                <p class="audio-flow__block__text">[this is how you upload files]</p>
+              </div>
+              <div class="audio-flow__block audio-flow__block--distribution">
+                <img src="@/assets/img/icons/icon-audiofiles.svg" alt="">
+                <h4 class="audio-flow__block__heading">Distribution</h4>
+                <p class="audio-flow__block__text">[the audio is now recorded and mastered, and sent to you]</p>
+              </div>
+           </div>
       </div>
     </div>
      <div class="content-section">

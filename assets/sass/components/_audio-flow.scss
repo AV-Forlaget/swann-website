@@ -1,0 +1,135 @@
+.audio-flow {
+
+    @include mq($removeMobileMenuBreakpoint) {
+        margin-top: 10em;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .audio-flow__block {
+        position: relative;
+        margin: 0 0 10em;
+
+        @include mq($removeMobileMenuBreakpoint) {
+            max-width: 50%;
+        }
+
+        &:last-child {
+            margin: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &.audio-flow__block--studio {
+            @include mq($removeMobileMenuBreakpoint) {
+             
+            }
+        }
+
+        &.audio-flow__block--order {
+            @include mq($removeMobileMenuBreakpoint) {
+
+                img {
+                    max-width: 22em;
+                }
+            }
+        }
+
+        &.audio-flow__block--narrator {
+            @include mq($removeMobileMenuBreakpoint) {
+                min-width: 100%;
+                max-width: 100%;
+
+                img {
+                    max-width: 45em;
+                }
+            }
+        }
+
+        &.audio-flow__block--upload {
+            @include mq($removeMobileMenuBreakpoint) {
+             
+            }
+
+            img {
+                max-width: 14em;
+            }
+        }
+
+        &.audio-flow__block--distribution {
+            @include mq($removeMobileMenuBreakpoint) {
+                
+            }
+
+            img {
+                background: $white;
+                border-radius: 50%;
+                max-width: 10em;
+            }
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 1em;
+        }
+
+        &:after {
+            content:'';
+            position: absolute;
+            top: auto;
+            right: 0;
+            bottom: -9em;
+            left: 0;
+            margin: auto;
+            width: 0;
+            height: 8em;
+            border-right: 4px dotted $headings-color;
+
+            @include mq($removeMobileMenuBreakpoint) {
+                display: none;
+            }
+        }
+    }
+
+    .audio-flow__block__heading {
+        margin: 0 0 0.2em;
+        font-size: 1.4em;
+        text-align: center;
+        color: rgba($font-color-dark, 0.5);
+
+        @include mq($mobileBreakpoint) {
+            font-size: 1.5em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.6em;
+        }
+
+        @include mq($largeBreakpoint) {
+            font-size: 1.7em;
+        }
+    }
+
+    .audio-flow__block__text {
+        margin: 0;
+        font-size: 0.9em;
+        text-align: center;
+        color: $font-color;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 1em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.05em;
+        }
+
+        @include mq($largeBreakpoint) {
+            font-size: 1.1em;
+        }
+    }
+}
