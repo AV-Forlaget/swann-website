@@ -1,9 +1,11 @@
 .country-item {
+    display: block;
     padding: 1em;
     box-sizing: border-box;
     background: $white;
     box-shadow: $block-shadow;
     border-radius: $r;
+    cursor: pointer;
     transition: transform 200ms ease;
 
     @include mq($mobileBreakpoint) {
