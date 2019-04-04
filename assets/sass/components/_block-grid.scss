@@ -11,6 +11,12 @@
         
         @include mq($removeMobileMenuBreakpoint) {
             width: 32%;
-        }    
+        }
+        
+        img {
+            display: block;
+            max-width: 10em;
+            margin: 0 auto;
+        }
     }
 }

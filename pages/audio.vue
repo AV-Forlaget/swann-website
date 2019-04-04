@@ -21,8 +21,8 @@
                <h3 class="ui-block__header__heading">Audiobooks</h3>
              </div>
              <div class="ui-block__body">
-               <img src="@/assets/img/icons/icon-audiobooks.svg" alt="">
-               <p>[long text about audiobooks]</p>
+               <img src="@/assets/img/icons/icon-audiobooks.svg" class="ui-block__icon" alt="">
+               <p class="ui-block__body__intro">[long text about audiobooks]</p>
              </div>
            </div>
            <div class="block-grid">
@@ -32,7 +32,7 @@
               </div>
               <div class="ui-block__body">
                 <img src="@/assets/img/icons/icon-articles.svg" alt="">
-                <p>[text about how production of articles to audio works]</p>
+                <p class="ui-block__body__intro">[text about how production of articles to audio works]</p>
               </div>
             </div>
              <div class="ui-block ui-block--formats">
@@ -41,7 +41,7 @@
               </div>
               <div class="ui-block__body">
                 <img src="@/assets/img/icons/icon-podcast.svg" alt="">
-                <p>[text about how production of podcasts works]</p>
+                <p class="ui-block__body__intro">[text about how production of podcasts works]</p>
               </div>
             </div>
             <div class="ui-block ui-block--formats">
@@ -50,7 +50,7 @@
               </div>
               <div class="ui-block__body">
                 <img src="@/assets/img/icons/icon-digitization.svg" alt="">
-                <p>[text about how of digitization of audiotapes works]</p>
+                <p class="ui-block__body__intro">[text about how of digitization of audiotapes works]</p>
               </div>
             </div>
           </div>
