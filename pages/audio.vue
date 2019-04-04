@@ -6,40 +6,44 @@
         <p class="main-hero__subheading">[Extended text about our history with audio in general and current activities]</p>
       </div>
     </div>
-    <div class="content-section">
+    <div class="content-section content-section--white">
       <div class="content-section__wrapper">
            <h2 class="content-section__heading">Audio production</h2>
            <p class="content-section__subheading">[Extended text about our history with audio production in general and current activities]</p>
            <div class="audio-flow">
               <div class="audio-flow__block audio-flow__block--studio">
-                <img src="@/assets/img/swann-studio-app.png" alt="">
+                <img src="@/assets/img/swann-studio-app.png" alt="" class="audio-flow__block__img">
                 <h4 class="audio-flow__block__heading">Swann studio app</h4>
                 <p class="audio-flow__block__text">[we have an awesome app that you can use, and it makes everything easy]</p>
+                <img src="@/assets/img/lines/line-studio-app.svg" alt="" class="audio-flow__block__line">
               </div>
               <div class="audio-flow__block audio-flow__block--order">
-                <img src="@/assets/img/swann-app-order.png" alt="">
+                <img src="@/assets/img/swann-app-order.png" alt="" class="audio-flow__block__img">
                 <h4 class="audio-flow__block__heading">Order</h4>
                 <p class="audio-flow__block__text">[this is how you order an audio production]</p>
+                 <img src="@/assets/img/lines/line-order.svg" alt="" class="audio-flow__block__line">
               </div>
               <div class="audio-flow__block audio-flow__block--narrator">
-                <img src="@/assets/img/swann-choose-narrator.jpg" alt="">
+                <img src="@/assets/img/swann-choose-narrator.jpg" alt="" class="audio-flow__block__img">
                 <h4 class="audio-flow__block__heading">Choose narrator</h4>
                 <p class="audio-flow__block__text">[this is how you choose a narrator]</p>
+                  <img src="@/assets/img/lines/line-narrator.svg" alt="" class="audio-flow__block__line">
               </div>
               <div class="audio-flow__block audio-flow__block--upload">
-                <img src="@/assets/img/icons/icon-jpg-pdf.svg" alt="">
+                <img src="@/assets/img/icons/icon-jpg-pdf.svg" alt=""class="audio-flow__block__img">
                 <h4 class="audio-flow__block__heading">Upload files</h4>
                 <p class="audio-flow__block__text">[this is how you upload files]</p>
+                <img src="@/assets/img/lines/line-upload.svg" alt="" class="audio-flow__block__line">
               </div>
               <div class="audio-flow__block audio-flow__block--distribution">
-                <img src="@/assets/img/icons/icon-audiofiles.svg" alt="">
+                <img src="@/assets/img/icons/icon-audiofiles.svg" alt="" class="audio-flow__block__img">
                 <h4 class="audio-flow__block__heading">Distribution</h4>
                 <p class="audio-flow__block__text">[the audio is now recorded and mastered, and sent to you]</p>
               </div>
            </div>
       </div>
     </div>
-     <div class="content-section">
+     <div class="content-section content-section--bg-color">
       <div class="content-section__wrapper">
            <h2 class="content-section__heading">Formats</h2>
            <p class="content-section__subheading">[introducion to the various formats]</p>
@@ -83,7 +87,7 @@
           </div>
       </div>
     </div>
-          <div class="content-section">
+          <div class="content-section content-section--white">
         <div class="content-section__wrapper">
            <h2 class="content-section__heading">Narration</h2>
            <p class="content-section__subheading">[text about narration and stuff, Paramount for the customer/listener and therefore for the publisher. An intimate process, Drives the story forward, A mutual relationship]</p>

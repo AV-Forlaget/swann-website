@@ -15,6 +15,14 @@
         background: $bg-color-dark;
     }
 
+    &.content-section--white {
+        background: $white;
+    }
+
+    &.content-section--bg-color {
+        background: $bg-color;
+    }
+
     &.content-section--dropdowns .search-selector {
         max-width: 35em;
         margin: 0 auto;

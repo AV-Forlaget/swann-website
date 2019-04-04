@@ -10,7 +10,7 @@
 
     .audio-flow__block {
         position: relative;
-        margin: 0 0 10em;
+        margin: 0 0 8em;
 
         @include mq($removeMobileMenuBreakpoint) {
             max-width: 50%;
@@ -25,56 +25,163 @@
         }
 
         &.audio-flow__block--studio {
-            @include mq($removeMobileMenuBreakpoint) {
-             
+           
+            .audio-flow__block__line {
+                display: none;
+              
+                @include mq($removeMobileMenuBreakpoint) {
+                    display: block;
+                    position: absolute;
+                    top: 4em;
+                    right: -23em;
+                    bottom: auto;
+                    left: auto;
+                    margin: auto;
+                    width: 30em;
+                }
+            }
+
+            .audio-flow__block__img {
+                position: relative;
+                z-index: 1;
             }
         }
 
         &.audio-flow__block--order {
             @include mq($removeMobileMenuBreakpoint) {
+                position: relative;
+                margin-top: 11em;
+                margin-bottom: 2em;
+            }
 
-                img {
+            @include mq($largeBreakpoint) {
+                right: -2em;
+            }
+
+            .audio-flow__block__img {
+                box-shadow: $block-shadow;
+                
+                @include mq($removeMobileMenuBreakpoint) {
+                    position: relative;
                     max-width: 22em;
+                    z-index: 1;
+                }
+            }
+
+            .audio-flow__block__line {
+                display: none;
+              
+                @include mq($removeMobileMenuBreakpoint) {
+                    display: block;
+                    position: absolute;
+                    top: 12em;
+                    right: auto;
+                    bottom: auto;
+                    left: -4.9em;
+                    margin: auto;
+                    width: 5.8em;
                 }
             }
         }
 
         &.audio-flow__block--narrator {
+
             @include mq($removeMobileMenuBreakpoint) {
                 min-width: 100%;
                 max-width: 100%;
+                position: relative;
+                right: 7.5em;
+            }
+            
+            .audio-flow__block__img {
+                box-shadow: $block-shadow;
 
-                img {
-                    max-width: 45em;
+                @include mq($removeMobileMenuBreakpoint) {
+                    max-width: 40em;
+                    position: relative;
+                    z-index: 1;;
+                }
+            }
+
+            .audio-flow__block__line {
+                display: none;
+              
+                @include mq($removeMobileMenuBreakpoint) {
+                    display: block;
+                    position: absolute;
+                    top: 7em;
+                    right: auto;
+                    bottom: auto;
+                    left: 4em;
+                    margin: auto;
+                    width: 14em;
                 }
             }
         }
 
         &.audio-flow__block--upload {
             @include mq($removeMobileMenuBreakpoint) {
-             
+                margin-top: 2em;
             }
 
-            img {
+            .audio-flow__block__img {
                 max-width: 14em;
+            }
+
+            .audio-flow__block__line {
+                display: none;
+              
+                @include mq($removeMobileMenuBreakpoint) {
+                    display: block;
+                    position: absolute;
+                    top: 2.5em;
+                    right: auto;
+                    bottom: auto;
+                    left: 14.5em;
+                    margin: auto;
+                    min-width: 30em;
+                }
             }
         }
 
         &.audio-flow__block--distribution {
             @include mq($removeMobileMenuBreakpoint) {
-                
+                position: relative;
+                margin-top: -2em;
+                left: 0;
             }
 
-            img {
+            @include mq(1100) {
+                left: -5%;
+            }
+
+            @include mq(1150) {
+                left: -10%;
+            }
+
+            @include mq($largeBreakpoint) {
+                position: relative;
+                margin-top: -2em;
+                left: -9.5em;
+            }
+
+            .audio-flow__block__img {
                 background: $white;
+                border: 4px solid $brand-color;
+                box-sizing: border-box;
                 border-radius: 50%;
-                max-width: 10em;
+                max-width: 12em;
+                box-shadow: $block-shadow;
             }
         }
 
-        img {
+        .audio-flow__block__img {
             display: block;
             margin: 0 auto 1em;
+
+            @include mq($removeMobileMenuBreakpoint) {
+                margin-bottom: 1.5em;
+            }
         }
 
         &:after {
@@ -82,12 +189,13 @@
             position: absolute;
             top: auto;
             right: 0;
-            bottom: -9em;
+            bottom: -6.5em;
             left: 0;
             margin: auto;
             width: 0;
-            height: 8em;
-            border-right: 4px dotted $headings-color;
+            width: 1.4em;
+            height: 5em;
+            background: url('../../img/lines/line-mobile.svg') no-repeat center 100%/cover;
 
             @include mq($removeMobileMenuBreakpoint) {
                 display: none;
@@ -97,20 +205,20 @@
 
     .audio-flow__block__heading {
         margin: 0 0 0.2em;
-        font-size: 1.4em;
+        font-size: 1.3em;
         text-align: center;
-        color: rgba($font-color-dark, 0.5);
+        color: $font-color-dark;
 
         @include mq($mobileBreakpoint) {
-            font-size: 1.5em;
+            font-size: 1.4em;
         }
 
         @include mq($removeMobileMenuBreakpoint) {
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         @include mq($largeBreakpoint) {
-            font-size: 1.7em;
+            font-size: 1.6em;
         }
     }
 
