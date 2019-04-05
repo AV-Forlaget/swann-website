@@ -55,3 +55,18 @@
         }
     }
 }
+
+.main-hero--negative {
+	@extend .main-hero;
+	background-color: transparent;
+
+	.main-hero__heading--negative {
+		@extend .main-hero__heading;
+		color: $font-color-dark;
+	}
+
+	.main-hero__subheading--negative {
+		@extend .main-hero__subheading;
+		color: $font-color;
+	}
+}
