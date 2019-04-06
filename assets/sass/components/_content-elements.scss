@@ -12,14 +12,18 @@
   color: $white;
 }
 
-.department {
 
+
+.department {
+	margin-bottom: 95px;
 }
 
 .department__heading {
 	text-align: left;
 	color: $font-color-dark;
 	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 32px;
 }
 
 .department__list {
@@ -30,6 +34,7 @@
 .department__item {
 	margin-right: 40px;
 }
+
 
 
 .employee__image {
@@ -44,9 +49,9 @@
 }
 
 .employee__jobtitle {
-		color: $font-color;
-		font-size: .75em;
-		margin: 0;
+	color: $font-color;
+	font-size: .75em;
+	margin: 0;
 }
 
 .employee__email {

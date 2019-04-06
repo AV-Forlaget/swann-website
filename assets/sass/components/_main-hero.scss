@@ -58,7 +58,7 @@
 
 .main-hero--negative {
 	@extend .main-hero;
-	background-color: transparent;
+	background-color: $white;
 
 	.main-hero__heading--negative {
 		@extend .main-hero__heading;
