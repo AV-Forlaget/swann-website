@@ -3,7 +3,7 @@
         <div class="intro-slide__content">
             <h2 class="slide-heading" v-text="content.header"></h2>
             <p class="slide-text" v-text="content.text"></p>
-            <nuxt-link :to="content.link.href" v-text="content.link.text"></nuxt-link>
+            <nuxt-link class="btn" :to="content.link.href" v-text="content.link.text"></nuxt-link>
         </div>
     </div>
 </template>

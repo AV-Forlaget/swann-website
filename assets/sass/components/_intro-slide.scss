@@ -1,0 +1,78 @@
+.intro-slide {
+    min-height: 12em;
+    background-size: cover;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq($mobileBreakpoint) {
+        min-height: 30em;
+    }
+
+    @include mq($removeMobileMenuBreakpoint) {
+        min-height: 40em;
+    }
+
+    .intro-slide__content {
+        @extend .wrapper;
+        padding-top: 2em;
+        align-self: center;
+
+        @include mq($mobileBreakpoint) {
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+    
+        @include mq($removeMobileMenuBreakpoint) {
+            max-width: 75em;
+        }
+        
+        .slide-heading {
+            display: block;
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: left;
+            color: $white;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            @include mq($mobileBreakpoint) {
+                font-size: 1.4em;
+            }
+
+            @include mq($removeMobileMenuBreakpoint) {
+                font-size: 1.6em;
+            }
+
+            @include mq($largeBreakpoint) {
+                font-size: 1.8em;
+            }
+        }
+
+        .slide-text {
+            display: block;
+            font-size: 0.9em;
+            margin: 0.2em 0 0;
+            color: $white;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            @include mq($mobileBreakpoint) {
+                font-size: 1em;
+            }
+
+            @include mq($removeMobileMenuBreakpoint) {
+                margin-top: 0.3em;
+                font-size: 1.1em;
+                max-width: 30em;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1em;
+        }
+    }
+}

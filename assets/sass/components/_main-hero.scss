@@ -13,12 +13,7 @@
     @include mq($removeMobileMenuBreakpoint) {
         min-height: 25em;
     }
-
-    &.main-hero--frontpage {
-        background: url('../../img/hero-bg.jpg') no-repeat center 100%/cover;
-    }
-
-
+    
     .main-hero__wrapper {
         @extend .wrapper;
     }

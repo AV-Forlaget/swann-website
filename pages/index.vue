@@ -1,12 +1,10 @@
 <template>
   <section class="main-content">
-    <div class="main-hero main-hero--frontpage">
-      <carousel :per-page="1" :pagination-enabled="true" :navigationEnabled="true" :autoplay="true" :autoplayTimeout="5000" :speed="1000">
+     <carousel :per-page="1" :pagination-enabled="true" :navigationEnabled="true" :autoplay="true" :autoplayTimeout="5000" :speed="1000">
         <slide v-for="(content, contentKey) in introSlides" :key="contentKey">
           <intro-slide :content="content"></intro-slide>
         </slide>
       </carousel>
-    </div>
     <div class="content-section">
       <div class="content-section__wrapper">
       <h2 class="content-section__heading">[how nice we are]</h2>
@@ -277,7 +275,7 @@ export default {
             text: 'Read more',
             href: '/audio'
           },
-          image: require('~/assets/img/hero-bg.jpg')
+          image: require('~/assets/img/slides/slide-audiobooks.jpg')
         },
         {
           header: 'Worldwide reach',
@@ -286,7 +284,7 @@ export default {
             text: 'Read more',
             href: '/distribution'
           },
-          image: require('~/assets/img/hero-bg.jpg')
+          image: require('~/assets/img/slides/slide-distribution.jpg')
         },
         {
           header: 'Tech and Tradition',
@@ -295,7 +293,7 @@ export default {
             text: 'Read more',
             href: '/about-us'
           },
-          image: require('~/assets/img/hero-bg.jpg')
+          image: require('~/assets/img/slides/slide-about.jpg')
         }
       ],
     }
