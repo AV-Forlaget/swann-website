@@ -109,32 +109,31 @@
 
           </div>
         </div>
-
-         <div class="ui-block">
-          <div class="ui-block__header">
-            <h3 class="ui-block__header__heading">Streaming</h3>
-          </div>
-          <div class="ui-block__body">
-          <p class="ui-block__body__intro">[text about how streaming works in in general]</p>
-          <div class="icon-list">
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/logos/logo-mofibo.svg" class="icon-list__icon icon-list__item--small" alt="" />
-            </div>
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/logos/logo-storytel.svg" class="icon-list__icon icon-list__item--small" alt="" />
-            </div>
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/logos/logo-nextory.svg" class="icon-list__icon" alt="" />
-            </div>
-
-             <div class="icon-list__item icon-list__item--large">
-              <img src="@/assets/img/logos/logo-saxo.svg" class="icon-list__icon icon-list__item--large" alt="" />
+      </div>
+      <div class="content-section content-section--dark">
+        <div class="content-section__wrapper">
+          <div class="content-block">
+             <div class="content-block__header">
+            
             </div>
           </div>
-          <p class="ui-block__body__intro">[streaming services from all countries]</p>
+          <div class="text-block text-block--dark">
+            <h3 class="text-block__heading">Our partners</h3>
+            <p class="text-block__paragraph">We distribute to many major partners and streaming services.</p>
+            <div class="icon-list">
+              <div class="icon-list__item">
+                <img src="@/assets/img/logos/logo-mofibo.svg" class="icon-list__icon icon-list__item--small" alt="" />
+              </div>
+              <div class="icon-list__item">
+                <img src="@/assets/img/logos/logo-storytel.svg" class="icon-list__icon icon-list__item--small" alt="" />
+              </div>
+              <div class="icon-list__item">
+                <img src="@/assets/img/logos/logo-nextory.svg" class="icon-list__icon" alt="" />
+              </div>
+              <div class="icon-list__item icon-list__item--large">
+                <img src="@/assets/img/logos/logo-saxo.svg" class="icon-list__icon icon-list__item--large" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
