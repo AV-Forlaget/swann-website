@@ -122,16 +122,16 @@
             <p class="text-block__paragraph">We distribute to many major partners and streaming services.</p>
             <div class="icon-list">
               <div class="icon-list__item">
-                <img src="@/assets/img/logos/logo-mofibo.svg" class="icon-list__icon icon-list__item--small" alt="" />
+                <img src="@/assets/img/logos/logo-mofibo-white.svg" class="icon-list__icon icon-list__item--small" alt="" />
               </div>
               <div class="icon-list__item">
-                <img src="@/assets/img/logos/logo-storytel.svg" class="icon-list__icon icon-list__item--small" alt="" />
+                <img src="@/assets/img/logos/logo-storytel-white.svg" class="icon-list__icon icon-list__item--small" alt="" />
               </div>
               <div class="icon-list__item">
-                <img src="@/assets/img/logos/logo-nextory.svg" class="icon-list__icon" alt="" />
+                <img src="@/assets/img/logos/logo-nextory-white.svg" class="icon-list__icon" alt="" />
               </div>
               <div class="icon-list__item icon-list__item--large">
-                <img src="@/assets/img/logos/logo-saxo.svg" class="icon-list__icon icon-list__item--large" alt="" />
+                <img src="@/assets/img/logos/logo-saxo-white.svg" class="icon-list__icon icon-list__item--large" alt="" />
               </div>
             </div>
           </div>
