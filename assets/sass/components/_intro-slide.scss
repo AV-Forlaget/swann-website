@@ -68,6 +68,10 @@
                 font-size: 1.1em;
                 max-width: 30em;
             }
+
+            @at-root .intro-slide.slide-about .slide-text {
+                max-width: 43em;
+            }
         }
 
         .btn {

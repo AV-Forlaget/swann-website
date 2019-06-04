@@ -1,5 +1,5 @@
 <template>
-    <div class="intro-slide" :style="{'background-image': bgImg}">
+    <div class="intro-slide" :class="['slide-' + content.class]" :style="{'background-image': bgImg}">
         <div class="intro-slide__content">
             <h2 class="slide-heading" v-text="content.header"></h2>
             <p class="slide-text" v-text="content.text"></p>

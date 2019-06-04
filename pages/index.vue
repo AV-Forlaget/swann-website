@@ -275,6 +275,7 @@ export default {
             text: 'Read more',
             href: '/audio'
           },
+          class: 'audiobooks',
           image: require('~/assets/img/slides/slide-audiobooks.jpg')
         },
         {
@@ -284,6 +285,7 @@ export default {
             text: 'Read more',
             href: '/distribution'
           },
+          class: 'distribution',
           image: require('~/assets/img/slides/slide-distribution.jpg')
         },
         {
@@ -293,6 +295,7 @@ export default {
             text: 'Read more',
             href: '/about-us'
           },
+          class: 'about',
           image: require('~/assets/img/slides/slide-about.jpg')
         }
       ],
