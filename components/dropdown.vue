@@ -14,7 +14,7 @@
                         >
                          {{ (option.text) ? option.text : option }}
                          <span v-if="option.subline" v-html="option.subline"></span>
-                        </li>
+                    </li>
                 </ul>
             </div>
         </div>
