@@ -458,7 +458,7 @@ export default {
         if(lang.length) {
           return {
             text: lang[0].text,
-            subLine: (lang[0].studio) ? '<b>Strudio: </b>' + lang[0].studio : null,
+            subline: (lang[0].studios) ? '<b>Studios:</b> ' + lang[0].studios.join(', ') : null,
             value: lang[0].value
           }
         }
