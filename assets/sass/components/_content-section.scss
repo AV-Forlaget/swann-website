@@ -4,7 +4,7 @@
     padding: 2em 0 3em;
 
     @include mq($mobileBreakpoint) {
-        padding: 4em 0;
+        padding: 3em 0;
     }
 
     &:nth-child(odd) {
