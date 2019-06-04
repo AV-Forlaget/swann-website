@@ -9,10 +9,12 @@
                 <ul>
                    <li v-for="option in optionList" 
                         :key="(option.value) ? option.value : option"
-                        v-text="(option.text) ? option.text : option"
                         :class="{'selected': option == selectedValue}"
                         @click="selectOption(option)"
-                        ></li>
+                        >
+                         {{ (option.text) ? option.text : option }}
+                         <span v-if="option.subline" v-html="option.subline"></span>
+                        </li>
                 </ul>
             </div>
         </div>
