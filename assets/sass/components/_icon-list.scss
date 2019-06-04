@@ -1,10 +1,25 @@
 .icon-list {
 
-  @include mq($removeMobileMenuBreakpoint) {
+  @include mq($mobileBreakpoint) {
     display: flex;
-    flex-flow: nowrap row;
+    flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.icon-list__item {
+ 
+
+  @include mq($mobileBreakpoint) {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  @include mq($removeMobileMenuBreakpoint) {
+    min-width: 25%;
+    max-width: 25%;
   }
 }
 
@@ -12,7 +27,26 @@
   display: block;
   position: relative;
   margin: auto;
-  max-width: 95px;
+  max-width: 12em;
+
+  @include mq($mobileBreakpoint) {
+    max-width: 8em;
+  }
+
+  @include mq($removeMobileMenuBreakpoint) {
+    max-width: 10em;
+  }
+
+  &.icon-list__item--small {
+
+    @include mq($removeMobileMenuBreakpoint) {
+        max-width: 8em;
+    }
+  }
+
+  &.icon-list__item--large {
+    max-width: 18em;
+  }
 }
 
 .icon-list__heading {
