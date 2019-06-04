@@ -1,10 +1,11 @@
 .intro-slide {
-    min-height: 12em;
+    min-height: 20em;
     background-size: cover;
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
     align-items: center;
+    padding: 1em 0;
 
     @include mq($mobileBreakpoint) {
         min-height: 30em;
@@ -16,13 +17,7 @@
 
     .intro-slide__content {
         @extend .wrapper;
-        padding-top: 2em;
         align-self: center;
-
-        @include mq($mobileBreakpoint) {
-            padding-top: 2em;
-            padding-bottom: 2em;
-        }
     
         @include mq($removeMobileMenuBreakpoint) {
             max-width: 75em;
