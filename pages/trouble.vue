@@ -8,13 +8,3 @@
 
   </section>
 </template>
-
-<script>
-/*
-export default {
-  mounted() {
-    this.$store.commit('step', 1);
-  }
-}
-*/
-</script>

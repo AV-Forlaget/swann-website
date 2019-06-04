@@ -20,11 +20,10 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Narrator application',
+    title: 'Swann Studio',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Swann Studios narrator application'}
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -47,8 +46,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/directives.js',
-    { src: '@/plugins/recapcha.js', ssr: false }
+    '@/plugins/directives.js'
   ],
 
   /*
@@ -57,9 +55,7 @@ module.exports = {
   modules,
 
   env: {
-    RECAPCHA_SITE_KEY: process.env.RECAPCHA_SITE_KEY || '',
-    POST_URL: process.env.POST_URL || '',
-    CLOSE_URL: process.env.CLOSE_URL || '',
+
   },
 
   /*
