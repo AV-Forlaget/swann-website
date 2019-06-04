@@ -14,19 +14,13 @@
 							<li class="nav__item">
 								<nuxt-link class="nav__item__anchor" to="/distribution">Distribution</nuxt-link>
 							</li>
-							<li class="nav__item">
-								<nuxt-link class="nav__item__anchor" to="/countries">Countries</nuxt-link>
-							</li>
 						</ul>
 					</div>
 					<div class="main-nav__list main-nav__list--right">
-						<p class="header-tagline">Be part of our 1 catalog</p>
+						<p class="header-tagline">Be part of our narrator catalog</p>
 						<ul class="nav nav--login-menu">
 							<li class="nav__item">
-								<nuxt-link class="nav__item__anchor" to="/login">Login</nuxt-link>
-							</li>
-							<li class="nav__item">
-								<nuxt-link class="nav__item__anchor" to="/sign-up">Sign up</nuxt-link>
+								<a href="https://swann-studio.com/app/da/login">Login</a>
 							</li>
 						</ul>
 					</div>
@@ -51,9 +45,8 @@
 			<div class="footer-col">
 				<div class="footer-nav">
 					<nuxt-link to="/about-us">About us</nuxt-link>
-					<nuxt-link to="/language">Language</nuxt-link>
-					<nuxt-link to="/login">Login</nuxt-link>
-					<nuxt-link to="/trouble">Trouble? Contact us here ...</nuxt-link>
+					<a href="https://swann-studio.com/app/da/login">Login</a>
+					<nuxt-link to="/trouble">Download printable brochure here</nuxt-link>
 				</div>
 				<span class="footer-copyright">© 2019 Swann A/S - All rights reserved</span>
 			</div>
