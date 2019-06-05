@@ -1,6 +1,6 @@
 <template>
   <section class="main-content">
-     <carousel :per-page="1" :pagination-enabled="true" :navigationEnabled="true" :autoplay="true" :autoplayTimeout="5000" :speed="1000">
+     <carousel :per-page="1" :pagination-enabled="true" :navigationEnabled="true" :autoplay="true" :autoplayTimeout="5000" :speed="1000"  v-if="showSlider">
         <slide v-for="(content, contentKey) in introSlides" :key="contentKey">
           <intro-slide :content="content"></intro-slide>
         </slide>
@@ -247,6 +247,7 @@
 export default {
  data() {
     return {
+      showSlider: false,
       countryOptions: [
         {
           text: 'Denmark',
@@ -300,6 +301,9 @@ export default {
         }
       ],
     }
+  },
+  mounted() {
+    this.showSlider = true;
   },
   components: {
     Dropdown,
