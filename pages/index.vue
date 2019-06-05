@@ -10,87 +10,16 @@
      </div>
     <div class="content-section">
       <div class="content-section__wrapper">
-      <h2 class="content-section__heading">[how nice we are]</h2>
-      <p class="content-section__subheading">[more about the niceness]</p>
-
-      <div class="service">
-
-        <div class="service__audio service__card">
-          <div class="service__header">
-            <img src="@/assets/img/icons/icon-audio.svg" class="service__icon service__icon-audio" alt="" />
-            <h3 class="service__heading">Audio</h3>
-            <p class="service__paragraph">[quick introduction about our history with audio production and current activities]</p>
-          </div>
-
-          <div class="service__list icon-list">
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/icons/icon-audiobooks.svg" class="icon-list__icon" alt="" />
-              <h4 class="icon-list__heading">Audiobooks</h4>
-              <p class="icon-list__paragraph">[quick introduction]</p>
-            </div>
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/icons/icon-articles.svg" class="icon-list__icon" alt="" />
-              <h4 class="icon-list__heading">Articles</h4>
-              <p class="icon-list__paragraph">[quick introduction]</p>
-            </div>
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/icons/icon-podcast.svg" class="icon-list__icon" alt="" />
-              <h4 class="icon-list__heading">Podcast</h4>
-              <p class="icon-list__paragraph">[quick introduction]</p>
-            </div>
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon" alt="" />
-              <h4 class="icon-list__heading">Digitization</h4>
-              <p class="icon-list__paragraph">[quick introduction]</p>
-            </div>
-          </div> <!-- END .service__list -->
-      </div> <!-- END .service__audio -->
-
-
-      <div class="service__distribution service__card">
-        <div class="service__header">
-          <img src="@/assets/img/icons/icon-distribution.svg" class="service__icon about__icon-audio" alt="" />
-          <h3 class="service__heading">Distribution</h3>
-          <p class="service__paragraph">[quick introduction about our history with distribution and current activities]</p>
+        <div class="content-section__grid">
+          <img src="@/assets/img/mic-audiobooks.png" class="service__icon service__icon-audio" alt="" />
+            <h2 class="content-section__heading">Audiobooks, podcast, audioarticles, and more</h2>
+            <p class="content-section__subheading">At Swann Studio we aim to simplify the audio production workflow for our clients as much as possible.</p>
+            <p class="content-section__subheading">Our practical software and constant focus on organizational efficiency makes us an ideal choice for publishers who work on a large scale.</p>
         </div>
-
-        <div class="service__list icon-list">
-
-          <div class="icon-list__item">
-            <img src="@/assets/img/icons/icon-audiofiles.svg" class="icon-list__icon" alt="" />
-            <h4 class="icon-list__heading">Digital audiobooks</h4>
-            <p class="icon-list__paragraph">[quick introduction]</p>
-          </div>
-
-          <div class="icon-list__item">
-            <img src="@/assets/img/icons/icon-print-on-demand.svg" class="icon-list__icon" alt="" />
-            <h4 class="icon-list__heading">Print-on-demand</h4>
-            <p class="icon-list__paragraph">[quick introduction]</p>
-          </div>
-
-          <div class="icon-list__item">
-            <img src="@/assets/img/icons/icon-streaming.svg" class="icon-list__icon" alt="" />
-            <h4 class="icon-list__heading">Streaming</h4>
-            <p class="icon-list__paragraph">[quick introduction]</p>
-          </div>
-
-          <div class="icon-list__item">
-            <img src="@/assets/img/icons/icon-publishing.svg" class="icon-list__icon" alt="" />
-            <h4 class="icon-list__heading">Publishing</h4>
-            <p class="icon-list__paragraph">[quick introduction]</p>
-          </div>
-        </div> <!-- END .service__list -->
-      </div> <!-- END .service__distribution -->
 
 
     </div> <!-- END .service -->
   </div> <!-- END .content-section -->
-
-    </div>
 
     <div class="content-section content-section--dark">
       <div class="content-section__wrapper">
