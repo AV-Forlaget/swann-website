@@ -1,10 +1,10 @@
 <template>
   <section class="main-content">
-    <div class="main-hero main-hero--frontpage">
-      <div class="main-hero__wrapper">
-        <h1 class="main-hero__heading">Audiobooks since 1983</h1>
-      </div>
-    </div>
+     <carousel :per-page="1" :pagination-enabled="true" :navigationEnabled="true" :autoplay="true" :autoplayTimeout="5000" :speed="1000">
+        <slide v-for="(content, contentKey) in introSlides" :key="contentKey">
+          <intro-slide :content="content"></intro-slide>
+        </slide>
+      </carousel>
     <div class="content-section">
       <div class="content-section__wrapper">
       <h2 class="content-section__heading">[how nice we are]</h2>
@@ -242,6 +242,8 @@
 
 <script>
     import Dropdown from '~/components/dropdown.vue';
+    import IntroSlide from '~/components/IntroSlide';
+
 export default {
  data() {
     return {
@@ -265,10 +267,43 @@ export default {
           value: 'etc'
         }
       ],
+      introSlides: [
+        {
+          header: 'Audiobooks since 1983',
+          text: 'Swann Studio has more than 35 years of experience with audiobook production and has grown to be an international market leader having produced more that 2000 new titles in 2018 and having already expanded to 6 new countries in 2019 alone.',
+          link: {
+            text: 'Read more',
+            href: '/audio'
+          },
+          class: 'audiobooks',
+          image: require('~/assets/img/slides/slide-audiobooks.jpg')
+        },
+        {
+          header: 'Worldwide reach',
+          text: 'Digital distribution is handled through our web app and we produce CDs as print-on-demand or in fixed volumes. We can deliver your audio however and wherever you want it.',
+          link: {
+            text: 'Read more',
+            href: '/distribution'
+          },
+          class: 'distribution',
+          image: require('~/assets/img/slides/slide-distribution.jpg')
+        },
+        {
+          header: 'Tech and Tradition',
+          text: 'Swann Studio has lived through the transition from cassettes and reel tapes in the 1980s to the current situation where the market is becoming increasingly digital and audiobooks hold a stronger position than ever. We have employees that can handle and assist is all aspects of audiobook production, publication and distribution. And with the help of our Swann Studio app our customers can order a title in just a few minutes.',
+          link: {
+            text: 'Read more',
+            href: '/about-us'
+          },
+          class: 'about',
+          image: require('~/assets/img/slides/slide-about.jpg')
+        }
+      ],
     }
   },
   components: {
-    Dropdown
+    Dropdown,
+    IntroSlide
   }
 }
 </script>
