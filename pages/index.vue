@@ -5,6 +5,9 @@
           <intro-slide :content="content"></intro-slide>
         </slide>
       </carousel>
+      <div class="VueCarousel" v-if="!showSlider">
+        <intro-slide v-for="(content, contentKey) in introSlides" :key="contentKey" :content="content" v-show="contentKey < 1"></intro-slide>
+     </div>
     <div class="content-section">
       <div class="content-section__wrapper">
       <h2 class="content-section__heading">[how nice we are]</h2>
