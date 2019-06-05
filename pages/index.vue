@@ -150,6 +150,9 @@
             <img src="@/assets/img/logos/logo-dafolo.svg" alt="">
           </div>
           <div class="partners-item partners-item--extra-small">
+              <img src="@/assets/img/logos/logo-forlagid.svg" alt="">
+          </div>
+          <div class="partners-item partners-item--medium">
               <img src="@/assets/img/logos/logo-gadsforlag.svg" alt="">
           </div>
            <div class="partners-item partners-item--medium">
@@ -158,13 +161,13 @@
           <div class="partners-item partners-item--extra-small">
               <img src="@/assets/img/logos/logo-gyldendal.svg" alt="">
           </div>
-             <div class="partners-item">
+          <div class="partners-item">
             <img src="@/assets/img/logos/logo-harlequin.svg" alt="">
           </div>
           <div class="partners-item">
               <img src="@/assets/img/logos/logo-harpercollinsnordic.svg" alt="">
           </div>
-           <div class="partners-item partners-item--small">
+          <div class="partners-item partners-item--small">
             <img src="@/assets/img/logos/logo-hoi.svg" alt="">
           </div>
           <div class="partners-item partners-item--medium">
@@ -188,6 +191,9 @@
            <div class="partners-item partners-item--medium">
               <img src="@/assets/img/logos/logo-lust.svg" alt="">
           </div>
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-lydbokforlaget.svg" alt="">
+          </div>
            <div class="partners-item">
               <img src="@/assets/img/logos/logo-modtryk.svg" alt="">
           </div>
@@ -196,6 +202,9 @@
           </div>
            <div class="partners-item partners-item--medium">
               <img src="@/assets/img/logos/logo-nextory.svg" alt="">
+          </div>
+           <div class="partners-item partners-item--small">
+              <img src="@/assets/img/logos/logo-olga.svg" alt="">
           </div>
            <div class="partners-item">
               <img src="@/assets/img/logos/logo-palatium.svg" alt="">
