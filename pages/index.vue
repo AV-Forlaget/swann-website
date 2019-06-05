@@ -91,13 +91,6 @@
   </div> <!-- END .content-section -->
 
     </div>
-    <div class="content-section content-section--dropdowns">
-      <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Countries</h2>
-        <p class="content-section__subheading">[quick introduction about our history with various countries and current activities]</p>
-        <dropdown placeholder="Choose country" :options="countryOptions"></dropdown>
-      </div>
-    </div>
 
     <div class="content-section content-section--dark">
       <div class="content-section__wrapper">
@@ -236,19 +229,6 @@
         </div>
       </div>
     </div>
-
-    <div class="content-section">
-      <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Download printable brochure</h2>
-        <div class="brochure-block">
-            <div class="brochure-block__icon">
-                <img src="@/assets/img/icons/icon-pdf.svg" alt="" />
-            </div>
-            <dropdown placeholder="Choose language" :options="languageOptions"></dropdown>
-        </div>
-      </div>
-    </div>
-
   </section>
 </template>
 

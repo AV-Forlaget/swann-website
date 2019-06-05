@@ -20,7 +20,11 @@
 
     @include mq($removeMobileMenuBreakpoint) {
         min-height: 40em;
-        padding: 1em 2em;
+        padding: 1em 4em;
+    }
+    
+    @include mq($largeBreakpoint) {
+        min-height: 50em;
     }
 
     &:after {
