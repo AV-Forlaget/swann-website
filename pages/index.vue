@@ -40,7 +40,7 @@
             <h2 class="content-section__heading">Narrator catalogue</h2>
             <p class="content-section__text">We currently produce audio in 11 countries with more being added. We have studios in Copehagen, Odense, Stockholm, Göteborg, Oslo, Helsinki, Los Angeles, London, Amsterdam, Reykjavik, Barcelona, Mexico City, Warsawa, Berlin and Hamburg.</p>
             <p class="content-section__text">We have narrators for all kinds of texts and genres, and editors and producers who can accomodate specific production requirements and are willing to disucss any idea you might have.</p>
-		        <nuxt-link class="btn" to="/distribution">To the catalogue</nuxt-link>
+		        <nuxt-link class="btn" to="/audio#narratorSection">To the catalogue</nuxt-link>
         </div>
         <div class="content-section__col content-section__col--sm">
             <img src="@/assets/img/narrator-catalogue.png" class="narrator-catalogue-img" alt="" />

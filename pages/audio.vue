@@ -95,7 +95,7 @@
         </div>
       </div>
     </div>
-    <div class="content-section content-section--white">
+    <div class="content-section content-section--white" id="narratorSection">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Narration</h2>
         <p class="content-section__text content-section__text--center">[text about narration and stuff, Paramount for the customer/listener and therefore for the publisher. An intimate process, Drives the story forward, A mutual relationship]</p>
