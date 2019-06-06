@@ -9,17 +9,18 @@
         <intro-slide v-for="(content, contentKey) in introSlides" :key="contentKey" :content="content" v-show="contentKey < 1"></intro-slide>
      </div>
     <div class="content-section">
-      <div class="content-section__wrapper">
-        <div class="content-section__grid">
-          <img src="@/assets/img/mic-audiobooks.png" class="service__icon service__icon-audio" alt="" />
+      <div class="content-section__wrapper content-section__wrapper--flex">
+        <div class="content-section__col content-section__col--sm">
+            <img src="@/assets/img/mic-audiobooks.png" class="service__icon service__icon-audio" alt="" />
+        </div>
+        <div class="content-section__col content-section__col--lg">
             <h2 class="content-section__heading">Audiobooks, podcast, audioarticles, and more</h2>
             <p class="content-section__subheading">At Swann Studio we aim to simplify the audio production workflow for our clients as much as possible.</p>
             <p class="content-section__subheading">Our practical software and constant focus on organizational efficiency makes us an ideal choice for publishers who work on a large scale.</p>
+		        <nuxt-link class="btn" to="/audio">Read more</nuxt-link>
         </div>
-
-
-    </div> <!-- END .service -->
-  </div> <!-- END .content-section -->
+    </div>
+  </div>
 
     <div class="content-section content-section--dark">
       <div class="content-section__wrapper">
