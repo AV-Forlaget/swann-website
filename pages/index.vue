@@ -8,24 +8,50 @@
       <div class="VueCarousel" v-if="!showSlider">
         <intro-slide v-for="(content, contentKey) in introSlides" :key="contentKey" :content="content" v-show="contentKey < 1"></intro-slide>
      </div>
-    <div class="content-section">
+    <div class="content-section frontpage-audiobooks">
       <div class="content-section__wrapper content-section__wrapper--flex">
-        <div class="content-section__col content-section__col--sm">
-            <img src="@/assets/img/mic-audiobooks.png" class="service__icon service__icon-audio" alt="" />
-        </div>
         <div class="content-section__col content-section__col--lg">
             <h2 class="content-section__heading">Audiobooks, podcast, audioarticles, and more</h2>
-            <p class="content-section__subheading">At Swann Studio we aim to simplify the audio production workflow for our clients as much as possible.</p>
-            <p class="content-section__subheading">Our practical software and constant focus on organizational efficiency makes us an ideal choice for publishers who work on a large scale.</p>
+            <p class="content-section__text">At Swann Studio we aim to simplify the audio production workflow for our clients as much as possible.</p>
+            <p class="content-section__text">Our practical software and constant focus on organizational efficiency makes us an ideal choice for publishers who work on a large scale.</p>
 		        <nuxt-link class="btn" to="/audio">Read more</nuxt-link>
         </div>
+        <div class="content-section__col content-section__col--sm">
+            <img src="@/assets/img/mic-audiobooks.png" class="audiobooks-microphone-img" alt="" />
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="content-section frontpage-distribution">
+      <div class="content-section__wrapper content-section__wrapper--flex">
+        <div class="content-section__col content-section__col--lg">
+            <h2 class="content-section__heading">Digital distribution, print-on-demand, streaming, publishing and more</h2>
+            <p class="content-section__text">Digital distribution is handled through our web app and we can easily set up our API to deliver a publication to any additional destinations.</p>
+            <p class="content-section__text">Physical publications can be ordered easily through our web app. We have 35 years of experience with making print-on-demand CDs, cooperate with fixed volume producers and offer graphical solutions, as well as general audio consultancy services.</p>
+		        <nuxt-link class="btn" to="/distribution">Read more</nuxt-link>
+        </div>
+        <div class="content-section__col content-section__col--sm">
+            <img src="@/assets/img/digital-distribution.png" class="audiobooks-microphone-img" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="content-section frontpage-narrator">
+      <div class="content-section__wrapper content-section__wrapper--flex">
+        <div class="content-section__col content-section__col--lg">
+            <h2 class="content-section__heading">Narrator catalogue</h2>
+            <p class="content-section__text">We currently produce audio in 11 countries with more being added. We have studios in Copehagen, Odense, Stockholm, Göteborg, Oslo, Helsinki, Los Angeles, London, Amsterdam, Reykjavik, Barcelona, Mexico City, Warsawa, Berlin and Hamburg.</p>
+            <p class="content-section__text">We have narrators for all kinds of texts and genres, and editors and producers who can accomodate specific production requirements and are willing to disucss any idea you might have.</p>
+		        <nuxt-link class="btn" to="/distribution">To the catalogue</nuxt-link>
+        </div>
+        <div class="content-section__col content-section__col--sm">
+            <img src="@/assets/img/narrator-catalogue.png" class="audiobooks-microphone-img" alt="" />
+        </div>
+      </div>
+    </div>
 
     <div class="content-section content-section--dark">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Audio productions</h2>
-        <p class="content-section__subheading">[rundown of productions and growth]</p>
+        <h2 class="content-section__heading content-section__heading--center">Audio productions</h2>
+        <p class="content-section__text content-section__text--center">[rundown of productions and growth]</p>
         <div class="production-facts">
           <div class="production-facts__list">
             <p class="production-facts__item">
@@ -54,8 +80,8 @@
 
     <div class="content-section">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Partners</h2>
-        <p class="content-section__subheading">[something about our partners]</p>
+        <h2 class="content-section__heading content-section__heading--center">Partners</h2>
+        <p class="content-section__text content-section__text--center">[something about our partners]</p>
         <div class="partners-grid">
           <div class="partners-item partners-item--medium">
             <img src="@/assets/img/logos/logo-alvilda.svg" alt="">

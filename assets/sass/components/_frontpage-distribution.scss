@@ -1,0 +1,21 @@
+.frontpage-distribution {
+    padding: 2em 0;
+
+    .audiobooks-microphone-img {
+        display: block;
+        max-width: 10em;
+        margin: 1em auto;
+
+        @include mq($removeMobileMenuBreakpoint) {
+            max-width: 20em;
+        }
+
+        @include mq($largeBreakpoint) {
+            max-width: 30em;
+        }
+    }
+
+    .btn {
+        display: inline-block;
+    }
+}

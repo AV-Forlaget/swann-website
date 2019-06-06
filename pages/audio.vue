@@ -12,7 +12,7 @@
       <div class="content-section__wrapper">
         <h2 class="content-section__heading">Audio production</h2>
         <p
-          class="content-section__subheading"
+          class="content-section__text"
         >[Extended text about our history with audio production in general and current activities]</p>
         <div class="audio-flow">
           <div class="audio-flow__block audio-flow__block--studio">
@@ -54,7 +54,7 @@
     <div class="content-section content-section--bg-color">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading">Formats</h2>
-        <p class="content-section__subheading">[introducion to the various formats]</p>
+        <p class="content-section__text">[introducion to the various formats]</p>
         <div class="ui-block ui-block--formats">
           <div class="ui-block__header">
             <h3 class="ui-block__header__heading">Audiobooks</h3>
@@ -101,7 +101,7 @@
       <div class="content-section__wrapper">
         <h2 class="content-section__heading">Narration</h2>
         <p
-          class="content-section__subheading"
+          class="content-section__text"
         >[text about narration and stuff, Paramount for the customer/listener and therefore for the publisher. An intimate process, Drives the story forward, A mutual relationship]</p>
         <div class="ui-block">
           <div class="ui-block__header">

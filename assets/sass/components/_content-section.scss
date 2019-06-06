@@ -51,40 +51,63 @@
                 }
 
                 &:last-child {
-                    margin-right: 0;
-                    margin-left: 1%;
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        margin-right: 0;
+                        margin-left: 1%;
+                    }
                 }
 
                 &.content-section__col--sm {
-                    width: 38%;
-                    min-width: 38%;
-                    max-width: 38%;
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        width: 40%;
+                        min-width: 40%;
+                        max-width: 40%;
+                    }
                 }
 
                 &.content-section__col--lg {
-                    width: 60%;
-                    min-width: 60%;
-                    max-width: 60%;
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        width: 58%;
+                        min-width: 58%;
+                        max-width: 58%;
+                    }
                 }
             }
         }
     }
 
     .content-section__heading {
-        margin: 0;
+        margin: 0 0 0.3em;
         font-size: 1.5em;
-        color: $font-color;
+        line-height: 110%;
+        color: $headings-color;
         font-weight: bold;
         text-align: left;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
         @include mq($mobileBreakpoint) {
+            margin-bottom: 0.3em;
             font-size: 2em;
+            line-height: 112%;
         }
 
         @include mq($removeMobileMenuBreakpoint) {
+            margin-bottom: 0.3em;
             font-size: 2.5em;
+            line-height: 115%;
+        }
+
+        @include mq($largeBreakpoint) {
+            margin-bottom: 0.4em;
+            line-height: 118%;
+        }
+
+        &.content-section__heading--center {
+            text-align: center;
         }
 
         @at-root .content-section.content-section--dark .content-section__heading {
@@ -92,14 +115,14 @@
         }
     }
 
-    .content-section__subheading {
-        margin: 0 0 2em;
+    .content-section__text {
+        margin: 0 0 1em;
         font-size: 0.95em;
-        color: rgba($font-color, 0.6);
+        color: $font-color;
         text-align: left;
 
         @include mq($mobileBreakpoint) {
-            margin-bottom: 3em;
+            margin-bottom: 0.9em;
             font-size: 1.1em;
         }
 
@@ -107,8 +130,12 @@
             font-size: 1.2em;
         }
 
-        @at-root .content-section.content-section--dark .content-section__subheading {
+        @at-root .content-section.content-section--dark .content-section__text {
             color: $brand-color-2;
+        }
+
+        &.content-section__text--center {
+            text-align: center;
         }
     }
 }
