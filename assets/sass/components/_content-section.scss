@@ -30,23 +30,84 @@
 
     .content-section__wrapper {
         @extend .wrapper;
+
+        &.content-section__wrapper--flex {
+
+            @include mq($removeMobileMenuBreakpoint) {
+                display: flex;
+                flex-flow: nowrap row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .content-section__col {
+             
+                @include mq($removeMobileMenuBreakpoint) {
+                    flex: 1;
+                    width: 49%;
+                    min-width: 49%;
+                    max-width: 49%;
+                    margin-right: 1%;
+                }
+
+                &:last-child {
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        margin-right: 0;
+                        margin-left: 1%;
+                    }
+                }
+
+                &.content-section__col--sm {
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        width: 40%;
+                        min-width: 40%;
+                        max-width: 40%;
+                    }
+                }
+
+                &.content-section__col--lg {
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        width: 58%;
+                        min-width: 58%;
+                        max-width: 58%;
+                    }
+                }
+            }
+        }
     }
 
     .content-section__heading {
-        margin: 0;
+        margin: 0 0 0.3em;
         font-size: 1.5em;
-        color: $font-color;
-        font-weight: normal;
-        text-align: center;
+        line-height: 110%;
+        color: $headings-color;
+        font-weight: bold;
+        text-align: left;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
         @include mq($mobileBreakpoint) {
+            margin-bottom: 0.3em;
             font-size: 2em;
+            line-height: 112%;
         }
 
         @include mq($removeMobileMenuBreakpoint) {
+            margin-bottom: 0.3em;
             font-size: 2.5em;
+            line-height: 115%;
+        }
+
+        @include mq($largeBreakpoint) {
+            margin-bottom: 0.4em;
+            line-height: 118%;
+        }
+
+        &.content-section__heading--center {
+            text-align: center;
         }
 
         @at-root .content-section.content-section--dark .content-section__heading {
@@ -54,14 +115,14 @@
         }
     }
 
-    .content-section__subheading {
-        margin: 0 0 2em;
+    .content-section__text {
+        margin: 0 0 1em;
         font-size: 0.95em;
-        color: rgba($font-color, 0.6);
-        text-align: center;
+        color: $font-color;
+        text-align: left;
 
         @include mq($mobileBreakpoint) {
-            margin-bottom: 3em;
+            margin-bottom: 0.9em;
             font-size: 1.1em;
         }
 
@@ -69,8 +130,12 @@
             font-size: 1.2em;
         }
 
-        @at-root .content-section.content-section--dark .content-section__subheading {
+        @at-root .content-section.content-section--dark .content-section__text {
             color: $brand-color-2;
+        }
+
+        &.content-section__text--center {
+            text-align: center;
         }
     }
 }

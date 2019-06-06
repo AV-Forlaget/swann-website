@@ -10,10 +10,8 @@
     </div>
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Audio production</h2>
-        <p
-          class="content-section__subheading"
-        >[Extended text about our history with audio production in general and current activities]</p>
+        <h2 class="content-section__heading content-section__heading--center">Audio production</h2>
+        <p class="content-section__text content-section__text--center">[Extended text about our history with audio production in general and current activities]</p>
         <div class="audio-flow">
           <div class="audio-flow__block audio-flow__block--studio">
             <img src="@/assets/img/swann-studio-app.png" alt class="audio-flow__block__img">
@@ -53,8 +51,8 @@
     </div>
     <div class="content-section content-section--bg-color">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Formats</h2>
-        <p class="content-section__subheading">[introducion to the various formats]</p>
+        <h2 class="content-section__heading content-section__heading--center">Formats</h2>
+        <p class="content-section__text content-section__text--center">[introducion to the various formats]</p>
         <div class="ui-block ui-block--formats">
           <div class="ui-block__header">
             <h3 class="ui-block__header__heading">Audiobooks</h3>
@@ -97,12 +95,10 @@
         </div>
       </div>
     </div>
-    <div class="content-section content-section--white">
+    <div class="content-section content-section--white" id="narratorSection">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Narration</h2>
-        <p
-          class="content-section__subheading"
-        >[text about narration and stuff, Paramount for the customer/listener and therefore for the publisher. An intimate process, Drives the story forward, A mutual relationship]</p>
+        <h2 class="content-section__heading content-section__heading--center">Narration</h2>
+        <p class="content-section__text content-section__text--center">[text about narration and stuff, Paramount for the customer/listener and therefore for the publisher. An intimate process, Drives the story forward, A mutual relationship]</p>
         <div class="ui-block">
           <div class="ui-block__header">
             <h3 class="ui-block__header__heading">Narrators</h3>

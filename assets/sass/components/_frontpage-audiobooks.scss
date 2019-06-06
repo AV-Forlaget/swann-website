@@ -1,0 +1,26 @@
+.frontpage-audiobooks {
+
+    .content-section__wrapper .content-section__col:first-child {
+        @include mq($removeMobileMenuBreakpoint) {
+            order: 1;
+        }
+    }
+
+    .audiobooks-microphone-img {
+        display: block;
+        max-width: 10em;
+        margin: 1em auto;
+
+        @include mq($removeMobileMenuBreakpoint) {
+            max-width: 20em;
+        }
+
+        @include mq($largeBreakpoint) {
+            max-width: 30em;
+        }
+    }
+
+    .btn {
+        display: inline-block;
+    }
+}

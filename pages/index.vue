@@ -8,94 +8,50 @@
       <div class="VueCarousel" v-if="!showSlider">
         <intro-slide v-for="(content, contentKey) in introSlides" :key="contentKey" :content="content" v-show="contentKey < 1"></intro-slide>
      </div>
-    <div class="content-section">
-      <div class="content-section__wrapper">
-      <h2 class="content-section__heading">[how nice we are]</h2>
-      <p class="content-section__subheading">[more about the niceness]</p>
-
-      <div class="service">
-
-        <div class="service__audio service__card">
-          <div class="service__header">
-            <img src="@/assets/img/icons/icon-audio.svg" class="service__icon service__icon-audio" alt="" />
-            <h3 class="service__heading">Audio</h3>
-            <p class="service__paragraph">[quick introduction about our history with audio production and current activities]</p>
-          </div>
-
-          <div class="service__list icon-list">
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/icons/icon-audiobooks.svg" class="icon-list__icon" alt="" />
-              <h4 class="icon-list__heading">Audiobooks</h4>
-              <p class="icon-list__paragraph">[quick introduction]</p>
-            </div>
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/icons/icon-articles.svg" class="icon-list__icon" alt="" />
-              <h4 class="icon-list__heading">Articles</h4>
-              <p class="icon-list__paragraph">[quick introduction]</p>
-            </div>
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/icons/icon-podcast.svg" class="icon-list__icon" alt="" />
-              <h4 class="icon-list__heading">Podcast</h4>
-              <p class="icon-list__paragraph">[quick introduction]</p>
-            </div>
-
-            <div class="icon-list__item">
-              <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon" alt="" />
-              <h4 class="icon-list__heading">Digitization</h4>
-              <p class="icon-list__paragraph">[quick introduction]</p>
-            </div>
-          </div> <!-- END .service__list -->
-      </div> <!-- END .service__audio -->
-
-
-      <div class="service__distribution service__card">
-        <div class="service__header">
-          <img src="@/assets/img/icons/icon-distribution.svg" class="service__icon about__icon-audio" alt="" />
-          <h3 class="service__heading">Distribution</h3>
-          <p class="service__paragraph">[quick introduction about our history with distribution and current activities]</p>
+    <div class="content-section frontpage-audiobooks">
+      <div class="content-section__wrapper content-section__wrapper--flex">
+        <div class="content-section__col content-section__col--lg">
+            <h2 class="content-section__heading">Audiobooks, podcast, audioarticles, and more</h2>
+            <p class="content-section__text">At Swann Studio we aim to simplify the audio production workflow for our clients as much as possible.</p>
+            <p class="content-section__text">Our practical software and constant focus on organizational efficiency makes us an ideal choice for publishers who work on a large scale.</p>
+		        <nuxt-link class="btn" to="/audio">Read more</nuxt-link>
         </div>
-
-        <div class="service__list icon-list">
-
-          <div class="icon-list__item">
-            <img src="@/assets/img/icons/icon-audiofiles.svg" class="icon-list__icon" alt="" />
-            <h4 class="icon-list__heading">Digital audiobooks</h4>
-            <p class="icon-list__paragraph">[quick introduction]</p>
-          </div>
-
-          <div class="icon-list__item">
-            <img src="@/assets/img/icons/icon-print-on-demand.svg" class="icon-list__icon" alt="" />
-            <h4 class="icon-list__heading">Print-on-demand</h4>
-            <p class="icon-list__paragraph">[quick introduction]</p>
-          </div>
-
-          <div class="icon-list__item">
-            <img src="@/assets/img/icons/icon-streaming.svg" class="icon-list__icon" alt="" />
-            <h4 class="icon-list__heading">Streaming</h4>
-            <p class="icon-list__paragraph">[quick introduction]</p>
-          </div>
-
-          <div class="icon-list__item">
-            <img src="@/assets/img/icons/icon-publishing.svg" class="icon-list__icon" alt="" />
-            <h4 class="icon-list__heading">Publishing</h4>
-            <p class="icon-list__paragraph">[quick introduction]</p>
-          </div>
-        </div> <!-- END .service__list -->
-      </div> <!-- END .service__distribution -->
-
-
-    </div> <!-- END .service -->
-  </div> <!-- END .content-section -->
-
+        <div class="content-section__col content-section__col--sm">
+            <img src="@/assets/img/mic-audiobooks.png" class="audiobooks-microphone-img" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="content-section frontpage-distribution">
+      <div class="content-section__wrapper content-section__wrapper--flex">
+        <div class="content-section__col content-section__col--lg">
+            <h2 class="content-section__heading">Digital distribution, print-on-demand, streaming, publishing and more</h2>
+            <p class="content-section__text">Digital distribution is handled through our web app and we can easily set up our API to deliver a publication to any additional destinations.</p>
+            <p class="content-section__text">Physical publications can be ordered easily through our web app. We have 35 years of experience with making print-on-demand CDs, cooperate with fixed volume producers and offer graphical solutions, as well as general audio consultancy services.</p>
+		        <nuxt-link class="btn" to="/distribution">Read more</nuxt-link>
+        </div>
+        <div class="content-section__col content-section__col--sm">
+            <img src="@/assets/img/digital-distribution.png" class="digital-distribution-img" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="content-section frontpage-narrator">
+      <div class="content-section__wrapper content-section__wrapper--flex">
+        <div class="content-section__col content-section__col--lg">
+            <h2 class="content-section__heading">Narrator catalogue</h2>
+            <p class="content-section__text">We currently produce audio in 11 countries with more being added. We have studios in Copehagen, Odense, Stockholm, Göteborg, Oslo, Helsinki, Los Angeles, London, Amsterdam, Reykjavik, Barcelona, Mexico City, Warsawa, Berlin and Hamburg.</p>
+            <p class="content-section__text">We have narrators for all kinds of texts and genres, and editors and producers who can accomodate specific production requirements and are willing to disucss any idea you might have.</p>
+		        <nuxt-link class="btn" to="/audio#narratorSection">To the catalogue</nuxt-link>
+        </div>
+        <div class="content-section__col content-section__col--sm">
+            <img src="@/assets/img/narrator-catalogue.png" class="narrator-catalogue-img" alt="" />
+        </div>
+      </div>
     </div>
 
     <div class="content-section content-section--dark">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Audio productions</h2>
-        <p class="content-section__subheading">[rundown of productions and growth]</p>
+        <h2 class="content-section__heading content-section__heading--center">Audio productions</h2>
+        <p class="content-section__text content-section__text--center">[rundown of productions and growth]</p>
         <div class="production-facts">
           <div class="production-facts__list">
             <p class="production-facts__item">
@@ -122,10 +78,10 @@
       </div>
     </div>
 
-    <div class="content-section">
+    <div class="content-section content-section--white">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Partners</h2>
-        <p class="content-section__subheading">[something about our partners]</p>
+        <h2 class="content-section__heading content-section__heading--center">Partners</h2>
+        <p class="content-section__text content-section__text--center">[something about our partners]</p>
         <div class="partners-grid">
           <div class="partners-item partners-item--medium">
             <img src="@/assets/img/logos/logo-alvilda.svg" alt="">
