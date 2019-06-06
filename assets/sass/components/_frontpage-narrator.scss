@@ -1,4 +1,4 @@
-.frontpage-distribution {
+.frontpage-narrator {
     padding: 6em 0;
     box-sizing: border-box;
 
@@ -10,17 +10,23 @@
         padding: 12em 0;
     }
 
-    .digital-distribution-img {
+    .content-section__wrapper .content-section__col:first-child {
+        @include mq($removeMobileMenuBreakpoint) {
+            order: 1;
+        }
+    }
+
+    .narrator-catalogue-img {
         display: block;
-        max-width: 18em;
+        max-width: 15em;
         margin: 1em auto;
 
         @include mq($removeMobileMenuBreakpoint) {
-            max-width: 25em;
+            max-width: 15em;
         }
 
         @include mq($largeBreakpoint) {
-            max-width: 30em;
+            max-width: 20em;
         }
     }
 

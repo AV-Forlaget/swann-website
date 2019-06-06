@@ -30,7 +30,7 @@
 		        <nuxt-link class="btn" to="/distribution">Read more</nuxt-link>
         </div>
         <div class="content-section__col content-section__col--sm">
-            <img src="@/assets/img/digital-distribution.png" class="audiobooks-microphone-img" alt="" />
+            <img src="@/assets/img/digital-distribution.png" class="digital-distribution-img" alt="" />
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
 		        <nuxt-link class="btn" to="/distribution">To the catalogue</nuxt-link>
         </div>
         <div class="content-section__col content-section__col--sm">
-            <img src="@/assets/img/narrator-catalogue.png" class="audiobooks-microphone-img" alt="" />
+            <img src="@/assets/img/narrator-catalogue.png" class="narrator-catalogue-img" alt="" />
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div class="content-section">
+    <div class="content-section content-section--white">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Partners</h2>
         <p class="content-section__text content-section__text--center">[something about our partners]</p>
