@@ -14,6 +14,10 @@
         <div class="content-section__btn">
           <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
         </div>
+      </div>
+    </div>
+    <div class="content-section content-section--bg-color">
+      <div class="content-section__wrapper">
         <div class="audio-flow">
           <div class="audio-flow__block audio-flow__block--studio">
             <img src="@/assets/img/swann-studio-app.png" alt="Swann studio app" class="audio-flow__block__img">
@@ -37,52 +41,6 @@
             <img src="@/assets/img/icons/icon-delivery.png" alt="Delivery" class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Delivery</h4>
             <p class="audio-flow__block__text">Our audioserver automatically tags the audio files, divides them into tracks or chapters and converts them into the requested format. We check the metadata and the quality of the recording before delivering in any chosen format.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content-section content-section--bg-color">
-      <div class="content-section__wrapper">
-        <h2 class="content-section__heading content-section__heading--center">Formats</h2>
-        <p class="content-section__text content-section__text--center">[introducion to the various formats]</p>
-        <div class="ui-block ui-block--formats">
-          <div class="ui-block__header">
-            <h3 class="ui-block__header__heading">Audiobooks</h3>
-          </div>
-          <div class="ui-block__body">
-            <img src="@/assets/img/icons/icon-audiobooks.svg" class="ui-block__icon" alt>
-            <p class="ui-block__body__intro">[long text about audiobooks]</p>
-          </div>
-        </div>
-        <div class="block-grid">
-          <div class="ui-block ui-block--formats">
-            <div class="ui-block__header">
-              <h3 class="ui-block__header__heading">Articles</h3>
-            </div>
-            <div class="ui-block__body">
-              <img src="@/assets/img/icons/icon-articles.svg" alt>
-              <p
-                class="ui-block__body__intro"
-              >[text about how production of articles to audio works]</p>
-            </div>
-          </div>
-          <div class="ui-block ui-block--formats">
-            <div class="ui-block__header">
-              <h3 class="ui-block__header__heading">Podcast</h3>
-            </div>
-            <div class="ui-block__body">
-              <img src="@/assets/img/icons/icon-podcast.svg" alt>
-              <p class="ui-block__body__intro">[text about how production of podcasts works]</p>
-            </div>
-          </div>
-          <div class="ui-block ui-block--formats">
-            <div class="ui-block__header">
-              <h3 class="ui-block__header__heading">Digitization</h3>
-            </div>
-            <div class="ui-block__body">
-              <img src="@/assets/img/icons/icon-digitization.svg" alt>
-              <p class="ui-block__body__intro">[text about how of digitization of audiotapes works]</p>
-            </div>
           </div>
         </div>
       </div>
