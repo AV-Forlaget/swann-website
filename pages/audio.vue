@@ -372,6 +372,35 @@
         </div>
       </div>
     </div>
+    <div class="content-section content-section--dark">
+        <div class="content-section__wrapper">
+          <div class="text-block text-block--dark">
+            <h3 class="text-block__heading">Other audio production services</h3>
+              <p class="text-block__paragraph">In addition to the audiobook services Swann Studio provides podcast production assistance and article narrations for online journals, magazines, newspapers etc. We also have a team ready to help you digitize and optimize your backlist of titles on cassettes or reel tapes.</p>
+              <p class="text-block__paragraph">If you are interested in our services, please contact our audio production team.</p>
+            <div class="content-section__btn">
+              <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
+            </div>
+            <div class="icon-list">
+              <div class="icon-list__item">
+                <img src="@/assets/img/icons/icon-podcast.svg" class="icon-list__icon icon-list__item--small" alt="" />
+                <h4>Podcast</h4>
+                <p>We offer both practical and editorial assistance with podcast productions. Our team can also help you distribute your content.</p>
+              </div>
+              <div class="icon-list__item">
+                <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon icon-list__item--small" alt="" />
+                <h4>Digitization</h4>
+                <p>We can digitize audio on cassettes or reel tapes, clean the sound and handle the distribution for example to help you revitalize your backlist.</p>
+              </div>
+              <div class="icon-list__item">
+                <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon" alt="" />
+                <h4>Articles</h4>
+                <p>Swann Studio provides narration for all kinds of online publications, ranging from science journals, through fashion magazines to weekly or daily newspapers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
 </template>
 
