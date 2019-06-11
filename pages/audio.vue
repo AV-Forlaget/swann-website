@@ -3,15 +3,17 @@
     <div class="main-hero">
       <div class="main-hero__wrapper">
         <h1 class="main-hero__heading">Audio</h1>
-        <p
-          class="main-hero__subheading"
-        >[Extended text about our history with audio in general and current activities]</p>
       </div>
     </div>
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading content-section__heading--center">Audio production</h2>
-        <p class="content-section__text content-section__text--center">[Extended text about our history with audio production in general and current activities]</p>
+        <h2 class="content-section__heading content-section__heading--center">Audiobook production</h2>
+        <p class="content-section__text content-section__text--center">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
+        <p class="content-section__text content-section__text--center">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
+        <p class="content-section__text content-section__text--center">If you are interested in our services, please contact our audiobook production team.</p>
+        <div class="content-section__btn">
+          <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
+        </div>
         <div class="audio-flow">
           <div class="audio-flow__block audio-flow__block--studio">
             <img src="@/assets/img/swann-studio-app.png" alt class="audio-flow__block__img">

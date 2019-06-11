@@ -130,4 +130,9 @@
       display: inline;
     }
   }
+
+  &.btn--center {
+    display: inline-block;
+    margin: 0 auto;
+  }
 }

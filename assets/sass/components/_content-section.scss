@@ -123,11 +123,16 @@
 
         @include mq($mobileBreakpoint) {
             margin-bottom: 0.9em;
-            font-size: 1.1em;
+            font-size: 1em;
         }
 
         @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.1em;
+        }
+
+        @include mq($largeBreakpoint) {
             font-size: 1.2em;
+            line-height: 150%;
         }
 
         @at-root .content-section.content-section--dark .content-section__text {
@@ -136,6 +141,22 @@
 
         &.content-section__text--center {
             text-align: center;
+        }
+    }
+
+    .content-section__btn {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: center;
+        align-items: center;
+        margin: 1em auto 1em;
+
+        @include mq($mobileBreakpoint) {
+            margin-top: 1.5em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            margin-top: 2em;
         }
     }
 }
