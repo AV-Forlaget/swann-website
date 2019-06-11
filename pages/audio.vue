@@ -16,37 +16,27 @@
         </div>
         <div class="audio-flow">
           <div class="audio-flow__block audio-flow__block--studio">
-            <img src="@/assets/img/swann-studio-app.png" alt class="audio-flow__block__img">
+            <img src="@/assets/img/swann-studio-app.png" alt="Swann studio app" class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Swann studio app</h4>
-            <p
-              class="audio-flow__block__text"
-            >[we have an awesome app that you can use, and it makes everything easy]</p>
-            <img src="@/assets/img/lines/line-studio-app.svg" alt class="audio-flow__block__line">
+            <p class="audio-flow__block__text">Upload your manuscript and metadata directly through our web app or API. From here on everything is handled by us with the help of our software that organizes the entire production process.</p>
+            <img src="@/assets/img/lines/line-01.svg" alt class="audio-flow__block__line">
           </div>
-          <div class="audio-flow__block audio-flow__block--order">
-            <img src="@/assets/img/swann-app-order.png" alt class="audio-flow__block__img">
-            <h4 class="audio-flow__block__heading">Order</h4>
-            <p class="audio-flow__block__text">[this is how you order an audio production]</p>
-            <img src="@/assets/img/lines/line-order.svg" alt class="audio-flow__block__line">
-          </div>
-          <div class="audio-flow__block audio-flow__block--narrator">
+          <div class="audio-flow__block audio-flow__block--casting">
             <img src="@/assets/img/swann-choose-narrator.jpg" alt class="audio-flow__block__img">
-            <h4 class="audio-flow__block__heading">Choose narrator</h4>
-            <p class="audio-flow__block__text">[this is how you choose a narrator]</p>
-            <img src="@/assets/img/lines/line-narrator.svg" alt class="audio-flow__block__line">
+            <h4 class="audio-flow__block__heading">Casting</h4>
+            <p class="audio-flow__block__text">You can choose a narrator from our catalogue, request someone from the outside or let our editors assist you or decide for you, based on their experience with thousands of productions in all genres.</p>
+            <img src="@/assets/img/lines/line-02.svg" alt class="audio-flow__block__line">
           </div>
-          <div class="audio-flow__block audio-flow__block--upload">
-            <img src="@/assets/img/icons/icon-jpg-pdf.svg" alt class="audio-flow__block__img">
-            <h4 class="audio-flow__block__heading">Upload files</h4>
-            <p class="audio-flow__block__text">[this is how you upload files]</p>
-            <img src="@/assets/img/lines/line-upload.svg" alt class="audio-flow__block__line">
+          <div class="audio-flow__block audio-flow__block--recording">
+            <img src="@/assets/img/icons/icon-recording.png" alt class="audio-flow__block__img">
+            <h4 class="audio-flow__block__heading">Recording</h4>
+            <p class="audio-flow__block__text">The production can be completed within as little as three weeks after the choice of narrator has been confirmed, and you can follow the progress of your title in the app.</p>
+            <img src="@/assets/img/lines/line-03.svg" alt class="audio-flow__block__line">
           </div>
-          <div class="audio-flow__block audio-flow__block--distribution">
-            <img src="@/assets/img/icons/icon-audiofiles.svg" alt class="audio-flow__block__img">
-            <h4 class="audio-flow__block__heading">Distribution</h4>
-            <p
-              class="audio-flow__block__text"
-            >[the audio is now recorded and mastered, and sent to you]</p>
+          <div class="audio-flow__block audio-flow__block--delivery">
+            <img src="@/assets/img/icons/icon-delivery.png" alt="Delivery" class="audio-flow__block__img">
+            <h4 class="audio-flow__block__heading">Delivery</h4>
+            <p class="audio-flow__block__text">Our audioserver automatically tags the audio files, divides them into tracks or chapters and converts them into the requested format. We check the metadata and the quality of the recording before delivering in any chosen format.</p>
           </div>
         </div>
       </div>
