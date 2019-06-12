@@ -8,6 +8,11 @@
   }
 
   &.icon-list--distribution {
+    margin-top: 2em;
+
+    @include mq($removeMobileMenuBreakpoint) {
+      margin-top: 4em;
+    }
 
     .icon-list__item {
 
@@ -21,7 +26,7 @@
       }
 
       &:last-child {
-        margin-bottom: 5.9em;
+        margin-bottom: 5.8em;
       }
     }
   }
