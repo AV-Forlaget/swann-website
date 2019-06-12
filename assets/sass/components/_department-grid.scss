@@ -16,9 +16,15 @@
         }
     }
 
-    .employee-image {
+    img {
+        display: block;
+        margin: 0 auto;
         max-width: 130px;
         height: auto;
+
+        @include mq($mobileBreakpoint) {
+            margin: 0;
+        }
     }
     
     .employee-name {
