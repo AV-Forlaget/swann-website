@@ -11,24 +11,24 @@
     </div>
 
 
-	<div class="content-section">
+	<div class="content-section content-section--bg-color">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Management</h2>
 			<div class="department-grid">
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Julian Lundsgaard</h3>
 					<p class="employee-jobtitle">CEO</p>
-					<p class="employee-email"><nuxt-link to="mailto:ja@swann.com" class="employee__anchor">ja@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:ja@swann.com" >ja@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Daniel Lundsgaard</h3>
 					<p class="employee-jobtitle">Project manager</p>
-					<p class="employee-email"><nuxt-link to="mailto:ap@swann.com" class="employee__anchor">ap@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:ap@swann.com" >ap@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Lene Christensen</h3>
 					<p class="employee-jobtitle">Head of production</p>
-					<p class="employee-email"><nuxt-link to="mailto:mc@swann.com" class="employee__anchor">mc@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:mc@swann.com" >mc@swann.com</nuxt-link></p>
 				</div>
 			</div>
 		</div>
@@ -40,34 +40,34 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Benjamin Blaaberg</h3>
 					<p class="employee-jobtitle">Chief audio tech</p>
-					<p class="employee-email"><nuxt-link to="mailto:ag@swann.com" class="employee__anchor">ag@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:ag@swann.com" >ag@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Oliver Lundsgaard</h3>
 					<p class="employee-jobtitle">Audio research</p>
-					<p class="employee-email"><nuxt-link to="mailto:gg@swann.com" class="employee__anchor">gg@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:gg@swann.com" >gg@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Henrik Pedersen</h3>
 					<p class="employee-jobtitle">Audio tech</p>
-					<p class="employee-email"><nuxt-link to="mailto:be@swann.com" class="employee__anchor">be@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:be@swann.com" >be@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Bahra Aki Chamanara</h3>
 					<p class="employee-jobtitle">Digitization</p>
-					<p class="employee-email"><nuxt-link to="mailto:ac@swann.com" class="employee__anchor">ac@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:ac@swann.com" >ac@swann.com</nuxt-link></p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="content-section">
+	<div class="content-section content-section--bg-color">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Publishing</h2>
 			<div class="department-grid">
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Martin Johs. Møller</h3>
 					<p class="employee-jobtitle">Editor-in-chief</p>
-					<p class="employee-email"><nuxt-link to="mailto:sh@swann.com" class="employee__anchor">sh@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:sh@swann.com" >sh@swann.com</nuxt-link></p>
 				</div>
 			</div>
 		</div>
@@ -79,39 +79,39 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Malin Flinta</h3>
 					<p class="employee-jobtitle">Coordinator/controller</p>
-					<p class="employee-email"><nuxt-link to="mailto:lc@swann.com" class="employee__anchor">lc@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:lc@swann.com" >lc@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Natja Sørensen</h3>
 					<p class="employee-jobtitle">Graphic designer</p>
-					<p class="employee-email"><nuxt-link to="mailto:eb@swann.com" class="employee__anchor">eb@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:eb@swann.com" >eb@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >?</h3>
 					<p class="employee-jobtitle">Coordinator/shipment</p>
-					<p class="employee-email"><nuxt-link to="mailto:nb@swann.com" class="employee__anchor">nb@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:nb@swann.com" >nb@swann.com</nuxt-link></p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="content-section">
+	<div class="content-section content-section--bg-color">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Development</h2>
 			<div class="department-grid">
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Jakob Lund</h3>
 					<p class="employee-jobtitle">Lead programmer</p>
-					<p class="employee--email"><nuxt-link to="mailto:wl@swann.com" class="employee__anchor">wl@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:wl@swann.com" >wl@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Tore Sæderup</h3>
 					<p class="employee-jobtitle">Backend developer</p>
-					<p class="employee-email"><nuxt-link to="mailto:lc@swann.com" class="employee__anchor">lc@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:lc@swann.com" >lc@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Klaus Fyhn Jacobsen</h3>
 					<p class="employee-jobtitle">Backend developer</p>
-					<p class="employee-email"><nuxt-link to="mailto:lc@swann.com" class="employee__anchor">lc@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:lc@swann.com" >lc@swann.com</nuxt-link></p>
 				</div>
 			</div>
 		</div>
@@ -124,12 +124,12 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Jane Olsen</h3>
 					<p class="employee-jobtitle">Bookkeeper</p>
-					<p class="employee-email"><nuxt-link to="mailto:gl@swann.com" class="employee__anchor">gl@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:gl@swann.com" >gl@swann.com</nuxt-link></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Anette Lundsgaard</h3>
 					<p class="employee-jobtitle">Bookkeeper</p>
-					<p class="employee-email"><nuxt-link to="mailto:cm@swann.com" class="employee__anchor">cm@swann.com</nuxt-link></p>
+					<p class="employee-email"><nuxt-link to="mailto:cm@swann.com" >cm@swann.com</nuxt-link></p>
 				</div>
 			</div>
 		</div>
