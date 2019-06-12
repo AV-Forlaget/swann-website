@@ -4,6 +4,28 @@
       <div class="main-hero__wrapper">
         <h1 class="main-hero__heading">Distribution</h1>
       </div>
+      <div class="spectrum">
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+        <div class="spectrum__bar"></div>
+      </div>
     </div>
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
