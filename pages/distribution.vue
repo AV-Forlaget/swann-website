@@ -95,27 +95,27 @@
     <div class="content-section content-section--dark">
         <div class="content-section__wrapper">
           <div class="text-block text-block--dark">
-            <h3 class="text-block__heading">Other audio production services</h3>
-            <p class="text-block__paragraph">In addition to the audiobook services Swann Studio provides podcast production assistance and article narrations for online journals, magazines, newspapers etc. We also have a team ready to help you digitize and optimize your backlist of titles on cassettes or reel tapes.</p>
-            <p class="text-block__paragraph">If you are interested in our services, please contact our audio production team.</p>
+            <h3 class="text-block__heading">Other services</h3>
+            <p class="text-block__paragraph">Swann Studio is ready to assist you with any task, issue or inquiry regarding audiobooks or other spoken audio productions. We also work with e-books and have a vast general knowledge of the publishing industry. You can see some examples of what we have to offer below. </p>
+            <p class="text-block__paragraph">If you are interested in knowing more about our additional services feel free to reach out.</p>
             <div class="content-section__btn">
               <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
             </div>
-            <div class="icon-list">
+            <div class="icon-list icon-list--distribution">
               <div class="icon-list__item">
-                <img src="@/assets/img/icons/icon-podcast.svg" class="icon-list__icon icon-list__item--small" alt="" />
-                <h4>Podcast</h4>
-                <p>We offer both practical and editorial assistance with podcast productions. Our team can also help you distribute your content.</p>
+                <img src="@/assets/img/icons/icon-publishing.svg" class="icon-list__icon icon-list__item--small" alt="" />
+                <h4>Publishing</h4>
+                <p>We publish a great number of titles ourselves every year. If you are a rights owner or a writer you can always present or submit your material to us. Furthermore our editorial team offers global assistance and consultancy with everything regarding audiobook publication.</p>
               </div>
               <div class="icon-list__item">
-                <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon icon-list__item--small" alt="" />
-                <h4>Digitization</h4>
-                <p>We can digitize audio on cassettes or reel tapes, clean the sound and handle the distribution for example to help you revitalize your backlist.</p>
+                <img src="@/assets/img/icons/icon-cover-production.svg" class="icon-list__icon icon-list__item--small" alt="" />
+                <h4>Cover production</h4>
+                <p>Our graphics team can produce covers based on existing material or make entirely new ones. We are very aware of the particularities of creating content for the visually competitive streaming market. We can do single projects but also assist with larger series or even entire visual audiobook publication profiles.</p>
               </div>
               <div class="icon-list__item">
-                <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon" alt="" />
-                <h4>Articles</h4>
-                <p>Swann Studio provides narration for all kinds of online publications, ranging from science journals, through fashion magazines to weekly or daily newspapers.</p>
+                <img src="@/assets/img/icons/icon-translation.svg" class="icon-list__icon" alt="" />
+                <h4>Translation</h4>
+                <p>Our international presence makes us an ideal partner for publications in multiple languages and markets. We are always on hand to assist with any translation services our clients might need.</p>
               </div>
             </div>
           </div>
