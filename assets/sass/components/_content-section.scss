@@ -7,6 +7,10 @@
         padding: 3em 0;
     }
 
+    @include mq($removeMobileMenuBreakpoint) {
+        padding: 5em 0;
+    }
+
     &:nth-child(odd) {
         background: $white;
     }

@@ -6,12 +6,12 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mq($mobileBreakpoint) {
-        min-height: 20em;
+    @include mq($removeMobileMenuBreakpoint) {
+        min-height: 15em;
     }
 
-    @include mq($removeMobileMenuBreakpoint) {
-        min-height: 25em;
+    @include mq($largeBreakpoint) {
+        min-height: 16em;
     }
     
     .main-hero__wrapper {
