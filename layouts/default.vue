@@ -20,7 +20,7 @@
 						<p class="header-tagline">Be part of our narrator catalog</p>
 						<ul class="nav nav--login-menu">
 							<li class="nav__item">
-								<a href="https://swann-studio.com/app/da/login">Login</a>
+								<a href="https://swann-studio.com/app/da/login" class="btn">Login</a>
 							</li>
 						</ul>
 					</div>
