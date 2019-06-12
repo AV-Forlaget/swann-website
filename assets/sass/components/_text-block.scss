@@ -21,19 +21,36 @@
         text-align: center;
 
         @include mq($mobileBreakpoint) {
-            font-size: 1.8em;
+            font-size: 2em;
+            line-height: 112%;
         }
 
         @include mq($removeMobileMenuBreakpoint) {
-            font-size: 2.4em;
+            font-size: 2.5em;
+            line-height: 115%;
+        }
+
+        @include mq($largeBreakpoint) {
+            line-height: 118%;
         }
     }
 
     .text-block__paragraph {
         text-align: center;
+        font-size: 0.95em;
 
         @include mq($mobileBreakpoint) {
+            margin-bottom: 0.9em;
+            font-size: 1em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
             font-size: 1.1em;
+        }
+
+        @include mq($largeBreakpoint) {
+            font-size: 1.2em;
+            line-height: 150%;
         }
     }
 

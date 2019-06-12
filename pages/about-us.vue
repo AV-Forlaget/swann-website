@@ -11,7 +11,7 @@
     </div>
 
 
-	<div class="content-section content-section--white">
+	<div class="content-section">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Management</h2>
 			<div class="department-grid">
@@ -33,7 +33,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="content-section content-section--white">
+	<div class="content-section">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Audio production</h2>
 			<div class="department-grid">
@@ -60,7 +60,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="content-section content-section--white">
+	<div class="content-section">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Publishing</h2>
 			<div class="department-grid">
@@ -72,7 +72,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="content-section content-section--white">
+	<div class="content-section">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Distribution</h2>
 			<div class="department-grid">
@@ -94,7 +94,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="content-section content-section--white">
+	<div class="content-section">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Development</h2>
 			<div class="department-grid">
@@ -117,7 +117,7 @@
 		</div>
 	</div>
 
-	<div class="content-section content-section--white">
+	<div class="content-section">
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Bookkeeping</h2>
 			<div class="department-grid">

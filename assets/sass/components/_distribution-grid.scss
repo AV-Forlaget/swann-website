@@ -4,18 +4,14 @@
     pointer-events: none;
 
     @include mq($largeBreakpoint) {
-        margin-top: -5em;
+        margin-top: -1em;
     }
 
     &.distribution-block--cd {
 
-        @include mq($largeBreakpoint) {
-            margin-top: -3em;
-        }
-
         .distribution-block__grid__item.distribution-block__grid__item--left {
             @include mq($largeBreakpoint) {
-                margin-top: 10em;
+                margin-top: 8.2em;
             }
         }
     }
@@ -62,7 +58,7 @@
             }
 
             @include mq($largeBreakpoint) {
-                margin-top: 12em;
+                margin-top: 8em;
                 max-width: 40em;
             }
 
@@ -118,17 +114,8 @@
     
             @include mq($mobileBreakpoint) {
                 margin-bottom: 0.9em;
-                font-size: 1em;
-                text-align: left;
-            }
-    
-            @include mq($removeMobileMenuBreakpoint) {
-                font-size: 1.1em;
-            }
-    
-            @include mq($largeBreakpoint) {
-                font-size: 1.2em;
                 line-height: 150%;
+                text-align: left;
             }
         }
     }

@@ -45,7 +45,7 @@
         <div class="text-block text-block--dark">
           <h3 class="text-block__heading">Our partners</h3>
           <p class="text-block__paragraph">We distribute to many major partners and streaming services.</p>
-          <div class="icon-list">
+          <div class="icon-list icon-list--partners">
             <div class="icon-list__item">
               <img src="@/assets/img/logos/logo-mofibo-white.svg" class="icon-list__icon icon-list__item--small" alt="" />
             </div>

@@ -25,6 +25,14 @@
       }
     }
   }
+
+  &.icon-list--partners {
+
+    @include mq($removeMobileMenuBreakpoint) {
+      max-height: 12em;
+      margin-top: -2em;
+    }
+  }
 }
 
 .icon-list__item {
