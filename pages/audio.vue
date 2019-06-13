@@ -142,7 +142,7 @@ export default {
     filteredNarratorList() {
       return this.narrators.filter((narrator) => {
         if(this.searchFilter) {
-          let regex = new RegExp('^' + this.searchFilter + '+', 'i');
+          let regex = new RegExp('^' + this.searchFilter.trim() + '+', 'i');
           if(!narrator.name.match(regex)) {
             return false;
           }
