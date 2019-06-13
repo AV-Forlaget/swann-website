@@ -67,45 +67,55 @@
         height: 5em;
         margin-right: 1em;
         cursor: pointer;
+        background: shade($white, 10%);
+        border-radius: 50%;
+        transition: background 150ms ease;
 
-        &.narrator-item__preview--pause .preview-bar {
+        &.narrator-item__preview--pause {
+            background: $white;
+            transition: background 150ms ease;
 
-            &.preview-bar--first {
-                width: 10px;
-                height: 30px;
-                background: $brand-color;
-                transform: rotate(0deg) translate3d(0.8em,0,0);
-                transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
-            }
-
-            &.preview-bar--second {
-                width: 10px;
-                transform: translate3d(-0.8em,0,0);
-                background: $brand-color;
-                transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+            .preview-bar {
+                &.preview-bar--first {
+                    width: 10px;
+                    height: 30px;
+                    background: $brand-color;
+                    transform: rotate(0deg) translate3d(0.8em,0,0);
+                    transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+                }
+    
+                &.preview-bar--second {
+                    width: 10px;
+                    transform: translate3d(-0.8em,0,0);
+                    background: $brand-color;
+                    transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+                }
             }
         }
 
-        &.narrator-item__preview--loading .preview-bar {
+        &.narrator-item__preview--loading {
+            background: $white;
+            transition: background 150ms ease;
 
-            &.preview-bar--first {
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: $brand-color;
-                animation: preview-loading 500ms linear infinite both;
-                transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
-            }
+           .preview-bar {
+                &.preview-bar--first {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: $brand-color;
+                    animation: preview-loading 500ms linear infinite both;
+                    transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+                }
 
-            &.preview-bar--second {
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: $brand-color;
-                animation: preview-loading 500ms 250ms linear infinite both;
-                transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
-            }
-            
+                &.preview-bar--second {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: $brand-color;
+                    animation: preview-loading 500ms 250ms linear infinite both;
+                    transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+                }
+           }
         }
 
         .preview-bar {
@@ -127,8 +137,9 @@
             }
 
             &.preview-bar--second {
-                transform: translate3d(-1.4em,0,0);
-                background: $white;
+                width: 16px;
+                transform: translate3d(-1.1em,0,0);
+                background: shade($white, 10%);
                 transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
             }
         }
