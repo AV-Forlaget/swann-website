@@ -46,7 +46,7 @@
 				<div class="footer-nav">
 					<nuxt-link to="/about-us">About us</nuxt-link>
 					<a href="https://swann-studio.com/app/da/login">Login</a>
-					<a href="swannstudio-overview.pdf" target="_blank">Download printable brochure here</a>
+					<a href="/swannstudio-overview.pdf" target="_blank">Download printable brochure here</a>
 					<nuxt-link to="/trouble"></nuxt-link>
 				</div>
 				<span class="footer-copyright">© 2019 Swann A/S - All rights reserved</span>
