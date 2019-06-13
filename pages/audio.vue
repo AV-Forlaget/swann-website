@@ -72,12 +72,12 @@
         <h2 class="content-section__heading content-section__heading--center">Our worldwide narrator catalogue</h2>
         <p class="content-section__text content-section__text--center">Swann Studio has an extensive ever growing global catalogue of voices. Our audio editors are always ready to assist our clients in choosing the right narrator for any job. We believe that narrating and listening is intimate and requires a great deal of sensibility and always aim to understand and learn more about the nuances of storytelling traditions in different markets and cultures.</p>
           <div class="narrator-sorting">
-              <dropdown placeholder="Voice type" :options="voicetypeOptions"></dropdown>
-              <dropdown placeholder="Location" :options="locationOptions"></dropdown>
-              <input-field name="Search"></input-field>
+              <dropdown :options="voicetypeOptions" v-model="selectedVoiceFilter"></dropdown>
+              <dropdown :options="locationOptions" v-model="selectedLocationFilter"></dropdown>
+              <input-field name="Search" v-model="searchFilter"></input-field>
             </div>
             <div class="narrator-grid">
-              <narrator-item v-for="narrator in narrators" :key="narrator.id" :narrator="narrator"></narrator-item>
+              <narrator-item v-for="narrator in filteredNarratorList" :key="narrator.id" :narrator="narrator"></narrator-item>
             </div>
       </div>
     </div>
@@ -131,10 +131,37 @@ export default {
       })
       .catch(console.error);
   },
+  data() {
+      return {
+        selectedVoiceFilter: ' ',
+        selectedLocationFilter: ' ',
+        searchFilter: ''
+      }
+  },
   computed: {
+    filteredNarratorList() {
+      return this.narrators.filter((narrator) => {
+        if(this.searchFilter) {
+          let regex = new RegExp('^' + this.searchFilter.trim() + '+', 'i');
+          if(!narrator.name.match(regex)) {
+            return false;
+          }
+        }
+
+        if(this.selectedLocationFilter != ' ' && narrator.language !== this.selectedLocationFilter) {
+          return false;
+        }
+
+        if(this.selectedVoiceFilter != ' ' && narrator.voice.gender !== this.selectedVoiceFilter) {
+          return false;
+        }
+
+        return true;
+      });
+    },
     locationOptions() {
       let narratorLanguages = _.uniq(this.narrators.map((narrator) => narrator.language));
-      return _.sortBy(narratorLanguages.map((langaugeCode) => {
+      let locations = _.sortBy(narratorLanguages.map((langaugeCode) => {
         let lang = Languages.filter((lang) => lang.value === langaugeCode);
         if(lang.length) {
           return {
@@ -146,10 +173,17 @@ export default {
 
         return null;
       }).filter((lang) => lang), 'text');
+
+      locations.unshift({
+        text: '(All locations)',
+        value: ' '
+      });
+
+      return locations;
     },
     voicetypeOptions() {
       let narratorVoices = _.uniq(this.narrators.map((narrator) => narrator.voice.gender)).filter((voice) => voice);
-      return _.sortBy(narratorVoices.map((voice) => {
+      let voiceTypes = _.sortBy(narratorVoices.map((voice) => {
         let text = voice;
         switch(voice) {
           case 'female':
@@ -165,6 +199,13 @@ export default {
           value: voice
         }
       }), 'text');
+
+      voiceTypes.unshift({
+        text: '(All voice types)',
+        value: ' '
+      });
+
+      return voiceTypes;
     }
   },
   components: {
