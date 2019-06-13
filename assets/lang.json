@@ -134,7 +134,6 @@
     {
         "text": "German",
         "studios": [
-            "Berlin",
             "Hamborg"
         ],
         "value": "de"
@@ -157,9 +156,6 @@
     },
     {
         "text": "English",
-        "studios": [
-            "London"
-        ],
         "value": "en"
     },
     {
@@ -168,6 +164,9 @@
     },
     {
         "text": "Spanish; Castilian",
+        "studios": [
+            "Barcelona"
+        ],
         "value": "es"
     },
     {
@@ -461,7 +460,10 @@
         "value": "na"
     },
     {
-        "text": "Bokm\u00e5l, Norwegian; Norwegian Bokm\u00e5l",
+        "text": "Norwegian",
+        "studios": [
+            "Oslo"
+        ],
         "value": "nb"
     },
     {
@@ -536,9 +538,6 @@
     },
     {
         "text": "Polish",
-        "studios": [
-            "Warsawa"
-        ],
         "value": "pl"
     },
     {
