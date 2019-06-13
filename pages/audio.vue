@@ -77,42 +77,7 @@
               <input-field name="Search"></input-field>
             </div>
             <div class="narrator-grid">
-              <div class="narrator-item">
-                <div class="narrator-item__avatar">
-                  <img src="@/assets/img/icons/icon-male-narrator.svg" alt>
-                </div>
-                <div class="narrator-item__content">
-                  <h4 class="narrator-name">Narrator name</h4>
-                </div>
-                <button class="narrator-item__preview">
-                  <span class="preview-bar preview-bar--first"></span>
-                  <span class="preview-bar preview-bar--second"></span>
-                </button>
-              </div>          
-              <div class="narrator-item">
-                <div class="narrator-item__avatar">
-                  <img src="@/assets/img/icons/icon-female-narrator.svg" alt>
-                </div>
-                <div class="narrator-item__content">
-                  <h4 class="narrator-name">Narrator name</h4>
-                </div>
-                 <button class="narrator-item__preview narrator-item__preview--pause">
-                  <span class="preview-bar preview-bar--first"></span>
-                  <span class="preview-bar preview-bar--second"></span>
-                </button>
-              </div>
-              <div class="narrator-item">
-                <div class="narrator-item__avatar">
-                  <img src="@/assets/img/icons/icon-female-narrator.svg" alt>
-                </div>
-                <div class="narrator-item__content">
-                  <h4 class="narrator-name">Narrator name</h4>
-                </div>
-                 <button class="narrator-item__preview narrator-item__preview--loading">
-                  <span class="preview-bar preview-bar--first"></span>
-                  <span class="preview-bar preview-bar--second"></span>
-                </button>
-              </div>
+              <narrator-item v-for="narrator in narrators" :key="narrator.id" :narrator="narrator"></narrator-item>
             </div>
       </div>
     </div>
@@ -153,6 +118,7 @@ import Dropdown from "~/components/dropdown.vue";
 import InputField from "~/components/input-field.vue";
 import SwannAPI from "~/plugins/SwannAPI.js";
 import Languages from '~/assets/lang.json';
+import NarratorItem from '~/components/narrator-item.vue';
 import _ from 'underscore';
 
 export default {
@@ -160,19 +126,15 @@ export default {
     return Promise.all([SwannAPI.getNarrators()])
       .then(([narrators]) => {
         return {
-          narrators: narrators.data
+          narrators: _.sortBy(narrators.data, 'name')
         };
       })
       .catch(console.error);
   },
-  data() {
-    return {
-    };
-  },
   computed: {
     locationOptions() {
       let narratorLanguages = _.uniq(this.narrators.map((narrator) => narrator.language));
-      return narratorLanguages.map((langaugeCode) => {
+      return _.sortBy(narratorLanguages.map((langaugeCode) => {
         let lang = Languages.filter((lang) => lang.value === langaugeCode);
         if(lang.length) {
           return {
@@ -183,11 +145,11 @@ export default {
         }
 
         return null;
-      }).filter((lang) => lang);
+      }).filter((lang) => lang), 'text');
     },
     voicetypeOptions() {
       let narratorVoices = _.uniq(this.narrators.map((narrator) => narrator.voice.gender)).filter((voice) => voice);
-      return narratorVoices.map((voice) => {
+      return _.sortBy(narratorVoices.map((voice) => {
         let text = voice;
         switch(voice) {
           case 'female':
@@ -202,12 +164,13 @@ export default {
           text,
           value: voice
         }
-      });
+      }), 'text');
     }
   },
   components: {
     Dropdown,
-    InputField
+    InputField,
+    NarratorItem
   }
 };
 </script>
