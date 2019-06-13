@@ -15,7 +15,7 @@ $bg-color-2: #f2eeeb;
 // Font colors
 $font-color: #555;
 $font-color-dark: $bg-color-dark;
-$headings-color: rgba($bg-color-dark, 0.25);
+$headings-color: $bg-color-dark;
 
 // System colors
 $positive:$brand-color-2;

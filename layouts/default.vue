@@ -17,10 +17,10 @@
 						</ul>
 					</div>
 					<div class="main-nav__list main-nav__list--right">
-						<p class="header-tagline">Be part of our narrator catalog</p>
+						<nuxt-link class="header-tagline" to="/">Be part of our narrator catalog</nuxt-link>
 						<ul class="nav nav--login-menu">
 							<li class="nav__item">
-								<a href="https://swann-studio.com/app/da/login">Login</a>
+								<a href="https://swann-studio.com/app/da/login" class="btn">Login</a>
 							</li>
 						</ul>
 					</div>
