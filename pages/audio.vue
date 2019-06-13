@@ -85,12 +85,8 @@
                   <h4 class="narrator-name">Narrator name</h4>
                 </div>
                 <button class="narrator-item__preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
-                    <circle cx="139" cy="139" r="139"></circle>
-                    <polygon
-                      points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"
-                    ></polygon>
-                  </svg>
+                  <span class="preview-bar preview-bar--first"></span>
+                  <span class="preview-bar preview-bar--second"></span>
                 </button>
               </div>          
               <div class="narrator-item">
@@ -100,13 +96,9 @@
                 <div class="narrator-item__content">
                   <h4 class="narrator-name">Narrator name</h4>
                 </div>
-                <button class="narrator-item__preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 278">
-                    <circle cx="139" cy="139" r="139"></circle>
-                    <polygon
-                      points="121.88 81.25 121.88 141.25 121.88 201.25 196.88 141.25 121.88 81.25"
-                    ></polygon>
-                  </svg>
+                 <button class="narrator-item__preview narrator-item__preview--pause">
+                  <span class="preview-bar preview-bar--first"></span>
+                  <span class="preview-bar preview-bar--second"></span>
                 </button>
               </div>
             </div>
