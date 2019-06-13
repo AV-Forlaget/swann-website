@@ -46,15 +46,16 @@
 				<div class="footer-nav">
 					<nuxt-link to="/about-us">About us</nuxt-link>
 					<a href="https://swann-studio.com/app/da/login">Login</a>
-					<nuxt-link to="/trouble">Download printable brochure here</nuxt-link>
+					<a href="/swannstudio-overview.pdf" target="_blank">Download printable brochure here</a>
+					<nuxt-link to="/trouble"></nuxt-link>
 				</div>
 				<span class="footer-copyright">© 2019 Swann A/S - All rights reserved</span>
 			</div>
 			<div class="footer-col">
-				<a href="#" class="footer-some" title="Visit Facebook">
+				<a href="https://www.facebook.com/SwannStudio1983" target="_blank" class="footer-some" title="Visit Facebook">
   					<img src="@/assets/img/icons/icon-facebook.svg" alt="Visit Facebook" />
 				</a>
-				<a href="#" class="footer-some" title="Visit Instagram">
+				<a href="https://www.instagram.com/swann.studio/" target="_blank" class="footer-some" title="Visit Instagram">
 					<img src="@/assets/img/icons/icon-instagram.svg" alt="Visit Instagram" />
 				</a>
 			</div>
