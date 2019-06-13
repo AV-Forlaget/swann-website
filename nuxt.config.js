@@ -56,7 +56,8 @@ module.exports = {
   modules,
 
   env: {
-    API_URL: process.env.API_URL || ''
+    API_URL: process.env.API_URL || '',
+    FILE_URL: process.env.FILE_URL || ''
   },
 
   /*
