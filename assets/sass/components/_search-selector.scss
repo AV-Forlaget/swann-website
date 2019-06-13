@@ -68,9 +68,11 @@
                 box-sizing: border-box;
                 background: $white;
                 color: $font-color;
+                font-size: 1.1em;
+                font-weight: bold;
                 margin: 0;
                 cursor: pointer;
-                padding: 0.4em 1em;
+                padding: 0.8em 1em;
                 list-style: none;
                 font-family: $font-standard;
                 z-index: 7;
@@ -78,12 +80,27 @@
                 border-top: none;
 
                 &:last-child {
-                    padding-bottom: 0.4em;
                     border-radius: 0 0 $r $r;
                 }
 
                 &:hover {
                     color: $brand-color;
+
+                    b {
+                        color: $brand-color;
+                    }
+                }
+
+                span {
+                    font-weight: normal;
+                    display: block;
+                    font-size: 0.75em;
+
+                    b {
+                        color: rgba($font-color, 0.5);
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
                 }
             }
         }
