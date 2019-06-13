@@ -125,10 +125,17 @@
     },
     {
         "text": "Danish",
+        "studios": [
+            "Copenhagen",
+            "Odense"
+        ],
         "value": "da"
     },
     {
         "text": "German",
+        "studios": [
+            "Hamborg"
+        ],
         "value": "de"
     },
     {
@@ -157,6 +164,9 @@
     },
     {
         "text": "Spanish; Castilian",
+        "studios": [
+            "Barcelona"
+        ],
         "value": "es"
     },
     {
@@ -177,6 +187,9 @@
     },
     {
         "text": "Finnish",
+        "studios": [
+            "Helsinki"
+        ],
         "value": "fi"
     },
     {
@@ -285,6 +298,9 @@
     },
     {
         "text": "Icelandic",
+        "studios": [
+            "Reykjavik"
+        ],
         "value": "is"
     },
     {
@@ -444,7 +460,10 @@
         "value": "na"
     },
     {
-        "text": "Bokm\u00e5l, Norwegian; Norwegian Bokm\u00e5l",
+        "text": "Norwegian",
+        "studios": [
+            "Oslo"
+        ],
         "value": "nb"
     },
     {
@@ -460,7 +479,10 @@
         "value": "ng"
     },
     {
-        "text": "Dutch; Flemish",
+        "text": "Dutch",
+        "studios": [
+            "Amsterdam"
+        ],
         "value": "nl"
     },
     {
@@ -469,6 +491,9 @@
     },
     {
         "text": "Norwegian",
+        "studios": [
+            "Oslo"
+        ],
         "value": "no"
     },
     {
@@ -613,6 +638,10 @@
     },
     {
         "text": "Swedish",
+        "studios": [
+            "Stochkholm",
+            "Göteborg"
+        ],
         "value": "sv"
     },
     {

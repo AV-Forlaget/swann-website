@@ -148,6 +148,8 @@
 import Dropdown from "~/components/dropdown.vue";
 import InputField from "~/components/input-field.vue";
 import SwannAPI from "~/plugins/SwannAPI.js";
+import Languages from '~/assets/lang.json';
+import _ from 'underscore';
 
 export default {
   asyncData() {
@@ -161,35 +163,43 @@ export default {
   },
   data() {
     return {
-      voicetypeOptions: [
-        {
-          text: "Feminine",
-          value: "feminine"
-        },
-        {
-          text: "Masculine",
-          value: "masculine"
-        },
-        {
-          text: "Youthful",
-          value: "youthful"
-        },
-        {
-          text: "Mature",
-          value: "mature"
-        }
-      ],
-      locationOptions: [
-        {
-          text: "Denmark",
-          value: "denmark"
-        },
-        {
-          text: "Etc.",
-          value: "etc"
-        }
-      ]
     };
+  },
+  computed: {
+    locationOptions() {
+      let narratorLanguages = _.uniq(this.narrators.map((narrator) => narrator.language));
+      return narratorLanguages.map((langaugeCode) => {
+        let lang = Languages.filter((lang) => lang.value === langaugeCode);
+        if(lang.length) {
+          return {
+            text: lang[0].text,
+            subline: (lang[0].studios) ? '<b>Studios:</b> ' + lang[0].studios.join(', ') : null,
+            value: lang[0].value
+          }
+        }
+
+        return null;
+      }).filter((lang) => lang);
+    },
+    voicetypeOptions() {
+      let narratorVoices = _.uniq(this.narrators.map((narrator) => narrator.voice.gender)).filter((voice) => voice);
+      return narratorVoices.map((voice) => {
+        let text = voice;
+        switch(voice) {
+          case 'female':
+            text = 'Feminie';
+            break;
+          case "male":
+            text = 'Masculine';
+            break;
+        }
+        
+        return {
+          text,
+          value: voice
+        }
+      });
+    }
   },
   components: {
     Dropdown,
