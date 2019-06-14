@@ -36,6 +36,13 @@ export default {
             }
         }
     },
+    mounted() {
+        if(this.audioFile) {
+            this.$refs.audio.addEventListener('ended', () => {
+                this.playing = false;                
+            });
+        }
+    },
     methods: {
         play() {
             if(!this.loaded) {
