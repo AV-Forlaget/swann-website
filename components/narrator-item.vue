@@ -78,9 +78,7 @@ export default {
                 const dt = t? t1 - t: 0
                 const dv = dt/150
                 t = t1
-                console.log(audio.volume, dt);
                 if (audio.volume == 0) {
-                    console.log('StopPlay');
                     this.playing = false;
                     audio.pause()
                 } else {
