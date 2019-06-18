@@ -25,11 +25,6 @@
 					<p class="employee-jobtitle">Project manager</p>
 					<p class="employee-email"><nuxt-link to="mailto:ap@swann.com" >ap@swann.com</nuxt-link></p>
 				</div>
-				<div class="department-grid__item">
-					<h3 class="employee-name" >Lene Christensen</h3>
-					<p class="employee-jobtitle">Head of production</p>
-					<p class="employee-email"><nuxt-link to="mailto:mc@swann.com" >mc@swann.com</nuxt-link></p>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -37,6 +32,11 @@
 		<div class="content-section__wrapper">
 			<h2 class="content-section__heading content-section__heading--center">Audio production</h2>
 			<div class="department-grid">
+				<div class="department-grid__item">
+					<h3 class="employee-name" >Lene Christensen</h3>
+					<p class="employee-jobtitle">Head of production</p>
+					<p class="employee-email"><nuxt-link to="mailto:mc@swann.com" >mc@swann.com</nuxt-link></p>
+				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Benjamin Blaaberg</h3>
 					<p class="employee-jobtitle">Chief audio tech</p>

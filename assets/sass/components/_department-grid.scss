@@ -2,7 +2,7 @@
 
     @include mq($mobileBreakpoint) {
         display: flex;
-        flex-flow: nowrap row;
+        flex-flow: wrap row;
         justify-content: center;
         align-items: center;
     }
