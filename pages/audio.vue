@@ -77,7 +77,7 @@
               <input-field name="Search" v-model="searchFilter"></input-field>
             </div>
             <div class="narrator-grid">
-              <narrator-item v-for="narrator in filteredNarratorList" :key="narrator.id" :narrator="narrator"></narrator-item>
+              <narrator-item v-for="narrator in filteredNarratorList" :key="narrator.id" :narrator="narrator" @playaudio="(id) => playingNarratorId = id" :playingAudioId="playingNarratorId"></narrator-item>
             </div>
       </div>
     </div>
@@ -135,7 +135,8 @@ export default {
       return {
         selectedVoiceFilter: ' ',
         selectedLocationFilter: ' ',
-        searchFilter: ''
+        searchFilter: '',
+        playingNarratorId: ''
       }
   },
   computed: {
