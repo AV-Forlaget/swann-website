@@ -99,7 +99,7 @@
                 <p>We can digitise audio on cassettes or reel tapes, clean the sound and handle the distribution for example to help you revitalise your backlist.</p>
               </div>
               <div class="icon-list__item">
-                <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon" alt="" />
+                <img src="@/assets/img/icons/icon-articles.svg" class="icon-list__icon" alt="" style="max-width: 8em;"/>
                 <h4>Articles</h4>
                 <p>Swann Studio provides narration for all kinds of online publications, ranging from science journals, through fashion magazines to weekly or daily newspapers.</p>
               </div>
