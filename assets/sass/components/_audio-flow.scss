@@ -9,6 +9,16 @@
         margin-bottom: 5em;
     }
 
+    @include mq($removeMobileMenuBreakpoint) {
+        background: url('../../img/lines/audio-line-bg.svg') no-repeat center;
+        background-size: 38%;
+        background-position-y: 18em;
+    }
+
+    @include mq($largeBreakpoint) {
+        background-position-y: 14em;
+    }
+
     .audio-flow__block {
         position: relative;
         margin: 0 0 8em;
@@ -27,30 +37,11 @@
             }
         }
 
-        .audio-flow__block__line {
-            display: none;
-
-            @include mq($removeMobileMenuBreakpoint) {
-                display: block;
-            }
-        }
-
         &.audio-flow__block--studio {
 
             @include mq($removeMobileMenuBreakpoint) {
                 margin-top: -5em;
             }
-
-            .audio-flow__block__line {
-                position: absolute;
-                top: 0;
-                right: -9em;
-                bottom: 0;
-                left: auto;
-                margin: auto;
-                width: 200px;
-                height: 225px;
-            }  
         }
 
         &.audio-flow__block--casting {
@@ -66,17 +57,6 @@
                     max-width: 29em;
                 }
             }
-
-            .audio-flow__block__line {
-                position: absolute;
-                top: 7em;
-                right: auto;
-                bottom: 0;
-                left: -21.3em;
-                margin: auto;
-                width: 364px;
-                height: 112px;
-            }  
         }
 
         &.audio-flow__block--recording {
@@ -89,17 +69,6 @@
             .audio-flow__block__img {
                 max-width: 15em;
             }
-
-            .audio-flow__block__line {
-                position: absolute;
-                top: 11em;
-                right: -17.5em;
-                bottom: 0;
-                left: auto;
-                margin: auto;
-                width: 490px;
-                height: 187px;
-            }  
         }
 
         &.audio-flow__block--delivery {

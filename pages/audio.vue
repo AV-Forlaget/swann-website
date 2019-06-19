@@ -45,19 +45,16 @@
             <img src="@/assets/img/swann-studio-app.png" alt="Swann studio app" class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Swann studio app</h4>
             <p class="audio-flow__block__text">Upload your manuscript and metadata directly through our web app or API. From here on everything is handled by us with the help of our software that organises the entire production process.</p>
-            <img src="@/assets/img/lines/line-01.svg" alt class="audio-flow__block__line">
           </div>
           <div class="audio-flow__block audio-flow__block--casting">
             <img src="@/assets/img/swann-choose-narrator.jpg" alt class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Casting</h4>
             <p class="audio-flow__block__text">You can choose a narrator from our catalogue, request someone from the outside or let our editors assist you or decide for you, based on their experience with thousands of productions in all genres.</p>
-            <img src="@/assets/img/lines/line-02.svg" alt class="audio-flow__block__line">
           </div>
           <div class="audio-flow__block audio-flow__block--recording">
             <img src="@/assets/img/icons/icon-recording.png" alt class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Recording</h4>
             <p class="audio-flow__block__text">The production can be completed within as little as three weeks after the choice of narrator has been confirmed, and you can follow the progress of your title in the app.</p>
-            <img src="@/assets/img/lines/line-03.svg" alt class="audio-flow__block__line">
           </div>
           <div class="audio-flow__block audio-flow__block--delivery">
             <img src="@/assets/img/icons/icon-delivery.png" alt="Delivery" class="audio-flow__block__img">
