@@ -29,10 +29,10 @@
     </div>
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading content-section__heading--center">Audiobook production</h2>
-        <p class="content-section__text content-section__text--center">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
-        <p class="content-section__text content-section__text--center">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
-        <p class="content-section__text content-section__text--center">If you are interested in our services, please contact our audiobook production team.</p>
+        <h2 class="content-section__heading">Audiobook production</h2>
+        <p class="content-section__text">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
+        <p class="content-section__text">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
+        <p class="content-section__text">If you are interested in our services, please contact our audiobook production team.</p>
         <div class="content-section__btn">
           <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
         </div>
@@ -87,7 +87,7 @@
             <h3 class="text-block__heading">Other audio production services</h3>
             <p class="text-block__paragraph">In addition to the audiobook services Swann Studio provides podcast production assistance and article narrations for online journals, magazines, newspapers etc. We also have a team ready to help you digitise and optimise your backlist of titles on cassettes or reel tapes.</p>
             <p class="text-block__paragraph">If you are interested in our services, please contact our audio production team.</p>
-            <div class="content-section__btn">
+            <div class="content-section__btn content-section__btn--center">
               <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
             </div>
             <div class="icon-list">

@@ -32,7 +32,7 @@
         <h2 class="content-section__heading content-section__heading--center">Digital distribution</h2>
         <p class="content-section__text content-section__text--center">Digital distribution can be handled directly through our web application and we can easily set up our API to deliver a publication to any additional destinations. We work with all relevant streaming services and/or other sales channels.</p>
         <p class="content-section__text content-section__text--center">If you are interested in our digital distribution services, please contact our distribution team.</p>
-        <div class="content-section__btn">
+        <div class="content-section__btn content-section__btn--center">
           <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
         </div>
         <div class="distribution-block">
@@ -90,7 +90,7 @@
         <h2 class="content-section__heading content-section__heading--center">Print-on-Demand and distribution of CDs</h2>
         <p class="content-section__text content-section__text--center">Digital distribution can be directly handled through our web application and we can easily set up our API to deliver a publication to any additional destinations. We work with all relevant streaming services and/or other sales channels.</p>
         <p class="content-section__text content-section__text--center">If you are interested in our digital distribution services, please contact our distribution team.</p>
-        <div class="content-section__btn">
+        <div class="content-section__btn content-section__btn--center">
           <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
         </div>
         <div class="distribution-block distribution-block--cd">
@@ -120,7 +120,7 @@
             <h3 class="text-block__heading">Other services</h3>
             <p class="text-block__paragraph">Swann Studio is ready to assist you with any task, issue or inquiry regarding audiobooks or other spoken audio productions. We also work with ebooks and have a vast general knowledge of the publishing industry. You can see some examples of what we have to offer below. </p>
             <p class="text-block__paragraph">If you are interested in knowing more about our additional services, feel free to reach out.</p>
-            <div class="content-section__btn">
+            <div class="content-section__btn content-section__btn--center">
               <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
             </div>
             <div class="icon-list icon-list--distribution">
