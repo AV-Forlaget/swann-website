@@ -13,7 +13,7 @@
         <div class="content-section__col content-section__col--lg">
             <h2 class="content-section__heading">Audiobooks, podcast, audioarticles, and more</h2>
             <p class="content-section__text">At Swann Studio we aim to simplify the audio production workflow for our clients as much as possible.</p>
-            <p class="content-section__text">Our practical software and constant focus on organizational efficiency makes us an ideal choice for publishers who work on a large scale.</p>
+            <p class="content-section__text">Our agile software and constant focus on organisational efficiency makes us an ideal choice for publishers who work on a large scale.</p>
 		        <nuxt-link class="btn" to="/audio">Read more</nuxt-link>
         </div>
         <div class="content-section__col content-section__col--sm">
@@ -38,8 +38,8 @@
       <div class="content-section__wrapper content-section__wrapper--flex">
         <div class="content-section__col content-section__col--lg">
             <h2 class="content-section__heading">Narrator catalogue</h2>
-            <p class="content-section__text">We currently produce audio in 11 countries with more being added. We have studios in Copehagen, Odense, Stockholm, Göteborg, Oslo, Helsinki, Los Angeles, London, Amsterdam, Reykjavik, Barcelona, Mexico City, Warsawa, Berlin and Hamburg.</p>
-            <p class="content-section__text">We have narrators for all kinds of texts and genres, and editors and producers who can accomodate specific production requirements and are willing to disucss any idea you might have.</p>
+            <p class="content-section__text">Swann Studio has recording facilities in more than 12 countries. Locations include Copenhagen, Odense, Stockholm, Göteborg, Oslo, Helsinki, Amsterdam, Reykjavik, Paris, Hamburg and Berlin.</p>
+            <p class="content-section__text">We have narrators for all kinds of texts and genres, and editors and producers who can accommodate specific production requirements and are willing to discuss any idea you might have.</p>
 		        <nuxt-link class="btn" to="/audio#narratorSection">To the catalogue</nuxt-link>
         </div>
         <div class="content-section__col content-section__col--sm">
@@ -51,7 +51,6 @@
     <div class="content-section content-section--dark">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Audio productions</h2>
-        <p class="content-section__text content-section__text--center">[rundown of productions and growth]</p>
         <div class="production-facts">
           <div class="production-facts__list">
             <p class="production-facts__item">
@@ -81,7 +80,7 @@
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Partners</h2>
-        <p class="content-section__text content-section__text--center">[something about our partners]</p>
+        <p class="content-section__text content-section__text--center">We produce and/or distribute audio for a wide range of clients and partners.</p>
         <div class="partners-grid">
           <div class="partners-item partners-item--medium">
             <img src="@/assets/img/logos/logo-alvilda.svg" alt="">
@@ -219,7 +218,7 @@ export default {
       introSlides: [
         {
           header: 'Audiobooks since 1983',
-          text: 'Swann Studio has more than 35 years of experience with audiobook production and has grown to be an international market leader having produced more that 2000 new titles in 2018 and having already expanded to 6 new countries in 2019 alone.',
+          text: 'Swann Studio has more than 35 years of experience with audiobook production and has grown to be an international market leader having produced more that 2000 new titles in 2018 and having already expanded to 9 new countries in 2019 alone.',
           link: {
             text: 'Read more',
             href: '/audio'

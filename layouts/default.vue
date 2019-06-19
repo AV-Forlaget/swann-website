@@ -17,7 +17,7 @@
 						</ul>
 					</div>
 					<div class="main-nav__list main-nav__list--right">
-						<nuxt-link class="header-tagline" to="/">Be part of our narrator catalog</nuxt-link>
+						<nuxt-link class="header-tagline" to="/">Be part of our narrator catalogue</nuxt-link>
 						<ul class="nav nav--login-menu">
 							<li class="nav__item">
 								<a href="https://swann-studio.com/app/da/login" class="btn">Login</a>
