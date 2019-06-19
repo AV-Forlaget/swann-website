@@ -68,18 +68,26 @@
           <h3 class="text-block__heading">Our partners</h3>
           <p class="text-block__paragraph">We distribute to many major partners and streaming services.</p>
           <div class="icon-list icon-list--partners">
+          
             <div class="icon-list__item">
+              <img src="@/assets/img/logos/logo-nextory-white.svg" class="icon-list__icon icon-list__item--large" alt="" />
+            </div>
+            <div class="icon-list__item">
+              <img src="@/assets/img/logos/logo-pubhub.svg" class="icon-list__icon icon-list__item--medium" alt="" />
+            </div>
+              <div class="icon-list__item">
               <img src="@/assets/img/logos/logo-mofibo-white.svg" class="icon-list__icon icon-list__item--small" alt="" />
             </div>
             <div class="icon-list__item">
               <img src="@/assets/img/logos/logo-storytel-white.svg" class="icon-list__icon icon-list__item--small" alt="" />
             </div>
             <div class="icon-list__item">
-              <img src="@/assets/img/logos/logo-nextory-white.svg" class="icon-list__icon" alt="" />
+              <img src="@/assets/img/logos/logo-bookbeat.svg" class="icon-list__icon icon-list__item--medium" alt="" />
             </div>
-            <div class="icon-list__item icon-list__item--large">
-              <img src="@/assets/img/logos/logo-saxo-white.svg" class="icon-list__icon icon-list__item--large" alt="" />
+            <div class="icon-list__item">
+              <img src="@/assets/img/logos/logo-kirjavalitys.svg" class="icon-list__icon icon-list__item--large" alt="" />
             </div>
+         
           </div>
         </div>
       </div>
