@@ -8,6 +8,7 @@
       <div class="VueCarousel" v-if="!showSlider">
         <intro-slide v-for="(content, contentKey) in introSlides" :key="contentKey" :content="content" v-show="contentKey < 1"></intro-slide>
      </div>
+    <div class="scroll-indicator"></div>
     <div class="content-section frontpage-audiobooks">
       <div class="content-section__wrapper content-section__wrapper--flex">
         <div class="content-section__col content-section__col--lg">
