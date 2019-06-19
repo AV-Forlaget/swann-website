@@ -238,7 +238,7 @@ export default {
         },
         {
           header: 'Tech and Tradition',
-          text: 'Swann Studio has lived through the transition from cassettes and reel tapes in the 1980s to the current situation where the market is becoming increasingly digital and audiobooks hold a stronger position than ever. We have employees that can handle and assist is all aspects of audiobook production, publication and distribution. And with the help of our Swann Studio app our customers can order a title in just a few minutes.',
+          text: 'Swann Studio has lived through the transition from cassettes and reel tapes in the 1980s to the current situation where the market is becoming increasingly digital and audiobooks hold a stronger position than ever. We have employees that can handle, and assist in, all aspects of audiobook production, publication and distribution. And with the help of our Swann Studio app our customers can order a title in just a few minutes.',
           link: {
             text: 'Read more',
             href: '/about-us'
