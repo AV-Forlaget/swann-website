@@ -44,7 +44,7 @@
           <div class="audio-flow__block audio-flow__block--studio">
             <img src="@/assets/img/swann-studio-app.png" alt="Swann studio app" class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Swann studio app</h4>
-            <p class="audio-flow__block__text">Upload your manuscript and metadata directly through our web app or API. From here on everything is handled by us with the help of our software that organizes the entire production process.</p>
+            <p class="audio-flow__block__text">Upload your manuscript and metadata directly through our web app or API. From here on everything is handled by us with the help of our software that organises the entire production process.</p>
             <img src="@/assets/img/lines/line-01.svg" alt class="audio-flow__block__line">
           </div>
           <div class="audio-flow__block audio-flow__block--casting">
@@ -85,7 +85,7 @@
         <div class="content-section__wrapper">
           <div class="text-block text-block--dark">
             <h3 class="text-block__heading">Other audio production services</h3>
-            <p class="text-block__paragraph">In addition to the audiobook services Swann Studio provides podcast production assistance and article narrations for online journals, magazines, newspapers etc. We also have a team ready to help you digitize and optimize your backlist of titles on cassettes or reel tapes.</p>
+            <p class="text-block__paragraph">In addition to the audiobook services Swann Studio provides podcast production assistance and article narrations for online journals, magazines, newspapers etc. We also have a team ready to help you digitise and optimise your backlist of titles on cassettes or reel tapes.</p>
             <p class="text-block__paragraph">If you are interested in our services, please contact our audio production team.</p>
             <div class="content-section__btn">
               <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
@@ -98,8 +98,8 @@
               </div>
               <div class="icon-list__item">
                 <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon icon-list__item--small" alt="" />
-                <h4>Digitization</h4>
-                <p>We can digitize audio on cassettes or reel tapes, clean the sound and handle the distribution for example to help you revitalize your backlist.</p>
+                <h4>Digitisation</h4>
+                <p>We can digitise audio on cassettes or reel tapes, clean the sound and handle the distribution for example to help you revitalise your backlist.</p>
               </div>
               <div class="icon-list__item">
                 <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon" alt="" />
@@ -188,7 +188,7 @@ export default {
         let text = voice;
         switch(voice) {
           case 'female':
-            text = 'Feminie';
+            text = 'Feminine';
             break;
           case "male":
             text = 'Masculine';
