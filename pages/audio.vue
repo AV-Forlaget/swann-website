@@ -98,7 +98,7 @@
               </div>
               <div class="icon-list__item">
                 <img src="@/assets/img/icons/icon-digitization.svg" class="icon-list__icon icon-list__item--small" alt="" />
-                <h4>digitisation</h4>
+                <h4>Digitisation</h4>
                 <p>We can digitise audio on cassettes or reel tapes, clean the sound and handle the distribution for example to help you revitalise your backlist.</p>
               </div>
               <div class="icon-list__item">
