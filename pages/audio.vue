@@ -44,7 +44,7 @@
           <div class="audio-flow__block audio-flow__block--studio">
             <img src="@/assets/img/swann-studio-app.png" alt="Swann studio app" class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Swann studio app</h4>
-            <p class="audio-flow__block__text">Upload your manuscript and metadata directly through our web app or API. From here on everything is handled by us with the help of our software that organizes the entire production process.</p>
+            <p class="audio-flow__block__text">Upload your manuscript and metadata directly through our web app or API. From here on everything is handled by us with the help of our software that organises the entire production process.</p>
             <img src="@/assets/img/lines/line-01.svg" alt class="audio-flow__block__line">
           </div>
           <div class="audio-flow__block audio-flow__block--casting">
@@ -188,7 +188,7 @@ export default {
         let text = voice;
         switch(voice) {
           case 'female':
-            text = 'Feminie';
+            text = 'Feminine';
             break;
           case "male":
             text = 'Masculine';
