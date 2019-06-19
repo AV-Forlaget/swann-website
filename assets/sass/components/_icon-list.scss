@@ -34,7 +34,6 @@
   &.icon-list--partners {
 
     @include mq($removeMobileMenuBreakpoint) {
-      max-height: 12em;
       margin-top: -2em;
     }
   }
@@ -50,8 +49,13 @@
   }
 
   @include mq($removeMobileMenuBreakpoint) {
-    min-width: 25%;
-    max-width: 25%;
+    min-width: 33%;
+    max-width: 33%;
+  }
+
+  @include mq($largeBreakpoint) {
+    min-width: 16.5%;
+    max-width: 16.5%;
   }
 
   h4 {

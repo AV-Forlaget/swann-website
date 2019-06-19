@@ -29,10 +29,10 @@
     </div>
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading content-section__heading--center">Audiobook production</h2>
-        <p class="content-section__text content-section__text--center">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
-        <p class="content-section__text content-section__text--center">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
-        <p class="content-section__text content-section__text--center">If you are interested in our services, please contact our audiobook production team.</p>
+        <h2 class="content-section__heading">Audiobook production</h2>
+        <p class="content-section__text">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
+        <p class="content-section__text">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
+        <p class="content-section__text">If you are interested in our services, please contact our audiobook production team.</p>
         <div class="content-section__btn">
           <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
         </div>
@@ -45,19 +45,16 @@
             <img src="@/assets/img/swann-studio-app.png" alt="Swann studio app" class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Swann studio app</h4>
             <p class="audio-flow__block__text">Upload your manuscript and metadata directly through our web app or API. From here on everything is handled by us with the help of our software that organises the entire production process.</p>
-            <img src="@/assets/img/lines/line-01.svg" alt class="audio-flow__block__line">
           </div>
           <div class="audio-flow__block audio-flow__block--casting">
             <img src="@/assets/img/swann-choose-narrator.jpg" alt class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Casting</h4>
             <p class="audio-flow__block__text">You can choose a narrator from our catalogue, request someone from the outside or let our editors assist you or decide for you, based on their experience with thousands of productions in all genres.</p>
-            <img src="@/assets/img/lines/line-02.svg" alt class="audio-flow__block__line">
           </div>
           <div class="audio-flow__block audio-flow__block--recording">
             <img src="@/assets/img/icons/icon-recording.png" alt class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Recording</h4>
             <p class="audio-flow__block__text">The production can be completed within as little as three weeks after the choice of narrator has been confirmed, and you can follow the progress of your title in the app.</p>
-            <img src="@/assets/img/lines/line-03.svg" alt class="audio-flow__block__line">
           </div>
           <div class="audio-flow__block audio-flow__block--delivery">
             <img src="@/assets/img/icons/icon-delivery.png" alt="Delivery" class="audio-flow__block__img">
@@ -87,7 +84,7 @@
             <h3 class="text-block__heading">Other audio production services</h3>
             <p class="text-block__paragraph">In addition to the audiobook services Swann Studio provides podcast production assistance and article narrations for online journals, magazines, newspapers etc. We also have a team ready to help you digitise and optimise your backlist of titles on cassettes or reel tapes.</p>
             <p class="text-block__paragraph">If you are interested in our services, please contact our audio production team.</p>
-            <div class="content-section__btn">
+            <div class="content-section__btn content-section__btn--center">
               <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
             </div>
             <div class="icon-list">
