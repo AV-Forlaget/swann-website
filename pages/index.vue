@@ -55,22 +55,22 @@
         <div class="production-facts">
           <div class="production-facts__list">
             <p class="production-facts__item">
-              <span class="production-facts__number">2013</span>
+              <span class="production-facts__number" v-text="contentData.productionsLastYear">2013</span>
               <span class="production-facts__text">Productions last year</span>
             </p>
 
             <p class="production-facts__item">
-              <span class="production-facts__number">230</span>
+              <span class="production-facts__number" v-text="contentData.productionsThisYear">230</span>
               <span class="production-facts__text">Productions this year</span>
             </p>
 
             <p class="production-facts__item">
-              <span class="production-facts__number">405</span>
+              <span class="production-facts__number" v-text="contentData.narratorsTotal"></span>
               <span class="production-facts__text">Active narrators</span>
             </p>
 
             <p class="production-facts__item">
-              <span class="production-facts__number">89</span>
+              <span class="production-facts__number" v-text="contentData.studiosTotal"></span>
               <span class="production-facts__text">Active studios</span>
             </p>
           </div>
@@ -191,6 +191,7 @@
 <script>
     import Dropdown from '~/components/dropdown.vue';
     import IntroSlide from '~/components/IntroSlide';
+    import SwannAPI from "~/plugins/SwannAPI.js";
 
 export default {
  data() {
@@ -250,8 +251,25 @@ export default {
       ],
     }
   },
+  asyncData() {
+    return Promise.all([SwannAPI.getContentData()])
+      .then(([contentData]) => {
+        return {
+          contentData: contentData
+        };
+      })
+      .catch(console.error);
+  },
   mounted() {
     this.showSlider = true;
+    this.loadContentData();
+  },
+  methods: {
+    loadContentData() {
+      return SwannAPI.getContentData().then((contentData) => {
+        this.contentData = contentData;
+      })
+    }
   },
   components: {
     Dropdown,
