@@ -191,7 +191,6 @@
 <script>
     import Dropdown from '~/components/dropdown.vue';
     import IntroSlide from '~/components/IntroSlide';
-    import SwannAPI from "~/plugins/SwannAPI.js";
 
 export default {
  data() {
@@ -251,24 +250,13 @@ export default {
       ],
     }
   },
-  asyncData() {
-    return Promise.all([SwannAPI.getContentData()])
-      .then(([contentData]) => {
-        return {
-          contentData: contentData
-        };
-      })
-      .catch(console.error);
-  },
   mounted() {
     this.showSlider = true;
-    this.loadContentData();
+    this.$store.dispatch('getContentData');
   },
-  methods: {
-    loadContentData() {
-      return SwannAPI.getContentData().then((contentData) => {
-        this.contentData = contentData;
-      })
+  computed: {
+    contentData() {
+      return this.$store.state.contentData;
     }
   },
   components: {
