@@ -173,9 +173,6 @@
            <div class="partners-item partners-item--medium">
               <img src="@/assets/img/logos/logo-saga.svg" alt="">
           </div>
-           <div class="partners-item">
-              <img src="@/assets/img/logos/logo-saxo.svg" alt="">
-          </div>
            <div class="partners-item partners-item--extra-small">
               <img src="@/assets/img/logos/logo-storytel.svg" alt="">
           </div>
