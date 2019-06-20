@@ -113,21 +113,11 @@
 <script>
 import Dropdown from "~/components/dropdown.vue";
 import InputField from "~/components/input-field.vue";
-import SwannAPI from "~/plugins/SwannAPI.js";
 import Languages from '~/assets/lang.json';
 import NarratorItem from '~/components/narrator-item.vue';
 import _ from 'underscore';
 
 export default {
-  asyncData() {
-    return Promise.all([SwannAPI.getNarrators()])
-      .then(([narrators]) => {
-        return {
-          narrators: _.sortBy(narrators.data, 'name')
-        };
-      })
-      .catch(console.error);
-  },
   data() {
       return {
         selectedVoiceFilter: ' ',
@@ -136,7 +126,14 @@ export default {
         playingNarratorId: ''
       }
   },
+  mounted() {
+    this.$store.dispatch('getNarrators');
+    this.$store.dispatch('getContentData');
+  },
   computed: {
+    narrators() {
+      return _.sortBy(this.$store.state.narrators, 'name');
+    },
     filteredNarratorList() {
       return this.narrators.filter((narrator) => {
         if(this.searchFilter) {
@@ -159,12 +156,15 @@ export default {
     },
     locationOptions() {
       let narratorLanguages = _.uniq(this.narrators.map((narrator) => narrator.language));
+      let studioCities = this.$store.state.contentData.languageStudioCities || { };
       let locations = _.sortBy(narratorLanguages.map((langaugeCode) => {
-        let lang = Languages.filter((lang) => lang.value === langaugeCode);
+        let lang = Languages.filter((lang) => lang.value.toLowerCase() === langaugeCode.toLowerCase());
+        let studioCity = studioCities[langaugeCode] || null;
+
         if(lang.length) {
           return {
             text: lang[0].text,
-            subline: (lang[0].studios) ? '<b>Studios:</b> ' + lang[0].studios.join(', ') : null,
+            subline: (studioCity) ? '<b>Studios:</b> ' + studioCity.cities.join(', ') : null,
             value: lang[0].value
           }
         }
@@ -173,7 +173,7 @@ export default {
       }).filter((lang) => lang), 'text');
 
       locations.unshift({
-        text: '(All locations)',
+        text: '(All languages)',
         value: ' '
       });
 
