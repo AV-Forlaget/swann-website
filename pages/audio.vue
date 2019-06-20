@@ -173,7 +173,7 @@ export default {
       }).filter((lang) => lang), 'text');
 
       locations.unshift({
-        text: '(All locations)',
+        text: '(All languages)',
         value: ' '
       });
 
