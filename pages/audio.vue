@@ -29,11 +29,11 @@
     </div>
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading">Audiobook production</h2>
-        <p class="content-section__text">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
-        <p class="content-section__text">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
-        <p class="content-section__text">If you are interested in our services, please contact our audiobook production team.</p>
-        <div class="content-section__btn">
+        <h2 class="content-section__heading content-section__heading--center">Audiobook production</h2>
+        <p class="content-section__text content-section__text--center">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
+        <p class="content-section__text content-section__text--center">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
+        <p class="content-section__text content-section__text--center">If you are interested in our services, please contact our audiobook production team.</p>
+        <div class="content-section__btn content-section__btn--center">
           <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
         </div>
       </div>
