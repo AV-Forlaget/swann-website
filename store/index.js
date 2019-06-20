@@ -25,9 +25,9 @@ export const actions = {
                 SwannAPI.getContentData().then((resp) => {
                     commit('contentdata', resp.data);
                     resolve();
-                });
+                }).catch((err) => reject(err));
             }
-        }).catch((err) => reject(err));
+        });
     },
 
     getNarrators({commit, state}) {
@@ -38,8 +38,8 @@ export const actions = {
                 SwannAPI.getNarrators().then((resp) => {
                     commit('narrators', resp.data);
                     resolve();
-                });
+                }).catch((err) => reject(err));
             }
-        }).catch((err) => reject(err));
+        })
     }
 }
