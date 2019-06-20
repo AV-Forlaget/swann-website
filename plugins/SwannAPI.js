@@ -8,6 +8,10 @@ class SwannAPI {
     getNarrators() {
         return axious.get(this.apiURL + 'public/Narrators');
     }
+
+    getContentData() {
+        return axious.get(this.apiURL + 'public/stats');
+    }
 }
 
 export default new SwannAPI
