@@ -36,30 +36,29 @@
     @include mq($removeMobileMenuBreakpoint) {
       margin-top: -2em;
     }
-  }
-  
-  .icon-list {
 
-    @include mq($mobileBreakpoint) {
-      flex: 1;
-      min-width: 50%;
-      max-width: 50%;
-    }
-  
-    @include mq($removeMobileMenuBreakpoint) {
-      min-width: 33%;
-      max-width: 33%;
-    }
-  
-    @include mq($largeBreakpoint) {
-      min-width: 16.5%;
-      max-width: 16.5%;
+    .icon-list__item {
+
+      @include mq($mobileBreakpoint) {
+        flex: 1;
+        min-width: 50%;
+        max-width: 50%;
+      }
+    
+      @include mq($removeMobileMenuBreakpoint) {
+        min-width: 33%;
+        max-width: 33%;
+      }
+    
+      @include mq($largeBreakpoint) {
+        min-width: 16.5%;
+        max-width: 16.5%;
+      }
     }
   }
 }
 
 .icon-list__item {
- 
 
   @include mq($mobileBreakpoint) {
     flex: 1;
