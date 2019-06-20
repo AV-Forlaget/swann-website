@@ -1,0 +1,70 @@
+.main-hero {
+    position: relative;
+    min-height: 12em;
+    background: $bg-color-dark;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq($removeMobileMenuBreakpoint) {
+        min-height: 15em;
+    }
+
+    @include mq($largeBreakpoint) {
+        min-height: 16em;
+    }
+    
+    .main-hero__wrapper {
+        @extend .wrapper;
+    }
+
+    .main-hero__heading {
+        position: relative;
+        margin: 0;
+        font-size: 2.25em;
+        color: $white;
+        text-align: center;
+        z-index: 1;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 3.5em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 4em;
+        }
+    }
+
+    .main-hero__subheading {
+        margin: 0;
+        font-size: 0.95em;
+        color: $brand-color-2;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 1.1em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.main-hero--negative {
+	@extend .main-hero;
+	background-color: $white;
+
+	.main-hero__heading--negative {
+		@extend .main-hero__heading;
+		color: $font-color-dark;
+	}
+
+	.main-hero__subheading--negative {
+		@extend .main-hero__subheading;
+		color: $font-color;
+	}
+}

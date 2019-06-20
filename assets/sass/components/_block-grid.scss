@@ -1,0 +1,22 @@
+.block-grid {
+
+    @include mq($removeMobileMenuBreakpoint) {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ui-block {
+        
+        @include mq($removeMobileMenuBreakpoint) {
+            width: 32%;
+        }
+        
+        img {
+            display: block;
+            max-width: 10em;
+            margin: 0 auto;
+        }
+    }
+}

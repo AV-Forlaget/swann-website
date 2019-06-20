@@ -1,0 +1,152 @@
+.narrator-item {
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+
+    .narrator-item__avatar {
+       display: none;
+
+        @include mq($smallMobileBreakpoint) {
+            display: block;
+            flex: 1;
+            min-width: 5em;
+            max-width: 5em;
+            height: 6.7em;
+            display: flex;
+            flex-flow: nowrap row;
+            align-items: center;
+        }
+
+        @include mq($mobileBreakpoint) {
+            min-width: 6em;
+            max-width: 6em;
+        }
+    }
+
+    .narrator-item__content {
+        flex: 1;
+        padding: 1em;
+        box-sizing: border-box;
+
+        @include mq($smallMobileBreakpoint) {
+            padding-left: 0;
+        }
+
+        .narrator-name {
+            margin: 0;
+            display: block;
+            font-size: 0.9em;
+        }
+
+        .narrator-genre {
+            display: block;
+            font-size: 0.8em;
+        }
+
+        .narrator-narrations {
+            display: block;
+            font-size: 0.8em;
+        }
+
+        .narrator-price {
+            display: block;
+            font-size: 0.8em;
+        }
+    }
+
+    .narrator-item__preview {
+        position: relative;
+        background: none;
+        border: none;
+        flex: 1;
+        min-width: 5em;
+        max-width: 5em;
+        height: 5em;
+        margin-right: 1em;
+        cursor: pointer;
+        background: shade($white, 10%);
+        border-radius: 50%;
+        transition: background 150ms ease;
+
+        &.narrator-item__preview--pause {
+            background: $white;
+            transition: background 150ms ease;
+
+            .preview-bar {
+                &.preview-bar--first {
+                    width: 10px;
+                    height: 30px;
+                    background: $brand-color;
+                    transform: rotate(0deg) translate3d(0.8em,0,0);
+                    transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+                }
+    
+                &.preview-bar--second {
+                    width: 10px;
+                    transform: translate3d(-0.8em,0,0);
+                    background: $brand-color;
+                    transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+                }
+            }
+        }
+
+        &.narrator-item__preview--loading {
+            background: $white;
+            transition: background 150ms ease;
+
+           .preview-bar {
+                &.preview-bar--first {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: $brand-color;
+                    animation: preview-loading 500ms linear infinite both;
+                    transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+                }
+
+                &.preview-bar--second {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: $brand-color;
+                    animation: preview-loading 500ms 250ms linear infinite both;
+                    transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+                }
+           }
+        }
+
+        .preview-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 20px;
+            height: 30px;
+            background: $black;
+            transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+
+            &.preview-bar--first {
+                height: 20px;
+                transform: translate3d(-0.4em,0,0) rotate(45deg);
+                transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+            }
+
+            &.preview-bar--second {
+                width: 16px;
+                transform: translate3d(-1.1em,0,0);
+                background: shade($white, 10%);
+                transition: transform 150ms ease, width 150ms ease,  height 150ms ease;
+            }
+        }
+
+
+        &:hover .preview-bar.preview-bar--first {
+            background: $brand-color;
+        }
+    }
+}

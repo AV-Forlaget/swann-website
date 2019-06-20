@@ -1,0 +1,151 @@
+.audio-flow {
+    position: relative;
+
+    @include mq($removeMobileMenuBreakpoint) {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+
+    @include mq($removeMobileMenuBreakpoint) {
+        background: url('../../img/lines/audio-line-bg.svg') no-repeat center;
+        background-size: 38%;
+        background-position-y: 18em;
+    }
+
+    @include mq($largeBreakpoint) {
+        background-position-y: 14em;
+    }
+
+    .audio-flow__block {
+        position: relative;
+        margin: 0 0 8em;
+
+        @include mq($removeMobileMenuBreakpoint) {
+            min-width: 45%;
+            max-width: 45%;
+            position: relative;
+        }
+
+        &:last-child {
+            margin: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &.audio-flow__block--studio {
+
+            @include mq($removeMobileMenuBreakpoint) {
+                margin-top: -5em;
+            }
+        }
+
+        &.audio-flow__block--casting {
+            @include mq($removeMobileMenuBreakpoint) {
+                margin-top: 25em;
+                margin-bottom: 2em;
+            }
+
+            .audio-flow__block__img {
+                box-shadow: $block-shadow;
+                
+                @include mq($removeMobileMenuBreakpoint) {
+                    max-width: 29em;
+                }
+            }
+        }
+
+        &.audio-flow__block--recording {
+
+            @include mq($removeMobileMenuBreakpoint) {
+                position: relative;
+                margin-top: -15em;
+            }
+            
+            .audio-flow__block__img {
+                max-width: 15em;
+            }
+        }
+
+        &.audio-flow__block--delivery {
+
+            @include mq($removeMobileMenuBreakpoint) {
+                margin-top: 5em;
+            }
+           
+
+            .audio-flow__block__img {
+                max-width: 15em;
+            }
+        }
+
+        .audio-flow__block__img {
+            display: block;
+            margin: 0 auto 1em;
+            max-width: 90%;
+
+            @include mq($removeMobileMenuBreakpoint) {
+                max-width: 30em;
+                position: relative;
+                z-index: 1;
+                margin-bottom: 1.5em;
+            }
+        }
+
+        &:after {
+            content:'';
+            position: absolute;
+            top: auto;
+            right: 0;
+            bottom: -6.5em;
+            left: 0;
+            margin: auto;
+            width: 0;
+            width: 1.4em;
+            height: 5em;
+            background: url('../../img/lines/line-mobile.svg') no-repeat center 100%/cover;
+
+            @include mq($removeMobileMenuBreakpoint) {
+                display: none;
+            }
+        }
+    }
+
+    .audio-flow__block__heading {
+        margin: 0 0 0.2em;
+        font-size: 1.3em;
+        text-align: center;
+        color: $font-color-dark;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 1.4em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.5em;
+        }
+
+        @include mq($largeBreakpoint) {
+            font-size: 1.6em;
+        }
+    }
+
+    .audio-flow__block__text {
+        margin: 0;
+        font-size: 0.9em;
+        text-align: center;
+        color: $font-color;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 1em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.05em;
+        }
+    }
+}

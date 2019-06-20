@@ -1,0 +1,170 @@
+.content-section {
+    position: relative;
+    box-sizing: border-box;
+    padding: 2em 0 3em;
+
+    @include mq($mobileBreakpoint) {
+        padding: 3em 0;
+    }
+
+    @include mq($removeMobileMenuBreakpoint) {
+        padding: 5em 0;
+    }
+
+    &:nth-child(odd) {
+        background: $white;
+    }
+
+    &.content-section--dark {
+        background: $bg-color-dark;
+    }
+
+    &.content-section--white {
+        background: $white;
+    }
+
+    &.content-section--bg-color {
+        background: $bg-color;
+    }
+
+    &.content-section--dropdowns .search-selector {
+        max-width: 35em;
+        margin: 0 auto;
+    }
+
+    .content-section__wrapper {
+        @extend .wrapper;
+
+        &.content-section__wrapper--flex {
+
+            @include mq($removeMobileMenuBreakpoint) {
+                display: flex;
+                flex-flow: nowrap row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .content-section__col {
+             
+                @include mq($removeMobileMenuBreakpoint) {
+                    flex: 1;
+                    width: 49%;
+                    min-width: 49%;
+                    max-width: 49%;
+                    margin-right: 1%;
+                }
+
+                &:last-child {
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        margin-right: 0;
+                        margin-left: 1%;
+                    }
+                }
+
+                &.content-section__col--sm {
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        width: 40%;
+                        min-width: 40%;
+                        max-width: 40%;
+                    }
+                }
+
+                &.content-section__col--lg {
+
+                    @include mq($removeMobileMenuBreakpoint) {
+                        width: 58%;
+                        min-width: 58%;
+                        max-width: 58%;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-section__heading {
+        margin: 0 0 0.3em;
+        font-size: 1.5em;
+        line-height: 110%;
+        color: $headings-color;
+        font-weight: bold;
+        text-align: left;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        @include mq($mobileBreakpoint) {
+            margin-bottom: 0.3em;
+            font-size: 2em;
+            line-height: 112%;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            margin-bottom: 0.3em;
+            font-size: 2.5em;
+            line-height: 115%;
+        }
+
+        @include mq($largeBreakpoint) {
+            margin-bottom: 0.4em;
+            line-height: 118%;
+        }
+
+        &.content-section__heading--center {
+            text-align: center;
+        }
+
+        @at-root .content-section.content-section--dark .content-section__heading {
+            color: $white;
+        }
+    }
+
+    .content-section__text {
+        margin: 0 0 1em;
+        font-size: 0.95em;
+        color: $font-color;
+        text-align: left;
+
+        @include mq($mobileBreakpoint) {
+            margin-bottom: 0.9em;
+            font-size: 1em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.1em;
+        }
+
+        @include mq($largeBreakpoint) {
+            font-size: 1.2em;
+            line-height: 150%;
+        }
+
+        @at-root .content-section.content-section--dark .content-section__text {
+            color: $brand-color-2;
+        }
+
+        &.content-section__text--center {
+            text-align: center;
+        }
+    }
+
+    .content-section__btn {
+        margin: 1em 0;
+
+        @include mq($mobileBreakpoint) {
+            margin-top: 1.5em;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            margin-top: 2em;
+        }
+
+        &.content-section__btn--center {
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: center;
+            align-items: center;
+            margin: 1em auto 1em;
+        }
+    }
+}

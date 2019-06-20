@@ -1,0 +1,31 @@
+.partners-grid {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+
+    .partners-item {
+        width: 5em;
+
+        @include mq($mobileBreakpoint) {
+            width: 12.5em; 
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &.partners-item--extra-small img {
+            width: 50%;
+        }
+
+        &.partners-item--small img {
+            width: 60%;
+        }
+
+        &.partners-item--medium img {
+            width: 80%;
+        }
+    }
+}

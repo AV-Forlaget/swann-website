@@ -1,0 +1,36 @@
+.frontpage-narrator {
+    padding: 6em 0;
+    box-sizing: border-box;
+
+    @include mq($mobileBreakpoint) {
+        padding: 10em 0;
+    }
+
+    @include mq($removeMobileMenuBreakpoint) {
+        padding: 12em 0;
+    }
+
+    .content-section__wrapper .content-section__col:first-child {
+        @include mq($removeMobileMenuBreakpoint) {
+            order: 1;
+        }
+    }
+
+    .narrator-catalogue-img {
+        display: block;
+        max-width: 15em;
+        margin: 1em auto;
+
+        @include mq($removeMobileMenuBreakpoint) {
+            max-width: 15em;
+        }
+
+        @include mq($largeBreakpoint) {
+            max-width: 20em;
+        }
+    }
+
+    .btn {
+        display: inline-block;
+    }
+}

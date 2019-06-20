@@ -1,33 +1,44 @@
 .btn {
   //Layout
   margin: 0;
-  padding: 0.8em 1.1em;
+  padding: 0.8em 1em;
   border-radius: $r-btn;
   border: none;
   -webkit-appearance: none;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 
   //Typography
   font-family: $font-standard;
-  font-size: 0.85em;
-  text-transform: uppercase;
-  text-decoration: none;
+  font-size: 0.8em;
+  text-decoration: none !important;
   text-align: center;
-  font-weight: normal;
-  letter-spacing: 0.01em;
+  font-weight: bold;
+  text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  @include mq($smallMobileBreakpoint) {
+    padding: 0.8em 1.5em;
+    letter-spacing: 0.01em;
+  }
+
   @include mq($mobileBreakpoint) {
     font-size: 0.9em;
-    padding: 1em 1.5em;
+    padding: 1em 1.8em;
     min-width: 8em;
+    letter-spacing: 0.02em;
+  }
+
+  @include mq($removeMobileMenuBreakpoint) {
+    font-size: 1em;
   }
 
   //Color
   color: $white;
-  background: $brand-color;
+  background: linear-gradient(35deg, $brand-color 0%, $brand-purple 250%) no-repeat center 100%/cover;
+  box-shadow: $block-shadow;
 
   //Interaction
   cursor: pointer;
@@ -35,26 +46,40 @@
   transition: color 1s ease;
 
   &:hover {
-    background: shade($brand-color, 8%);
+    background: linear-gradient(35deg, tint($brand-color, 8%), $brand-cyan 350%) no-repeat center 100%/cover;
   }
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    opacity: 0;
-    transition: opacity 1s ease;
+  &:disabled, &[disabled], &.btn--disabled {
+    pointer-events: none;
+
+    &:after {
+      content:'';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      background: rgba($white, 0.75);
+      z-index: 1;
+    }
   }
 
-  &.btn--alt {
-    background: $grey-dark;
+  &.btn--green {
+    background: linear-gradient(35deg, $brand-color-2 0%, $brand-cyan 350%) no-repeat center 100%/cover;
 
     &:hover {
-      background: shade($grey-dark, 8%);
+      background: linear-gradient(35deg, tint($brand-color-2, 15%), $brand-cyan 160%) no-repeat center 100%/cover;
+    }
+  }
+
+  &.btn--grey {
+    background: tint($font-color, 45%);
+
+    &:hover {
+      background: tint($font-color, 40%);
     }
   }
 
@@ -66,21 +91,48 @@
     }
   }
 
+  &.btn--outline {
+    padding: 0.6em 2em;
+    background: none;
+    border: 1px solid rgba($font-color, 0.7);
+    color: $font-color;
+    box-shadow: none;
+    font-weight: normal;
+
+    &:hover {
+      color: $font-color;
+    }
+  }
 
   &.btn--loading {
     position: relative;
-    color: rgba($white,0);
-    transition: color 350ms ease;
     cursor: wait;
+    overflow: hidden;
 
     &:after {
-      width: 2em;
-      height: 2em;
-      //background: url("../assets/img/icons/icon-loading.png") 100%/cover;
-      background: $brand-color;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: rgba($white, 0.2);
       opacity: 1;
-      animation: spinner 1s linear infinite;
-      transition: opacity 350ms ease;
+      animation: loading-progress 6s linear both;
     }
+  }
+
+  .btn__mobile-hide {
+    display: none;
+    
+    @include mq($mobileBreakpoint) {
+      display: inline;
+    }
+  }
+
+  &.btn--center {
+    display: inline-block;
+    margin: 0 auto;
   }
 }

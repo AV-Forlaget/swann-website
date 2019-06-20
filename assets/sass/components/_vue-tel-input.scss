@@ -1,0 +1,39 @@
+.vue-tel-input {
+    padding: 0.12em 0;
+    box-sizing: border-box; 
+    color: $font-color !important;
+    border: 1px solid $border-color !important;
+    border-radius: $r !important;
+    outline: none;
+    box-shadow: 0 0 2px rgba($black,0.05);
+
+    &[data-v-dda77e96]:focus-within {
+        box-shadow: 0 0 2px rgba($black,0.05) !important;
+        background: tint($brand-color,96%);
+    }
+    
+    .dropdown {
+        background: none !important;
+
+        &:hover .dropdown-arrow {
+            color: $brand-color;
+           }
+
+       .dropdown-arrow {
+           color: rgba($font-color, 0.6);
+       }
+    }
+
+    input {
+        outline: none !important;
+        font-family: $font-standard;
+        font-size: 0.8em;
+        color: $font-color !important;
+        background: none;
+        cursor: text;
+
+        &:focus:hover {
+            color: $brand-color !important;
+        }
+    }
+}

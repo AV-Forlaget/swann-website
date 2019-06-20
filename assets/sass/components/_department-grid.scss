@@ -1,0 +1,78 @@
+.department-grid {
+
+    @include mq($mobileBreakpoint) {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .department-grid__item {
+        padding: 1em;
+        box-sizing: border-box;
+
+        @include mq($removeMobileMenuBreakpoint) {
+            padding: 1em 2em;
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 130px;
+        height: auto;
+
+        @include mq($mobileBreakpoint) {
+            margin: 0;
+        }
+    }
+    
+    .employee-name {
+        color: $font-color;
+        font-size: 1em;
+        margin: 0.5em 0 0.1em;
+        text-align: center;
+
+        @include mq($mobileBreakpoint) {
+            text-align: left;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1.1em;
+        }
+    }
+    
+    .employee-jobtitle {
+        color: $font-color;
+        font-size: .9em;
+        margin: 0;
+        text-align: center;
+
+        @include mq($mobileBreakpoint) {
+            text-align: left;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1em;
+        }
+    }
+    
+    .employee-email {
+        color: $font-color;
+        font-size: .9em;
+        margin: 0;
+        text-align: center;
+
+        @include mq($mobileBreakpoint) {
+            text-align: left;
+        }
+
+        @include mq($removeMobileMenuBreakpoint) {
+            font-size: 1em;
+        }
+
+        a {
+            color: $brand-color-2;
+        }
+    }
+}

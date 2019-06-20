@@ -1,0 +1,56 @@
+.country-item {
+    display: block;
+    padding: 1em;
+    box-sizing: border-box;
+    background: $white;
+    box-shadow: $block-shadow;
+    border-radius: $r;
+    cursor: pointer;
+    transition: transform 200ms ease;
+
+    @include mq($mobileBreakpoint) {
+        padding: 1.5em;
+    }
+
+    @include mq($removeMobileMenuBreakpoint) {
+        padding: 2em;
+    }
+
+    &:hover {
+        transform: translate(0,-0.2em);
+        transition: transform 200ms ease;
+        box-shadow: $block-shadow-large;
+    }
+    
+    .country-item__heading {
+        margin: 0 0 0.5em;
+        color: $font-color;
+        font-size: 1.2em;
+
+        @include mq($mobileBreakpoint) {
+            font-size: 1.4em;
+        }
+    
+    }
+
+    .country-item__tags {
+        margin-bottom: 0.25em;
+
+        span {
+            padding: 0.1em 0.4em;
+            box-sizing: border-box;
+            border-radius: $r;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: $brand-color-2;
+            background: rgba($brand-color-2, 0.1);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+
+    .country-item__narrators {
+        margin: 0;
+        color: rgba($bg-color-dark, 0.5);
+    }
+}

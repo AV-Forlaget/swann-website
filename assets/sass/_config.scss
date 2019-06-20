@@ -3,45 +3,41 @@ $black:#000;
 $white:#fff;
 
 // Client colors
-$brand-color: #1337ff;
-$brand-color-2: tint($brand-color, 20%);
-$grey: #f5f5f5;
-$grey-light: #ededed;
-$grey-dark: #333;
-$border-color:#d5d5d5;
+$brand-color: #1e96dd;
+$brand-color-2: #22c877;
+$brand-purple: #7e4fc6;
+$brand-cyan: #20d9bc;
+$bg-color: #f1f2f3;
+$bg-color-dark: #191f47;
+$border-color: rgba($black, 0.1);
 
 // Font colors
-$font-color: #393939;
-$grey-light-light: #666;
-$font-color-dark: #2a2a2a;
+$font-color: #555;
+$font-color-dark: $bg-color-dark;
+$headings-color: $bg-color-dark;
 
 // System colors
-$positive:#5aa253;
+$positive:$brand-color-2;
 $negative:#e75858;
-$informative:#1e88c5;
+$informative:$brand-color;
 $warning:#e7a713;
 
-// Gradients
-$brand-gradient: linear-gradient(90deg, $brand-color 0%, shade($brand-color,2%) 100%);
-
-// border radius
-$r:4px;
-$r-btn:6px;
-
 // Font family settings
-$font-standard: 'Arial', sans-serif;
-$font-bold: sans-serif;
+$font-standard: 'Open Sans', sans-serif;
+$font-bold: 'Open Sans', sans-serif;
 
 // border radius
-$r:2px;
-$r-table:5px;
-$r-btn:8px;
+$r: 4px;
+$r-table: 5px;
+$r-btn: 24px;
 
 // remove mobile menu breakpoint
-$smallMobileBreakpoint: 330;
+$smallMobileBreakpoint: 350;
 $mobileBreakpoint: 600;
-$removeMobileMenuBreakPoint: 900;
+$removeMobileMenuBreakpoint: 970;
+$contentGridBreakpoint: 1100;
 $largeBreakpoint: 1200;
+$desktopWrapper: 1276;
 $hamburgerTransition: all 150ms ease;
 
 // Shadows

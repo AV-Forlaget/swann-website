@@ -9,7 +9,7 @@ body {
     height: 100%;
     overflow: hidden;
 
-    @include mq($removeMobileMenuBreakPoint) {
+    @include mq($removeMobileMenuBreakpoint) {
       height: auto;
       overflow-y: auto;
     }

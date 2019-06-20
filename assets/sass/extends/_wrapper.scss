@@ -1,21 +1,16 @@
 .wrapper {
+  position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0.5em;
+  padding: 0 1em;
   box-sizing: border-box;
 
-  @include mq($mobileBreakpoint) {
-    padding: 0 1em;
-    max-width: 40em;
+  @include mq($removeMobileMenuBreakpoint) {
+    max-width: 75em;
+    padding: 0 1.5em;
   }
 
-  @include mq($removeMobileMenuBreakPoint) {
-    max-width: 60em;
-  }
-
-  @include mq(976) {
+  @include mq(1276) {
     padding: 0;
   }
-
-  @include chrisCoyier;
 }

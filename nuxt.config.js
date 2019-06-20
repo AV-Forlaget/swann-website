@@ -1,27 +1,45 @@
 const pkg = require('./package')
 
+let modules = [
+  '@nuxtjs/dotenv',
+  'nuxt-imagemin'
+];
+
+if(!process.env.PRODUCTION) {
+  modules.push(['nuxt-robots-module', {
+    /* module options */
+    UserAgent: '*',
+    Disallow: '/',
+  }])
+}
+
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Swann Studio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'msapplication-TileColor', content: '#ffffff' },
+      { name: 'theme-color', content: '#ffffff' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' }
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#22c877' },
 
   /*
   ** Global CSS
@@ -34,23 +52,24 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '@/plugins/directives.js',
+    { src: '~/plugins/carousel.js', ssr: false }
   ],
 
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules,
+
+  env: {
+    API_URL: process.env.API_URL || '',
+    FILE_URL: process.env.FILE_URL || ''
+  },
 
   /*
   ** Build configuration
   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-      
-    }
+    
   }
 }
