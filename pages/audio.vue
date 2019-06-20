@@ -30,9 +30,9 @@
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Audiobook production</h2>
-        <p class="content-section__text content-section__text--center">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
-        <p class="content-section__text content-section__text--center">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
-        <p class="content-section__text content-section__text--center">If you are interested in our services, please contact our audiobook production team.</p>
+        <p class="content-section__text">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
+        <p class="content-section__text">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
+        <p class="content-section__text">If you are interested in our services, please contact our audiobook production team.</p>
         <div class="content-section__btn content-section__btn--center">
           <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
         </div>
@@ -67,7 +67,7 @@
     <div class="content-section content-section--white" id="narratorSection">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Our worldwide narrator catalogue</h2>
-        <p class="content-section__text content-section__text--center">Swann Studio has an extensive ever growing global catalogue of voices. Our audio editors are always ready to assist our clients in choosing the right narrator for any job. We believe that narrating and listening is intimate and requires a great deal of sensibility and always aim to understand and learn more about the nuances of storytelling traditions in different markets and cultures.</p>
+        <p class="content-section__text">Swann Studio has an extensive ever growing global catalogue of voices. Our audio editors are always ready to assist our clients in choosing the right narrator for any job. We believe that narrating and listening is intimate and requires a great deal of sensibility and always aim to understand and learn more about the nuances of storytelling traditions in different markets and cultures.</p>
           <div class="narrator-sorting">
               <dropdown :options="voicetypeOptions" v-model="selectedVoiceFilter"></dropdown>
               <dropdown :options="locationOptions" v-model="selectedLocationFilter"></dropdown>
