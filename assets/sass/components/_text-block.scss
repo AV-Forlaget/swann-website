@@ -36,7 +36,6 @@
     }
 
     .text-block__paragraph {
-        text-align: center;
         font-size: 0.95em;
 
         @include mq($mobileBreakpoint) {
@@ -51,6 +50,10 @@
         @include mq($largeBreakpoint) {
             font-size: 1.2em;
             line-height: 150%;
+        }
+
+        &.text-block__paragraph--center {
+            text-align: center;
         }
     }
 

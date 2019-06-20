@@ -4,9 +4,9 @@
 	<div class="content-section frontpage-audiobooks">
       <div class="content-section__wrapper">
 			<h1 class="content-section__heading content-section__heading--center">Swann Studio</h1>
-            <p class="content-section__text content-section__text--center">Swann Studio is a family owned international audiobook production company and publishing house established in Odense, Denmark in 1983. The business has grown through several stages and market transitions to become an international frontrunner in audiobook production both in regards to volume and quality.</p>
-            <p class="content-section__text content-section__text--center">We have a deep and well rooted understanding of all aspects of the industry, having helped develop and nurture the strongly established Danish market over a span of four decades.</p>
-            <p class="content-section__text content-section__text--center">Swann Studio is very focused on incorporating solid and accessible tech solutions to make it as easy as possible to order and receive a production, and for our clients and us to have the most seamless communication possible. We offer all audiobook production services imaginable, provide audiobook business consultancy and assist in everything from designing a cover to helping with strategies for regional markets.</p>
+            <p class="content-section__text">Swann Studio is a family owned international audiobook production company and publishing house established in Odense, Denmark in 1983. The business has grown through several stages and market transitions to become an international frontrunner in audiobook production both in regards to volume and quality.</p>
+            <p class="content-section__text">We have a deep and well rooted understanding of all aspects of the industry, having helped develop and nurture the strongly established Danish market over a span of four decades.</p>
+            <p class="content-section__text">Swann Studio is very focused on incorporating solid and accessible tech solutions to make it as easy as possible to order and receive a production, and for our clients and us to have the most seamless communication possible. We offer all audiobook production services imaginable, provide audiobook business consultancy and assist in everything from designing a cover to helping with strategies for regional markets.</p>
       </div>
     </div>
 
