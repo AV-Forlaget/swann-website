@@ -18,12 +18,12 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Julian Lundsgaard</h3>
 					<p class="employee-jobtitle">CEO</p>
-					<p class="employee-email"><nuxt-link to="mailto:jwl@swann-studio.com" >jwl@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:jwl@swann-studio.com" >jwl@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Daniel Lundsgaard</h3>
 					<p class="employee-jobtitle">Project Manager</p>
-					<p class="employee-email"><nuxt-link to="mailto:dwl@swann-studio.com" >dwl@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:dwl@swann-studio.com" >dwl@swann-studio.com</a></p>
 				</div>
 			</div>
 		</div>
@@ -35,27 +35,27 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Lene Christensen</h3>
 					<p class="employee-jobtitle">Head of Production</p>
-					<p class="employee-email"><nuxt-link to="mailto:lc@swann-studio.com" >lc@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:lc@swann-studio.com" >lc@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Benjamin Blaaberg</h3>
 					<p class="employee-jobtitle">Chief Audio Tech</p>
-					<p class="employee-email"><nuxt-link to="mailto:bb@swann-studio.com" >bb@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:bb@swann-studio.com">bb@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Oliver Lundsgaard</h3>
 					<p class="employee-jobtitle">Audio Research</p>
-					<p class="employee-email"><nuxt-link to="mailto:owl@swann-studio.com" >owl@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:owl@swann-studio.com">owl@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Henrik Pedersen</h3>
 					<p class="employee-jobtitle">Audio Tech</p>
-					<p class="employee-email"><nuxt-link to="mailto:hp@swann-studio.com" >hp@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:hp@swann-studio.com">hp@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Bahra Aki Chamanara</h3>
 					<p class="employee-jobtitle">Digitisation</p>
-					<p class="employee-email"><nuxt-link to="mailto:bac@swann-studio.com" >bac@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:bac@swann-studio.com">bac@swann-studio.com</a></p>
 				</div>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Martin Johs. Møller</h3>
 					<p class="employee-jobtitle">Editor-in-Chief</p>
-					<p class="employee-email"><nuxt-link to="mailto:mjm@swann-studio.com" >mjm@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:mjm@swann-studio.com" >mjm@swann-studio.com</a></p>
 				</div>
 			</div>
 		</div>
@@ -79,17 +79,17 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Malin Flinta</h3>
 					<p class="employee-jobtitle">Coordinator</p>
-					<p class="employee-email"><nuxt-link to="mailto:mf@swann-studio.com" >mf@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:mf@swann-studio.com" >mf@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Natja Sørensen</h3>
 					<p class="employee-jobtitle">Graphic Designer</p>
-					<p class="employee-email"><nuxt-link to="mailto:ns@swann-studio.com" >ns@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:ns@swann-studio.com" >ns@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Emil Steentofte Andersen</h3>
 					<p class="employee-jobtitle">Coordinator/Shipment</p>
-					<p class="employee-email"><nuxt-link to="mailto:info@swann-studio.com" >info@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:info@swann-studio.com" >info@swann-studio.com</a></p>
 				</div>
 			</div>
 		</div>
@@ -101,17 +101,17 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Jakob Lund</h3>
 					<p class="employee-jobtitle">Lead Programmer</p>
-					<p class="employee-email"><nuxt-link to="mailto:jl@swann-studio.com" >jl@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:jl@swann-studio.com" >jl@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Tore Sæderup</h3>
 					<p class="employee-jobtitle">Backend Developer</p>
-					<p class="employee-email"><nuxt-link to="mailto:ts@swann-studio.com" >ts@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:ts@swann-studio.com" >ts@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Klaus Fyhn Jacobsen</h3>
 					<p class="employee-jobtitle">Backend Developer</p>
-					<p class="employee-email"><nuxt-link to="mailto:kfj@swann-studio.com" >kfj@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:kfj@swann-studio.com" >kfj@swann-studio.com</a></p>
 				</div>
 			</div>
 		</div>
@@ -124,12 +124,12 @@
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Jane Olsen</h3>
 					<p class="employee-jobtitle">Bookkeeper</p>
-					<p class="employee-email"><nuxt-link to="mailto:invoice@swann-studio.com" >invoice@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:invoice@swann-studio.com" >invoice@swann-studio.com</a></p>
 				</div>
 				<div class="department-grid__item">
 					<h3 class="employee-name" >Anette Lundsgaard</h3>
 					<p class="employee-jobtitle">Bookkeeper</p>
-					<p class="employee-email"><nuxt-link to="mailto:awl@swann-studio.com" >awl@swann-studio.com</nuxt-link></p>
+					<p class="employee-email"><a href="mailto:awl@swann-studio.com" >awl@swann-studio.com</a></p>
 				</div>
 			</div>
 		</div>
