@@ -118,15 +118,6 @@ import NarratorItem from '~/components/narrator-item.vue';
 import _ from 'underscore';
 
 export default {
-  head () {
-    return {
-      title: 'Audio',
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        //{ hid: 'description', name: 'description', content: 'My custom description' }
-      ]
-    }
-  },
   data() {
       return {
         selectedVoiceFilter: ' ',
