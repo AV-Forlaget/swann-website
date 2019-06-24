@@ -24,10 +24,6 @@
       &:first-child {
         margin-bottom: 1.2em;
       }
-
-      &:last-child {
-        margin-bottom: 5.8em;
-      }
     }
   }
 
@@ -69,6 +65,29 @@
   @include mq($removeMobileMenuBreakpoint) {
     min-width: 25%;
     max-width: 25%;
+  }
+
+
+  &.icon-list__item--articles {
+
+    @include mq($removeMobileMenuBreakpoint) {
+      margin-bottom: -1.8em;
+
+      img {
+        margin-bottom: -0.4em;
+      }
+    }
+  }
+
+  &.icon-list__item--translation {
+
+    @include mq($removeMobileMenuBreakpoint) {
+      margin-bottom: 4em;
+
+      img {
+        margin-bottom: -0.6em;
+      }
+    }
   }
 
   h4 {
