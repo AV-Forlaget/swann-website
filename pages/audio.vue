@@ -59,7 +59,7 @@
           <div class="audio-flow__block audio-flow__block--delivery">
             <img src="@/assets/img/icons/icon-delivery.png" alt="Delivery" class="audio-flow__block__img">
             <h4 class="audio-flow__block__heading">Delivery</h4>
-            <p class="audio-flow__block__text">Our audioserver automatically tags the audio files, divides them into tracks or chapters and converts them into the requested format. We check the metadata and the quality of the recording before delivering in any chosen format.</p>
+            <p class="audio-flow__block__text">Our audio server automatically tags the audio files, divides them into tracks or chapters and converts them into the requested format. We check the metadata and the quality of the recording before delivering in any chosen format.</p>
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@
                 <h4>Digitisation</h4>
                 <p>We can digitise audio on cassettes or reel tapes, clean the sound and handle the distribution for example to help you revitalise your backlist.</p>
               </div>
-              <div class="icon-list__item">
+              <div class="icon-list__item icon-list__item--articles">
                 <img src="@/assets/img/icons/icon-articles.svg" class="icon-list__icon" alt="" style="max-width: 8em;"/>
                 <h4>Articles</h4>
                 <p>Swann Studio provides narration for all kinds of online publications, ranging from science journals, through fashion magazines to weekly or daily newspapers.</p>

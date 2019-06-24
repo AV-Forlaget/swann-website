@@ -30,7 +30,7 @@
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Digital distribution</h2>
-        <p class="content-section__text">Digital distribution can be handled directly through our web application and we can easily set up our API to deliver a publication to any additional destinations. We work with all relevant streaming services and/or other sales channels.</p>
+        <p class="content-section__text">Digital distribution can be handled directly through our web application and we can easily set up our API to deliver a publication to any additional destinations. We work with all relevant streaming services and/or other sales channels. By popular demand, we also offer track division of audiobooks to make them compatible for direct upload to music streaming services.</p>
         <p class="content-section__text">If you are interested in our digital distribution services, please contact our distribution team.</p>
         <div class="content-section__btn content-section__btn--center">
           <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
@@ -142,7 +142,7 @@
                 <h4>Cover production</h4>
                 <p>Our graphics team can produce covers based on existing material or make entirely new ones. We are very aware of the particularities of creating content for the visually competitive streaming market. We can do single projects but also assist with larger series or even entire visual audiobook publication profiles.</p>
               </div>
-              <div class="icon-list__item">
+              <div class="icon-list__item icon-list__item--translation">
                 <img src="@/assets/img/icons/icon-translation.svg" class="icon-list__icon" alt="" />
                 <h4>Translation</h4>
                 <p>Our international presence makes us an ideal partner for publications in multiple languages and markets. We are always on hand to assist with any translation services our clients might need.</p>
