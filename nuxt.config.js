@@ -20,12 +20,13 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Swann Studio',
+    title: 'Swann Studio: Audiobook production and distribution',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'theme-color', content: '#ffffff' },
+      { name: 'description', content: 'Europe’s largest audiobook production company with 35 years of experience, recording studios in 14 countries and audiobook and eBook distribution services.' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
