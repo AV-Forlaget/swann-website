@@ -17,7 +17,7 @@
 						</ul>
 					</div>
 					<div class="main-nav__list main-nav__list--right">
-						<nuxt-link class="header-tagline" to="/">Be part of our narrator catalogue</nuxt-link>
+						<a class="header-tagline" :href="narratorCatalogLink">Be part of our narrator catalogue</a>
 						<ul class="nav nav--login-menu">
 							<li class="nav__item">
 								<a href="https://swann-studio.com/app/da/login" class="btn">Login</a>
@@ -68,7 +68,8 @@
 export default {
     data() {
         return {
-            open: false
+            open: false,
+			narratorCatalogLink: process.env.NARRATOR_LINK
         }
     },
     watch: {
@@ -82,6 +83,6 @@ export default {
                 document.getElementsByTagName('body')[0].classList.remove('showMenu');
             }
         }
-    }
+	}
 }
 </script>
