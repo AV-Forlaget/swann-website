@@ -1,5 +1,3 @@
-const pkg = require('./package')
-
 let modules = [
   '@nuxtjs/dotenv',
   'nuxt-imagemin'
@@ -64,7 +62,8 @@ module.exports = {
 
   env: {
     API_URL: process.env.API_URL || '',
-    FILE_URL: process.env.FILE_URL || ''
+    FILE_URL: process.env.FILE_URL || '',
+    NARRATOR_LINK: process.env.NARRATOR_LINK || '#'
   },
 
   /*
