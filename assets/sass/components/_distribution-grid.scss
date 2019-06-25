@@ -45,10 +45,10 @@
     
     .distribution-block__grid__item {
         position: relative;
-        z-index: 1;
 
         @include mq($removeMobileMenuBreakpoint) {
             max-width: 40em;
+            z-index: 1;
         }
 
         &.distribution-block__grid__item--left {
