@@ -11,3 +11,13 @@ services:
     tty: true
     ports:
       - 3000:3000
+
+  web:
+    build:
+      context: ./docker
+      dockerfile: nginx.dockerfile
+    working_dir: /var/www
+    volumes_from:
+      - frontend
+    ports:
+      - 80:80
