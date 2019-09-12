@@ -48,6 +48,11 @@
         </div>
       </div>
     </div>
+     <div class="content-section frontpage-video">
+      <div class="content-section__wrapper">
+        <img src="@/assets/img/narrator-catalogue.png" alt="">
+      </div>
+    </div>
 
     <div class="content-section content-section--dark">
       <div class="content-section__wrapper">
