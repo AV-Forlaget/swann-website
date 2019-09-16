@@ -14,10 +14,12 @@
 							<li class="nav__item">
 								<nuxt-link class="nav__item__anchor" to="/distribution">Distribution</nuxt-link>
 							</li>
+							<li class="nav__item">
+								<a class="header-tagline" :href="narratorCatalogLink">Be part of our narrator catalogue</a>
+							</li>
 						</ul>
 					</div>
 					<div class="main-nav__list main-nav__list--right">
-						<a class="header-tagline" :href="narratorCatalogLink">Be part of our narrator catalogue</a>
 						<ul class="nav nav--login-menu">
 							<li class="nav__item">
 								<a href="https://swann-studio.com/app/da/login" class="btn">Login</a>
