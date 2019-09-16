@@ -50,7 +50,8 @@
     </div>
      <div class="content-section frontpage-video">
       <div class="content-section__wrapper">
-        <img @click="showVideo = true" src="@/assets/img/narrator-catalogue.png" alt="">
+        <img @click="showVideo = true" src="@/assets/img/swann-video.jpg" alt="">
+        
       </div>
     </div>
 
