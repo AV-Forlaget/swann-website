@@ -22,7 +22,7 @@
 					<div class="main-nav__list main-nav__list--right">
 						<ul class="nav nav--login-menu">
 							<li class="nav__item">
-								<a href="https://swann-studio.com/app/da/login" class="btn">Login</a>
+								<a :href="loginLink" class="btn">Login</a>
 							</li>
 						</ul>
 					</div>
@@ -71,7 +71,8 @@ export default {
     data() {
         return {
             open: false,
-			narratorCatalogLink: process.env.NARRATOR_LINK
+			narratorCatalogLink: process.env.NARRATOR_LINK,
+			loginLink: process.env.LOGIN_LINK
         }
     },
     watch: {

@@ -64,7 +64,9 @@ module.exports = {
   env: {
     API_URL: process.env.API_URL || dotEnv.parsed.API_URL || '',
     FILE_URL: process.env.FILE_URL || dotEnv.parsed.FILE_URL || '',
-    NARRATOR_LINK: process.env.NARRATOR_LINK || dotEnv.parsed.NARRATOR_LINK || ''
+    NARRATOR_LINK: process.env.NARRATOR_LINK || dotEnv.parsed.NARRATOR_LINK || '',
+    LOGIN_LINK: process.env.LOGIN_LINK || dotEnv.parsed.LOGIN_LINK || '',
+    FRONTPAGE_VIDEO_ID: process.env.FRONTPAGE_VIDEO_ID || dotEnv.parsed.FRONTPAGE_VIDEO_ID || ''
   },
 
   /*
