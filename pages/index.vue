@@ -189,7 +189,7 @@
       </div>
     </div>
 
-    <modal v-if="showVideo" :no-scroll="true" :is-open="true" @close="showVideo = false">
+    <modal v-if="showVideo" :no-scroll="true" :is-open="true" @close="showVideo = false" :close-on-click="true">
       <youtube v-if="videoId" :video-id="videoId" :player-vars="playerVars"></youtube>
     </modal>
   </section>
