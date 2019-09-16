@@ -50,7 +50,7 @@
     </div>
      <div class="content-section frontpage-video">
       <div class="content-section__wrapper">
-        <img src="@/assets/img/narrator-catalogue.png" alt="">
+        <img @click="showVideo = true" src="@/assets/img/narrator-catalogue.png" alt="">
       </div>
     </div>
 
@@ -187,17 +187,26 @@
         </div>
       </div>
     </div>
+
+    <modal v-if="showVideo" :no-scroll="true" :is-open="true" @close="showVideo = false">
+      <youtube v-if="videoId" :video-id="videoId" :player-vars="playerVars"></youtube>
+    </modal>
   </section>
 </template>
 
 <script>
     import Dropdown from '~/components/dropdown.vue';
     import IntroSlide from '~/components/IntroSlide';
-
+    import Modal from '~/components/modal';
 export default {
  data() {
     return {
+      showVideo: false,
       showSlider: false,
+      videoId:  process.env.FRONTPAGE_VIDEO_ID,
+      playerVars: {
+        autoplay: 1
+      },
       countryOptions: [
         {
           text: 'Denmark',
@@ -263,7 +272,8 @@ export default {
   },
   components: {
     Dropdown,
-    IntroSlide
+    IntroSlide,
+    Modal
   }
 }
 </script>

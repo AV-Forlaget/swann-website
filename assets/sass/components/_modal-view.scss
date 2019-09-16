@@ -1,0 +1,428 @@
+.modal-view {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @include mq($removeMobileMenuBreakPoint) {
+    position: absolute;
+    top: 3em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  //Fixing bug that causes z-index to glitch on search-widget on desktop
+  &.modal--search-widget {
+
+    @include mq($removeMobileMenuBreakPoint) {
+      z-index: 6;
+    }
+  }
+
+  //Fixing bug that causes z-index to glitch on search-widget on desktop
+  &.modal--calendar {
+
+    @include mq($removeMobileMenuBreakPoint) {
+      top: 0em;
+    }
+
+    .modal-view__content {
+      height: calc(100vh - 125px);
+      
+      @include mq($removeMobileMenuBreakPoint) {
+        background: none;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  &.modal-view--bg {
+    @include mq($removeMobileMenuBreakPoint) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: none;
+      max-width: 52em;
+      height: calc(100vh - 180px);
+
+      &:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        background: rgba($black, 0.5);
+        pointer-events: none;
+      }
+    }
+
+    > .modal-view__header {
+      display: flex;
+
+      @include mq($removeMobileMenuBreakPoint) {
+        background: $white;
+        position: relative;
+        z-index: 1;
+        border-bottom: 1px solid $border-color;
+        border-radius: $r $r 0 0;
+      }
+
+      .modal-view__header__text {
+        @include mq($removeMobileMenuBreakPoint) {
+          color: $bg-light;
+        }
+      }
+
+      .modal-view__header__icon svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 1.6em;
+        height: 1.6em;
+
+        path {
+          fill: $white;
+
+          @include mq($removeMobileMenuBreakPoint) {
+            fill: $bg-light;
+          }
+        }
+      }
+
+      .modal-view__header__btn {
+
+        @include mq($removeMobileMenuBreakPoint) {
+          margin-right: 0.5em;
+        }
+
+        svg {
+          width: 1.6em;
+          height: 1.6em;
+
+          path {
+            @include mq($removeMobileMenuBreakPoint) {
+              fill: $font-color;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-view__content {
+
+      @include mq($removeMobileMenuBreakPoint) {
+        position: relative;
+        z-index: 1;
+        border-radius: 0 0 $r $r;
+      }
+    }
+  }
+
+  .modal-view__header {
+    background: $bg-dark;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: flex-start;
+
+    @include mq($removeMobileMenuBreakPoint) {
+      display: none;
+    }
+
+    @at-root .modal-view.modal-view--group-travel > .modal-view__header {
+      @include mq($removeMobileMenuBreakPoint) {
+        display: flex;
+      }
+    }
+
+    .modal-view__header__icon {
+      position: relative;
+      align-self: center;
+      width: 4em;
+      height: 4em;
+      box-sizing: border-box;
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 1.6em;
+        height: 1.6em;
+      }
+    }
+
+    .modal-view__header__text {
+      display: block;
+      align-self: center;
+      color: $white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: 0 auto 0 0;
+      font-size: 1.15em;
+      line-height: 110%;
+    }
+
+    .modal-view__header__btn {
+      align-self: center;
+      width: 4em;
+      height: 4em;
+      padding: 1.3em;
+      background: none;
+      box-sizing: border-box;
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+
+  .modal-view__content {
+    background: $bg-light;
+    height: calc(100vh - 125px);
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    @include mq($removeMobileMenuBreakPoint) {
+      min-width: 17em;
+      height: auto;
+      background: $white;
+      border-radius: $r;
+      box-shadow: $block-shadow;
+      overflow: inherit;
+    }
+
+    @at-root .modal-view.modal-view--group-travel > .modal-view__content {
+      @include mq($removeMobileMenuBreakPoint) {
+        border-radius: 0;
+        height: calc(100vh - 180px);
+        overflow-y: auto;
+      }
+    }
+
+    @at-root .result-area .modal-view.modal--search-widget.modal--calendar .modal-view__content .modal-view__content__wrapper {
+      @include mq($removeMobileMenuBreakPoint) {
+        max-width: 70%;
+      }
+
+      @include mq(1050) {
+        max-width: 75%;
+      }
+
+      @include mq($removeDesktopWrapper) {
+        max-width: 15.2em;
+      }
+    }
+
+    .modal-view-list {
+      padding: 0;
+
+      &.modal-view-list--no-hover .modal-view-list__item {
+        padding: 0.2em 0;
+        cursor: inherit;
+        background: $white;
+        border-bottom: 1px solid rgba($border-color,0.5);
+
+        @include mq($removeMobileMenuBreakPoint) {
+          background: none;
+        }
+
+        &:hover {
+          @include mq($removeMobileMenuBreakPoint) {
+            background: none;
+          }
+        }
+      }
+
+      .modal-view-list__item {
+        display: flex;
+        padding: 1em;
+        position: relative;
+        cursor: pointer;
+
+        @include mq($removeMobileMenuBreakPoint) {
+          padding: 0.6em;
+          border-bottom: 1px solid rgba($border-color,0.5);
+        }
+
+        &:hover {
+          @include mq($removeMobileMenuBreakPoint) {
+            background: linear-gradient(to top, tint($grey-light, 60%) 0%, $white 80%);
+
+            p {
+              color: $brand-color;
+            }
+          }
+        }
+
+        &:first-child {
+
+          @include mq($removeMobileMenuBreakPoint) {
+            &:after {
+              content: '';
+              position: absolute;
+              top: -0.35em;
+              right: auto;
+              bottom: auto;
+              left: 0.9em;
+              margin: auto;
+              width: 0.8em;
+              height: 0.8em;
+              background: $white;
+              transform: rotate(45deg);
+            }
+
+            &:hover {
+              border-radius: $r $r 0 0;
+            }
+          }
+        }
+
+        &:last-child:hover {
+          @include mq($removeMobileMenuBreakPoint) {
+            border-radius: 0 0 $r $r;
+          }
+        }
+
+        &.modal-view-list__item--special {
+          border: none;
+
+          &:hover {
+            border-radius: $r;
+          }
+
+          img {
+            display: none;
+          }
+
+          .modal-view-list__item__content {
+            p {
+
+              @include mq($removeMobileMenuBreakPoint) {
+                margin-left: 0.6em;
+              }
+            }
+          }
+        }
+
+        .btn {
+          font-family: $font-number;
+          margin: 0.6em 1em;
+          padding: 0.6em 1em;
+          display: block;
+          width: 100%;
+        }
+
+        img {
+          width: 2.5em;
+          height: 2.5em;
+          align-self: center;
+          margin-right: 1em;
+
+          @include mq($removeMobileMenuBreakPoint) {
+            width: 2.25em;
+            height: 2.25em;
+            margin-right: 0.6em;
+          }
+        }
+
+        p {
+          display: block;
+          align-self: center;
+          margin: 0;
+          font-size: 1em;
+          color: $white;
+          font-weight: bold;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+
+          @include mq($removeMobileMenuBreakPoint) {
+            font-size: 1.1em;
+            color: $font-color;
+          }
+        }
+
+        span {
+          display: block;
+          align-self: center;
+          margin: -0.1em 0 0;
+          font-size: 0.8em;
+          color: $white;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+
+          @include mq($removeMobileMenuBreakPoint) {
+            margin: -0.15em 0 0;
+            font-size: 0.9em;
+            color: $font-color;
+          }
+        }
+
+        .modal-view-list__item__text {
+          font-family: $font-number;
+          color: $font-color;
+          align-self: center;
+          font-size: 1em;
+          font-weight: normal;
+          margin: 0 auto 0 1em;
+        }
+
+        .count-picker {
+          margin-right: 0.5em;
+
+          @include mq($removeMobileMenuBreakPoint) {
+            margin-right: 0.2em;
+          }
+        }
+
+        .modal-view-list__item__link {
+          font-family: $font-number;
+          display: block;
+          padding: 0.8em 1em;
+          align-self: center;
+          font-weight: normal;
+          font-size: 1em;
+          color: $brand-blue;
+        }
+      }
+    }
+  }
+
+  .modal-view__footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 0.8em 1em;
+    box-sizing: border-box;
+    background: $bg-dark;
+
+    @include mq($removeMobileMenuBreakPoint) {
+      display: none;
+    }
+
+    .btn {
+      display: block;
+      margin: 0;
+      border: none;
+      border-radius: $r-btn;
+    }
+  }
+}

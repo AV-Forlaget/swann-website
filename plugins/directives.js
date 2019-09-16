@@ -4,8 +4,10 @@ import ValidateJS from 'validate.js';
 import { isEmpty } from 'underscore';
 import VueTelInput from 'vue-tel-input';
 import 'vue-tel-input/dist/vue-tel-input.css';
+import VueYoutube from 'vue-youtube';
 
 Vue.use(VueTelInput);
+Vue.use(VueYoutube);
 
 Vue.directive('ui-mask', (el, binding) => {
     if(binding.value.mask) {
