@@ -151,7 +151,7 @@
         "value": "ee"
     },
     {
-        "text": "Greek, Modern (1453-)",
+        "text": "Greek",
         "value": "el"
     },
     {
@@ -159,11 +159,19 @@
         "value": "en"
     },
     {
+        "text": "English (American)",
+        "value": "en_US"
+    },
+    {
+        "text": "English (Australian)",
+        "value": "en_AU"
+    },
+    {
         "text": "Esperanto",
         "value": "eo"
     },
     {
-        "text": "Spanish; Castilian",
+        "text": "Spanish",
         "studios": [
             "Barcelona"
         ],
