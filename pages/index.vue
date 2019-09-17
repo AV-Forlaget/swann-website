@@ -50,7 +50,8 @@
     </div>
      <div class="content-section frontpage-video">
       <div class="content-section__wrapper">
-        <h2 class="content-section__heading content-section__heading--center">See how easy audiobook production can be</h2>
+        <h2 class="content-section__heading content-section__heading--center">Our production process</h2>
+        <p class="content-section__text content-section__text--center">Watch a short presentation below.</p>
         <img @click="showVideo = true" src="@/assets/img/swann-video.jpg" alt="">
       </div>
     </div>
