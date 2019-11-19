@@ -143,7 +143,7 @@ export default {
           }
         }
 
-        if(this.selectedLocationFilter != ' ' && narrator.language !== this.selectedLocationFilter) {
+        if(this.selectedLocationFilter != ' ' && !narrator.language.startsWith(this.selectedLocationFilter)) {
           return false;
         }
 

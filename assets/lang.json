@@ -178,6 +178,13 @@
         "value": "es"
     },
     {
+        "text": "Spanish (Castillian)",
+        "studios": [
+            "Barcelona"
+        ],
+        "value": "es_ES"
+    },
+    {
         "text": "Estonian",
         "value": "et"
     },
