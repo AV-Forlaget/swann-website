@@ -1,58 +1,99 @@
 <template>
   <section class="main-content">
-     <carousel :per-page="1" :pagination-enabled="true" :navigationEnabled="true" :autoplay="true" :autoplayTimeout="5000" :speed="1000"  v-if="showSlider">
-        <slide v-for="(content, contentKey) in introSlides" :key="contentKey">
-          <intro-slide :content="content"></intro-slide>
-        </slide>
-      </carousel>
-      <div class="VueCarousel" v-if="!showSlider">
-        <intro-slide v-for="(content, contentKey) in introSlides" :key="contentKey" :content="content" v-show="contentKey < 1"></intro-slide>
-     </div>
+    <carousel
+      :per-page="1"
+      :pagination-enabled="true"
+      :navigationEnabled="true"
+      :autoplay="true"
+      :autoplayTimeout="5000"
+      :speed="1000"
+      v-if="showSlider"
+    >
+      <slide v-for="(content, contentKey) in introSlides" :key="contentKey">
+        <intro-slide :content="content"></intro-slide>
+      </slide>
+    </carousel>
+    <div class="VueCarousel" v-if="!showSlider">
+      <intro-slide
+        v-for="(content, contentKey) in introSlides"
+        :key="contentKey"
+        :content="content"
+        v-show="contentKey < 1"
+      ></intro-slide>
+    </div>
     <div class="scroll-indicator"></div>
     <div class="content-section frontpage-audiobooks">
       <div class="content-section__wrapper content-section__wrapper--flex">
         <div class="content-section__col content-section__col--lg">
-            <h2 class="content-section__heading">Audiobooks, podcast, audioarticles, and more</h2>
-            <p class="content-section__text">At Swann Studio we aim to simplify the audio production workflow for our clients as much as possible.</p>
-            <p class="content-section__text">Our agile software and constant focus on organisational efficiency makes us an ideal choice for publishers who work on a large scale.</p>
-		        <nuxt-link class="btn" to="/audio">Read more</nuxt-link>
+          <h2 class="content-section__heading">Audiobooks, podcast, audioarticles, and more</h2>
+          <p class="content-section__text">
+            At Swann Studio we aim to simplify the audio production workflow for
+            our clients as much as possible.
+          </p>
+          <p class="content-section__text">
+            Our agile software and constant focus on organisational efficiency
+            makes us an ideal choice for publishers who work on a large scale.
+          </p>
+          <nuxt-link class="btn" to="/audio">Read more</nuxt-link>
         </div>
         <div class="content-section__col content-section__col--sm">
-            <img src="@/assets/img/mic-audiobooks.png" class="audiobooks-microphone-img" alt="" />
+          <img src="@/assets/img/mic-audiobooks.png" class="audiobooks-microphone-img" alt />
         </div>
       </div>
     </div>
     <div class="content-section frontpage-distribution">
       <div class="content-section__wrapper content-section__wrapper--flex">
         <div class="content-section__col content-section__col--lg">
-            <h2 class="content-section__heading">Digital distribution, print-on-demand, streaming, publishing and more</h2>
-            <p class="content-section__text">Digital distribution is handled through our web app and we can easily set up our API to deliver a publication to any additional destinations.</p>
-            <p class="content-section__text">Physical publications can be ordered easily through our web app. We have 35 years of experience with making print-on-demand CDs, cooperate with fixed volume producers and offer graphical solutions, as well as general audio consultancy services.</p>
-		        <nuxt-link class="btn" to="/distribution">Read more</nuxt-link>
+          <h2 class="content-section__heading">
+            Digital distribution, print-on-demand, streaming, publishing and
+            more
+          </h2>
+          <p class="content-section__text">
+            Digital distribution is handled through our web app and we can
+            easily set up our API to deliver a publication to any additional
+            destinations.
+          </p>
+          <p class="content-section__text">
+            Physical publications can be ordered easily through our web app. We
+            have 35 years of experience with making print-on-demand CDs,
+            cooperate with fixed volume producers and offer graphical solutions,
+            as well as general audio consultancy services.
+          </p>
+          <nuxt-link class="btn" to="/distribution">Read more</nuxt-link>
         </div>
         <div class="content-section__col content-section__col--sm">
-            <img src="@/assets/img/digital-distribution.png" class="digital-distribution-img" alt="" />
+          <img src="@/assets/img/digital-distribution.png" class="digital-distribution-img" alt />
         </div>
       </div>
     </div>
     <div class="content-section frontpage-narrator">
       <div class="content-section__wrapper content-section__wrapper--flex">
         <div class="content-section__col content-section__col--lg">
-            <h2 class="content-section__heading">Narrator catalogue</h2>
-            <p class="content-section__text">Swann Studio has recording facilities in more than 12 countries. Locations include Copenhagen, Odense, Stockholm, Göteborg, Oslo, Helsinki, Amsterdam, Reykjavik, Paris, Hamburg and Berlin.</p>
-            <p class="content-section__text">We have narrators for all kinds of texts and genres, and editors and producers who can accommodate specific production requirements and are willing to discuss any idea you might have.</p>
-		        <nuxt-link class="btn" to="/audio#narratorSection">To the catalogue</nuxt-link>
+          <h2 class="content-section__heading">Narrator catalogue</h2>
+          <p class="content-section__text">
+            Swann Studio has recording facilities in more than 12 countries.
+            Locations include Copenhagen, Odense, Stockholm, Göteborg, Oslo,
+            Helsinki, Amsterdam, Reykjavik, Paris, Hamburg and Berlin.
+          </p>
+          <p class="content-section__text">
+            We have narrators for all kinds of texts and genres, and editors and
+            producers who can accommodate specific production requirements and
+            are willing to discuss any idea you might have.
+          </p>
+          <nuxt-link class="btn" to="/audio#narratorSection">To the catalogue</nuxt-link>
         </div>
         <div class="content-section__col content-section__col--sm">
-            <img src="@/assets/img/narrator-catalogue.png" class="narrator-catalogue-img" alt="" />
+          <img src="@/assets/img/narrator-catalogue.png" class="narrator-catalogue-img" alt />
         </div>
       </div>
     </div>
-     <div class="content-section frontpage-video">
+    <div class="content-section frontpage-video">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Our production process</h2>
-        <p class="content-section__text content-section__text--center">Watch a short presentation below.</p>
-        <img @click="showVideo = true" src="@/assets/img/swann-video.jpg" alt="">
+        <p
+          class="content-section__text content-section__text--center"
+        >Watch a short presentation below.</p>
+        <img @click="showVideo = true" src="@/assets/img/swann-video.jpg" alt />
       </div>
     </div>
 
@@ -88,194 +129,212 @@
     <div class="content-section content-section--white">
       <div class="content-section__wrapper">
         <h2 class="content-section__heading content-section__heading--center">Partners</h2>
-        <p class="content-section__text content-section__text--center">We produce and/or distribute audio for a wide range of clients and partners.</p>
+        <p class="content-section__text content-section__text--center">
+          We produce and/or distribute audio for a wide range of clients and
+          partners.
+        </p>
         <div class="partners-grid">
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-alpha.svg" alt="Alpha" />
+          </div>
           <div class="partners-item partners-item--medium">
-            <img src="@/assets/img/logos/logo-alvilda.svg" alt="">
+            <img src="@/assets/img/logos/logo-alvilda.svg" alt="Alvilda" />
           </div>
           <div class="partners-item partners-item--large">
-              <img src="@/assets/img/logos/logo-bibelselskabet.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--medium">
-            <img src="@/assets/img/logos/logo-bonnier.svg" alt="">
+            <img src="@/assets/img/logos/logo-bibelselskabet.svg" alt="Bibelselskabets Forlag" />
           </div>
           <div class="partners-item partners-item--small">
-              <img src="@/assets/img/logos/logo-ck.svg" alt="">
+            <img src="@/assets/img/logos/logo-bookmark.svg" alt="Bookmark" />
           </div>
-            <div class="partners-item">
-            <img src="@/assets/img/logos/logo-dafolo.svg" alt="">
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-bonnier.svg" alt="Bonnier" />
+          </div>
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-dafolo.svg" alt="Dafolo" />
+          </div>
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-gadsforlag.svg" alt="Gads Forlag" />
+          </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-grif.svg" alt="GRIF" />
+          </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-gutkind.svg" alt="Gutkind" />
           </div>
           <div class="partners-item partners-item--extra-small">
-              <img src="@/assets/img/logos/logo-forlagid.svg" alt="">
+            <img src="@/assets/img/logos/logo-gyldendal.svg" alt="Gyldendal" />
           </div>
           <div class="partners-item partners-item--medium">
-              <img src="@/assets/img/logos/logo-gadsforlag.svg" alt="">
+            <img src="@/assets/img/logos/logo-harlequin.svg" alt="Harlequin" />
           </div>
-           <div class="partners-item partners-item--medium">
-            <img src="@/assets/img/logos/logo-grif.svg" alt="">
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-harpercollins.svg" alt="HarperCollins" />
+          </div>
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-hamburg.svg" alt="Horbuch Hamburg" />
+          </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-hrferdinand.svg" alt="Hr. Ferdinand" />
+          </div>
+          <div class="partners-item">
+            <img src="@/assets/img/logos/logo-illustreretvidenskab.svg" alt="Illustret Videnskab" />
+          </div>
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-jentas.svg" alt="Jentas" />
+          </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-klim.svg" alt="KLIM" />
           </div>
           <div class="partners-item partners-item--extra-small">
-              <img src="@/assets/img/logos/logo-gyldendal.svg" alt="">
+            <img src="@/assets/img/logos/logo-kristeligtdagblad.svg" alt="Kristeligt Dagblad" />
+          </div>
+          <div class="partners-item partners-item--extra-small">
+            <img src="@/assets/img/logos/logo-lr.svg" alt="Lindhardt and Ringhof" />
+          </div>
+          <div class="partners-item partners-item--medium">
+            <img src="@/assets/img/logos/logo-lust.svg" alt="Lust" />
           </div>
           <div class="partners-item">
-            <img src="@/assets/img/logos/logo-harlequin.svg" alt="">
+            <img src="@/assets/img/logos/logo-modtryk.svg" alt="Modtryk" />
+          </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-nok.svg" alt="Natur and Kultur" />
+          </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-mofibo.svg" alt="Mofibo" />
+          </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-olga.svg" alt="Olga Forlaget" />
           </div>
           <div class="partners-item">
-              <img src="@/assets/img/logos/logo-harpercollinsnordic.svg" alt="">
+            <img src="@/assets/img/logos/logo-palatium.svg" alt="Palatium Books" />
+          </div>
+          <div class="partners-item">
+            <img src="@/assets/img/logos/logo-peoplespress.svg" alt="People's Press" />
+          </div>
+          <div class="partners-item">
+            <img src="@/assets/img/logos/logo-polaris.svg" alt="Bokforlaget Polaris" />
           </div>
           <div class="partners-item partners-item--small">
-            <img src="@/assets/img/logos/logo-hoi.svg" alt="">
+            <img src="@/assets/img/logos/logo-politikensforlag.svg" alt="Politikens Forlag" />
           </div>
           <div class="partners-item partners-item--medium">
-              <img src="@/assets/img/logos/logo-hrferdinand.svg" alt="">
-          </div>
-            <div class="partners-item">
-            <img src="@/assets/img/logos/logo-illustreretvidenskab.svg" alt="">
+            <img src="@/assets/img/logos/logo-turbine.svg" alt="Turbine" />
           </div>
           <div class="partners-item partners-item--medium">
-              <img src="@/assets/img/logos/logo-jentas.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--small">
-            <img src="@/assets/img/logos/logo-klim.svg" alt="">
+            <img src="@/assets/img/logos/logo-saga.svg" alt="Egmont Saga" />
           </div>
           <div class="partners-item partners-item--small">
-              <img src="@/assets/img/logos/logo-kristeligtdagblad.svg" alt="">
+            <img src="@/assets/img/logos/logo-storytel.svg" alt="Storytel" />
           </div>
-           <div class="partners-item partners-item--small">
-              <img src="@/assets/img/logos/logo-lr.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--medium">
-              <img src="@/assets/img/logos/logo-lust.svg" alt="">
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-strawberry.svg" alt="Strawberry" />
           </div>
           <div class="partners-item partners-item--medium">
-            <img src="@/assets/img/logos/logo-lydbokforlaget.svg" alt="">
+            <img src="@/assets/img/logos/logo-viatone.svg" alt="Viatone" />
           </div>
-           <div class="partners-item">
-              <img src="@/assets/img/logos/logo-modtryk.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--small">
-              <img src="@/assets/img/logos/logo-mofibo.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--medium">
-              <img src="@/assets/img/logos/logo-nextory.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--small">
-              <img src="@/assets/img/logos/logo-olga.svg" alt="">
-          </div>
-           <div class="partners-item">
-              <img src="@/assets/img/logos/logo-palatium.svg" alt="">
-          </div>
-           <div class="partners-item">
-              <img src="@/assets/img/logos/logo-peoplespress.svg" alt="">
-          </div>
-           <div class="partners-item">
-              <img src="@/assets/img/logos/logo-polaris.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--small">
-              <img src="@/assets/img/logos/logo-politikensforlag.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--medium">
-              <img src="@/assets/img/logos/logo-rosinante.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--medium">
-              <img src="@/assets/img/logos/logo-saga.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--extra-small">
-              <img src="@/assets/img/logos/logo-storytel.svg" alt="">
-          </div>
-           <div class="partners-item partners-item--medium">
-              <img src="@/assets/img/logos/logo-viatone.svg" alt="">
+          <div class="partners-item partners-item--large">
+            <img src="@/assets/img/logos/logo-aarhus.svg" alt="Aarhus" />
           </div>
         </div>
       </div>
     </div>
 
-    <modal v-if="showVideo" :no-scroll="true" :is-open="true" @close="showVideo = false" :close-on-click="true">
+    <modal
+      v-if="showVideo"
+      :no-scroll="true"
+      :is-open="true"
+      @close="showVideo = false"
+      :close-on-click="true"
+    >
       <youtube v-if="videoId" :video-id="videoId" :player-vars="playerVars"></youtube>
     </modal>
   </section>
 </template>
 
 <script>
-    import Dropdown from '~/components/dropdown.vue';
-    import IntroSlide from '~/components/IntroSlide';
-    import Modal from '~/components/modal';
+import Dropdown from "~/components/dropdown.vue"
+import IntroSlide from "~/components/IntroSlide"
+import Modal from "~/components/modal"
 export default {
- data() {
+  data() {
     return {
       showVideo: false,
       showSlider: false,
-      videoId:  process.env.FRONTPAGE_VIDEO_ID,
+      videoId: process.env.FRONTPAGE_VIDEO_ID,
       playerVars: {
-        autoplay: 1
+        autoplay: 1,
       },
       countryOptions: [
         {
-          text: 'Denmark',
-          value: 'denmark'
+          text: "Denmark",
+          value: "denmark",
         },
         {
-          text: 'Etc.',
-          value: 'etc'
-        }
+          text: "Etc.",
+          value: "etc",
+        },
       ],
-       languageOptions: [
+      languageOptions: [
         {
-          text: 'Danish',
-          value: 'danish'
+          text: "Danish",
+          value: "danish",
         },
         {
-          text: 'Etc.',
-          value: 'etc'
-        }
+          text: "Etc.",
+          value: "etc",
+        },
       ],
       introSlides: [
         {
-          header: 'Audiobooks since 1983',
-          text: 'Swann Studio has more than 35 years of experience with audiobook production and has grown to be an international market leader having produced more that 2000 new titles in 2018 and having already expanded to 9 new countries in 2019 alone.',
+          header: "Audiobooks since 1983",
+          text:
+            "Swann Studio has more than 35 years of experience with audiobook production and has grown to be an international market leader having produced more that 2000 new titles in 2018 and having already expanded to 9 new countries in 2019 alone.",
           link: {
-            text: 'Read more',
-            href: '/audio'
+            text: "Read more",
+            href: "/audio",
           },
-          class: 'audiobooks',
-          image: require('~/assets/img/slides/slide-audiobooks.jpg')
+          class: "audiobooks",
+          image: require("~/assets/img/slides/slide-audiobooks.jpg"),
         },
         {
-          header: 'Worldwide reach',
-          text: 'Digital distribution is handled through our web app and we produce CDs as print-on-demand or in fixed volumes. We can deliver your audio however and wherever you want it.',
+          header: "Worldwide reach",
+          text:
+            "Digital distribution is handled through our web app and we produce CDs as print-on-demand or in fixed volumes. We can deliver your audio however and wherever you want it.",
           link: {
-            text: 'Read more',
-            href: '/distribution'
+            text: "Read more",
+            href: "/distribution",
           },
-          class: 'distribution',
-          image: require('~/assets/img/slides/slide-distribution.jpg')
+          class: "distribution",
+          image: require("~/assets/img/slides/slide-distribution.jpg"),
         },
         {
-          header: 'Tech and Tradition',
-          text: 'Swann Studio has lived through the transition from cassettes and reel tapes in the 1980s to the current situation where the market is becoming increasingly digital and audiobooks hold a stronger position than ever. We have employees that can handle, and assist in, all aspects of audiobook production, publication and distribution. And with the help of our Swann Studio app our customers can order a title in just a few minutes.',
+          header: "Tech and Tradition",
+          text:
+            "Swann Studio has lived through the transition from cassettes and reel tapes in the 1980s to the current situation where the market is becoming increasingly digital and audiobooks hold a stronger position than ever. We have employees that can handle, and assist in, all aspects of audiobook production, publication and distribution. And with the help of our Swann Studio app our customers can order a title in just a few minutes.",
           link: {
-            text: 'Read more',
-            href: '/about-us'
+            text: "Read more",
+            href: "/about-us",
           },
-          class: 'about',
-          image: require('~/assets/img/slides/slide-about.jpg')
-        }
+          class: "about",
+          image: require("~/assets/img/slides/slide-about.jpg"),
+        },
       ],
     }
   },
   mounted() {
-    this.showSlider = true;
-    this.$store.dispatch('getContentData');
+    this.showSlider = true
+    this.$store.dispatch("getContentData")
   },
   computed: {
     contentData() {
-      return this.$store.state.contentData;
-    }
+      return this.$store.state.contentData
+    },
   },
   components: {
     Dropdown,
     IntroSlide,
-    Modal
-  }
+    Modal,
+  },
 }
 </script>
