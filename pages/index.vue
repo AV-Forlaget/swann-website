@@ -140,6 +140,9 @@
           <div class="partners-item partners-item--medium">
             <img src="@/assets/img/logos/logo-alvilda.svg" alt="Alvilda" />
           </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-audiobuch.svg" alt="Audiobuch" />
+          </div>
           <div class="partners-item partners-item--large">
             <img src="@/assets/img/logos/logo-bibelselskabet.svg" alt="Bibelselskabets Forlag" />
           </div>
@@ -191,6 +194,9 @@
           <div class="partners-item partners-item--extra-small">
             <img src="@/assets/img/logos/logo-lr.svg" alt="Lindhardt and Ringhof" />
           </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-libello.svg" alt="Libello" />
+          </div>
           <div class="partners-item partners-item--medium">
             <img src="@/assets/img/logos/logo-lust.svg" alt="Lust" />
           </div>
@@ -226,6 +232,9 @@
           </div>
           <div class="partners-item partners-item--small">
             <img src="@/assets/img/logos/logo-storytel.svg" alt="Storytel" />
+          </div>
+          <div class="partners-item partners-item--small">
+            <img src="@/assets/img/logos/logo-strillo.svg" alt="Strillo" />
           </div>
           <div class="partners-item partners-item--small">
             <img src="@/assets/img/logos/logo-strawberry.svg" alt="Strawberry" />
