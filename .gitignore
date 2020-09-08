@@ -82,3 +82,7 @@ dist
 
 package-lock.json
 .contentful.json
+
+
+#Ignore env
+.env
