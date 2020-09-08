@@ -3,6 +3,12 @@ jobs:
   build:
     docker:
       - image: circleci/node:14
+    environment:
+      API_URL='https://swann-studio.com/api'
+      FILE_URL='https://swann-studio.com/files'
+      NARRATOR_LINK='https://narrator-survey.swann-studio.com/'
+      LOGIN_LINK='app'
+      FRONTPAGE_VIDEO_ID='kaKkslEshik'
     steps:
       - checkout
       - restore_cache:
@@ -17,3 +23,14 @@ jobs:
       - run:
           name: generate-static-page
           command: npx nuxt generate
+      - setup_remote_docker
+      - run:
+          name: login-swann-docker
+          run:
+            docker login -u devops -p $DOCKER_PASSWORD $DOCKER_REGISTRY
+      - run:
+          name: build-docker
+          command: docker build . -t $DOCKER_REGISTRY/website:latest
+      - run:
+          name: push-docker
+          command: docker push $DOCKER_REGISTRY/website:latest
