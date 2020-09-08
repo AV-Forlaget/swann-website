@@ -21,11 +21,11 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: Build
-          command: npx nuxt build
-      - run:
           name: Generate static site
           command: npx nuxt generate
+      - run:
+          name: Where is _nuxt
+          command: ls dist
       - setup_remote_docker
       - run:
           name: Locker login
@@ -37,3 +37,11 @@ jobs:
       - run:
           name: Push docker image
           command: docker push $DOCKER_REGISTRY/website:latest
+
+workflow:
+  delivery:
+    jobs:
+      - build:
+          filters:
+            only:
+              - master
