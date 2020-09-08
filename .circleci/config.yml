@@ -21,6 +21,9 @@ jobs:
           paths:
             - ./node_modules
       - run:
+          name: Build
+          command: npx nuxt build
+      - run:
           name: Generate static site
           command: npx nuxt generate
       - setup_remote_docker
