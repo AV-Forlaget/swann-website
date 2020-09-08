@@ -14,23 +14,23 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
-          name: install-packages
+          name: Install dependencies
           command: yarn install
       - save_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
             - ./node_modules
       - run:
-          name: generate-static-page
+          name: Generate static site
           command: npx nuxt generate
       - setup_remote_docker
       - run:
-          name: login-swann-docker
+          name: Locker login
           command:
             docker login -u devops -p $DOCKER_PASSWORD $DOCKER_REGISTRY
       - run:
-          name: build-docker
+          name: Build docker image
           command: docker build . -t $DOCKER_REGISTRY/website:latest
       - run:
-          name: push-docker
+          name: Push docker image
           command: docker push $DOCKER_REGISTRY/website:latest
