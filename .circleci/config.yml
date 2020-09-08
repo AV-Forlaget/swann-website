@@ -23,9 +23,6 @@ jobs:
       - run:
           name: Generate static site
           command: npx nuxt generate
-      - run:
-          name: Where is _nuxt
-          command: ls dist
       - setup_remote_docker
       - run:
           name: Locker login
