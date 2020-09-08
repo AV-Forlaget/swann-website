@@ -5,9 +5,9 @@ jobs:
       - image: circleci/node:14
     steps:
       - checkout
-      - run:
-          name: install-global-tools
-          command: npm install -g yarn nuxt
+      # - run:
+      #     name: install-global-tools
+      #     command: npm install -g yarn nuxt
       - restore_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
