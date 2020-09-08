@@ -4,11 +4,11 @@ jobs:
     docker:
       - image: circleci/node:14
     environment:
-      API_URL='https://swann-studio.com/api'
-      FILE_URL='https://swann-studio.com/files'
-      NARRATOR_LINK='https://narrator-survey.swann-studio.com/'
-      LOGIN_LINK='app'
-      FRONTPAGE_VIDEO_ID='kaKkslEshik'
+      API_URL: 'https://swann-studio.com/api'
+      FILE_URL: 'https://swann-studio.com/files'
+      NARRATOR_LINK: 'https://narrator-survey.swann-studio.com/'
+      LOGIN_LINK: 'app'
+      FRONTPAGE_VIDEO_ID: 'kaKkslEshik'
     steps:
       - checkout
       - restore_cache:
