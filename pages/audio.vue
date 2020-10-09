@@ -32,9 +32,9 @@
         <h2 class="content-section__heading content-section__heading--center">Audiobook production</h2>
         <p class="content-section__text">Swann Studio aims to simplify the audio production workflow for our clients as much as possible.</p>
         <p class="content-section__text">We produce and publish audiobooks and other sound content internationally and on any scale. We are currently expanding into new markets every month, working with big international publishing houses as well as private individual publishers.</p>
-        <p class="content-section__text">If you are interested in our services, please contact our audiobook production team.</p>
+        <p class="content-section__text">If you are interested in our services, please contact Tascha Lynggaard Jørgensen from our audiobook production team at tlj@swann-studio.com.</p>
         <div class="content-section__btn content-section__btn--center">
-          <nuxt-link class="btn" to="/about-us">Contact information</nuxt-link>
+          <nuxt-link class="btn" to="/about-us">More contact information</nuxt-link>
         </div>
       </div>
     </div>

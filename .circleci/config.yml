@@ -1,4 +1,8 @@
 version: 2.1
+notify:
+  webhooks:
+    - url: https://outlook.office.com/webhook/504a268c-2467-448c-8bb2-4acc7868e43c@16a9d9bf-fe63-4826-896e-910a781c9c99/CircleCI/3ff53964a8c148479a0dffde37fc6ec6/f8956b24-66ba-48b1-8828-dafe51578a9b
+
 jobs:
   build:
     docker:
