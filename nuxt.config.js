@@ -13,7 +13,7 @@ if(!process.env.PRODUCTION) {
 }
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
   target: 'static',
   /*
   ** Headers of the page
