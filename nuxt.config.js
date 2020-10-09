@@ -74,5 +74,6 @@ module.exports = {
   */
   build: {
     
-  }
+  },
+  target: 'static'
 }
