@@ -39,7 +39,7 @@ jobs:
           name: Push docker image
           command: |
             docker push $DOCKER_REGISTRY/website:latest
-            REVISION="$DOCKER_REGISTRY/website:$(git rev-parse --short HEAD)
+            REVISION="$DOCKER_REGISTRY/website:$(git rev-parse --short HEAD)"
             docker tag $DOCKER_REGISTRY/website:latest $REVISION
             docker push $REVISION
 
