@@ -22,7 +22,7 @@ jobs:
             - ./node_modules
       - run:
           name: Generate static site
-          command: npx nuxt generate
+          command: npx nuxt generate --spa
       - setup_remote_docker
       - run:
           name: Locker login

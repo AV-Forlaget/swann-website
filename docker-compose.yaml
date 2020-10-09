@@ -21,3 +21,8 @@ services:
       - frontend
     ports:
       - 80:80
+  website:
+    build:
+      context: .
+    ports:
+      - 9000:80
