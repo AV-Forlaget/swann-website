@@ -28,7 +28,7 @@
                 >
               </li>
               <li class="nav__item">
-                <a class="header-tagline" :href="https://job.swann-studio.com"
+                <a class="header-tagline" href="https://job.swann-studio.com"
                   >Be part of our team</a
                 >
               </li>
