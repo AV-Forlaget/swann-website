@@ -13,6 +13,7 @@ jobs:
       NARRATOR_LINK: 'https://narrator-survey.swann-studio.com/'
       LOGIN_LINK: 'app'
       FRONTPAGE_VIDEO_ID: 'kaKkslEshik'
+      PRODUCTION: true
     steps:
       - checkout
       - restore_cache:
